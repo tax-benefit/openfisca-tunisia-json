@@ -84,6 +84,11 @@
     "salaire_imposable",
     "irpp_mensuel_salarie"
   ],
+  "salaire_super_brut": [
+    "salaire_de_base",
+    "primes",
+    "cotisations_employeur"
+  ],
   "tspr": [
     "revenu_assimile_salaire_apres_abattements",
     "revenu_assimile_pension_apres_abattements"

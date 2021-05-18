@@ -299,7 +299,11 @@
       "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
       "source_code": "def formula(foyer_fiscal, period):\n    '''\n    TODO: Nombre d'enfants étudiants du supérieur non boursiers\n    '''\n    age = foyer_fiscal.members('age', period = period)\n    boursier = foyer_fiscal.members('boursier', period = period)\n\n    return 0 * age * not_(boursier)\n",
       "start_line_number": 37,
-      "stop_line_number": 45
+      "stop_line_number": 45,
+      "variables": [
+        "age",
+        "boursier"
+      ]
     }
   },
   "json_type": "number",

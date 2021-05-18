@@ -234,7 +234,10 @@
       "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
       "source_code": "def formula(menage, period, parameters):\n    prestations_familiales_enfant_a_charge = menage.members(\n        'prestations_familiales_enfant_a_charge', period)\n    af_nbenf = max_(\n        menage.sum(prestations_familiales_enfant_a_charge),\n        3\n        )\n    return af_nbenf\n",
       "start_line_number": 110,
-      "stop_line_number": 118
+      "stop_line_number": 118,
+      "variables": [
+        "prestations_familiales_enfant_a_charge"
+      ]
     }
   },
   "json_type": "number",

@@ -143,7 +143,10 @@
       "file_path": "/openfisca_tunisia/model/common.py",
       "source_code": "def formula(individu, period):\n    irpp = individu.foyer_fiscal('irpp', period = period)\n\n    return irpp\n",
       "start_line_number": 16,
-      "stop_line_number": 20
+      "stop_line_number": 20,
+      "variables": [
+        "irpp"
+      ]
     }
   },
   "json_type": "number",

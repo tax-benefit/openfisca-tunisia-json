@@ -278,7 +278,11 @@
       "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
       "source_code": "def formula(foyer_fiscal, period):\n    '''\n    TODO: Nombre d'enfants infirmes\n    '''\n    age = foyer_fiscal.members('age', period = period)\n    invalide = foyer_fiscal.members('invalide', period = period)\n\n    return 0 * age * invalide\n",
       "start_line_number": 53,
-      "stop_line_number": 61
+      "stop_line_number": 61,
+      "variables": [
+        "age",
+        "invalide"
+      ]
     }
   },
   "json_type": "number",

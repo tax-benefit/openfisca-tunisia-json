@@ -1108,7 +1108,11 @@
       ],
       "source_code": "def formula(menage, period, parameters):\n    month = period.last_month\n    salaire_imposable_holder = menage.members('salaire_imposable', period = month)\n    age_en_mois_holder = menage.members('age_en_mois', period = month)\n    smig48 = parameters(period.start).cotisations_sociales.gen.smig_48h_mensuel  # TODO: smig 48H\n    # TODO rework and test\n    # Une prise en charge peut être accordée à la mère exerçant une\n    # activité salariée et dont le salaire ne dépasse pas deux fois et demie\n    # le SMIG pour 48 heures de travail par semaine. Cette contribution est\n    # versée pour les enfants ouvrant droit aux prestations familiales et\n    # dont l'âge est compris entre 2 et 36 mois. Elle s'élève à 15 dinars par\n    # enfant et par mois pendant 11 mois.\n    # , _option = {'age_en_mois': ENFS, 'sal': [CHEF, PART]}\n    somme_salaire_imposable = (\n        menage.personne_de_reference('salaire_imposable', period = month) +\n        menage.conjoint('salaire_imposable', period = month)\n        )\n    age_en_mois = menage.members('age_en_mois', period = month)\n    P = parameters(period).prestations_familiales.creche\n    age_en_mois_benjamin = menage.min(age_en_mois)[0]\n\n    elig_age = (age_en_mois_benjamin <= P.age_max) * (age_en_mois_benjamin >= P.age_min)\n    elig_sal = somme_salaire_imposable < P.plaf * smig48\n    return P.montant * elig_age * elig_sal * min_(P.duree, 12 - age_en_mois_benjamin)\n",
       "start_line_number": 190,
-      "stop_line_number": 214
+      "stop_line_number": 214,
+      "variables": [
+        "age_en_mois",
+        "salaire_imposable"
+      ]
     }
   },
   "json_type": "number",

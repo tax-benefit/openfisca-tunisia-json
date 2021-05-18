@@ -143,7 +143,10 @@
       "file_path": "/openfisca_tunisia/model/common.py",
       "source_code": "def formula(individu, period):\n    revenus_fonciers = individu.foyer_fiscal('revenus_fonciers', period = period)\n    return revenus_fonciers\n",
       "start_line_number": 62,
-      "stop_line_number": 65
+      "stop_line_number": 65,
+      "variables": [
+        "revenus_fonciers"
+      ]
     }
   },
   "json_type": "number",

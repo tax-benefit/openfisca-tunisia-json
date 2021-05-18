@@ -287,6 +287,7 @@
       "start_line_number": 647,
       "stop_line_number": 654,
       "variables": [
+        "deduction_famille",
         "salaire_imposable"
       ]
     }

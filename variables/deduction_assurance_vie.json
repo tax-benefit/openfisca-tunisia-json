@@ -646,7 +646,8 @@
       "start_line_number": 525,
       "stop_line_number": 533,
       "variables": [
-        "nb_enf"
+        "nb_enf",
+        "prime_assurance_vie"
       ]
     }
   },

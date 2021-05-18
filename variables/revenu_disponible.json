@@ -175,7 +175,10 @@
       "file_path": "/openfisca_tunisia/model/common.py",
       "source_code": "def formula(menage, period):\n    revenu_disponible_individuels = menage.members('revenu_disponible_individuel', period = period)\n    return menage.sum(revenu_disponible_individuels)\n",
       "start_line_number": 35,
-      "stop_line_number": 38
+      "stop_line_number": 38,
+      "variables": [
+        "revenu_disponible_individuel"
+      ]
     }
   },
   "json_type": "number",

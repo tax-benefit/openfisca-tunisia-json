@@ -439,7 +439,10 @@
       ],
       "source_code": "def formula(foyer_fiscal, period, parameters):\n    '''\n    TODO: fixme\n    '''\n    age = foyer_fiscal.members('age', period = period)\n    P = parameters(period.start).impot_revenu.deductions.fam\n    # res =+ (\n    #    (ag < 20) +\n    #    (ag < 25)*not_(boursier)*()\n    #    )\n    condition = (age >= 0) * (age <= P.age)\n    return foyer_fiscal.sum(condition, role = FoyerFiscal.PERSONNE_A_CHARGE)\n",
       "start_line_number": 17,
-      "stop_line_number": 29
+      "stop_line_number": 29,
+      "variables": [
+        "age"
+      ]
     }
   },
   "json_type": "number",

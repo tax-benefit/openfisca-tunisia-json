@@ -1,0 +1,449 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "float32",
+  "entity": "foyer_fiscal",
+  "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+  "formulas": {
+    "0001-01-01": {
+      "ast": {
+        "args": {
+          "args": [
+            {
+              "arg": "foyer_fiscal",
+              "ast_class": "arg",
+              "col_offset": 12,
+              "end_col_offset": 24,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "period",
+              "ast_class": "arg",
+              "col_offset": 26,
+              "end_col_offset": 32,
+              "end_lineno": 1,
+              "lineno": 1
+            }
+          ],
+          "ast_class": "arguments",
+          "defaults": [],
+          "kw_defaults": [],
+          "kwonlyargs": [],
+          "posonlyargs": []
+        },
+        "ast_class": "FunctionDef",
+        "body": [
+          {
+            "ast_class": "Expr",
+            "col_offset": 4,
+            "end_col_offset": 7,
+            "end_lineno": 5,
+            "lineno": 2,
+            "value": {
+              "ast_class": "Constant",
+              "col_offset": 4,
+              "end_col_offset": 7,
+              "end_lineno": 5,
+              "lineno": 2,
+              "value": "\n    Revenu net imposable ie soumis à au barême de l'impôt après déduction des dépenses\n    et charges professionnelles et des revenus non soumis à l'impôt\n    "
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 46,
+            "end_lineno": 6,
+            "lineno": 6,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 7,
+                "end_lineno": 6,
+                "id": "rng",
+                "lineno": 6
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 23,
+                  "end_col_offset": 28,
+                  "end_lineno": 6,
+                  "lineno": 6,
+                  "value": "rng"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 10,
+              "end_col_offset": 46,
+              "end_lineno": 6,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 10,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 22,
+                "end_lineno": 6,
+                "id": "foyer_fiscal",
+                "lineno": 6
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 30,
+                  "end_col_offset": 45,
+                  "end_lineno": 6,
+                  "lineno": 6,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 39,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 45,
+                    "end_lineno": 6,
+                    "id": "period",
+                    "lineno": 6
+                  }
+                }
+              ],
+              "lineno": 6
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 74,
+            "end_lineno": 7,
+            "lineno": 7,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 21,
+                "end_lineno": 7,
+                "id": "deduction_famille",
+                "lineno": 7
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 37,
+                  "end_col_offset": 56,
+                  "end_lineno": 7,
+                  "lineno": 7,
+                  "value": "deduction_famille"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 24,
+              "end_col_offset": 74,
+              "end_lineno": 7,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 24,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 36,
+                "end_lineno": 7,
+                "id": "foyer_fiscal",
+                "lineno": 7
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 58,
+                  "end_col_offset": 73,
+                  "end_lineno": 7,
+                  "lineno": 7,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 67,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 73,
+                    "end_lineno": 7,
+                    "id": "period",
+                    "lineno": 7
+                  }
+                }
+              ],
+              "lineno": 7
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 80,
+            "end_lineno": 8,
+            "lineno": 8,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 19,
+                "end_lineno": 8,
+                "id": "deduction_rente",
+                "lineno": 8
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 55,
+                  "end_col_offset": 62,
+                  "end_lineno": 8,
+                  "lineno": 8,
+                  "value": "rente"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 22,
+              "end_col_offset": 80,
+              "end_lineno": 8,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "declarant_principal",
+                "col_offset": 22,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 54,
+                "end_lineno": 8,
+                "lineno": 8,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 22,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 34,
+                  "end_lineno": 8,
+                  "id": "foyer_fiscal",
+                  "lineno": 8
+                }
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 64,
+                  "end_col_offset": 79,
+                  "end_lineno": 8,
+                  "lineno": 8,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 73,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 79,
+                    "end_lineno": 8,
+                    "id": "period",
+                    "lineno": 8
+                  }
+                }
+              ],
+              "lineno": 8
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 86,
+            "end_lineno": 9,
+            "lineno": 9,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 27,
+                "end_lineno": 9,
+                "id": "deduction_assurance_vie",
+                "lineno": 9
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 43,
+                  "end_col_offset": 68,
+                  "end_lineno": 9,
+                  "lineno": 9,
+                  "value": "deduction_assurance_vie"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 30,
+              "end_col_offset": 86,
+              "end_lineno": 9,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 30,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 42,
+                "end_lineno": 9,
+                "id": "foyer_fiscal",
+                "lineno": 9
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 70,
+                  "end_col_offset": 85,
+                  "end_lineno": 9,
+                  "lineno": 9,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 79,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 85,
+                    "end_lineno": 9,
+                    "id": "period",
+                    "lineno": 9
+                  }
+                }
+              ],
+              "lineno": 9
+            }
+          },
+          {
+            "ast_class": "Return",
+            "col_offset": 4,
+            "end_col_offset": 80,
+            "end_lineno": 10,
+            "lineno": 10,
+            "value": {
+              "ast_class": "BinOp",
+              "col_offset": 11,
+              "end_col_offset": 80,
+              "end_lineno": 10,
+              "left": {
+                "ast_class": "Name",
+                "col_offset": 11,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 14,
+                "end_lineno": 10,
+                "id": "rng",
+                "lineno": 10
+              },
+              "lineno": 10,
+              "op": {
+                "ast_class": "Sub"
+              },
+              "right": {
+                "ast_class": "BinOp",
+                "col_offset": 18,
+                "end_col_offset": 79,
+                "end_lineno": 10,
+                "left": {
+                  "ast_class": "BinOp",
+                  "col_offset": 18,
+                  "end_col_offset": 53,
+                  "end_lineno": 10,
+                  "left": {
+                    "ast_class": "Name",
+                    "col_offset": 18,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 35,
+                    "end_lineno": 10,
+                    "id": "deduction_famille",
+                    "lineno": 10
+                  },
+                  "lineno": 10,
+                  "op": {
+                    "ast_class": "Add"
+                  },
+                  "right": {
+                    "ast_class": "Name",
+                    "col_offset": 38,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 53,
+                    "end_lineno": 10,
+                    "id": "deduction_rente",
+                    "lineno": 10
+                  }
+                },
+                "lineno": 10,
+                "op": {
+                  "ast_class": "Add"
+                },
+                "right": {
+                  "ast_class": "Name",
+                  "col_offset": 56,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 79,
+                  "end_lineno": 10,
+                  "id": "deduction_assurance_vie",
+                  "lineno": 10
+                }
+              }
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [],
+        "end_col_offset": 80,
+        "end_lineno": 10,
+        "lineno": 1,
+        "name": "formula"
+      },
+      "documentation": "\nRevenu net imposable ie soumis à au barême de l'impôt après déduction des dépenses\net charges professionnelles et des revenus non soumis à l'impôt\n",
+      "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+      "source_code": "def formula(foyer_fiscal, period):\n    '''\n    Revenu net imposable ie soumis à au barême de l'impôt après déduction des dépenses\n    et charges professionnelles et des revenus non soumis à l'impôt\n    '''\n    rng = foyer_fiscal('rng', period = period)\n    deduction_famille = foyer_fiscal('deduction_famille', period = period)\n    deduction_rente = foyer_fiscal.declarant_principal('rente', period = period)\n    deduction_assurance_vie = foyer_fiscal('deduction_assurance_vie', period = period)\n    return rng - (deduction_famille + deduction_rente + deduction_assurance_vie)\n",
+      "start_line_number": 584,
+      "stop_line_number": 594,
+      "variables": [
+        "deduction_assurance_vie",
+        "deduction_famille",
+        "rng"
+      ]
+    }
+  },
+  "json_type": "number",
+  "label": "Revenu net imposable",
+  "name": "revenu_net_imposable",
+  "referring_variables": [
+    "impot_revenu_brut"
+  ],
+  "start_line_number": 578,
+  "stop_line_number": 594,
+  "value_type": "float"
+}

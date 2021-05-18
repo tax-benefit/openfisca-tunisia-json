@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "eternity",
+  "dtype": "int32",
+  "entity": "menage",
+  "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/logement.py",
+  "json_type": "integer",
+  "label": "Localisation du logement (code postal)",
+  "name": "code_postal",
+  "start_line_number": 7,
+  "stop_line_number": 12,
+  "value_type": "int"
+}

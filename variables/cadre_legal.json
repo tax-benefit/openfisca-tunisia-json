@@ -1,0 +1,22 @@
+{
+  "default_value": "developpement_regional",
+  "definition_period": "year",
+  "dtype": "int16",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+  "is_period_size_independent": true,
+  "json_type": "string",
+  "label": "Cadre légal de l’activité de l’entreprise",
+  "name": "cadre_legal",
+  "possible_values": {
+    "autres": "Autres (à préciser)",
+    "developpement_agricole": "Développement agricole",
+    "developpement_regional": "Développement régional",
+    "exportation_droit_commun": "Exportation dans le cadre du droit commun",
+    "exportation_totale": "Exportation totale dans le cadre du Code d'Incitations aux Investissements (CII)",
+    "parcs_activites_economiques": "Parcs des activités économiques"
+  },
+  "start_line_number": 58,
+  "stop_line_number": 65,
+  "value_type": "Enum"
+}

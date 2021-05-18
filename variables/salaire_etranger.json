@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/autres_revenus.py",
+  "json_type": "integer",
+  "label": "Salaires perçus à l'étranger",
+  "name": "salaire_etranger",
+  "start_line_number": 9,
+  "stop_line_number": 14,
+  "value_type": "int"
+}

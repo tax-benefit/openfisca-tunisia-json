@@ -1,0 +1,16 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+  "json_type": "integer",
+  "label": "Résultat comptable (BIC, régime réel)",
+  "name": "bic_reel_res",
+  "referring_variables": [
+    "bic"
+  ],
+  "start_line_number": 67,
+  "stop_line_number": 72,
+  "value_type": "int"
+}

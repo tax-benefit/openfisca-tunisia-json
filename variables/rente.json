@@ -1,0 +1,16 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/deductions.py",
+  "json_type": "integer",
+  "label": "Rentes payées obligatoirement et à titre gratuit",
+  "name": "rente",
+  "referring_variables": [
+    "deduction_rente"
+  ],
+  "start_line_number": 81,
+  "stop_line_number": 86,
+  "value_type": "int"
+}

@@ -1,0 +1,16 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+  "json_type": "integer",
+  "label": "Bénéfice fiscal (BEAP, bénéfice comme reliquat positif entre recette et dépenses)",
+  "name": "beap_reliq_benef_fiscal",
+  "referring_variables": [
+    "beap"
+  ],
+  "start_line_number": 264,
+  "stop_line_number": 269,
+  "value_type": "int"
+}

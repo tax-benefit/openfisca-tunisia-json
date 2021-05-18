@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/deductions.py",
+  "json_type": "integer",
+  "label": "Remboursement des prêts universitaires en principal et intérêts",
+  "name": "pret_universitaire",
+  "start_line_number": 102,
+  "stop_line_number": 107,
+  "value_type": "int"
+}

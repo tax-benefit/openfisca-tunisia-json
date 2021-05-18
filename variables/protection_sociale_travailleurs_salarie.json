@@ -1,0 +1,170 @@
+{
+  "default_value": 0,
+  "definition_period": "month",
+  "dtype": "float32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+  "formulas": {
+    "0001-01-01": {
+      "ast": {
+        "args": {
+          "args": [
+            {
+              "arg": "individu",
+              "ast_class": "arg",
+              "col_offset": 12,
+              "end_col_offset": 20,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "period",
+              "ast_class": "arg",
+              "col_offset": 22,
+              "end_col_offset": 28,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "parameters",
+              "ast_class": "arg",
+              "col_offset": 30,
+              "end_col_offset": 40,
+              "end_lineno": 1,
+              "lineno": 1
+            }
+          ],
+          "ast_class": "arguments",
+          "defaults": [],
+          "kw_defaults": [],
+          "kwonlyargs": [],
+          "posonlyargs": []
+        },
+        "ast_class": "FunctionDef",
+        "body": [
+          {
+            "ast_class": "Return",
+            "col_offset": 4,
+            "end_col_offset": 9,
+            "end_lineno": 8,
+            "lineno": 2,
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Name",
+                  "col_offset": 8,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 16,
+                  "end_lineno": 3,
+                  "id": "individu",
+                  "lineno": 3
+                },
+                {
+                  "ast_class": "Name",
+                  "col_offset": 8,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 14,
+                  "end_lineno": 4,
+                  "id": "period",
+                  "lineno": 4
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 11,
+              "end_col_offset": 9,
+              "end_lineno": 8,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 11,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 29,
+                "end_lineno": 2,
+                "id": "compute_cotisation",
+                "lineno": 2
+              },
+              "keywords": [
+                {
+                  "arg": "cotisation_type",
+                  "ast_class": "keyword",
+                  "col_offset": 8,
+                  "end_col_offset": 35,
+                  "end_lineno": 5,
+                  "lineno": 5,
+                  "value": {
+                    "ast_class": "Constant",
+                    "col_offset": 26,
+                    "end_col_offset": 35,
+                    "end_lineno": 5,
+                    "lineno": 5,
+                    "value": "salarie"
+                  }
+                },
+                {
+                  "arg": "bareme_name",
+                  "ast_class": "keyword",
+                  "col_offset": 8,
+                  "end_col_offset": 55,
+                  "end_lineno": 6,
+                  "lineno": 6,
+                  "value": {
+                    "ast_class": "Constant",
+                    "col_offset": 22,
+                    "end_col_offset": 55,
+                    "end_lineno": 6,
+                    "lineno": 6,
+                    "value": "protection_sociale_travailleurs"
+                  }
+                },
+                {
+                  "arg": "parameters",
+                  "ast_class": "keyword",
+                  "col_offset": 8,
+                  "end_col_offset": 31,
+                  "end_lineno": 7,
+                  "lineno": 7,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 21,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 31,
+                    "end_lineno": 7,
+                    "id": "parameters",
+                    "lineno": 7
+                  }
+                }
+              ],
+              "lineno": 2
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [],
+        "end_col_offset": 9,
+        "end_lineno": 8,
+        "lineno": 1,
+        "name": "formula"
+      },
+      "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+      "source_code": "def formula(individu, period, parameters):\n    return compute_cotisation(\n        individu,\n        period,\n        cotisation_type = 'salarie',\n        bareme_name = 'protection_sociale_travailleurs',\n        parameters = parameters\n        )\n",
+      "start_line_number": 341,
+      "stop_line_number": 349
+    }
+  },
+  "json_type": "number",
+  "label": "Cotisation protection sociale des travailleurs (salarié)",
+  "name": "protection_sociale_travailleurs_salarie",
+  "referring_variables": [
+    "cotisations_salarie"
+  ],
+  "start_line_number": 335,
+  "stop_line_number": 349,
+  "value_type": "float"
+}

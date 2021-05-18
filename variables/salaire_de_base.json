@@ -1,0 +1,18 @@
+{
+  "default_value": 0,
+  "definition_period": "month",
+  "dtype": "float32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/activite/salarie.py",
+  "json_type": "number",
+  "label": "Salaire de base",
+  "name": "salaire_de_base",
+  "referring_variables": [
+    "assiette_cotisations_sociales",
+    "salaire_super_brut"
+  ],
+  "set_input": "set_input_divide_by_period",
+  "start_line_number": 9,
+  "stop_line_number": 15,
+  "value_type": "float"
+}

@@ -1,0 +1,405 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "float32",
+  "entity": "foyer_fiscal",
+  "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+  "formulas": {
+    "0001-01-01": {
+      "ast": {
+        "args": {
+          "args": [
+            {
+              "arg": "foyer_fiscal",
+              "ast_class": "arg",
+              "col_offset": 12,
+              "end_col_offset": 24,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "period",
+              "ast_class": "arg",
+              "col_offset": 26,
+              "end_col_offset": 32,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "parameters",
+              "ast_class": "arg",
+              "col_offset": 34,
+              "end_col_offset": 44,
+              "end_lineno": 1,
+              "lineno": 1
+            }
+          ],
+          "ast_class": "arguments",
+          "defaults": [],
+          "kw_defaults": [],
+          "kwonlyargs": [],
+          "posonlyargs": []
+        },
+        "ast_class": "FunctionDef",
+        "body": [
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 106,
+            "end_lineno": 2,
+            "lineno": 2,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 27,
+                "end_lineno": 2,
+                "id": "revenu_assimile_pension",
+                "lineno": 2
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 63,
+                  "end_col_offset": 88,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": "revenu_assimile_pension"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 30,
+              "end_col_offset": 106,
+              "end_lineno": 2,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "declarant_principal",
+                "col_offset": 30,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 62,
+                "end_lineno": 2,
+                "lineno": 2,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 30,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 42,
+                  "end_lineno": 2,
+                  "id": "foyer_fiscal",
+                  "lineno": 2
+                }
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 90,
+                  "end_col_offset": 105,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 99,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 105,
+                    "end_lineno": 2,
+                    "id": "period",
+                    "lineno": 2
+                  }
+                }
+              ],
+              "lineno": 2
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 61,
+            "end_lineno": 4,
+            "lineno": 3,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 37,
+                "end_lineno": 3,
+                "id": "avantages_nature_assimile_pension",
+                "lineno": 3
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 8,
+                  "end_col_offset": 43,
+                  "end_lineno": 4,
+                  "lineno": 4,
+                  "value": "avantages_nature_assimile_pension"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 40,
+              "end_col_offset": 61,
+              "end_lineno": 4,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "declarant_principal",
+                "col_offset": 40,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 72,
+                "end_lineno": 3,
+                "lineno": 3,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 40,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 52,
+                  "end_lineno": 3,
+                  "id": "foyer_fiscal",
+                  "lineno": 3
+                }
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 45,
+                  "end_col_offset": 60,
+                  "end_lineno": 4,
+                  "lineno": 4,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 54,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 60,
+                    "end_lineno": 4,
+                    "id": "period",
+                    "lineno": 4
+                  }
+                }
+              ],
+              "lineno": 3
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 53,
+            "end_lineno": 5,
+            "lineno": 5,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 8,
+                "end_lineno": 5,
+                "id": "tspr",
+                "lineno": 5
+              }
+            ],
+            "value": {
+              "ast_class": "Attribute",
+              "attr": "tspr",
+              "col_offset": 11,
+              "ctx": {
+                "ast_class": "Load"
+              },
+              "end_col_offset": 53,
+              "end_lineno": 5,
+              "lineno": 5,
+              "value": {
+                "ast_class": "Attribute",
+                "attr": "impot_revenu",
+                "col_offset": 11,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 48,
+                "end_lineno": 5,
+                "lineno": 5,
+                "value": {
+                  "args": [
+                    {
+                      "ast_class": "Attribute",
+                      "attr": "start",
+                      "col_offset": 22,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 34,
+                      "end_lineno": 5,
+                      "lineno": 5,
+                      "value": {
+                        "ast_class": "Name",
+                        "col_offset": 22,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 28,
+                        "end_lineno": 5,
+                        "id": "period",
+                        "lineno": 5
+                      }
+                    }
+                  ],
+                  "ast_class": "Call",
+                  "col_offset": 11,
+                  "end_col_offset": 35,
+                  "end_lineno": 5,
+                  "func": {
+                    "ast_class": "Name",
+                    "col_offset": 11,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 21,
+                    "end_lineno": 5,
+                    "id": "parameters",
+                    "lineno": 5
+                  },
+                  "keywords": [],
+                  "lineno": 5
+                }
+              }
+            }
+          },
+          {
+            "ast_class": "Return",
+            "col_offset": 4,
+            "end_col_offset": 94,
+            "end_lineno": 6,
+            "lineno": 6,
+            "value": {
+              "ast_class": "BinOp",
+              "col_offset": 11,
+              "end_col_offset": 94,
+              "end_lineno": 6,
+              "left": {
+                "ast_class": "BinOp",
+                "col_offset": 12,
+                "end_col_offset": 71,
+                "end_lineno": 6,
+                "left": {
+                  "ast_class": "Name",
+                  "col_offset": 12,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 35,
+                  "end_lineno": 6,
+                  "id": "revenu_assimile_pension",
+                  "lineno": 6
+                },
+                "lineno": 6,
+                "op": {
+                  "ast_class": "Add"
+                },
+                "right": {
+                  "ast_class": "Name",
+                  "col_offset": 38,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 71,
+                  "end_lineno": 6,
+                  "id": "avantages_nature_assimile_pension",
+                  "lineno": 6
+                }
+              },
+              "lineno": 6,
+              "op": {
+                "ast_class": "Mult"
+              },
+              "right": {
+                "ast_class": "BinOp",
+                "col_offset": 76,
+                "end_col_offset": 93,
+                "end_lineno": 6,
+                "left": {
+                  "ast_class": "Constant",
+                  "col_offset": 76,
+                  "end_col_offset": 77,
+                  "end_lineno": 6,
+                  "lineno": 6,
+                  "value": 1
+                },
+                "lineno": 6,
+                "op": {
+                  "ast_class": "Sub"
+                },
+                "right": {
+                  "ast_class": "Attribute",
+                  "attr": "abat_pen",
+                  "col_offset": 80,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 93,
+                  "end_lineno": 6,
+                  "lineno": 6,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 80,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 84,
+                    "end_lineno": 6,
+                    "id": "tspr",
+                    "lineno": 6
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [],
+        "end_col_offset": 94,
+        "end_lineno": 6,
+        "lineno": 1,
+        "name": "formula"
+      },
+      "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+      "parameters": [
+        "impot_revenu.tspr.abat_pen"
+      ],
+      "source_code": "def formula(foyer_fiscal, period, parameters):\n    revenu_assimile_pension = foyer_fiscal.declarant_principal('revenu_assimile_pension', period = period)\n    avantages_nature_assimile_pension = foyer_fiscal.declarant_principal(\n        'avantages_nature_assimile_pension', period = period)\n    tspr = parameters(period.start).impot_revenu.tspr\n    return (revenu_assimile_pension + avantages_nature_assimile_pension) * (1 - tspr.abat_pen)\n",
+      "start_line_number": 371,
+      "stop_line_number": 377
+    }
+  },
+  "json_type": "number",
+  "label": "Revenu assimilé à des pensions après abattements",
+  "name": "revenu_assimile_pension_apres_abattements",
+  "referring_variables": [
+    "tspr"
+  ],
+  "start_line_number": 365,
+  "stop_line_number": 377,
+  "value_type": "float"
+}

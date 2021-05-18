@@ -1,0 +1,18 @@
+{
+  "default_value": 0,
+  "definition_period": "month",
+  "dtype": "float32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/activite/salarie.py",
+  "json_type": "number",
+  "label": "Primes",
+  "name": "primes",
+  "referring_variables": [
+    "assiette_cotisations_sociales",
+    "salaire_super_brut"
+  ],
+  "set_input": "set_input_divide_by_period",
+  "start_line_number": 17,
+  "stop_line_number": 23,
+  "value_type": "float"
+}

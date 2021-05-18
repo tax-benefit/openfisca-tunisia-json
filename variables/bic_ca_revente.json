@@ -1,0 +1,16 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+  "json_type": "integer",
+  "label": "Chiffre d’affaires global au titre des activités d’achat en vue de la revente et les activités de transformation (BIC, régime forfaitaire, cession de fonds de commerce)",
+  "name": "bic_ca_revente",
+  "referring_variables": [
+    "bic_ca_global"
+  ],
+  "start_line_number": 123,
+  "stop_line_number": 129,
+  "value_type": "int"
+}

@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+  "json_type": "integer",
+  "label": "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur industriel et commercial (BIC)",
+  "name": "bic_societes_personnes_resultat",
+  "start_line_number": 81,
+  "stop_line_number": 87,
+  "value_type": "int"
+}

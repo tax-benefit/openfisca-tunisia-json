@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/capital/valeurs_mobilieres_et_capitaux_mobiliers.py",
+  "json_type": "integer",
+  "label": "Autres intérêts",
+  "name": "capm_aut",
+  "start_line_number": 90,
+  "stop_line_number": 95,
+  "value_type": "int"
+}

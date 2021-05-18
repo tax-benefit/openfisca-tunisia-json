@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/capital/valeurs_mobilieres_et_capitaux_mobiliers.py",
+  "json_type": "integer",
+  "label": "Intérêts des titres de participation",
+  "name": "capm_part",
+  "start_line_number": 55,
+  "stop_line_number": 60,
+  "value_type": "int"
+}

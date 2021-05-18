@@ -1,0 +1,19 @@
+{
+  "default_value": 2,
+  "definition_period": "eternity",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+  "json_type": "integer",
+  "label": "Statut marital",
+  "name": "statut_marital",
+  "referring_variables": [
+    "celibataire",
+    "divorce",
+    "marie",
+    "veuf"
+  ],
+  "start_line_number": 111,
+  "stop_line_number": 117,
+  "value_type": "int"
+}

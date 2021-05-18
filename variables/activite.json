@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "eternity",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+  "json_type": "integer",
+  "label": "Activité",
+  "name": "activite",
+  "start_line_number": 126,
+  "stop_line_number": 131,
+  "value_type": "int"
+}

@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/capital/valeurs_mobilieres_et_capitaux_mobiliers.py",
+  "json_type": "integer",
+  "label": "Revenus des valeurs mobilières autres que ceux régulièrement distribués",
+  "name": "valm_nreg",
+  "start_line_number": 10,
+  "stop_line_number": 15,
+  "value_type": "int"
+}

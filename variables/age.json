@@ -1,0 +1,226 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+  "formulas": {
+    "0001-01-01": {
+      "ast": {
+        "args": {
+          "args": [
+            {
+              "arg": "individu",
+              "ast_class": "arg",
+              "col_offset": 12,
+              "end_col_offset": 20,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "period",
+              "ast_class": "arg",
+              "col_offset": 22,
+              "end_col_offset": 28,
+              "end_lineno": 1,
+              "lineno": 1
+            }
+          ],
+          "ast_class": "arguments",
+          "defaults": [],
+          "kw_defaults": [],
+          "kwonlyargs": [],
+          "posonlyargs": []
+        },
+        "ast_class": "FunctionDef",
+        "body": [
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 55,
+            "end_lineno": 2,
+            "lineno": 2,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 18,
+                "end_lineno": 2,
+                "id": "date_naissance",
+                "lineno": 2
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 30,
+                  "end_col_offset": 46,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": "date_naissance"
+                },
+                {
+                  "ast_class": "Name",
+                  "col_offset": 48,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 54,
+                  "end_lineno": 2,
+                  "id": "period",
+                  "lineno": 2
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 21,
+              "end_col_offset": 55,
+              "end_lineno": 2,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 21,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 29,
+                "end_lineno": 2,
+                "id": "individu",
+                "lineno": 2
+              },
+              "keywords": [],
+              "lineno": 2
+            }
+          },
+          {
+            "ast_class": "Return",
+            "col_offset": 4,
+            "end_col_offset": 78,
+            "end_lineno": 3,
+            "lineno": 3,
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 61,
+                  "end_col_offset": 77,
+                  "end_lineno": 3,
+                  "lineno": 3,
+                  "value": "timedelta64[Y]"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 11,
+              "end_col_offset": 78,
+              "end_lineno": 3,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "astype",
+                "col_offset": 11,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 60,
+                "end_lineno": 3,
+                "lineno": 3,
+                "value": {
+                  "ast_class": "BinOp",
+                  "col_offset": 12,
+                  "end_col_offset": 52,
+                  "end_lineno": 3,
+                  "left": {
+                    "args": [
+                      {
+                        "ast_class": "Attribute",
+                        "attr": "date",
+                        "col_offset": 23,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 34,
+                        "end_lineno": 3,
+                        "lineno": 3,
+                        "value": {
+                          "ast_class": "Name",
+                          "col_offset": 23,
+                          "ctx": {
+                            "ast_class": "Load"
+                          },
+                          "end_col_offset": 29,
+                          "end_lineno": 3,
+                          "id": "period",
+                          "lineno": 3
+                        }
+                      }
+                    ],
+                    "ast_class": "Call",
+                    "col_offset": 12,
+                    "end_col_offset": 35,
+                    "end_lineno": 3,
+                    "func": {
+                      "ast_class": "Name",
+                      "col_offset": 12,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 22,
+                      "end_lineno": 3,
+                      "id": "datetime64",
+                      "lineno": 3
+                    },
+                    "keywords": [],
+                    "lineno": 3
+                  },
+                  "lineno": 3,
+                  "op": {
+                    "ast_class": "Sub"
+                  },
+                  "right": {
+                    "ast_class": "Name",
+                    "col_offset": 38,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 52,
+                    "end_lineno": 3,
+                    "id": "date_naissance",
+                    "lineno": 3
+                  }
+                }
+              },
+              "keywords": [],
+              "lineno": 3
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [],
+        "end_col_offset": 78,
+        "end_lineno": 3,
+        "lineno": 1,
+        "name": "formula"
+      },
+      "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+      "source_code": "def formula(individu, period):\n    date_naissance = individu('date_naissance', period)\n    return (datetime64(period.date) - date_naissance).astype('timedelta64[Y]')\n",
+      "start_line_number": 17,
+      "stop_line_number": 20,
+      "variables": [
+        "date_naissance"
+      ]
+    }
+  },
+  "is_period_size_independent": true,
+  "json_type": "integer",
+  "label": "Âge (en années)",
+  "name": "age",
+  "referring_variables": [
+    "age_en_mois",
+    "prestations_familiales_enfant_a_charge"
+  ],
+  "set_input": "set_input_dispatch_by_period",
+  "start_line_number": 9,
+  "stop_line_number": 20,
+  "value_type": "int"
+}

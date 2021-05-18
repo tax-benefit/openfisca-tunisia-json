@@ -1,0 +1,22 @@
+{
+  "default_value": "neant",
+  "definition_period": "year",
+  "dtype": "int16",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+  "is_period_size_independent": true,
+  "json_type": "string",
+  "label": "Type d’activité (BIC)",
+  "name": "bic_reel",
+  "possible_values": {
+    "artisan": "Artisan",
+    "commercant": "Commerçant",
+    "industriel": "Industriel",
+    "multi_activites": "Plus d'une activité",
+    "neant": "Néant",
+    "prestataire_de_services": "Prestataire de services"
+  },
+  "start_line_number": 36,
+  "stop_line_number": 43,
+  "value_type": "Enum"
+}

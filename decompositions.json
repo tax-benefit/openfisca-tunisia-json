@@ -1,0 +1,91 @@
+{
+  "assiette_cotisations_sociales": [
+    "salaire_de_base",
+    "primes"
+  ],
+  "beap": [
+    "beap_reel_res_fiscal",
+    "beap_reliq_benef_fiscal",
+    "beap_monogr",
+    "beap_part_benef_sp"
+  ],
+  "bic": [
+    "bic_reel_res"
+  ],
+  "bic_benef_fiscal_cession": [
+    "bic_res_cession",
+    "bic_pv_cession"
+  ],
+  "bic_ca_global": [
+    "bic_ca_revente",
+    "bic_ca_autre"
+  ],
+  "bnc": [
+    "bnc_reel_res_fiscal",
+    "bnc_forf_benef_fiscal",
+    "bnc_part_benef_sp"
+  ],
+  "cotisations_employeur": [
+    "accident_du_travail_employeur",
+    "deces_employeur",
+    "fonds_special_etat",
+    "famille_employeur",
+    "maladie_employeur",
+    "maternite_employeur",
+    "protection_sociale_travailleurs_employeur",
+    "retraite_employeur"
+  ],
+  "cotisations_salarie": [
+    "accident_du_travail_salarie",
+    "deces_salarie",
+    "famille_salarie",
+    "maladie_salarie",
+    "maternite_salarie",
+    "protection_sociale_travailleurs_salarie",
+    "retraite_salarie",
+    "ugtt"
+  ],
+  "cotisations_sociales": [
+    "cotisations_employeur",
+    "cotisations_salarie"
+  ],
+  "deduction_rente": [
+    "rente"
+  ],
+  "impots_directs": [
+    "irpp"
+  ],
+  "prestations_familiales": [
+    "af",
+    "majoration_salaire_unique",
+    "contribution_frais_creche"
+  ],
+  "revenu_disponible": [
+    "revenu_disponible_individuel"
+  ],
+  "revenu_disponible_individuel": [
+    "revenus_du_travail",
+    "revenu_assimile_pension",
+    "revenus_du_capital",
+    "prestations_sociales",
+    "impots_directs"
+  ],
+  "revenus_du_capital": [
+    "revenus_fonciers"
+  ],
+  "revenus_du_travail": [
+    "salaire_imposable"
+  ],
+  "salaire_imposable": [
+    "assiette_cotisations_sociales",
+    "cotisations_salarie"
+  ],
+  "salaire_net_a_payer": [
+    "salaire_imposable",
+    "irpp_mensuel_salarie"
+  ],
+  "tspr": [
+    "revenu_assimile_salaire_apres_abattements",
+    "revenu_assimile_pension_apres_abattements"
+  ]
+}

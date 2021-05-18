@@ -1,0 +1,21 @@
+{
+  "default_value": "api",
+  "definition_period": "year",
+  "dtype": "int16",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+  "is_period_size_independent": true,
+  "json_type": "string",
+  "label": "Structure auprès de laquelle la déclaration d’investissement a été déposée",
+  "name": "structure_declaration_investissement",
+  "possible_values": {
+    "api": "Agence de Promotion de l'Industrie et de l'Innovation",
+    "apia": "Agence de Promotion des Investissements Agricoles",
+    "autres": "Autre structure (à préciser)",
+    "commissariat_regional_developpement_agricole": "Commissariat régional du développement agricole",
+    "ont": "ONT"
+  },
+  "start_line_number": 89,
+  "stop_line_number": 96,
+  "value_type": "Enum"
+}

@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/capital/valeurs_mobilieres_et_capitaux_mobiliers.py",
+  "json_type": "integer",
+  "label": "Intérêts bruts des comptes spéciaux d’épargne ouverts auprès de la CENT",
+  "name": "capm_cent",
+  "start_line_number": 41,
+  "stop_line_number": 46,
+  "value_type": "int"
+}

@@ -1,0 +1,16 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+  "json_type": "integer",
+  "label": "Plue-value de cession du fond de commerce (BIC, régime forfaitaire, cession de fonds de commerce)",
+  "name": "bic_pv_cession",
+  "referring_variables": [
+    "bic_benef_fiscal_cession"
+  ],
+  "start_line_number": 145,
+  "stop_line_number": 150,
+  "value_type": "int"
+}

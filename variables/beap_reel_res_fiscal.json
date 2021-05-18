@@ -1,0 +1,16 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+  "json_type": "integer",
+  "label": "Résultat fiscal (BEAP, régime réel)",
+  "name": "beap_reel_res_fiscal",
+  "referring_variables": [
+    "beap"
+  ],
+  "start_line_number": 225,
+  "stop_line_number": 230,
+  "value_type": "int"
+}

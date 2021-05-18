@@ -1,0 +1,329 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "float32",
+  "entity": "menage",
+  "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
+  "formulas": {
+    "0001-01-01": {
+      "ast": {
+        "args": {
+          "args": [
+            {
+              "arg": "menage",
+              "ast_class": "arg",
+              "col_offset": 12,
+              "end_col_offset": 18,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "period",
+              "ast_class": "arg",
+              "col_offset": 20,
+              "end_col_offset": 26,
+              "end_lineno": 1,
+              "lineno": 1
+            }
+          ],
+          "ast_class": "arguments",
+          "defaults": [],
+          "kw_defaults": [],
+          "kwonlyargs": [],
+          "posonlyargs": []
+        },
+        "ast_class": "FunctionDef",
+        "body": [
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 38,
+            "end_lineno": 2,
+            "lineno": 2,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 6,
+                "end_lineno": 2,
+                "id": "af",
+                "lineno": 2
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 16,
+                  "end_col_offset": 20,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": "af"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 9,
+              "end_col_offset": 38,
+              "end_lineno": 2,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 9,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 15,
+                "end_lineno": 2,
+                "id": "menage",
+                "lineno": 2
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 22,
+                  "end_col_offset": 37,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 31,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 37,
+                    "end_lineno": 2,
+                    "id": "period",
+                    "lineno": 2
+                  }
+                }
+              ],
+              "lineno": 2
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 84,
+            "end_lineno": 3,
+            "lineno": 3,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 29,
+                "end_lineno": 3,
+                "id": "majoration_salaire_unique",
+                "lineno": 3
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 39,
+                  "end_col_offset": 66,
+                  "end_lineno": 3,
+                  "lineno": 3,
+                  "value": "majoration_salaire_unique"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 32,
+              "end_col_offset": 84,
+              "end_lineno": 3,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 32,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 38,
+                "end_lineno": 3,
+                "id": "menage",
+                "lineno": 3
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 68,
+                  "end_col_offset": 83,
+                  "end_lineno": 3,
+                  "lineno": 3,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 77,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 83,
+                    "end_lineno": 3,
+                    "id": "period",
+                    "lineno": 3
+                  }
+                }
+              ],
+              "lineno": 3
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 84,
+            "end_lineno": 4,
+            "lineno": 4,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 29,
+                "end_lineno": 4,
+                "id": "contribution_frais_creche",
+                "lineno": 4
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 39,
+                  "end_col_offset": 66,
+                  "end_lineno": 4,
+                  "lineno": 4,
+                  "value": "contribution_frais_creche"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 32,
+              "end_col_offset": 84,
+              "end_lineno": 4,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 32,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 38,
+                "end_lineno": 4,
+                "id": "menage",
+                "lineno": 4
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 68,
+                  "end_col_offset": 83,
+                  "end_lineno": 4,
+                  "lineno": 4,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 77,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 83,
+                    "end_lineno": 4,
+                    "id": "period",
+                    "lineno": 4
+                  }
+                }
+              ],
+              "lineno": 4
+            }
+          },
+          {
+            "ast_class": "Return",
+            "col_offset": 4,
+            "end_col_offset": 69,
+            "end_lineno": 5,
+            "lineno": 5,
+            "value": {
+              "ast_class": "BinOp",
+              "col_offset": 11,
+              "end_col_offset": 69,
+              "end_lineno": 5,
+              "left": {
+                "ast_class": "BinOp",
+                "col_offset": 11,
+                "end_col_offset": 41,
+                "end_lineno": 5,
+                "left": {
+                  "ast_class": "Name",
+                  "col_offset": 11,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 13,
+                  "end_lineno": 5,
+                  "id": "af",
+                  "lineno": 5
+                },
+                "lineno": 5,
+                "op": {
+                  "ast_class": "Add"
+                },
+                "right": {
+                  "ast_class": "Name",
+                  "col_offset": 16,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 41,
+                  "end_lineno": 5,
+                  "id": "majoration_salaire_unique",
+                  "lineno": 5
+                }
+              },
+              "lineno": 5,
+              "op": {
+                "ast_class": "Add"
+              },
+              "right": {
+                "ast_class": "Name",
+                "col_offset": 44,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 69,
+                "end_lineno": 5,
+                "id": "contribution_frais_creche",
+                "lineno": 5
+              }
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [],
+        "end_col_offset": 69,
+        "end_lineno": 5,
+        "lineno": 1,
+        "name": "formula"
+      },
+      "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
+      "source_code": "def formula(menage, period):\n    af = menage('af', period = period)\n    majoration_salaire_unique = menage('majoration_salaire_unique', period = period)\n    contribution_frais_creche = menage('contribution_frais_creche', period = period)\n    return af + majoration_salaire_unique + contribution_frais_creche\n",
+      "start_line_number": 222,
+      "stop_line_number": 227,
+      "variables": [
+        "af",
+        "contribution_frais_creche",
+        "majoration_salaire_unique"
+      ]
+    }
+  },
+  "json_type": "number",
+  "label": "Prestations familales",
+  "name": "prestations_familiales",
+  "start_line_number": 216,
+  "stop_line_number": 227,
+  "value_type": "float"
+}

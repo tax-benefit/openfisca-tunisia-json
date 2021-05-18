@@ -1,0 +1,456 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "float32",
+  "entity": "foyer_fiscal",
+  "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+  "formulas": {
+    "0001-01-01": {
+      "ast": {
+        "args": {
+          "args": [
+            {
+              "arg": "foyer_fiscal",
+              "ast_class": "arg",
+              "col_offset": 12,
+              "end_col_offset": 24,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "period",
+              "ast_class": "arg",
+              "col_offset": 26,
+              "end_col_offset": 32,
+              "end_lineno": 1,
+              "lineno": 1
+            }
+          ],
+          "ast_class": "arguments",
+          "defaults": [],
+          "kw_defaults": [],
+          "kwonlyargs": [],
+          "posonlyargs": []
+        },
+        "ast_class": "FunctionDef",
+        "body": [
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 9,
+            "end_lineno": 4,
+            "lineno": 2,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 23,
+                "end_lineno": 2,
+                "id": "bnc_reel_res_fiscal",
+                "lineno": 2
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "ast_class": "Constant",
+                      "col_offset": 29,
+                      "end_col_offset": 50,
+                      "end_lineno": 3,
+                      "lineno": 3,
+                      "value": "bnc_reel_res_fiscal"
+                    }
+                  ],
+                  "ast_class": "Call",
+                  "col_offset": 8,
+                  "end_col_offset": 68,
+                  "end_lineno": 3,
+                  "func": {
+                    "ast_class": "Attribute",
+                    "attr": "members",
+                    "col_offset": 8,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 28,
+                    "end_lineno": 3,
+                    "lineno": 3,
+                    "value": {
+                      "ast_class": "Name",
+                      "col_offset": 8,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 20,
+                      "end_lineno": 3,
+                      "id": "foyer_fiscal",
+                      "lineno": 3
+                    }
+                  },
+                  "keywords": [
+                    {
+                      "arg": "period",
+                      "ast_class": "keyword",
+                      "col_offset": 52,
+                      "end_col_offset": 67,
+                      "end_lineno": 3,
+                      "lineno": 3,
+                      "value": {
+                        "ast_class": "Name",
+                        "col_offset": 61,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 67,
+                        "end_lineno": 3,
+                        "id": "period",
+                        "lineno": 3
+                      }
+                    }
+                  ],
+                  "lineno": 3
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 26,
+              "end_col_offset": 9,
+              "end_lineno": 4,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "sum",
+                "col_offset": 26,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 42,
+                "end_lineno": 2,
+                "lineno": 2,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 26,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 38,
+                  "end_lineno": 2,
+                  "id": "foyer_fiscal",
+                  "lineno": 2
+                }
+              },
+              "keywords": [],
+              "lineno": 2
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 9,
+            "end_lineno": 7,
+            "lineno": 5,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 25,
+                "end_lineno": 5,
+                "id": "bnc_forf_benef_fiscal",
+                "lineno": 5
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "ast_class": "Constant",
+                      "col_offset": 29,
+                      "end_col_offset": 52,
+                      "end_lineno": 6,
+                      "lineno": 6,
+                      "value": "bnc_forf_benef_fiscal"
+                    }
+                  ],
+                  "ast_class": "Call",
+                  "col_offset": 8,
+                  "end_col_offset": 70,
+                  "end_lineno": 6,
+                  "func": {
+                    "ast_class": "Attribute",
+                    "attr": "members",
+                    "col_offset": 8,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 28,
+                    "end_lineno": 6,
+                    "lineno": 6,
+                    "value": {
+                      "ast_class": "Name",
+                      "col_offset": 8,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 20,
+                      "end_lineno": 6,
+                      "id": "foyer_fiscal",
+                      "lineno": 6
+                    }
+                  },
+                  "keywords": [
+                    {
+                      "arg": "period",
+                      "ast_class": "keyword",
+                      "col_offset": 54,
+                      "end_col_offset": 69,
+                      "end_lineno": 6,
+                      "lineno": 6,
+                      "value": {
+                        "ast_class": "Name",
+                        "col_offset": 63,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 69,
+                        "end_lineno": 6,
+                        "id": "period",
+                        "lineno": 6
+                      }
+                    }
+                  ],
+                  "lineno": 6
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 28,
+              "end_col_offset": 9,
+              "end_lineno": 7,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "sum",
+                "col_offset": 28,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 44,
+                "end_lineno": 5,
+                "lineno": 5,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 28,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 40,
+                  "end_lineno": 5,
+                  "id": "foyer_fiscal",
+                  "lineno": 5
+                }
+              },
+              "keywords": [],
+              "lineno": 5
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 9,
+            "end_lineno": 10,
+            "lineno": 8,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 21,
+                "end_lineno": 8,
+                "id": "bnc_part_benef_sp",
+                "lineno": 8
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "ast_class": "Constant",
+                      "col_offset": 29,
+                      "end_col_offset": 48,
+                      "end_lineno": 9,
+                      "lineno": 9,
+                      "value": "bnc_part_benef_sp"
+                    }
+                  ],
+                  "ast_class": "Call",
+                  "col_offset": 8,
+                  "end_col_offset": 66,
+                  "end_lineno": 9,
+                  "func": {
+                    "ast_class": "Attribute",
+                    "attr": "members",
+                    "col_offset": 8,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 28,
+                    "end_lineno": 9,
+                    "lineno": 9,
+                    "value": {
+                      "ast_class": "Name",
+                      "col_offset": 8,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 20,
+                      "end_lineno": 9,
+                      "id": "foyer_fiscal",
+                      "lineno": 9
+                    }
+                  },
+                  "keywords": [
+                    {
+                      "arg": "period",
+                      "ast_class": "keyword",
+                      "col_offset": 50,
+                      "end_col_offset": 65,
+                      "end_lineno": 9,
+                      "lineno": 9,
+                      "value": {
+                        "ast_class": "Name",
+                        "col_offset": 59,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 65,
+                        "end_lineno": 9,
+                        "id": "period",
+                        "lineno": 9
+                      }
+                    }
+                  ],
+                  "lineno": 9
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 24,
+              "end_col_offset": 9,
+              "end_lineno": 10,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "sum",
+                "col_offset": 24,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 40,
+                "end_lineno": 8,
+                "lineno": 8,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 24,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 36,
+                  "end_lineno": 8,
+                  "id": "foyer_fiscal",
+                  "lineno": 8
+                }
+              },
+              "keywords": [],
+              "lineno": 8
+            }
+          },
+          {
+            "ast_class": "Return",
+            "col_offset": 4,
+            "end_col_offset": 74,
+            "end_lineno": 11,
+            "lineno": 11,
+            "value": {
+              "ast_class": "BinOp",
+              "col_offset": 11,
+              "end_col_offset": 74,
+              "end_lineno": 11,
+              "left": {
+                "ast_class": "BinOp",
+                "col_offset": 11,
+                "end_col_offset": 54,
+                "end_lineno": 11,
+                "left": {
+                  "ast_class": "Name",
+                  "col_offset": 11,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 30,
+                  "end_lineno": 11,
+                  "id": "bnc_reel_res_fiscal",
+                  "lineno": 11
+                },
+                "lineno": 11,
+                "op": {
+                  "ast_class": "Add"
+                },
+                "right": {
+                  "ast_class": "Name",
+                  "col_offset": 33,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 54,
+                  "end_lineno": 11,
+                  "id": "bnc_forf_benef_fiscal",
+                  "lineno": 11
+                }
+              },
+              "lineno": 11,
+              "op": {
+                "ast_class": "Add"
+              },
+              "right": {
+                "ast_class": "Name",
+                "col_offset": 57,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 74,
+                "end_lineno": 11,
+                "id": "bnc_part_benef_sp",
+                "lineno": 11
+              }
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [],
+        "end_col_offset": 74,
+        "end_lineno": 11,
+        "lineno": 1,
+        "name": "formula"
+      },
+      "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+      "source_code": "def formula(foyer_fiscal, period):\n    bnc_reel_res_fiscal = foyer_fiscal.sum(\n        foyer_fiscal.members('bnc_reel_res_fiscal', period = period)\n        )\n    bnc_forf_benef_fiscal = foyer_fiscal.sum(\n        foyer_fiscal.members('bnc_forf_benef_fiscal', period = period)\n        )\n    bnc_part_benef_sp = foyer_fiscal.sum(\n        foyer_fiscal.members('bnc_part_benef_sp', period = period)\n        )\n    return bnc_reel_res_fiscal + bnc_forf_benef_fiscal + bnc_part_benef_sp\n",
+      "start_line_number": 200,
+      "stop_line_number": 211
+    }
+  },
+  "json_type": "number",
+  "label": "Bénéfices des professions non commerciales (BNC)",
+  "name": "bnc",
+  "referring_variables": [
+    "rng"
+  ],
+  "start_line_number": 194,
+  "stop_line_number": 211,
+  "value_type": "float"
+}

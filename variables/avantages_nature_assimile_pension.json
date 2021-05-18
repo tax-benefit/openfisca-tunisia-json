@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/remplacement/retraite.py",
+  "json_type": "integer",
+  "label": "Avantages en nature assimilables à des pensions",
+  "name": "avantages_nature_assimile_pension",
+  "start_line_number": 15,
+  "stop_line_number": 20,
+  "value_type": "int"
+}

@@ -1,0 +1,315 @@
+{
+  "default_value": false,
+  "definition_period": "year",
+  "dtype": "bool_",
+  "entity": "menage",
+  "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
+  "formulas": {
+    "0001-01-01": {
+      "ast": {
+        "args": {
+          "args": [
+            {
+              "arg": "individu",
+              "ast_class": "arg",
+              "col_offset": 12,
+              "end_col_offset": 20,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "period",
+              "ast_class": "arg",
+              "col_offset": 22,
+              "end_col_offset": 28,
+              "end_lineno": 1,
+              "lineno": 1
+            }
+          ],
+          "ast_class": "arguments",
+          "defaults": [],
+          "kw_defaults": [],
+          "kwonlyargs": [],
+          "posonlyargs": []
+        },
+        "ast_class": "FunctionDef",
+        "body": [
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 112,
+            "end_lineno": 2,
+            "lineno": 2,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 43,
+                "end_lineno": 2,
+                "id": "salaire_imposable_personne_de_reference",
+                "lineno": 2
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 75,
+                  "end_col_offset": 94,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": "salaire_imposable"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 46,
+              "end_col_offset": 112,
+              "end_lineno": 2,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "personne_de_reference",
+                "col_offset": 46,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 74,
+                "end_lineno": 2,
+                "lineno": 2,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 46,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 52,
+                  "end_lineno": 2,
+                  "id": "menage",
+                  "lineno": 2
+                }
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 96,
+                  "end_col_offset": 111,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 105,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 111,
+                    "end_lineno": 2,
+                    "id": "period",
+                    "lineno": 2
+                  }
+                }
+              ],
+              "lineno": 2
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 86,
+            "end_lineno": 3,
+            "lineno": 3,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 30,
+                "end_lineno": 3,
+                "id": "salaire_imposable_conjoint",
+                "lineno": 3
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 49,
+                  "end_col_offset": 68,
+                  "end_lineno": 3,
+                  "lineno": 3,
+                  "value": "salaire_imposable"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 33,
+              "end_col_offset": 86,
+              "end_lineno": 3,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "conjoint",
+                "col_offset": 33,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 48,
+                "end_lineno": 3,
+                "lineno": 3,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 33,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 39,
+                  "end_lineno": 3,
+                  "id": "menage",
+                  "lineno": 3
+                }
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 70,
+                  "end_col_offset": 85,
+                  "end_lineno": 3,
+                  "lineno": 3,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 79,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 85,
+                    "end_lineno": 3,
+                    "id": "period",
+                    "lineno": 3
+                  }
+                }
+              ],
+              "lineno": 3
+            }
+          },
+          {
+            "ast_class": "Return",
+            "col_offset": 4,
+            "end_col_offset": 92,
+            "end_lineno": 4,
+            "lineno": 4,
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Compare",
+                  "col_offset": 16,
+                  "comparators": [
+                    {
+                      "ast_class": "Constant",
+                      "col_offset": 58,
+                      "end_col_offset": 59,
+                      "end_lineno": 4,
+                      "lineno": 4,
+                      "value": 0
+                    }
+                  ],
+                  "end_col_offset": 59,
+                  "end_lineno": 4,
+                  "left": {
+                    "ast_class": "Name",
+                    "col_offset": 16,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 55,
+                    "end_lineno": 4,
+                    "id": "salaire_imposable_personne_de_reference",
+                    "lineno": 4
+                  },
+                  "lineno": 4,
+                  "ops": [
+                    {
+                      "ast_class": "Gt"
+                    }
+                  ]
+                },
+                {
+                  "ast_class": "Compare",
+                  "col_offset": 61,
+                  "comparators": [
+                    {
+                      "ast_class": "Constant",
+                      "col_offset": 90,
+                      "end_col_offset": 91,
+                      "end_lineno": 4,
+                      "lineno": 4,
+                      "value": 0
+                    }
+                  ],
+                  "end_col_offset": 91,
+                  "end_lineno": 4,
+                  "left": {
+                    "ast_class": "Name",
+                    "col_offset": 61,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 87,
+                    "end_lineno": 4,
+                    "id": "salaire_imposable_conjoint",
+                    "lineno": 4
+                  },
+                  "lineno": 4,
+                  "ops": [
+                    {
+                      "ast_class": "Gt"
+                    }
+                  ]
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 11,
+              "end_col_offset": 92,
+              "end_lineno": 4,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 11,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 15,
+                "end_lineno": 4,
+                "id": "xor_",
+                "lineno": 4
+              },
+              "keywords": [],
+              "lineno": 4
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [],
+        "end_col_offset": 92,
+        "end_lineno": 4,
+        "lineno": 1,
+        "name": "formula"
+      },
+      "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
+      "source_code": "def formula(individu, period):\n    salaire_imposable_personne_de_reference = menage.personne_de_reference('salaire_imposable', period = period)\n    salaire_imposable_conjoint = menage.conjoint('salaire_imposable', period = period)\n    return xor_(salaire_imposable_personne_de_reference > 0, salaire_imposable_conjoint > 0)\n",
+      "start_line_number": 60,
+      "stop_line_number": 64
+    }
+  },
+  "is_period_size_independent": true,
+  "json_type": "boolean",
+  "label": "Indicatrice de salaire unique",
+  "name": "salaire_unique",
+  "referring_variables": [
+    "majoration_salaire_unique"
+  ],
+  "start_line_number": 54,
+  "stop_line_number": 64,
+  "value_type": "bool"
+}

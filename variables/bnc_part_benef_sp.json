@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+  "json_type": "integer",
+  "label": "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimiléesqui réalisent des bénéfices non commerciaux (BNC)",
+  "name": "bnc_part_benef_sp",
+  "start_line_number": 205,
+  "stop_line_number": 211,
+  "value_type": "int"
+}

@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/capital/foncier.py",
+  "json_type": "integer",
+  "label": "Frais d’entretien et de réparation justifiés à déduire (revenus fonciers, base forfaitaire, immeubles bâtis)",
+  "name": "foncier_forfaitaire_batis_frais",
+  "start_line_number": 34,
+  "stop_line_number": 40,
+  "value_type": "int"
+}

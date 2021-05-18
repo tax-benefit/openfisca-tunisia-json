@@ -1,0 +1,299 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "float32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+  "formulas": {
+    "0001-01-01": {
+      "ast": {
+        "args": {
+          "args": [
+            {
+              "arg": "foyer_fiscal",
+              "ast_class": "arg",
+              "col_offset": 12,
+              "end_col_offset": 24,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "period",
+              "ast_class": "arg",
+              "col_offset": 26,
+              "end_col_offset": 32,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "parameters",
+              "ast_class": "arg",
+              "col_offset": 34,
+              "end_col_offset": 44,
+              "end_lineno": 1,
+              "lineno": 1
+            }
+          ],
+          "ast_class": "arguments",
+          "defaults": [],
+          "kw_defaults": [],
+          "kwonlyargs": [],
+          "posonlyargs": []
+        },
+        "ast_class": "FunctionDef",
+        "body": [
+          {
+            "ast_class": "Expr",
+            "col_offset": 4,
+            "end_col_offset": 7,
+            "end_lineno": 4,
+            "lineno": 2,
+            "value": {
+              "ast_class": "Constant",
+              "col_offset": 4,
+              "end_col_offset": 7,
+              "end_lineno": 4,
+              "lineno": 2,
+              "value": "\n    Bénéfice fiscal (régime forfaitaire, en % des recettes brutes TTC)\n    "
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 102,
+            "end_lineno": 5,
+            "lineno": 5,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 35,
+                "end_lineno": 5,
+                "id": "bnc_forfaitaire_recettes_brutes",
+                "lineno": 5
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 51,
+                  "end_col_offset": 84,
+                  "end_lineno": 5,
+                  "lineno": 5,
+                  "value": "bnc_forfaitaire_recettes_brutes"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 38,
+              "end_col_offset": 102,
+              "end_lineno": 5,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 38,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 50,
+                "end_lineno": 5,
+                "id": "foyer_fiscal",
+                "lineno": 5
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 86,
+                  "end_col_offset": 101,
+                  "end_lineno": 5,
+                  "lineno": 5,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 95,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 101,
+                    "end_lineno": 5,
+                    "id": "period",
+                    "lineno": 5
+                  }
+                }
+              ],
+              "lineno": 5
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 67,
+            "end_lineno": 6,
+            "lineno": 6,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 8,
+                "end_lineno": 6,
+                "id": "part",
+                "lineno": 6
+              }
+            ],
+            "value": {
+              "ast_class": "Attribute",
+              "attr": "part_forf",
+              "col_offset": 11,
+              "ctx": {
+                "ast_class": "Load"
+              },
+              "end_col_offset": 67,
+              "end_lineno": 6,
+              "lineno": 6,
+              "value": {
+                "ast_class": "Attribute",
+                "attr": "forf",
+                "col_offset": 11,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 57,
+                "end_lineno": 6,
+                "lineno": 6,
+                "value": {
+                  "ast_class": "Attribute",
+                  "attr": "bnc",
+                  "col_offset": 11,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 52,
+                  "end_lineno": 6,
+                  "lineno": 6,
+                  "value": {
+                    "ast_class": "Attribute",
+                    "attr": "impot_revenu",
+                    "col_offset": 11,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 48,
+                    "end_lineno": 6,
+                    "lineno": 6,
+                    "value": {
+                      "args": [
+                        {
+                          "ast_class": "Attribute",
+                          "attr": "start",
+                          "col_offset": 22,
+                          "ctx": {
+                            "ast_class": "Load"
+                          },
+                          "end_col_offset": 34,
+                          "end_lineno": 6,
+                          "lineno": 6,
+                          "value": {
+                            "ast_class": "Name",
+                            "col_offset": 22,
+                            "ctx": {
+                              "ast_class": "Load"
+                            },
+                            "end_col_offset": 28,
+                            "end_lineno": 6,
+                            "id": "period",
+                            "lineno": 6
+                          }
+                        }
+                      ],
+                      "ast_class": "Call",
+                      "col_offset": 11,
+                      "end_col_offset": 35,
+                      "end_lineno": 6,
+                      "func": {
+                        "ast_class": "Name",
+                        "col_offset": 11,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 21,
+                        "end_lineno": 6,
+                        "id": "parameters",
+                        "lineno": 6
+                      },
+                      "keywords": [],
+                      "lineno": 6
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "ast_class": "Return",
+            "col_offset": 4,
+            "end_col_offset": 49,
+            "end_lineno": 7,
+            "lineno": 7,
+            "value": {
+              "ast_class": "BinOp",
+              "col_offset": 11,
+              "end_col_offset": 49,
+              "end_lineno": 7,
+              "left": {
+                "ast_class": "Name",
+                "col_offset": 11,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 42,
+                "end_lineno": 7,
+                "id": "bnc_forfaitaire_recettes_brutes",
+                "lineno": 7
+              },
+              "lineno": 7,
+              "op": {
+                "ast_class": "Mult"
+              },
+              "right": {
+                "ast_class": "Name",
+                "col_offset": 45,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 49,
+                "end_lineno": 7,
+                "id": "part",
+                "lineno": 7
+              }
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [],
+        "end_col_offset": 49,
+        "end_lineno": 7,
+        "lineno": 1,
+        "name": "formula"
+      },
+      "documentation": "\nBénéfice fiscal (régime forfaitaire, en % des recettes brutes TTC)\n",
+      "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+      "source_code": "def formula(foyer_fiscal, period, parameters):\n    \"\"\"\n    Bénéfice fiscal (régime forfaitaire, en % des recettes brutes TTC)\n    \"\"\"\n    bnc_forfaitaire_recettes_brutes = foyer_fiscal('bnc_forfaitaire_recettes_brutes', period = period)\n    part = parameters(period.start).impot_revenu.bnc.forf.part_forf\n    return bnc_forfaitaire_recettes_brutes * part\n",
+      "start_line_number": 219,
+      "stop_line_number": 226,
+      "variables": [
+        "bnc_forfaitaire_recettes_brutes"
+      ]
+    }
+  },
+  "json_type": "number",
+  "label": "Bénéfice fiscal (régime forfaitaire en % des recettes brutes TTC)",
+  "name": "bnc_forf_benef_fiscal",
+  "start_line_number": 213,
+  "stop_line_number": 226,
+  "value_type": "float"
+}

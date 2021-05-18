@@ -1,0 +1,290 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "float32",
+  "entity": "foyer_fiscal",
+  "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+  "formulas": {
+    "0001-01-01": {
+      "ast": {
+        "args": {
+          "args": [
+            {
+              "arg": "foyer_fiscal",
+              "ast_class": "arg",
+              "col_offset": 12,
+              "end_col_offset": 24,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "period",
+              "ast_class": "arg",
+              "col_offset": 26,
+              "end_col_offset": 32,
+              "end_lineno": 1,
+              "lineno": 1
+            }
+          ],
+          "ast_class": "arguments",
+          "defaults": [],
+          "kw_defaults": [],
+          "kwonlyargs": [],
+          "posonlyargs": []
+        },
+        "ast_class": "FunctionDef",
+        "body": [
+          {
+            "ast_class": "Expr",
+            "col_offset": 4,
+            "end_col_offset": 7,
+            "end_lineno": 4,
+            "lineno": 2,
+            "value": {
+              "ast_class": "Constant",
+              "col_offset": 4,
+              "end_col_offset": 7,
+              "end_lineno": 4,
+              "lineno": 2,
+              "value": "\n    TODO: Nombre d'enfants infirmes\n    "
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 54,
+            "end_lineno": 5,
+            "lineno": 5,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 7,
+                "end_lineno": 5,
+                "id": "age",
+                "lineno": 5
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 31,
+                  "end_col_offset": 36,
+                  "end_lineno": 5,
+                  "lineno": 5,
+                  "value": "age"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 10,
+              "end_col_offset": 54,
+              "end_lineno": 5,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "members",
+                "col_offset": 10,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 30,
+                "end_lineno": 5,
+                "lineno": 5,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 10,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 22,
+                  "end_lineno": 5,
+                  "id": "foyer_fiscal",
+                  "lineno": 5
+                }
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 38,
+                  "end_col_offset": 53,
+                  "end_lineno": 5,
+                  "lineno": 5,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 47,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 53,
+                    "end_lineno": 5,
+                    "id": "period",
+                    "lineno": 5
+                  }
+                }
+              ],
+              "lineno": 5
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 64,
+            "end_lineno": 6,
+            "lineno": 6,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 12,
+                "end_lineno": 6,
+                "id": "invalide",
+                "lineno": 6
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 36,
+                  "end_col_offset": 46,
+                  "end_lineno": 6,
+                  "lineno": 6,
+                  "value": "invalide"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 15,
+              "end_col_offset": 64,
+              "end_lineno": 6,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "members",
+                "col_offset": 15,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 35,
+                "end_lineno": 6,
+                "lineno": 6,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 15,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 27,
+                  "end_lineno": 6,
+                  "id": "foyer_fiscal",
+                  "lineno": 6
+                }
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 48,
+                  "end_col_offset": 63,
+                  "end_lineno": 6,
+                  "lineno": 6,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 57,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 63,
+                    "end_lineno": 6,
+                    "id": "period",
+                    "lineno": 6
+                  }
+                }
+              ],
+              "lineno": 6
+            }
+          },
+          {
+            "ast_class": "Return",
+            "col_offset": 4,
+            "end_col_offset": 29,
+            "end_lineno": 8,
+            "lineno": 8,
+            "value": {
+              "ast_class": "BinOp",
+              "col_offset": 11,
+              "end_col_offset": 29,
+              "end_lineno": 8,
+              "left": {
+                "ast_class": "BinOp",
+                "col_offset": 11,
+                "end_col_offset": 18,
+                "end_lineno": 8,
+                "left": {
+                  "ast_class": "Constant",
+                  "col_offset": 11,
+                  "end_col_offset": 12,
+                  "end_lineno": 8,
+                  "lineno": 8,
+                  "value": 0
+                },
+                "lineno": 8,
+                "op": {
+                  "ast_class": "Mult"
+                },
+                "right": {
+                  "ast_class": "Name",
+                  "col_offset": 15,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 18,
+                  "end_lineno": 8,
+                  "id": "age",
+                  "lineno": 8
+                }
+              },
+              "lineno": 8,
+              "op": {
+                "ast_class": "Mult"
+              },
+              "right": {
+                "ast_class": "Name",
+                "col_offset": 21,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 29,
+                "end_lineno": 8,
+                "id": "invalide",
+                "lineno": 8
+              }
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [],
+        "end_col_offset": 29,
+        "end_lineno": 8,
+        "lineno": 1,
+        "name": "formula"
+      },
+      "documentation": "\nTODO: Nombre d'enfants infirmes\n",
+      "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+      "source_code": "def formula(foyer_fiscal, period):\n    '''\n    TODO: Nombre d'enfants infirmes\n    '''\n    age = foyer_fiscal.members('age', period = period)\n    invalide = foyer_fiscal.members('invalide', period = period)\n\n    return 0 * age * invalide\n",
+      "start_line_number": 53,
+      "stop_line_number": 61
+    }
+  },
+  "json_type": "number",
+  "label": "Nombre d'enfants infirmes",
+  "name": "nb_infirme",
+  "start_line_number": 47,
+  "stop_line_number": 61,
+  "value_type": "float"
+}

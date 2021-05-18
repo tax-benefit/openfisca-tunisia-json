@@ -1,0 +1,18 @@
+{
+  "default_value": "1970-01-01",
+  "definition_period": "eternity",
+  "dtype": "datetime64[D]",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+  "is_period_size_independent": true,
+  "json_type": "string",
+  "label": "Date de naissance",
+  "name": "date_naissance",
+  "referring_variables": [
+    "age",
+    "age_en_mois"
+  ],
+  "start_line_number": 52,
+  "stop_line_number": 58,
+  "value_type": "date"
+}

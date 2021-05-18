@@ -1,0 +1,610 @@
+{
+  "default_value": false,
+  "definition_period": "year",
+  "dtype": "bool_",
+  "entity": "foyer_fiscal",
+  "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+  "formulas": {
+    "0001-01-01": {
+      "ast": {
+        "args": {
+          "args": [
+            {
+              "arg": "foyer_fiscal",
+              "ast_class": "arg",
+              "col_offset": 12,
+              "end_col_offset": 24,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "period",
+              "ast_class": "arg",
+              "col_offset": 26,
+              "end_col_offset": 32,
+              "end_lineno": 1,
+              "lineno": 1
+            }
+          ],
+          "ast_class": "arguments",
+          "defaults": [],
+          "kw_defaults": [],
+          "kwonlyargs": [],
+          "posonlyargs": []
+        },
+        "ast_class": "FunctionDef",
+        "body": [
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 68,
+            "end_lineno": 2,
+            "lineno": 2,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 8,
+                "end_lineno": 2,
+                "id": "male",
+                "lineno": 2
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 44,
+                  "end_col_offset": 50,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": "male"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 11,
+              "end_col_offset": 68,
+              "end_lineno": 2,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "declarant_principal",
+                "col_offset": 11,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 43,
+                "end_lineno": 2,
+                "lineno": 2,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 11,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 23,
+                  "end_lineno": 2,
+                  "id": "foyer_fiscal",
+                  "lineno": 2
+                }
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 52,
+                  "end_col_offset": 67,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 61,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 67,
+                    "end_lineno": 2,
+                    "id": "period",
+                    "lineno": 2
+                  }
+                }
+              ],
+              "lineno": 2
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 70,
+            "end_lineno": 3,
+            "lineno": 3,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 9,
+                "end_lineno": 3,
+                "id": "marie",
+                "lineno": 3
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 45,
+                  "end_col_offset": 52,
+                  "end_lineno": 3,
+                  "lineno": 3,
+                  "value": "marie"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 12,
+              "end_col_offset": 70,
+              "end_lineno": 3,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "declarant_principal",
+                "col_offset": 12,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 44,
+                "end_lineno": 3,
+                "lineno": 3,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 12,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 24,
+                  "end_lineno": 3,
+                  "id": "foyer_fiscal",
+                  "lineno": 3
+                }
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 54,
+                  "end_col_offset": 69,
+                  "end_lineno": 3,
+                  "lineno": 3,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 63,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 69,
+                    "end_lineno": 3,
+                    "id": "period",
+                    "lineno": 3
+                  }
+                }
+              ],
+              "lineno": 3
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 74,
+            "end_lineno": 4,
+            "lineno": 4,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 11,
+                "end_lineno": 4,
+                "id": "divorce",
+                "lineno": 4
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 47,
+                  "end_col_offset": 56,
+                  "end_lineno": 4,
+                  "lineno": 4,
+                  "value": "divorce"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 14,
+              "end_col_offset": 74,
+              "end_lineno": 4,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "declarant_principal",
+                "col_offset": 14,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 46,
+                "end_lineno": 4,
+                "lineno": 4,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 14,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 26,
+                  "end_lineno": 4,
+                  "id": "foyer_fiscal",
+                  "lineno": 4
+                }
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 58,
+                  "end_col_offset": 73,
+                  "end_lineno": 4,
+                  "lineno": 4,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 67,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 73,
+                    "end_lineno": 4,
+                    "id": "period",
+                    "lineno": 4
+                  }
+                }
+              ],
+              "lineno": 4
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 68,
+            "end_lineno": 5,
+            "lineno": 5,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 8,
+                "end_lineno": 5,
+                "id": "veuf",
+                "lineno": 5
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 44,
+                  "end_col_offset": 50,
+                  "end_lineno": 5,
+                  "lineno": 5,
+                  "value": "veuf"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 11,
+              "end_col_offset": 68,
+              "end_lineno": 5,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "declarant_principal",
+                "col_offset": 11,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 43,
+                "end_lineno": 5,
+                "lineno": 5,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 11,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 23,
+                  "end_lineno": 5,
+                  "id": "foyer_fiscal",
+                  "lineno": 5
+                }
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 52,
+                  "end_col_offset": 67,
+                  "end_lineno": 5,
+                  "lineno": 5,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 61,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 67,
+                    "end_lineno": 5,
+                    "id": "period",
+                    "lineno": 5
+                  }
+                }
+              ],
+              "lineno": 5
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 52,
+            "end_lineno": 6,
+            "lineno": 6,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 10,
+                "end_lineno": 6,
+                "id": "nb_enf",
+                "lineno": 6
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 26,
+                  "end_col_offset": 34,
+                  "end_lineno": 6,
+                  "lineno": 6,
+                  "value": "nb_enf"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 13,
+              "end_col_offset": 52,
+              "end_lineno": 6,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 13,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 25,
+                "end_lineno": 6,
+                "id": "foyer_fiscal",
+                "lineno": 6
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 36,
+                  "end_col_offset": 51,
+                  "end_lineno": 6,
+                  "lineno": 6,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 45,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 51,
+                    "end_lineno": 6,
+                    "id": "period",
+                    "lineno": 6
+                  }
+                }
+              ],
+              "lineno": 6
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 9,
+            "end_lineno": 12,
+            "lineno": 7,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 19,
+                "end_lineno": 7,
+                "id": "chef_de_famille",
+                "lineno": 7
+              }
+            ],
+            "value": {
+              "ast_class": "BinOp",
+              "col_offset": 8,
+              "end_col_offset": 32,
+              "end_lineno": 10,
+              "left": {
+                "ast_class": "BinOp",
+                "col_offset": 8,
+                "end_col_offset": 22,
+                "end_lineno": 9,
+                "left": {
+                  "ast_class": "Name",
+                  "col_offset": 8,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 12,
+                  "end_lineno": 8,
+                  "id": "veuf",
+                  "lineno": 8
+                },
+                "lineno": 8,
+                "op": {
+                  "ast_class": "BitOr"
+                },
+                "right": {
+                  "ast_class": "BinOp",
+                  "col_offset": 9,
+                  "end_col_offset": 21,
+                  "end_lineno": 9,
+                  "left": {
+                    "ast_class": "Name",
+                    "col_offset": 9,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 14,
+                    "end_lineno": 9,
+                    "id": "marie",
+                    "lineno": 9
+                  },
+                  "lineno": 9,
+                  "op": {
+                    "ast_class": "BitAnd"
+                  },
+                  "right": {
+                    "ast_class": "Name",
+                    "col_offset": 17,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 21,
+                    "end_lineno": 9,
+                    "id": "male",
+                    "lineno": 9
+                  }
+                }
+              },
+              "lineno": 8,
+              "op": {
+                "ast_class": "BitOr"
+              },
+              "right": {
+                "ast_class": "BinOp",
+                "col_offset": 9,
+                "end_col_offset": 31,
+                "end_lineno": 10,
+                "left": {
+                  "ast_class": "Name",
+                  "col_offset": 9,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 16,
+                  "end_lineno": 10,
+                  "id": "divorce",
+                  "lineno": 10
+                },
+                "lineno": 10,
+                "op": {
+                  "ast_class": "BitAnd"
+                },
+                "right": {
+                  "ast_class": "Compare",
+                  "col_offset": 20,
+                  "comparators": [
+                    {
+                      "ast_class": "Constant",
+                      "col_offset": 29,
+                      "end_col_offset": 30,
+                      "end_lineno": 10,
+                      "lineno": 10,
+                      "value": 0
+                    }
+                  ],
+                  "end_col_offset": 30,
+                  "end_lineno": 10,
+                  "left": {
+                    "ast_class": "Name",
+                    "col_offset": 20,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 26,
+                    "end_lineno": 10,
+                    "id": "nb_enf",
+                    "lineno": 10
+                  },
+                  "lineno": 10,
+                  "ops": [
+                    {
+                      "ast_class": "Gt"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "ast_class": "Return",
+            "col_offset": 4,
+            "end_col_offset": 26,
+            "end_lineno": 14,
+            "lineno": 14,
+            "value": {
+              "ast_class": "Name",
+              "col_offset": 11,
+              "ctx": {
+                "ast_class": "Load"
+              },
+              "end_col_offset": 26,
+              "end_lineno": 14,
+              "id": "chef_de_famille",
+              "lineno": 14
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [],
+        "end_col_offset": 26,
+        "end_lineno": 14,
+        "lineno": 1,
+        "name": "formula"
+      },
+      "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+      "source_code": "def formula(foyer_fiscal, period):\n    male = foyer_fiscal.declarant_principal('male', period = period)\n    marie = foyer_fiscal.declarant_principal('marie', period = period)\n    divorce = foyer_fiscal.declarant_principal('divorce', period = period)\n    veuf = foyer_fiscal.declarant_principal('veuf', period = period)\n    nb_enf = foyer_fiscal('nb_enf', period = period)\n    chef_de_famille = (\n        veuf |\n        (marie & male) |\n        (divorce & (nb_enf > 0))  # | \n        # (marie & (not male)) |\n        )\n\n    return chef_de_famille\n",
+      "start_line_number": 103,
+      "stop_line_number": 117,
+      "variables": [
+        "nb_enf"
+      ]
+    }
+  },
+  "is_period_size_independent": true,
+  "json_type": "boolean",
+  "label": "Indicatrice de chef de famille",
+  "name": "chef_de_famille",
+  "referring_variables": [
+    "deduction_famille",
+    "deduction_smig"
+  ],
+  "set_input": "set_input_dispatch_by_period",
+  "start_line_number": 79,
+  "stop_line_number": 117,
+  "value_type": "bool"
+}

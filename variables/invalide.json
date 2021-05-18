@@ -1,0 +1,17 @@
+{
+  "default_value": false,
+  "definition_period": "eternity",
+  "dtype": "bool_",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+  "is_period_size_independent": true,
+  "json_type": "boolean",
+  "label": "Invalide",
+  "name": "invalide",
+  "referring_variables": [
+    "prestations_familiales_enfant_a_charge"
+  ],
+  "start_line_number": 119,
+  "stop_line_number": 124,
+  "value_type": "bool"
+}

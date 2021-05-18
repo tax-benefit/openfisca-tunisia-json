@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+  "json_type": "integer",
+  "label": "Dépenses d’exploitation (BEAP, bénéfice comme reliquat positif entre recette et dépenses)",
+  "name": "beap_reliq_dep_ex",
+  "start_line_number": 253,
+  "stop_line_number": 258,
+  "value_type": "int"
+}

@@ -1,0 +1,511 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "float32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/common.py",
+  "formulas": {
+    "0001-01-01": {
+      "ast": {
+        "args": {
+          "args": [
+            {
+              "arg": "individu",
+              "ast_class": "arg",
+              "col_offset": 12,
+              "end_col_offset": 20,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "period",
+              "ast_class": "arg",
+              "col_offset": 22,
+              "end_col_offset": 28,
+              "end_lineno": 1,
+              "lineno": 1
+            }
+          ],
+          "ast_class": "arguments",
+          "defaults": [],
+          "kw_defaults": [],
+          "kwonlyargs": [],
+          "posonlyargs": []
+        },
+        "ast_class": "FunctionDef",
+        "body": [
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 72,
+            "end_lineno": 2,
+            "lineno": 2,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 22,
+                "end_lineno": 2,
+                "id": "revenus_du_travail",
+                "lineno": 2
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 34,
+                  "end_col_offset": 54,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": "revenus_du_travail"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 25,
+              "end_col_offset": 72,
+              "end_lineno": 2,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 25,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 33,
+                "end_lineno": 2,
+                "id": "individu",
+                "lineno": 2
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 56,
+                  "end_col_offset": 71,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 65,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 71,
+                    "end_lineno": 2,
+                    "id": "period",
+                    "lineno": 2
+                  }
+                }
+              ],
+              "lineno": 2
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 82,
+            "end_lineno": 3,
+            "lineno": 3,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 27,
+                "end_lineno": 3,
+                "id": "revenu_assimile_pension",
+                "lineno": 3
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 39,
+                  "end_col_offset": 64,
+                  "end_lineno": 3,
+                  "lineno": 3,
+                  "value": "revenu_assimile_pension"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 30,
+              "end_col_offset": 82,
+              "end_lineno": 3,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 30,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 38,
+                "end_lineno": 3,
+                "id": "individu",
+                "lineno": 3
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 66,
+                  "end_col_offset": 81,
+                  "end_lineno": 3,
+                  "lineno": 3,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 75,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 81,
+                    "end_lineno": 3,
+                    "id": "period",
+                    "lineno": 3
+                  }
+                }
+              ],
+              "lineno": 3
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 72,
+            "end_lineno": 4,
+            "lineno": 4,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 22,
+                "end_lineno": 4,
+                "id": "revenus_du_capital",
+                "lineno": 4
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 34,
+                  "end_col_offset": 54,
+                  "end_lineno": 4,
+                  "lineno": 4,
+                  "value": "revenus_du_capital"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 25,
+              "end_col_offset": 72,
+              "end_lineno": 4,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 25,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 33,
+                "end_lineno": 4,
+                "id": "individu",
+                "lineno": 4
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 56,
+                  "end_col_offset": 71,
+                  "end_lineno": 4,
+                  "lineno": 4,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 65,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 71,
+                    "end_lineno": 4,
+                    "id": "period",
+                    "lineno": 4
+                  }
+                }
+              ],
+              "lineno": 4
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 76,
+            "end_lineno": 5,
+            "lineno": 5,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 24,
+                "end_lineno": 5,
+                "id": "prestations_sociales",
+                "lineno": 5
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 36,
+                  "end_col_offset": 58,
+                  "end_lineno": 5,
+                  "lineno": 5,
+                  "value": "prestations_sociales"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 27,
+              "end_col_offset": 76,
+              "end_lineno": 5,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 27,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 35,
+                "end_lineno": 5,
+                "id": "individu",
+                "lineno": 5
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 60,
+                  "end_col_offset": 75,
+                  "end_lineno": 5,
+                  "lineno": 5,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 69,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 75,
+                    "end_lineno": 5,
+                    "id": "period",
+                    "lineno": 5
+                  }
+                }
+              ],
+              "lineno": 5
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 64,
+            "end_lineno": 6,
+            "lineno": 6,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 18,
+                "end_lineno": 6,
+                "id": "impots_directs",
+                "lineno": 6
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 30,
+                  "end_col_offset": 46,
+                  "end_lineno": 6,
+                  "lineno": 6,
+                  "value": "impots_directs"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 21,
+              "end_col_offset": 64,
+              "end_lineno": 6,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 21,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 29,
+                "end_lineno": 6,
+                "id": "individu",
+                "lineno": 6
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 48,
+                  "end_col_offset": 63,
+                  "end_lineno": 6,
+                  "lineno": 6,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 57,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 63,
+                    "end_lineno": 6,
+                    "id": "period",
+                    "lineno": 6
+                  }
+                }
+              ],
+              "lineno": 6
+            }
+          },
+          {
+            "ast_class": "Return",
+            "col_offset": 4,
+            "end_col_offset": 116,
+            "end_lineno": 8,
+            "lineno": 8,
+            "value": {
+              "ast_class": "BinOp",
+              "col_offset": 11,
+              "end_col_offset": 116,
+              "end_lineno": 8,
+              "left": {
+                "ast_class": "BinOp",
+                "col_offset": 11,
+                "end_col_offset": 99,
+                "end_lineno": 8,
+                "left": {
+                  "ast_class": "BinOp",
+                  "col_offset": 11,
+                  "end_col_offset": 76,
+                  "end_lineno": 8,
+                  "left": {
+                    "ast_class": "BinOp",
+                    "col_offset": 11,
+                    "end_col_offset": 55,
+                    "end_lineno": 8,
+                    "left": {
+                      "ast_class": "Name",
+                      "col_offset": 11,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 29,
+                      "end_lineno": 8,
+                      "id": "revenus_du_travail",
+                      "lineno": 8
+                    },
+                    "lineno": 8,
+                    "op": {
+                      "ast_class": "Add"
+                    },
+                    "right": {
+                      "ast_class": "Name",
+                      "col_offset": 32,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 55,
+                      "end_lineno": 8,
+                      "id": "revenu_assimile_pension",
+                      "lineno": 8
+                    }
+                  },
+                  "lineno": 8,
+                  "op": {
+                    "ast_class": "Add"
+                  },
+                  "right": {
+                    "ast_class": "Name",
+                    "col_offset": 58,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 76,
+                    "end_lineno": 8,
+                    "id": "revenus_du_capital",
+                    "lineno": 8
+                  }
+                },
+                "lineno": 8,
+                "op": {
+                  "ast_class": "Add"
+                },
+                "right": {
+                  "ast_class": "Name",
+                  "col_offset": 79,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 99,
+                  "end_lineno": 8,
+                  "id": "prestations_sociales",
+                  "lineno": 8
+                }
+              },
+              "lineno": 8,
+              "op": {
+                "ast_class": "Add"
+              },
+              "right": {
+                "ast_class": "Name",
+                "col_offset": 102,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 116,
+                "end_lineno": 8,
+                "id": "impots_directs",
+                "lineno": 8
+              }
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [],
+        "end_col_offset": 116,
+        "end_lineno": 8,
+        "lineno": 1,
+        "name": "formula"
+      },
+      "file_path": "/openfisca_tunisia/model/common.py",
+      "source_code": "def formula(individu, period):\n    revenus_du_travail = individu('revenus_du_travail', period = period)\n    revenu_assimile_pension = individu('revenu_assimile_pension', period = period)\n    revenus_du_capital = individu('revenus_du_capital', period = period)\n    prestations_sociales = individu('prestations_sociales', period = period)\n    impots_directs = individu('impots_directs', period = period)\n\n    return revenus_du_travail + revenu_assimile_pension + revenus_du_capital + prestations_sociales + impots_directs\n",
+      "start_line_number": 46,
+      "stop_line_number": 54,
+      "variables": [
+        "impots_directs",
+        "prestations_sociales",
+        "revenu_assimile_pension",
+        "revenus_du_capital",
+        "revenus_du_travail"
+      ]
+    }
+  },
+  "json_type": "number",
+  "label": "Revenu disponible individuel",
+  "name": "revenu_disponible_individuel",
+  "start_line_number": 40,
+  "stop_line_number": 54,
+  "value_type": "float"
+}

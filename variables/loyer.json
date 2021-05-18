@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "menage",
+  "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/logement.py",
+  "json_type": "integer",
+  "label": "Loyer du logement",
+  "name": "loyer",
+  "start_line_number": 13,
+  "stop_line_number": 18,
+  "value_type": "int"
+}

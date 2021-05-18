@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/capital/valeurs_mobilieres_et_capitaux_mobiliers.py",
+  "json_type": "integer",
+  "label": "Intérêts des comptes épargne pour l'investissement",
+  "name": "capm_epinv",
+  "start_line_number": 83,
+  "stop_line_number": 88,
+  "value_type": "int"
+}

@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/deductions.py",
+  "json_type": "integer",
+  "label": "Dons au profit du fonds national de solidarité 26-26 et du Fonds National de l’Emploi 21-21",
+  "name": "dons",
+  "start_line_number": 95,
+  "stop_line_number": 100,
+  "value_type": "int"
+}

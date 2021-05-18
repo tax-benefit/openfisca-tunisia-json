@@ -1,0 +1,170 @@
+{
+  "default_value": false,
+  "definition_period": "year",
+  "dtype": "bool_",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+  "formulas": {
+    "0001-01-01": {
+      "ast": {
+        "args": {
+          "args": [
+            {
+              "arg": "individu",
+              "ast_class": "arg",
+              "col_offset": 12,
+              "end_col_offset": 20,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "period",
+              "ast_class": "arg",
+              "col_offset": 22,
+              "end_col_offset": 28,
+              "end_lineno": 1,
+              "lineno": 1
+            }
+          ],
+          "ast_class": "arguments",
+          "defaults": [],
+          "kw_defaults": [],
+          "kwonlyargs": [],
+          "posonlyargs": []
+        },
+        "ast_class": "FunctionDef",
+        "body": [
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 64,
+            "end_lineno": 2,
+            "lineno": 2,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 18,
+                "end_lineno": 2,
+                "id": "statut_marital",
+                "lineno": 2
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 30,
+                  "end_col_offset": 46,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": "statut_marital"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 21,
+              "end_col_offset": 64,
+              "end_lineno": 2,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 21,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 29,
+                "end_lineno": 2,
+                "id": "individu",
+                "lineno": 2
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 48,
+                  "end_col_offset": 63,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 57,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 63,
+                    "end_lineno": 2,
+                    "id": "period",
+                    "lineno": 2
+                  }
+                }
+              ],
+              "lineno": 2
+            }
+          },
+          {
+            "ast_class": "Return",
+            "col_offset": 4,
+            "end_col_offset": 32,
+            "end_lineno": 3,
+            "lineno": 3,
+            "value": {
+              "ast_class": "Compare",
+              "col_offset": 12,
+              "comparators": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 30,
+                  "end_col_offset": 31,
+                  "end_lineno": 3,
+                  "lineno": 3,
+                  "value": 2
+                }
+              ],
+              "end_col_offset": 31,
+              "end_lineno": 3,
+              "left": {
+                "ast_class": "Name",
+                "col_offset": 12,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 26,
+                "end_lineno": 3,
+                "id": "statut_marital",
+                "lineno": 3
+              },
+              "lineno": 3,
+              "ops": [
+                {
+                  "ast_class": "Eq"
+                }
+              ]
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [],
+        "end_col_offset": 32,
+        "end_lineno": 3,
+        "lineno": 1,
+        "name": "formula"
+      },
+      "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+      "source_code": "def formula(individu, period):\n    statut_marital = individu('statut_marital', period = period)\n    return (statut_marital == 2)\n",
+      "start_line_number": 84,
+      "stop_line_number": 87,
+      "variables": [
+        "statut_marital"
+      ]
+    }
+  },
+  "is_period_size_independent": true,
+  "json_type": "boolean",
+  "label": "Célibataire",
+  "name": "celibataire",
+  "start_line_number": 78,
+  "stop_line_number": 87,
+  "value_type": "bool"
+}

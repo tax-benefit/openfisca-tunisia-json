@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/capital/foncier.py",
+  "json_type": "integer",
+  "label": "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées qui réalisent des revenus fonciers",
+  "name": "foncier_societes_personnes",
+  "start_line_number": 72,
+  "stop_line_number": 77,
+  "value_type": "int"
+}

@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+  "json_type": "integer",
+  "label": "Résultat (BIC, régime forfaitaire, cession de fonds de commerce)",
+  "name": "bic_forfaitaire_resultat",
+  "start_line_number": 74,
+  "stop_line_number": 79,
+  "value_type": "int"
+}

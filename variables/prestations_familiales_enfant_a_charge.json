@@ -1,0 +1,550 @@
+{
+  "default_value": false,
+  "definition_period": "month",
+  "dtype": "bool_",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
+  "formulas": {
+    "0001-01-01": {
+      "ast": {
+        "args": {
+          "args": [
+            {
+              "arg": "individu",
+              "ast_class": "arg",
+              "col_offset": 12,
+              "end_col_offset": 20,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "period",
+              "ast_class": "arg",
+              "col_offset": 22,
+              "end_col_offset": 28,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "parameters",
+              "ast_class": "arg",
+              "col_offset": 30,
+              "end_col_offset": 40,
+              "end_lineno": 1,
+              "lineno": 1
+            }
+          ],
+          "ast_class": "arguments",
+          "defaults": [],
+          "kw_defaults": [],
+          "kwonlyargs": [],
+          "posonlyargs": []
+        },
+        "ast_class": "FunctionDef",
+        "body": [
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 33,
+            "end_lineno": 2,
+            "lineno": 2,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 7,
+                "end_lineno": 2,
+                "id": "age",
+                "lineno": 2
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 19,
+                  "end_col_offset": 24,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": "age"
+                },
+                {
+                  "ast_class": "Name",
+                  "col_offset": 26,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 32,
+                  "end_lineno": 2,
+                  "id": "period",
+                  "lineno": 2
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 10,
+              "end_col_offset": 33,
+              "end_lineno": 2,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 10,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 18,
+                "end_lineno": 2,
+                "id": "individu",
+                "lineno": 2
+              },
+              "keywords": [],
+              "lineno": 2
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 43,
+            "end_lineno": 3,
+            "lineno": 3,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 12,
+                "end_lineno": 3,
+                "id": "invalide",
+                "lineno": 3
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 24,
+                  "end_col_offset": 34,
+                  "end_lineno": 3,
+                  "lineno": 3,
+                  "value": "invalide"
+                },
+                {
+                  "ast_class": "Name",
+                  "col_offset": 36,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 42,
+                  "end_lineno": 3,
+                  "id": "period",
+                  "lineno": 3
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 15,
+              "end_col_offset": 43,
+              "end_lineno": 3,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 15,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 23,
+                "end_lineno": 3,
+                "id": "individu",
+                "lineno": 3
+              },
+              "keywords": [],
+              "lineno": 3
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 49,
+            "end_lineno": 4,
+            "lineno": 4,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 14,
+                "end_lineno": 4,
+                "id": "est_enfant",
+                "lineno": 4
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Attribute",
+                  "attr": "ENFANT",
+                  "col_offset": 35,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 48,
+                  "end_lineno": 4,
+                  "lineno": 4,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 35,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 41,
+                    "end_lineno": 4,
+                    "id": "Menage",
+                    "lineno": 4
+                  }
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 17,
+              "end_col_offset": 49,
+              "end_lineno": 4,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "has_role",
+                "col_offset": 17,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 34,
+                "end_lineno": 4,
+                "lineno": 4,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 17,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 25,
+                  "end_lineno": 4,
+                  "id": "individu",
+                  "lineno": 4
+                }
+              },
+              "keywords": [],
+              "lineno": 4
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 9,
+            "end_lineno": 9,
+            "lineno": 6,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 20,
+                "end_lineno": 6,
+                "id": "condition_enfant",
+                "lineno": 6
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "BinOp",
+                  "col_offset": 8,
+                  "end_col_offset": 75,
+                  "end_lineno": 8,
+                  "left": {
+                    "ast_class": "Compare",
+                    "col_offset": 9,
+                    "comparators": [
+                      {
+                        "ast_class": "Constant",
+                        "col_offset": 25,
+                        "end_col_offset": 27,
+                        "end_lineno": 7,
+                        "lineno": 7,
+                        "value": 16
+                      }
+                    ],
+                    "end_col_offset": 27,
+                    "end_lineno": 7,
+                    "left": {
+                      "ast_class": "Name",
+                      "col_offset": 9,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 21,
+                      "end_lineno": 7,
+                      "id": "age_individu",
+                      "lineno": 7
+                    },
+                    "lineno": 7,
+                    "ops": [
+                      {
+                        "ast_class": "LtE"
+                      }
+                    ]
+                  },
+                  "lineno": 7,
+                  "op": {
+                    "ast_class": "Add"
+                  },
+                  "right": {
+                    "ast_class": "BinOp",
+                    "col_offset": 8,
+                    "end_col_offset": 75,
+                    "end_lineno": 8,
+                    "left": {
+                      "ast_class": "Compare",
+                      "col_offset": 9,
+                      "comparators": [
+                        {
+                          "ast_class": "Constant",
+                          "col_offset": 25,
+                          "end_col_offset": 27,
+                          "end_lineno": 8,
+                          "lineno": 8,
+                          "value": 18
+                        }
+                      ],
+                      "end_col_offset": 27,
+                      "end_lineno": 8,
+                      "left": {
+                        "ast_class": "Name",
+                        "col_offset": 9,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 21,
+                        "end_lineno": 8,
+                        "id": "age_individu",
+                        "lineno": 8
+                      },
+                      "lineno": 8,
+                      "ops": [
+                        {
+                          "ast_class": "LtE"
+                        }
+                      ]
+                    },
+                    "lineno": 8,
+                    "op": {
+                      "ast_class": "Mult"
+                    },
+                    "right": {
+                      "ast_class": "Compare",
+                      "col_offset": 32,
+                      "comparators": [
+                        {
+                          "ast_class": "BinOp",
+                          "col_offset": 52,
+                          "end_col_offset": 74,
+                          "end_lineno": 8,
+                          "left": {
+                            "ast_class": "Constant",
+                            "col_offset": 52,
+                            "end_col_offset": 55,
+                            "end_lineno": 8,
+                            "lineno": 8,
+                            "value": 0.75
+                          },
+                          "lineno": 8,
+                          "op": {
+                            "ast_class": "Mult"
+                          },
+                          "right": {
+                            "ast_class": "Name",
+                            "col_offset": 58,
+                            "ctx": {
+                              "ast_class": "Load"
+                            },
+                            "end_col_offset": 74,
+                            "end_lineno": 8,
+                            "id": "smig_48h_mensuel",
+                            "lineno": 8
+                          }
+                        }
+                      ],
+                      "end_col_offset": 74,
+                      "end_lineno": 8,
+                      "left": {
+                        "ast_class": "Name",
+                        "col_offset": 32,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 48,
+                        "end_lineno": 8,
+                        "id": "salaire_individu",
+                        "lineno": 8
+                      },
+                      "lineno": 8,
+                      "ops": [
+                        {
+                          "ast_class": "LtE"
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 23,
+              "end_col_offset": 9,
+              "end_lineno": 9,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 23,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 26,
+                "end_lineno": 6,
+                "id": "or_",
+                "lineno": 6
+              },
+              "keywords": [],
+              "lineno": 6
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 9,
+            "end_lineno": 13,
+            "lineno": 10,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 40,
+                "end_lineno": 10,
+                "id": "condition_jeune_etudiant_ou_invalide",
+                "lineno": 10
+              }
+            ],
+            "value": {
+              "ast_class": "Name",
+              "col_offset": 9,
+              "ctx": {
+                "ast_class": "Load"
+              },
+              "end_col_offset": 26,
+              "end_lineno": 12,
+              "id": "invalide_individu",
+              "lineno": 12
+            }
+          },
+          {
+            "ast_class": "Return",
+            "col_offset": 4,
+            "end_col_offset": 83,
+            "end_lineno": 15,
+            "lineno": 15,
+            "value": {
+              "ast_class": "BinOp",
+              "col_offset": 11,
+              "end_col_offset": 83,
+              "end_lineno": 15,
+              "left": {
+                "args": [
+                  {
+                    "ast_class": "Name",
+                    "col_offset": 15,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 31,
+                    "end_lineno": 15,
+                    "id": "condition_enfant",
+                    "lineno": 15
+                  },
+                  {
+                    "ast_class": "Name",
+                    "col_offset": 33,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 69,
+                    "end_lineno": 15,
+                    "id": "condition_jeune_etudiant_ou_invalide",
+                    "lineno": 15
+                  }
+                ],
+                "ast_class": "Call",
+                "col_offset": 11,
+                "end_col_offset": 70,
+                "end_lineno": 15,
+                "func": {
+                  "ast_class": "Name",
+                  "col_offset": 11,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 14,
+                  "end_lineno": 15,
+                  "id": "or_",
+                  "lineno": 15
+                },
+                "keywords": [],
+                "lineno": 15
+              },
+              "lineno": 15,
+              "op": {
+                "ast_class": "Mult"
+              },
+              "right": {
+                "ast_class": "Name",
+                "col_offset": 73,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 83,
+                "end_lineno": 15,
+                "id": "est_enfant",
+                "lineno": 15
+              }
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [],
+        "end_col_offset": 83,
+        "end_lineno": 15,
+        "lineno": 1,
+        "name": "formula"
+      },
+      "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
+      "source_code": "def formula(individu, period, parameters):\n    age = individu('age', period)\n    invalide = individu('invalide', period)\n    est_enfant = individu.has_role(Menage.ENFANT)\n\n    condition_enfant = or_(\n        (age_individu <= 16) +\n        (age_individu <= 18) * (salaire_individu <= .75 * smig_48h_mensuel)\n        )\n    condition_jeune_etudiant_ou_invalide = (\n        # (age_individu <= 21) * etudiant ou soeur au foyer\n        (invalide_individu)\n        )\n\n    return or_(condition_enfant, condition_jeune_etudiant_ou_invalide) * est_enfant\n",
+      "start_line_number": 87,
+      "stop_line_number": 102,
+      "variables": [
+        "age",
+        "invalide"
+      ]
+    }
+  },
+  "is_period_size_independent": true,
+  "json_type": "boolean",
+  "label": "Enfant considéré à charge au sens des prestations familiales",
+  "name": "prestations_familiales_enfant_a_charge",
+  "reference": [
+    "http://www.cleiss.fr/docs/regimes/regime_tunisie_salaries.html"
+  ],
+  "start_line_number": 68,
+  "stop_line_number": 102,
+  "value_type": "bool"
+}

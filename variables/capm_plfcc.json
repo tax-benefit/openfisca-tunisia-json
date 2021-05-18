@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/capital/valeurs_mobilieres_et_capitaux_mobiliers.py",
+  "json_type": "integer",
+  "label": "Revenus des parts et de liquidation du fonds commun des créances",
+  "name": "capm_plfcc",
+  "start_line_number": 76,
+  "stop_line_number": 81,
+  "value_type": "int"
+}

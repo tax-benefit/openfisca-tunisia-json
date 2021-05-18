@@ -1,0 +1,322 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "float32",
+  "entity": "foyer_fiscal",
+  "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+  "formulas": {
+    "0001-01-01": {
+      "ast": {
+        "args": {
+          "args": [
+            {
+              "arg": "foyer_fiscal",
+              "ast_class": "arg",
+              "col_offset": 12,
+              "end_col_offset": 24,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "period",
+              "ast_class": "arg",
+              "col_offset": 26,
+              "end_col_offset": 32,
+              "end_lineno": 1,
+              "lineno": 1
+            }
+          ],
+          "ast_class": "arguments",
+          "defaults": [],
+          "kw_defaults": [],
+          "kwonlyargs": [],
+          "posonlyargs": []
+        },
+        "ast_class": "FunctionDef",
+        "body": [
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 111,
+            "end_lineno": 2,
+            "lineno": 2,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 21,
+                "end_lineno": 2,
+                "id": "salaire_imposable",
+                "lineno": 2
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 57,
+                  "end_col_offset": 76,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": "salaire_imposable"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 24,
+              "end_col_offset": 111,
+              "end_lineno": 2,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "declarant_principal",
+                "col_offset": 24,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 56,
+                "end_lineno": 2,
+                "lineno": 2,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 24,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 36,
+                  "end_lineno": 2,
+                  "id": "foyer_fiscal",
+                  "lineno": 2
+                }
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 78,
+                  "end_col_offset": 93,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 87,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 93,
+                    "end_lineno": 2,
+                    "id": "period",
+                    "lineno": 2
+                  }
+                },
+                {
+                  "arg": "options",
+                  "ast_class": "keyword",
+                  "col_offset": 95,
+                  "end_col_offset": 110,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": {
+                    "ast_class": "List",
+                    "col_offset": 105,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "elts": [
+                      {
+                        "ast_class": "Name",
+                        "col_offset": 106,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 109,
+                        "end_lineno": 2,
+                        "id": "ADD",
+                        "lineno": 2
+                      }
+                    ],
+                    "end_col_offset": 110,
+                    "end_lineno": 2,
+                    "lineno": 2
+                  }
+                }
+              ],
+              "lineno": 2
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 111,
+            "end_lineno": 3,
+            "lineno": 3,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 21,
+                "end_lineno": 3,
+                "id": "salaire_en_nature",
+                "lineno": 3
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 57,
+                  "end_col_offset": 76,
+                  "end_lineno": 3,
+                  "lineno": 3,
+                  "value": "salaire_en_nature"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 24,
+              "end_col_offset": 111,
+              "end_lineno": 3,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "declarant_principal",
+                "col_offset": 24,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 56,
+                "end_lineno": 3,
+                "lineno": 3,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 24,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 36,
+                  "end_lineno": 3,
+                  "id": "foyer_fiscal",
+                  "lineno": 3
+                }
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 78,
+                  "end_col_offset": 93,
+                  "end_lineno": 3,
+                  "lineno": 3,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 87,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 93,
+                    "end_lineno": 3,
+                    "id": "period",
+                    "lineno": 3
+                  }
+                },
+                {
+                  "arg": "options",
+                  "ast_class": "keyword",
+                  "col_offset": 95,
+                  "end_col_offset": 110,
+                  "end_lineno": 3,
+                  "lineno": 3,
+                  "value": {
+                    "ast_class": "List",
+                    "col_offset": 105,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "elts": [
+                      {
+                        "ast_class": "Name",
+                        "col_offset": 106,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 109,
+                        "end_lineno": 3,
+                        "id": "ADD",
+                        "lineno": 3
+                      }
+                    ],
+                    "end_col_offset": 110,
+                    "end_lineno": 3,
+                    "lineno": 3
+                  }
+                }
+              ],
+              "lineno": 3
+            }
+          },
+          {
+            "ast_class": "Return",
+            "col_offset": 4,
+            "end_col_offset": 50,
+            "end_lineno": 4,
+            "lineno": 4,
+            "value": {
+              "ast_class": "BinOp",
+              "col_offset": 12,
+              "end_col_offset": 49,
+              "end_lineno": 4,
+              "left": {
+                "ast_class": "Name",
+                "col_offset": 12,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 29,
+                "end_lineno": 4,
+                "id": "salaire_imposable",
+                "lineno": 4
+              },
+              "lineno": 4,
+              "op": {
+                "ast_class": "Add"
+              },
+              "right": {
+                "ast_class": "Name",
+                "col_offset": 32,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 49,
+                "end_lineno": 4,
+                "id": "salaire_en_nature",
+                "lineno": 4
+              }
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [],
+        "end_col_offset": 50,
+        "end_lineno": 4,
+        "lineno": 1,
+        "name": "formula"
+      },
+      "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+      "source_code": "def formula(foyer_fiscal, period):\n    salaire_imposable = foyer_fiscal.declarant_principal('salaire_imposable', period = period, options = [ADD])\n    salaire_en_nature = foyer_fiscal.declarant_principal('salaire_en_nature', period = period, options = [ADD])\n    return (salaire_imposable + salaire_en_nature)\n",
+      "start_line_number": 325,
+      "stop_line_number": 329
+    }
+  },
+  "json_type": "number",
+  "label": "Revenu assimilé à des salaires",
+  "name": "revenu_assimile_salaire",
+  "referring_variables": [
+    "revenu_assimile_salaire_apres_abattements",
+    "smig"
+  ],
+  "start_line_number": 319,
+  "stop_line_number": 329,
+  "value_type": "float"
+}

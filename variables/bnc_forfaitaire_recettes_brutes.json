@@ -1,0 +1,16 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+  "json_type": "integer",
+  "label": "Recettes globales brutes TTC (BNC, assiette forfaitaire)",
+  "name": "bnc_forfaitaire_recettes_brutes",
+  "referring_variables": [
+    "bnc_forf_benef_fiscal"
+  ],
+  "start_line_number": 190,
+  "stop_line_number": 195,
+  "value_type": "int"
+}

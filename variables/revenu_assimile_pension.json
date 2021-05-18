@@ -1,0 +1,16 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/remplacement/retraite.py",
+  "json_type": "integer",
+  "label": "Revenus assimilés à des pensions (pensions et rentes viagères)",
+  "name": "revenu_assimile_pension",
+  "referring_variables": [
+    "revenu_disponible_individuel"
+  ],
+  "start_line_number": 8,
+  "stop_line_number": 13,
+  "value_type": "int"
+}

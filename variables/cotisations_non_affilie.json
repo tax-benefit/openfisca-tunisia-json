@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/deductions.py",
+  "json_type": "integer",
+  "label": "Cotisations payées par les travailleurs non salariés affiliés à l’un des régimes légaux de la sécurité sociale",
+  "name": "cotisations_non_affilie",
+  "start_line_number": 109,
+  "stop_line_number": 115,
+  "value_type": "int"
+}

@@ -1,0 +1,14 @@
+{
+  "default_value": false,
+  "definition_period": "year",
+  "dtype": "bool_",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+  "is_period_size_independent": true,
+  "json_type": "boolean",
+  "label": "Indicatrice des sociétés de personnes et assimilées (BIC)",
+  "name": "bic_societes_personnes",
+  "start_line_number": 51,
+  "stop_line_number": 56,
+  "value_type": "bool"
+}

@@ -1,0 +1,16 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+  "json_type": "integer",
+  "label": "Total des dépenses (BIC, cession de fonds de commerce)",
+  "name": "bic_depenses",
+  "referring_variables": [
+    "bic_res_cession"
+  ],
+  "start_line_number": 138,
+  "stop_line_number": 143,
+  "value_type": "int"
+}

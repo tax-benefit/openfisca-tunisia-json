@@ -1,0 +1,13 @@
+{
+  "default_value": false,
+  "definition_period": "eternity",
+  "dtype": "bool_",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+  "is_period_size_independent": true,
+  "json_type": "boolean",
+  "name": "boursier",
+  "start_line_number": 134,
+  "stop_line_number": 138,
+  "value_type": "bool"
+}

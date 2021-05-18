@@ -1,0 +1,147 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "float32",
+  "entity": "foyer_fiscal",
+  "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+  "formulas": {
+    "0001-01-01": {
+      "ast": {
+        "args": {
+          "args": [
+            {
+              "arg": "foyer_fiscal",
+              "ast_class": "arg",
+              "col_offset": 12,
+              "end_col_offset": 24,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "period",
+              "ast_class": "arg",
+              "col_offset": 26,
+              "end_col_offset": 32,
+              "end_lineno": 1,
+              "lineno": 1
+            }
+          ],
+          "ast_class": "arguments",
+          "defaults": [],
+          "kw_defaults": [],
+          "kwonlyargs": [],
+          "posonlyargs": []
+        },
+        "ast_class": "FunctionDef",
+        "body": [
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 50,
+            "end_lineno": 2,
+            "lineno": 2,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 9,
+                "end_lineno": 2,
+                "id": "rente",
+                "lineno": 2
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 25,
+                  "end_col_offset": 32,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": "rente"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 12,
+              "end_col_offset": 50,
+              "end_lineno": 2,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 12,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 24,
+                "end_lineno": 2,
+                "id": "foyer_fiscal",
+                "lineno": 2
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 34,
+                  "end_col_offset": 49,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 43,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 49,
+                    "end_lineno": 2,
+                    "id": "period",
+                    "lineno": 2
+                  }
+                }
+              ],
+              "lineno": 2
+            }
+          },
+          {
+            "ast_class": "Return",
+            "col_offset": 4,
+            "end_col_offset": 16,
+            "end_lineno": 4,
+            "lineno": 4,
+            "value": {
+              "ast_class": "Name",
+              "col_offset": 11,
+              "ctx": {
+                "ast_class": "Load"
+              },
+              "end_col_offset": 16,
+              "end_lineno": 4,
+              "id": "rente",
+              "lineno": 4
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [],
+        "end_col_offset": 16,
+        "end_lineno": 4,
+        "lineno": 1,
+        "name": "formula"
+      },
+      "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+      "source_code": "def formula(foyer_fiscal, period):\n    rente = foyer_fiscal('rente', period = period)\n\n    return rente  # TODO:\n",
+      "start_line_number": 513,
+      "stop_line_number": 517,
+      "variables": [
+        "rente"
+      ]
+    }
+  },
+  "json_type": "number",
+  "label": "Arrérages et rentes payées à titre obligatoire et gratuit",
+  "name": "deduction_rente",
+  "start_line_number": 507,
+  "stop_line_number": 517,
+  "value_type": "float"
+}

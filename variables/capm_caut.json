@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/capital/valeurs_mobilieres_et_capitaux_mobiliers.py",
+  "json_type": "integer",
+  "label": "Intérêts des créances et intérêts et rémunérations des cautionnements",
+  "name": "capm_caut",
+  "start_line_number": 48,
+  "stop_line_number": 53,
+  "value_type": "int"
+}

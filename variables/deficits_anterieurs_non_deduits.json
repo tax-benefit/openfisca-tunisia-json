@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/autres_revenus.py",
+  "json_type": "integer",
+  "label": "Déficits des années antérieures non déduits",
+  "name": "deficits_anterieurs_non_deduits",
+  "start_line_number": 42,
+  "stop_line_number": 47,
+  "value_type": "int"
+}

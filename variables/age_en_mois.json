@@ -1,0 +1,1089 @@
+{
+  "default_value": -9999,
+  "definition_period": "month",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+  "formulas": {
+    "0001-01-01": {
+      "ast": {
+        "args": {
+          "args": [
+            {
+              "arg": "individu",
+              "ast_class": "arg",
+              "col_offset": 12,
+              "end_col_offset": 20,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "period",
+              "ast_class": "arg",
+              "col_offset": 22,
+              "end_col_offset": 28,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "parameters",
+              "ast_class": "arg",
+              "col_offset": 30,
+              "end_col_offset": 40,
+              "end_lineno": 1,
+              "lineno": 1
+            }
+          ],
+          "ast_class": "arguments",
+          "defaults": [],
+          "kw_defaults": [],
+          "kwonlyargs": [],
+          "posonlyargs": []
+        },
+        "ast_class": "FunctionDef",
+        "body": [
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 47,
+            "end_lineno": 3,
+            "lineno": 3,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 10,
+                "end_lineno": 3,
+                "id": "holder",
+                "lineno": 3
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 33,
+                  "end_col_offset": 46,
+                  "end_lineno": 3,
+                  "lineno": 3,
+                  "value": "age_en_mois"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 13,
+              "end_col_offset": 47,
+              "end_lineno": 3,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "get_holder",
+                "col_offset": 13,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 32,
+                "end_lineno": 3,
+                "lineno": 3,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 13,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 21,
+                  "end_lineno": 3,
+                  "id": "individu",
+                  "lineno": 3
+                }
+              },
+              "keywords": [],
+              "lineno": 3
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 24,
+            "end_lineno": 4,
+            "lineno": 4,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 9,
+                "end_lineno": 4,
+                "id": "start",
+                "lineno": 4
+              }
+            ],
+            "value": {
+              "ast_class": "Attribute",
+              "attr": "start",
+              "col_offset": 12,
+              "ctx": {
+                "ast_class": "Load"
+              },
+              "end_col_offset": 24,
+              "end_lineno": 4,
+              "lineno": 4,
+              "value": {
+                "ast_class": "Name",
+                "col_offset": 12,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 18,
+                "end_lineno": 4,
+                "id": "period",
+                "lineno": 4
+              }
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 46,
+            "end_lineno": 5,
+            "lineno": 5,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 17,
+                "end_lineno": 5,
+                "id": "known_periods",
+                "lineno": 5
+              }
+            ],
+            "value": {
+              "args": [],
+              "ast_class": "Call",
+              "col_offset": 20,
+              "end_col_offset": 46,
+              "end_lineno": 5,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "get_known_periods",
+                "col_offset": 20,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 44,
+                "end_lineno": 5,
+                "lineno": 5,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 20,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 26,
+                  "end_lineno": 5,
+                  "id": "holder",
+                  "lineno": 5
+                }
+              },
+              "keywords": [],
+              "lineno": 5
+            }
+          },
+          {
+            "ast_class": "For",
+            "body": [
+              {
+                "ast_class": "Assign",
+                "col_offset": 8,
+                "end_col_offset": 38,
+                "end_lineno": 8,
+                "lineno": 8,
+                "targets": [
+                  {
+                    "ast_class": "Name",
+                    "col_offset": 8,
+                    "ctx": {
+                      "ast_class": "Store"
+                    },
+                    "end_col_offset": 18,
+                    "end_lineno": 8,
+                    "id": "last_start",
+                    "lineno": 8
+                  }
+                ],
+                "value": {
+                  "ast_class": "Attribute",
+                  "attr": "start",
+                  "col_offset": 21,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 38,
+                  "end_lineno": 8,
+                  "lineno": 8,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 21,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 32,
+                    "end_lineno": 8,
+                    "id": "last_period",
+                    "lineno": 8
+                  }
+                }
+              },
+              {
+                "ast_class": "If",
+                "body": [
+                  {
+                    "ast_class": "Assign",
+                    "col_offset": 12,
+                    "end_col_offset": 54,
+                    "end_lineno": 10,
+                    "lineno": 10,
+                    "targets": [
+                      {
+                        "ast_class": "Name",
+                        "col_offset": 12,
+                        "ctx": {
+                          "ast_class": "Store"
+                        },
+                        "end_col_offset": 22,
+                        "end_lineno": 10,
+                        "id": "last_array",
+                        "lineno": 10
+                      }
+                    ],
+                    "value": {
+                      "args": [
+                        {
+                          "ast_class": "Name",
+                          "col_offset": 42,
+                          "ctx": {
+                            "ast_class": "Load"
+                          },
+                          "end_col_offset": 53,
+                          "end_lineno": 10,
+                          "id": "last_period",
+                          "lineno": 10
+                        }
+                      ],
+                      "ast_class": "Call",
+                      "col_offset": 25,
+                      "end_col_offset": 54,
+                      "end_lineno": 10,
+                      "func": {
+                        "ast_class": "Attribute",
+                        "attr": "get_array",
+                        "col_offset": 25,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 41,
+                        "end_lineno": 10,
+                        "lineno": 10,
+                        "value": {
+                          "ast_class": "Name",
+                          "col_offset": 25,
+                          "ctx": {
+                            "ast_class": "Load"
+                          },
+                          "end_col_offset": 31,
+                          "end_lineno": 10,
+                          "id": "holder",
+                          "lineno": 10
+                        }
+                      },
+                      "keywords": [],
+                      "lineno": 10
+                    }
+                  },
+                  {
+                    "ast_class": "Return",
+                    "col_offset": 12,
+                    "end_col_offset": 104,
+                    "end_lineno": 11,
+                    "lineno": 11,
+                    "value": {
+                      "ast_class": "BinOp",
+                      "col_offset": 19,
+                      "end_col_offset": 104,
+                      "end_lineno": 11,
+                      "left": {
+                        "ast_class": "Name",
+                        "col_offset": 19,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 29,
+                        "end_lineno": 11,
+                        "id": "last_array",
+                        "lineno": 11
+                      },
+                      "lineno": 11,
+                      "op": {
+                        "ast_class": "Add"
+                      },
+                      "right": {
+                        "ast_class": "BinOp",
+                        "col_offset": 33,
+                        "end_col_offset": 103,
+                        "end_lineno": 11,
+                        "left": {
+                          "ast_class": "BinOp",
+                          "col_offset": 33,
+                          "end_col_offset": 68,
+                          "end_lineno": 11,
+                          "left": {
+                            "ast_class": "BinOp",
+                            "col_offset": 34,
+                            "end_col_offset": 62,
+                            "end_lineno": 11,
+                            "left": {
+                              "ast_class": "Attribute",
+                              "attr": "year",
+                              "col_offset": 34,
+                              "ctx": {
+                                "ast_class": "Load"
+                              },
+                              "end_col_offset": 44,
+                              "end_lineno": 11,
+                              "lineno": 11,
+                              "value": {
+                                "ast_class": "Name",
+                                "col_offset": 34,
+                                "ctx": {
+                                  "ast_class": "Load"
+                                },
+                                "end_col_offset": 39,
+                                "end_lineno": 11,
+                                "id": "start",
+                                "lineno": 11
+                              }
+                            },
+                            "lineno": 11,
+                            "op": {
+                              "ast_class": "Sub"
+                            },
+                            "right": {
+                              "ast_class": "Attribute",
+                              "attr": "year",
+                              "col_offset": 47,
+                              "ctx": {
+                                "ast_class": "Load"
+                              },
+                              "end_col_offset": 62,
+                              "end_lineno": 11,
+                              "lineno": 11,
+                              "value": {
+                                "ast_class": "Name",
+                                "col_offset": 47,
+                                "ctx": {
+                                  "ast_class": "Load"
+                                },
+                                "end_col_offset": 57,
+                                "end_lineno": 11,
+                                "id": "last_start",
+                                "lineno": 11
+                              }
+                            }
+                          },
+                          "lineno": 11,
+                          "op": {
+                            "ast_class": "Mult"
+                          },
+                          "right": {
+                            "ast_class": "Constant",
+                            "col_offset": 66,
+                            "end_col_offset": 68,
+                            "end_lineno": 11,
+                            "lineno": 11,
+                            "value": 12
+                          }
+                        },
+                        "lineno": 11,
+                        "op": {
+                          "ast_class": "Add"
+                        },
+                        "right": {
+                          "ast_class": "BinOp",
+                          "col_offset": 72,
+                          "end_col_offset": 102,
+                          "end_lineno": 11,
+                          "left": {
+                            "ast_class": "Attribute",
+                            "attr": "month",
+                            "col_offset": 72,
+                            "ctx": {
+                              "ast_class": "Load"
+                            },
+                            "end_col_offset": 83,
+                            "end_lineno": 11,
+                            "lineno": 11,
+                            "value": {
+                              "ast_class": "Name",
+                              "col_offset": 72,
+                              "ctx": {
+                                "ast_class": "Load"
+                              },
+                              "end_col_offset": 77,
+                              "end_lineno": 11,
+                              "id": "start",
+                              "lineno": 11
+                            }
+                          },
+                          "lineno": 11,
+                          "op": {
+                            "ast_class": "Sub"
+                          },
+                          "right": {
+                            "ast_class": "Attribute",
+                            "attr": "month",
+                            "col_offset": 86,
+                            "ctx": {
+                              "ast_class": "Load"
+                            },
+                            "end_col_offset": 102,
+                            "end_lineno": 11,
+                            "lineno": 11,
+                            "value": {
+                              "ast_class": "Name",
+                              "col_offset": 86,
+                              "ctx": {
+                                "ast_class": "Load"
+                              },
+                              "end_col_offset": 96,
+                              "end_lineno": 11,
+                              "id": "last_start",
+                              "lineno": 11
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "col_offset": 8,
+                "end_col_offset": 104,
+                "end_lineno": 11,
+                "lineno": 9,
+                "orelse": [],
+                "test": {
+                  "ast_class": "Compare",
+                  "col_offset": 11,
+                  "comparators": [
+                    {
+                      "ast_class": "Attribute",
+                      "attr": "day",
+                      "col_offset": 29,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 38,
+                      "end_lineno": 9,
+                      "lineno": 9,
+                      "value": {
+                        "ast_class": "Name",
+                        "col_offset": 29,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 34,
+                        "end_lineno": 9,
+                        "id": "start",
+                        "lineno": 9
+                      }
+                    }
+                  ],
+                  "end_col_offset": 38,
+                  "end_lineno": 9,
+                  "left": {
+                    "ast_class": "Attribute",
+                    "attr": "day",
+                    "col_offset": 11,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 25,
+                    "end_lineno": 9,
+                    "lineno": 9,
+                    "value": {
+                      "ast_class": "Name",
+                      "col_offset": 11,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 21,
+                      "end_lineno": 9,
+                      "id": "last_start",
+                      "lineno": 9
+                    }
+                  },
+                  "lineno": 9,
+                  "ops": [
+                    {
+                      "ast_class": "Eq"
+                    }
+                  ]
+                }
+              }
+            ],
+            "col_offset": 4,
+            "end_col_offset": 104,
+            "end_lineno": 11,
+            "iter": {
+              "args": [
+                {
+                  "ast_class": "Name",
+                  "col_offset": 30,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 43,
+                  "end_lineno": 7,
+                  "id": "known_periods",
+                  "lineno": 7
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 23,
+              "end_col_offset": 60,
+              "end_lineno": 7,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 23,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 29,
+                "end_lineno": 7,
+                "id": "sorted",
+                "lineno": 7
+              },
+              "keywords": [
+                {
+                  "arg": "reverse",
+                  "ast_class": "keyword",
+                  "col_offset": 45,
+                  "end_col_offset": 59,
+                  "end_lineno": 7,
+                  "lineno": 7,
+                  "value": {
+                    "ast_class": "Constant",
+                    "col_offset": 55,
+                    "end_col_offset": 59,
+                    "end_lineno": 7,
+                    "lineno": 7,
+                    "value": true
+                  }
+                }
+              ],
+              "lineno": 7
+            },
+            "lineno": 7,
+            "orelse": [],
+            "target": {
+              "ast_class": "Name",
+              "col_offset": 8,
+              "ctx": {
+                "ast_class": "Store"
+              },
+              "end_col_offset": 19,
+              "end_lineno": 7,
+              "id": "last_period",
+              "lineno": 7
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 73,
+            "end_lineno": 13,
+            "lineno": 13,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 13,
+                "end_lineno": 13,
+                "id": "has_birth",
+                "lineno": 13
+              }
+            ],
+            "value": {
+              "args": [],
+              "ast_class": "Call",
+              "col_offset": 16,
+              "end_col_offset": 73,
+              "end_lineno": 13,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "get_known_periods",
+                "col_offset": 16,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 71,
+                "end_lineno": 13,
+                "lineno": 13,
+                "value": {
+                  "args": [
+                    {
+                      "ast_class": "Constant",
+                      "col_offset": 36,
+                      "end_col_offset": 52,
+                      "end_lineno": 13,
+                      "lineno": 13,
+                      "value": "date_naissance"
+                    }
+                  ],
+                  "ast_class": "Call",
+                  "col_offset": 16,
+                  "end_col_offset": 53,
+                  "end_lineno": 13,
+                  "func": {
+                    "ast_class": "Attribute",
+                    "attr": "get_holder",
+                    "col_offset": 16,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 35,
+                    "end_lineno": 13,
+                    "lineno": 13,
+                    "value": {
+                      "ast_class": "Name",
+                      "col_offset": 16,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 24,
+                      "end_lineno": 13,
+                      "id": "individu",
+                      "lineno": 13
+                    }
+                  },
+                  "keywords": [],
+                  "lineno": 13
+                }
+              },
+              "keywords": [],
+              "lineno": 13
+            }
+          },
+          {
+            "ast_class": "If",
+            "body": [
+              {
+                "ast_class": "Assign",
+                "col_offset": 8,
+                "end_col_offset": 70,
+                "end_lineno": 15,
+                "lineno": 15,
+                "targets": [
+                  {
+                    "ast_class": "Name",
+                    "col_offset": 8,
+                    "ctx": {
+                      "ast_class": "Store"
+                    },
+                    "end_col_offset": 15,
+                    "end_lineno": 15,
+                    "id": "has_age",
+                    "lineno": 15
+                  }
+                ],
+                "value": {
+                  "args": [
+                    {
+                      "args": [],
+                      "ast_class": "Call",
+                      "col_offset": 23,
+                      "end_col_offset": 69,
+                      "end_lineno": 15,
+                      "func": {
+                        "ast_class": "Attribute",
+                        "attr": "get_known_periods",
+                        "col_offset": 23,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 67,
+                        "end_lineno": 15,
+                        "lineno": 15,
+                        "value": {
+                          "args": [
+                            {
+                              "ast_class": "Constant",
+                              "col_offset": 43,
+                              "end_col_offset": 48,
+                              "end_lineno": 15,
+                              "lineno": 15,
+                              "value": "age"
+                            }
+                          ],
+                          "ast_class": "Call",
+                          "col_offset": 23,
+                          "end_col_offset": 49,
+                          "end_lineno": 15,
+                          "func": {
+                            "ast_class": "Attribute",
+                            "attr": "get_holder",
+                            "col_offset": 23,
+                            "ctx": {
+                              "ast_class": "Load"
+                            },
+                            "end_col_offset": 42,
+                            "end_lineno": 15,
+                            "lineno": 15,
+                            "value": {
+                              "ast_class": "Name",
+                              "col_offset": 23,
+                              "ctx": {
+                                "ast_class": "Load"
+                              },
+                              "end_col_offset": 31,
+                              "end_lineno": 15,
+                              "id": "individu",
+                              "lineno": 15
+                            }
+                          },
+                          "keywords": [],
+                          "lineno": 15
+                        }
+                      },
+                      "keywords": [],
+                      "lineno": 15
+                    }
+                  ],
+                  "ast_class": "Call",
+                  "col_offset": 18,
+                  "end_col_offset": 70,
+                  "end_lineno": 15,
+                  "func": {
+                    "ast_class": "Name",
+                    "col_offset": 18,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 22,
+                    "end_lineno": 15,
+                    "id": "bool",
+                    "lineno": 15
+                  },
+                  "keywords": [],
+                  "lineno": 15
+                }
+              },
+              {
+                "ast_class": "If",
+                "body": [
+                  {
+                    "ast_class": "Return",
+                    "col_offset": 12,
+                    "end_col_offset": 47,
+                    "end_lineno": 17,
+                    "lineno": 17,
+                    "value": {
+                      "ast_class": "BinOp",
+                      "col_offset": 19,
+                      "end_col_offset": 47,
+                      "end_lineno": 17,
+                      "left": {
+                        "args": [
+                          {
+                            "ast_class": "Constant",
+                            "col_offset": 28,
+                            "end_col_offset": 33,
+                            "end_lineno": 17,
+                            "lineno": 17,
+                            "value": "age"
+                          },
+                          {
+                            "ast_class": "Name",
+                            "col_offset": 35,
+                            "ctx": {
+                              "ast_class": "Load"
+                            },
+                            "end_col_offset": 41,
+                            "end_lineno": 17,
+                            "id": "period",
+                            "lineno": 17
+                          }
+                        ],
+                        "ast_class": "Call",
+                        "col_offset": 19,
+                        "end_col_offset": 42,
+                        "end_lineno": 17,
+                        "func": {
+                          "ast_class": "Name",
+                          "col_offset": 19,
+                          "ctx": {
+                            "ast_class": "Load"
+                          },
+                          "end_col_offset": 27,
+                          "end_lineno": 17,
+                          "id": "individu",
+                          "lineno": 17
+                        },
+                        "keywords": [],
+                        "lineno": 17
+                      },
+                      "lineno": 17,
+                      "op": {
+                        "ast_class": "Mult"
+                      },
+                      "right": {
+                        "ast_class": "Constant",
+                        "col_offset": 45,
+                        "end_col_offset": 47,
+                        "end_lineno": 17,
+                        "lineno": 17,
+                        "value": 12
+                      }
+                    }
+                  }
+                ],
+                "col_offset": 8,
+                "end_col_offset": 47,
+                "end_lineno": 17,
+                "lineno": 16,
+                "orelse": [],
+                "test": {
+                  "ast_class": "Name",
+                  "col_offset": 11,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 18,
+                  "end_lineno": 16,
+                  "id": "has_age",
+                  "lineno": 16
+                }
+              }
+            ],
+            "col_offset": 4,
+            "end_col_offset": 47,
+            "end_lineno": 17,
+            "lineno": 14,
+            "orelse": [],
+            "test": {
+              "ast_class": "UnaryOp",
+              "col_offset": 7,
+              "end_col_offset": 20,
+              "end_lineno": 14,
+              "lineno": 14,
+              "op": {
+                "ast_class": "Not"
+              },
+              "operand": {
+                "ast_class": "Name",
+                "col_offset": 11,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 20,
+                "end_lineno": 14,
+                "id": "has_birth",
+                "lineno": 14
+              }
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 55,
+            "end_lineno": 18,
+            "lineno": 18,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 18,
+                "end_lineno": 18,
+                "id": "date_naissance",
+                "lineno": 18
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 30,
+                  "end_col_offset": 46,
+                  "end_lineno": 18,
+                  "lineno": 18,
+                  "value": "date_naissance"
+                },
+                {
+                  "ast_class": "Name",
+                  "col_offset": 48,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 54,
+                  "end_lineno": 18,
+                  "id": "period",
+                  "lineno": 18
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 21,
+              "end_col_offset": 55,
+              "end_lineno": 18,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 21,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 29,
+                "end_lineno": 18,
+                "id": "individu",
+                "lineno": 18
+              },
+              "keywords": [],
+              "lineno": 18
+            }
+          },
+          {
+            "ast_class": "Return",
+            "col_offset": 4,
+            "end_col_offset": 79,
+            "end_lineno": 19,
+            "lineno": 19,
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 62,
+                  "end_col_offset": 78,
+                  "end_lineno": 19,
+                  "lineno": 19,
+                  "value": "timedelta64[M]"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 11,
+              "end_col_offset": 79,
+              "end_lineno": 19,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "astype",
+                "col_offset": 11,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 61,
+                "end_lineno": 19,
+                "lineno": 19,
+                "value": {
+                  "ast_class": "BinOp",
+                  "col_offset": 12,
+                  "end_col_offset": 53,
+                  "end_lineno": 19,
+                  "left": {
+                    "args": [
+                      {
+                        "ast_class": "Attribute",
+                        "attr": "start",
+                        "col_offset": 23,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 35,
+                        "end_lineno": 19,
+                        "lineno": 19,
+                        "value": {
+                          "ast_class": "Name",
+                          "col_offset": 23,
+                          "ctx": {
+                            "ast_class": "Load"
+                          },
+                          "end_col_offset": 29,
+                          "end_lineno": 19,
+                          "id": "period",
+                          "lineno": 19
+                        }
+                      }
+                    ],
+                    "ast_class": "Call",
+                    "col_offset": 12,
+                    "end_col_offset": 36,
+                    "end_lineno": 19,
+                    "func": {
+                      "ast_class": "Name",
+                      "col_offset": 12,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 22,
+                      "end_lineno": 19,
+                      "id": "datetime64",
+                      "lineno": 19
+                    },
+                    "keywords": [],
+                    "lineno": 19
+                  },
+                  "lineno": 19,
+                  "op": {
+                    "ast_class": "Sub"
+                  },
+                  "right": {
+                    "ast_class": "Name",
+                    "col_offset": 39,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 53,
+                    "end_lineno": 19,
+                    "id": "date_naissance",
+                    "lineno": 19
+                  }
+                }
+              },
+              "keywords": [],
+              "lineno": 19
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [],
+        "end_col_offset": 79,
+        "end_lineno": 19,
+        "lineno": 1,
+        "name": "formula"
+      },
+      "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+      "source_code": "def formula(individu, period, parameters):\n    # If age_en_mois is known at the same day of another month, compute the new age_en_mois from it.\n    holder = individu.get_holder('age_en_mois')\n    start = period.start\n    known_periods = holder.get_known_periods()\n\n    for last_period in sorted(known_periods, reverse = True):\n        last_start = last_period.start\n        if last_start.day == start.day:\n            last_array = holder.get_array(last_period)\n            return last_array + ((start.year - last_start.year) * 12 + (start.month - last_start.month))\n\n    has_birth = individu.get_holder('date_naissance').get_known_periods()\n    if not has_birth:\n        has_age = bool(individu.get_holder('age').get_known_periods())\n        if has_age:\n            return individu('age', period) * 12\n    date_naissance = individu('date_naissance', period)\n    return (datetime64(period.start) - date_naissance).astype('timedelta64[M]')\n",
+      "start_line_number": 31,
+      "stop_line_number": 50,
+      "variables": [
+        "age",
+        "date_naissance"
+      ]
+    }
+  },
+  "is_period_size_independent": true,
+  "json_type": "integer",
+  "label": "Âge (en mois)",
+  "name": "age_en_mois",
+  "start_line_number": 22,
+  "stop_line_number": 50,
+  "unit": "months",
+  "value_type": "int"
+}

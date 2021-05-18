@@ -1,0 +1,3010 @@
+{
+  "accident_du_travail_employeur": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 149,
+        "stop_line_number": 157
+      }
+    },
+    "json_type": "number",
+    "label": "Cotisation accidents du travail et maladies professionnelles (employeur)",
+    "name": "accident_du_travail_employeur",
+    "referring_variables": [
+      "cotisations_employeur"
+    ],
+    "start_line_number": 143,
+    "stop_line_number": 157,
+    "value_type": "float"
+  },
+  "accident_du_travail_salarie": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 165,
+        "stop_line_number": 173
+      }
+    },
+    "json_type": "number",
+    "label": "Cotisation accidents du travail et maladies professionnelles (salarié)",
+    "name": "accident_du_travail_salarie",
+    "referring_variables": [
+      "cotisations_salarie"
+    ],
+    "start_line_number": 159,
+    "stop_line_number": 173,
+    "value_type": "float"
+  },
+  "activite": {
+    "default_value": 0,
+    "definition_period": "eternity",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+    "json_type": "integer",
+    "label": "Activité",
+    "name": "activite",
+    "start_line_number": 126,
+    "stop_line_number": 131,
+    "value_type": "int"
+  },
+  "af": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "menage",
+    "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
+        "start_line_number": 126,
+        "stop_line_number": 146,
+        "variables": [
+          "af_nbenf"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Allocations familiales",
+    "name": "af",
+    "referring_variables": [
+      "prestations_familiales"
+    ],
+    "start_line_number": 120,
+    "stop_line_number": 146,
+    "value_type": "float"
+  },
+  "af_nbenf": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "menage",
+    "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
+        "start_line_number": 110,
+        "stop_line_number": 118
+      }
+    },
+    "json_type": "number",
+    "label": "Nombre d'enfants au sens des allocations familiales",
+    "name": "af_nbenf",
+    "referring_variables": [
+      "af",
+      "majoration_salaire_unique"
+    ],
+    "start_line_number": 104,
+    "stop_line_number": 118,
+    "value_type": "float"
+  },
+  "age": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+        "start_line_number": 17,
+        "stop_line_number": 20,
+        "variables": [
+          "date_naissance"
+        ]
+      }
+    },
+    "is_period_size_independent": true,
+    "json_type": "integer",
+    "label": "Âge (en années)",
+    "name": "age",
+    "referring_variables": [
+      "age_en_mois",
+      "prestations_familiales_enfant_a_charge"
+    ],
+    "set_input": "set_input_dispatch_by_period",
+    "start_line_number": 9,
+    "stop_line_number": 20,
+    "value_type": "int"
+  },
+  "age_en_mois": {
+    "default_value": -9999,
+    "definition_period": "month",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+        "start_line_number": 31,
+        "stop_line_number": 50,
+        "variables": [
+          "age",
+          "date_naissance"
+        ]
+      }
+    },
+    "is_period_size_independent": true,
+    "json_type": "integer",
+    "label": "Âge (en mois)",
+    "name": "age_en_mois",
+    "start_line_number": 22,
+    "stop_line_number": 50,
+    "unit": "months",
+    "value_type": "int"
+  },
+  "assiette_cotisations_sociales": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 76,
+        "stop_line_number": 81,
+        "variables": [
+          "primes",
+          "salaire_de_base"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Assiette des cotisations sociales",
+    "name": "assiette_cotisations_sociales",
+    "referring_variables": [
+      "salaire_imposable"
+    ],
+    "start_line_number": 70,
+    "stop_line_number": 81,
+    "value_type": "float"
+  },
+  "autres_revenus_etranger": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/autres_revenus.py",
+    "json_type": "integer",
+    "label": "Autres revenus perçus à l'étranger",
+    "name": "autres_revenus_etranger",
+    "start_line_number": 30,
+    "stop_line_number": 35,
+    "value_type": "int"
+  },
+  "avantages_nature_assimile_pension": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/remplacement/retraite.py",
+    "json_type": "integer",
+    "label": "Avantages en nature assimilables à des pensions",
+    "name": "avantages_nature_assimile_pension",
+    "start_line_number": 15,
+    "stop_line_number": 20,
+    "value_type": "int"
+  },
+  "beap": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 235,
+        "stop_line_number": 242,
+        "variables": [
+          "beap_monogr",
+          "beap_part_benef_sp",
+          "beap_reel_res_fiscal",
+          "beap_reliq_benef_fiscal"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Bénéfices de l'exploitation agricole et de pêche (BEAP)",
+    "name": "beap",
+    "start_line_number": 229,
+    "stop_line_number": 242,
+    "value_type": "float"
+  },
+  "beap_monogr": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "json_type": "integer",
+    "label": "Bénéfice sur la base de monographies sectorielles (BEAP)",
+    "name": "beap_monogr",
+    "referring_variables": [
+      "beap"
+    ],
+    "start_line_number": 274,
+    "stop_line_number": 279,
+    "value_type": "int"
+  },
+  "beap_part_benef_sp": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "json_type": "integer",
+    "label": "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur agricole et de pêche (BEAP)",
+    "name": "beap_part_benef_sp",
+    "referring_variables": [
+      "beap"
+    ],
+    "start_line_number": 283,
+    "stop_line_number": 289,
+    "value_type": "int"
+  },
+  "beap_reel_res_fiscal": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "json_type": "integer",
+    "label": "Résultat fiscal (BEAP, régime réel)",
+    "name": "beap_reel_res_fiscal",
+    "referring_variables": [
+      "beap"
+    ],
+    "start_line_number": 225,
+    "stop_line_number": 230,
+    "value_type": "int"
+  },
+  "beap_reliq_benef_fiscal": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "json_type": "integer",
+    "label": "Bénéfice fiscal (BEAP, bénéfice comme reliquat positif entre recette et dépenses)",
+    "name": "beap_reliq_benef_fiscal",
+    "referring_variables": [
+      "beap"
+    ],
+    "start_line_number": 264,
+    "stop_line_number": 269,
+    "value_type": "int"
+  },
+  "beap_reliq_dep_ex": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "json_type": "integer",
+    "label": "Dépenses d’exploitation (BEAP, bénéfice comme reliquat positif entre recette et dépenses)",
+    "name": "beap_reliq_dep_ex",
+    "start_line_number": 253,
+    "stop_line_number": 258,
+    "value_type": "int"
+  },
+  "beap_reliq_rec": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "json_type": "integer",
+    "label": "Recettes brutes (BEAP, bénéfice comme reliquat positif entre recette et dépenses)",
+    "name": "beap_reliq_rec",
+    "start_line_number": 237,
+    "stop_line_number": 242,
+    "value_type": "int"
+  },
+  "beap_reliq_stock": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "json_type": "integer",
+    "label": "Stocks (BEAP, bénéfice comme reliquat positif entre recette et dépenses)",
+    "name": "beap_reliq_stock",
+    "start_line_number": 243,
+    "stop_line_number": 248,
+    "value_type": "int"
+  },
+  "bic": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 131,
+        "stop_line_number": 136,
+        "variables": [
+          "bic_reel_res"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Bénéfices industriels et commerciaux (BIC)",
+    "name": "bic",
+    "start_line_number": 125,
+    "stop_line_number": 136,
+    "value_type": "float"
+  },
+  "bic_benef_fiscal_cession": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 179,
+        "stop_line_number": 184,
+        "variables": [
+          "bic_pv_cession",
+          "bic_res_cession"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Bénéfice fiscal (BIC, cession de fond de commerce)",
+    "name": "bic_benef_fiscal_cession",
+    "start_line_number": 173,
+    "stop_line_number": 184,
+    "value_type": "float"
+  },
+  "bic_ca_autre": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "json_type": "integer",
+    "label": "Chiffre d’affaires global au titre d’autres activités (BIC, régime forfaitaire, cession de fonds de commerce)",
+    "name": "bic_ca_autre",
+    "referring_variables": [
+      "bic_ca_global"
+    ],
+    "start_line_number": 131,
+    "stop_line_number": 136,
+    "value_type": "int"
+  },
+  "bic_ca_global": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "documentation": "\nChiffre d’affaires global\ndes personnes soumises au régime forfaitaire ayant cédé le fond de commerce\n",
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 149,
+        "stop_line_number": 158,
+        "variables": [
+          "bic_ca_autre",
+          "bic_ca_revente"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Chiffre d’affaires global (BIC, cession de fond de commerce",
+    "name": "bic_ca_global",
+    "referring_variables": [
+      "bic_res_cession"
+    ],
+    "start_line_number": 143,
+    "stop_line_number": 158,
+    "value_type": "float"
+  },
+  "bic_ca_revente": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "json_type": "integer",
+    "label": "Chiffre d’affaires global au titre des activités d’achat en vue de la revente et les activités de transformation (BIC, régime forfaitaire, cession de fonds de commerce)",
+    "name": "bic_ca_revente",
+    "referring_variables": [
+      "bic_ca_global"
+    ],
+    "start_line_number": 123,
+    "stop_line_number": 129,
+    "value_type": "int"
+  },
+  "bic_depenses": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "json_type": "integer",
+    "label": "Total des dépenses (BIC, cession de fonds de commerce)",
+    "name": "bic_depenses",
+    "referring_variables": [
+      "bic_res_cession"
+    ],
+    "start_line_number": 138,
+    "stop_line_number": 143,
+    "value_type": "int"
+  },
+  "bic_forfaitaire_resultat": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "json_type": "integer",
+    "label": "Résultat (BIC, régime forfaitaire, cession de fonds de commerce)",
+    "name": "bic_forfaitaire_resultat",
+    "start_line_number": 74,
+    "stop_line_number": 79,
+    "value_type": "int"
+  },
+  "bic_part_benef_sp": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "json_type": "integer",
+    "label": "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur industriel et commercial",
+    "name": "bic_part_benef_sp",
+    "start_line_number": 156,
+    "stop_line_number": 162,
+    "value_type": "int"
+  },
+  "bic_pv_cession": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "json_type": "integer",
+    "label": "Plue-value de cession du fond de commerce (BIC, régime forfaitaire, cession de fonds de commerce)",
+    "name": "bic_pv_cession",
+    "referring_variables": [
+      "bic_benef_fiscal_cession"
+    ],
+    "start_line_number": 145,
+    "stop_line_number": 150,
+    "value_type": "int"
+  },
+  "bic_reel": {
+    "default_value": "neant",
+    "definition_period": "year",
+    "dtype": "int16",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "is_period_size_independent": true,
+    "json_type": "string",
+    "label": "Type d’activité (BIC)",
+    "name": "bic_reel",
+    "possible_values": {
+      "artisan": "Artisan",
+      "commercant": "Commerçant",
+      "industriel": "Industriel",
+      "multi_activites": "Plus d'une activité",
+      "neant": "Néant",
+      "prestataire_de_services": "Prestataire de services"
+    },
+    "start_line_number": 36,
+    "stop_line_number": 43,
+    "value_type": "Enum"
+  },
+  "bic_reel_res": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "json_type": "integer",
+    "label": "Résultat comptable (BIC, régime réel)",
+    "name": "bic_reel_res",
+    "referring_variables": [
+      "bic"
+    ],
+    "start_line_number": 67,
+    "stop_line_number": 72,
+    "value_type": "int"
+  },
+  "bic_res_cession": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 166,
+        "stop_line_number": 171,
+        "variables": [
+          "bic_ca_global",
+          "bic_depenses"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Résultat (BIC, cession de fond de commerce)",
+    "name": "bic_res_cession",
+    "referring_variables": [
+      "bic_benef_fiscal_cession"
+    ],
+    "start_line_number": 160,
+    "stop_line_number": 171,
+    "value_type": "float"
+  },
+  "bic_res_fiscal": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "json_type": "integer",
+    "label": "Résultat fiscal (BIC, régime réel)",
+    "name": "bic_res_fiscal",
+    "start_line_number": 113,
+    "stop_line_number": 118,
+    "value_type": "int"
+  },
+  "bic_societes_personnes": {
+    "default_value": false,
+    "definition_period": "year",
+    "dtype": "bool_",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "is_period_size_independent": true,
+    "json_type": "boolean",
+    "label": "Indicatrice des sociétés de personnes et assimilées (BIC)",
+    "name": "bic_societes_personnes",
+    "start_line_number": 51,
+    "stop_line_number": 56,
+    "value_type": "bool"
+  },
+  "bic_societes_personnes_resultat": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "json_type": "integer",
+    "label": "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur industriel et commercial (BIC)",
+    "name": "bic_societes_personnes_resultat",
+    "start_line_number": 81,
+    "stop_line_number": 87,
+    "value_type": "int"
+  },
+  "bnc": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 200,
+        "stop_line_number": 211
+      }
+    },
+    "json_type": "number",
+    "label": "Bénéfices des professions non commerciales (BNC)",
+    "name": "bnc",
+    "referring_variables": [
+      "rng"
+    ],
+    "start_line_number": 194,
+    "stop_line_number": 211,
+    "value_type": "float"
+  },
+  "bnc_forf_benef_fiscal": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "documentation": "\nBénéfice fiscal (régime forfaitaire, en % des recettes brutes TTC)\n",
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 219,
+        "stop_line_number": 226,
+        "variables": [
+          "bnc_forfaitaire_recettes_brutes"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Bénéfice fiscal (régime forfaitaire en % des recettes brutes TTC)",
+    "name": "bnc_forf_benef_fiscal",
+    "start_line_number": 213,
+    "stop_line_number": 226,
+    "value_type": "float"
+  },
+  "bnc_forfaitaire_recettes_brutes": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "json_type": "integer",
+    "label": "Recettes globales brutes TTC (BNC, assiette forfaitaire)",
+    "name": "bnc_forfaitaire_recettes_brutes",
+    "referring_variables": [
+      "bnc_forf_benef_fiscal"
+    ],
+    "start_line_number": 190,
+    "stop_line_number": 195,
+    "value_type": "int"
+  },
+  "bnc_part_benef_sp": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "json_type": "integer",
+    "label": "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimiléesqui réalisent des bénéfices non commerciaux (BNC)",
+    "name": "bnc_part_benef_sp",
+    "start_line_number": 205,
+    "stop_line_number": 211,
+    "value_type": "int"
+  },
+  "bnc_reel_res_fiscal": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "json_type": "integer",
+    "label": "Résultat fiscal (BNC, régime réel)",
+    "name": "bnc_reel_res_fiscal",
+    "start_line_number": 176,
+    "stop_line_number": 181,
+    "value_type": "int"
+  },
+  "boursier": {
+    "default_value": false,
+    "definition_period": "eternity",
+    "dtype": "bool_",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+    "is_period_size_independent": true,
+    "json_type": "boolean",
+    "name": "boursier",
+    "start_line_number": 134,
+    "stop_line_number": 138,
+    "value_type": "bool"
+  },
+  "cadre_legal": {
+    "default_value": "developpement_regional",
+    "definition_period": "year",
+    "dtype": "int16",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "is_period_size_independent": true,
+    "json_type": "string",
+    "label": "Cadre légal de l’activité de l’entreprise",
+    "name": "cadre_legal",
+    "possible_values": {
+      "autres": "Autres (à préciser)",
+      "developpement_agricole": "Développement agricole",
+      "developpement_regional": "Développement régional",
+      "exportation_droit_commun": "Exportation dans le cadre du droit commun",
+      "exportation_totale": "Exportation totale dans le cadre du Code d'Incitations aux Investissements (CII)",
+      "parcs_activites_economiques": "Parcs des activités économiques"
+    },
+    "start_line_number": 58,
+    "stop_line_number": 65,
+    "value_type": "Enum"
+  },
+  "capm_aut": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/capital/valeurs_mobilieres_et_capitaux_mobiliers.py",
+    "json_type": "integer",
+    "label": "Autres intérêts",
+    "name": "capm_aut",
+    "start_line_number": 90,
+    "stop_line_number": 95,
+    "value_type": "int"
+  },
+  "capm_banq": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/capital/valeurs_mobilieres_et_capitaux_mobiliers.py",
+    "json_type": "integer",
+    "label": "Intérêts bruts des comptes spéciaux d’épargne ouverts auprès des banques",
+    "name": "capm_banq",
+    "start_line_number": 34,
+    "stop_line_number": 39,
+    "value_type": "int"
+  },
+  "capm_caisse": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/capital/valeurs_mobilieres_et_capitaux_mobiliers.py",
+    "json_type": "integer",
+    "label": "Intérêts des bons de caisse",
+    "name": "capm_caisse",
+    "start_line_number": 69,
+    "stop_line_number": 74,
+    "value_type": "int"
+  },
+  "capm_caut": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/capital/valeurs_mobilieres_et_capitaux_mobiliers.py",
+    "json_type": "integer",
+    "label": "Intérêts des créances et intérêts et rémunérations des cautionnements",
+    "name": "capm_caut",
+    "start_line_number": 48,
+    "stop_line_number": 53,
+    "value_type": "int"
+  },
+  "capm_cent": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/capital/valeurs_mobilieres_et_capitaux_mobiliers.py",
+    "json_type": "integer",
+    "label": "Intérêts bruts des comptes spéciaux d’épargne ouverts auprès de la CENT",
+    "name": "capm_cent",
+    "start_line_number": 41,
+    "stop_line_number": 46,
+    "value_type": "int"
+  },
+  "capm_epinv": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/capital/valeurs_mobilieres_et_capitaux_mobiliers.py",
+    "json_type": "integer",
+    "label": "Intérêts des comptes épargne pour l'investissement",
+    "name": "capm_epinv",
+    "start_line_number": 83,
+    "stop_line_number": 88,
+    "value_type": "int"
+  },
+  "capm_oblig": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/capital/valeurs_mobilieres_et_capitaux_mobiliers.py",
+    "json_type": "integer",
+    "label": "Intérêts des emprunts obligataires",
+    "name": "capm_oblig",
+    "start_line_number": 62,
+    "stop_line_number": 67,
+    "value_type": "int"
+  },
+  "capm_part": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/capital/valeurs_mobilieres_et_capitaux_mobiliers.py",
+    "json_type": "integer",
+    "label": "Intérêts des titres de participation",
+    "name": "capm_part",
+    "start_line_number": 55,
+    "stop_line_number": 60,
+    "value_type": "int"
+  },
+  "capm_plfcc": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/capital/valeurs_mobilieres_et_capitaux_mobiliers.py",
+    "json_type": "integer",
+    "label": "Revenus des parts et de liquidation du fonds commun des créances",
+    "name": "capm_plfcc",
+    "start_line_number": 76,
+    "stop_line_number": 81,
+    "value_type": "int"
+  },
+  "celibataire": {
+    "default_value": false,
+    "definition_period": "year",
+    "dtype": "bool_",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+        "start_line_number": 84,
+        "stop_line_number": 87,
+        "variables": [
+          "statut_marital"
+        ]
+      }
+    },
+    "is_period_size_independent": true,
+    "json_type": "boolean",
+    "label": "Célibataire",
+    "name": "celibataire",
+    "start_line_number": 78,
+    "stop_line_number": 87,
+    "value_type": "bool"
+  },
+  "chef_de_famille": {
+    "default_value": false,
+    "definition_period": "year",
+    "dtype": "bool_",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 103,
+        "stop_line_number": 117,
+        "variables": [
+          "nb_enf"
+        ]
+      }
+    },
+    "is_period_size_independent": true,
+    "json_type": "boolean",
+    "label": "Indicatrice de chef de famille",
+    "name": "chef_de_famille",
+    "referring_variables": [
+      "deduction_famille",
+      "deduction_smig"
+    ],
+    "set_input": "set_input_dispatch_by_period",
+    "start_line_number": 79,
+    "stop_line_number": 117,
+    "value_type": "bool"
+  },
+  "code_postal": {
+    "default_value": 0,
+    "definition_period": "eternity",
+    "dtype": "int32",
+    "entity": "menage",
+    "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/logement.py",
+    "json_type": "integer",
+    "label": "Localisation du logement (code postal)",
+    "name": "code_postal",
+    "start_line_number": 7,
+    "stop_line_number": 12,
+    "value_type": "int"
+  },
+  "compte_epargne_investissement": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/deductions.py",
+    "json_type": "integer",
+    "label": "Intérêts des comptes épargne pour l'investissement",
+    "name": "compte_epargne_investissement",
+    "start_line_number": 74,
+    "stop_line_number": 79,
+    "value_type": "int"
+  },
+  "compte_special_epargne_banque": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/deductions.py",
+    "json_type": "integer",
+    "label": "Intérêts des comptes spéciaux d’épargne ouverts auprès des banques",
+    "name": "compte_special_epargne_banque",
+    "referring_variables": [
+      "deduction_interets"
+    ],
+    "start_line_number": 53,
+    "stop_line_number": 58,
+    "value_type": "int"
+  },
+  "compte_special_epargne_cent": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/deductions.py",
+    "json_type": "integer",
+    "label": "Intérêts des comptes spéciaux d’épargne ouverts auprès de la CENT dans la limite",
+    "name": "compte_special_epargne_cent",
+    "referring_variables": [
+      "deduction_interets"
+    ],
+    "start_line_number": 60,
+    "stop_line_number": 65,
+    "value_type": "int"
+  },
+  "contribution_frais_creche": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "menage",
+    "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
+        "parameters": [
+          "prestations_familiales.creche.age_max",
+          "prestations_familiales.creche.age_min",
+          "prestations_familiales.creche.duree",
+          "prestations_familiales.creche.montant",
+          "prestations_familiales.creche.plaf"
+        ],
+        "start_line_number": 190,
+        "stop_line_number": 214
+      }
+    },
+    "json_type": "number",
+    "label": "Contribution aux frais de crêche",
+    "name": "contribution_frais_creche",
+    "referring_variables": [
+      "prestations_familiales"
+    ],
+    "start_line_number": 184,
+    "stop_line_number": 214,
+    "value_type": "float"
+  },
+  "cotisations_employeur": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 111,
+        "stop_line_number": 122,
+        "variables": [
+          "accident_du_travail_employeur",
+          "deces_employeur",
+          "famille_employeur",
+          "fonds_special_etat",
+          "maladie_employeur",
+          "maternite_employeur",
+          "protection_sociale_travailleurs_employeur",
+          "retraite_employeur"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Cotisation sociales employeur",
+    "name": "cotisations_employeur",
+    "referring_variables": [
+      "cotisations_sociales",
+      "salaire_super_brut"
+    ],
+    "start_line_number": 105,
+    "stop_line_number": 122,
+    "value_type": "float"
+  },
+  "cotisations_non_affilie": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/deductions.py",
+    "json_type": "integer",
+    "label": "Cotisations payées par les travailleurs non salariés affiliés à l’un des régimes légaux de la sécurité sociale",
+    "name": "cotisations_non_affilie",
+    "start_line_number": 109,
+    "stop_line_number": 115,
+    "value_type": "int"
+  },
+  "cotisations_salarie": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 130,
+        "stop_line_number": 141,
+        "variables": [
+          "accident_du_travail_salarie",
+          "deces_salarie",
+          "famille_salarie",
+          "maladie_salarie",
+          "maternite_salarie",
+          "protection_sociale_travailleurs_salarie",
+          "retraite_salarie",
+          "ugtt"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Cotisation sociales salarié",
+    "name": "cotisations_salarie",
+    "referring_variables": [
+      "cotisations_sociales",
+      "salaire_imposable"
+    ],
+    "start_line_number": 124,
+    "stop_line_number": 141,
+    "value_type": "float"
+  },
+  "cotisations_sociales": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 98,
+        "stop_line_number": 103,
+        "variables": [
+          "cotisations_employeur",
+          "cotisations_salarie"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Cotisations sociales",
+    "name": "cotisations_sociales",
+    "start_line_number": 92,
+    "stop_line_number": 103,
+    "value_type": "float"
+  },
+  "date_naissance": {
+    "default_value": "1970-01-01",
+    "definition_period": "eternity",
+    "dtype": "datetime64[D]",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+    "is_period_size_independent": true,
+    "json_type": "string",
+    "label": "Date de naissance",
+    "name": "date_naissance",
+    "referring_variables": [
+      "age",
+      "age_en_mois"
+    ],
+    "start_line_number": 52,
+    "stop_line_number": 58,
+    "value_type": "date"
+  },
+  "deces_employeur": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 181,
+        "stop_line_number": 189
+      }
+    },
+    "json_type": "number",
+    "label": "Cotisation assurances sociales: décès (employeur)",
+    "name": "deces_employeur",
+    "referring_variables": [
+      "cotisations_employeur"
+    ],
+    "start_line_number": 175,
+    "stop_line_number": 189,
+    "value_type": "float"
+  },
+  "deces_salarie": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 197,
+        "stop_line_number": 205
+      }
+    },
+    "json_type": "number",
+    "label": "Cotisation assurances sociales: décès (salarié)",
+    "name": "deces_salarie",
+    "referring_variables": [
+      "cotisations_salarie"
+    ],
+    "start_line_number": 191,
+    "stop_line_number": 205,
+    "value_type": "float"
+  },
+  "deduction_assurance_vie": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "parameters": [
+          "impot_revenu.deductions.assurance_vie.conj_plaf",
+          "impot_revenu.deductions.assurance_vie.enf_plaf",
+          "impot_revenu.deductions.assurance_vie.plaf"
+        ],
+        "start_line_number": 525,
+        "stop_line_number": 533,
+        "variables": [
+          "nb_enf"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Primes afférentes aux contrats d'assurance-vie collectifs ou individuels",
+    "name": "deduction_assurance_vie",
+    "referring_variables": [
+      "revenu_net_imposable"
+    ],
+    "start_line_number": 519,
+    "stop_line_number": 533,
+    "value_type": "float"
+  },
+  "deduction_famille": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "parameters": [
+          "impot_revenu.deductions.fam.chef_de_famille",
+          "impot_revenu.deductions.fam.enf1",
+          "impot_revenu.deductions.fam.enf2",
+          "impot_revenu.deductions.fam.enf3",
+          "impot_revenu.deductions.fam.enf4"
+        ],
+        "start_line_number": 487,
+        "stop_line_number": 505,
+        "variables": [
+          "chef_de_famille",
+          "nb_enf"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Déductions pour situation et charges de famille",
+    "name": "deduction_famille",
+    "referring_variables": [
+      "exoneration",
+      "revenu_net_imposable"
+    ],
+    "start_line_number": 481,
+    "stop_line_number": 505,
+    "value_type": "float"
+  },
+  "deduction_interets": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "parameters": [
+          "impot_revenu.deductions.banq.plaf",
+          "impot_revenu.deductions.cent.plaf",
+          "impot_revenu.deductions.oblig.plaf"
+        ],
+        "start_line_number": 466,
+        "stop_line_number": 479,
+        "variables": [
+          "compte_special_epargne_banque",
+          "compte_special_epargne_cent",
+          "emprunt_obligataire"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Déductions intérêts issus de comptes spéciaux ou d'obligations",
+    "name": "deduction_interets",
+    "start_line_number": 460,
+    "stop_line_number": 479,
+    "value_type": "float"
+  },
+  "deduction_rente": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 513,
+        "stop_line_number": 517,
+        "variables": [
+          "rente"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Arrérages et rentes payées à titre obligatoire et gratuit",
+    "name": "deduction_rente",
+    "start_line_number": 507,
+    "stop_line_number": 517,
+    "value_type": "float"
+  },
+  "deduction_smig": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 572,
+        "stop_line_number": 576,
+        "variables": [
+          "chef_de_famille"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Déduction supplémentaire pour les salariés payés au SMIG et SMAG",
+    "name": "deduction_smig",
+    "start_line_number": 566,
+    "stop_line_number": 576,
+    "value_type": "float"
+  },
+  "deficits_anterieurs_non_deduits": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/autres_revenus.py",
+    "json_type": "integer",
+    "label": "Déficits des années antérieures non déduits",
+    "name": "deficits_anterieurs_non_deduits",
+    "start_line_number": 42,
+    "stop_line_number": 47,
+    "value_type": "int"
+  },
+  "divorce": {
+    "default_value": false,
+    "definition_period": "year",
+    "dtype": "bool_",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+        "start_line_number": 95,
+        "stop_line_number": 98,
+        "variables": [
+          "statut_marital"
+        ]
+      }
+    },
+    "is_period_size_independent": true,
+    "json_type": "boolean",
+    "label": "Divorcé(e)",
+    "name": "divorce",
+    "start_line_number": 89,
+    "stop_line_number": 98,
+    "value_type": "bool"
+  },
+  "dons": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/deductions.py",
+    "json_type": "integer",
+    "label": "Dons au profit du fonds national de solidarité 26-26 et du Fonds National de l’Emploi 21-21",
+    "name": "dons",
+    "start_line_number": 95,
+    "stop_line_number": 100,
+    "value_type": "int"
+  },
+  "emprunt_obligataire": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/deductions.py",
+    "json_type": "integer",
+    "label": "Intérêts des emprunts obligataires",
+    "name": "emprunt_obligataire",
+    "referring_variables": [
+      "deduction_interets"
+    ],
+    "start_line_number": 67,
+    "stop_line_number": 72,
+    "value_type": "int"
+  },
+  "exoneration": {
+    "default_value": false,
+    "definition_period": "year",
+    "dtype": "bool_",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "2014-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "parameters": [
+          "impot_revenu.exoneration.seuil"
+        ],
+        "start_line_number": 616,
+        "stop_line_number": 627,
+        "variables": [
+          "deduction_famille",
+          "rng",
+          "tspr"
+        ]
+      },
+      "2017-01-01": null
+    },
+    "is_period_size_independent": true,
+    "json_type": "boolean",
+    "label": "Exoneration de l'impôt sur le revenu des personnes physiques",
+    "name": "exoneration",
+    "referring_variables": [
+      "irpp"
+    ],
+    "start_line_number": 609,
+    "stop_line_number": 627,
+    "value_type": "bool"
+  },
+  "famille_employeur": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 213,
+        "stop_line_number": 221
+      }
+    },
+    "json_type": "number",
+    "label": "Cotisation sociale allocations familiales (employeur)",
+    "name": "famille_employeur",
+    "referring_variables": [
+      "cotisations_employeur"
+    ],
+    "start_line_number": 207,
+    "stop_line_number": 221,
+    "value_type": "float"
+  },
+  "famille_salarie": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 229,
+        "stop_line_number": 237
+      }
+    },
+    "json_type": "number",
+    "label": "Cotisation sociale allocations familiales (salarié)",
+    "name": "famille_salarie",
+    "referring_variables": [
+      "cotisations_salarie"
+    ],
+    "start_line_number": 223,
+    "stop_line_number": 237,
+    "value_type": "float"
+  },
+  "fon_forf_bati": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 267,
+        "stop_line_number": 281
+      }
+    },
+    "json_type": "number",
+    "label": "Revenus fonciers net des immeubles bâtis",
+    "name": "fon_forf_bati",
+    "referring_variables": [
+      "revenus_fonciers"
+    ],
+    "start_line_number": 261,
+    "stop_line_number": 281,
+    "value_type": "float"
+  },
+  "fon_forf_nbat": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 289,
+        "stop_line_number": 300
+      }
+    },
+    "json_type": "number",
+    "label": "Revenus fonciers net des terrains non bâtis",
+    "name": "fon_forf_nbat",
+    "referring_variables": [
+      "revenus_fonciers"
+    ],
+    "start_line_number": 283,
+    "stop_line_number": 300,
+    "value_type": "float"
+  },
+  "foncier_forfaitaire_batis_frais": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/capital/foncier.py",
+    "json_type": "integer",
+    "label": "Frais d’entretien et de réparation justifiés à déduire (revenus fonciers, base forfaitaire, immeubles bâtis)",
+    "name": "foncier_forfaitaire_batis_frais",
+    "start_line_number": 34,
+    "stop_line_number": 40,
+    "value_type": "int"
+  },
+  "foncier_forfaitaire_batis_recettes": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/capital/foncier.py",
+    "json_type": "integer",
+    "label": "Recettes brutes réalisées TTC (revenus fonciers, base forfaitaire, immeubles bâtis)",
+    "name": "foncier_forfaitaire_batis_recettes",
+    "start_line_number": 20,
+    "stop_line_number": 25,
+    "value_type": "int"
+  },
+  "foncier_forfaitaire_batis_reliquat": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/capital/foncier.py",
+    "json_type": "integer",
+    "label": "Reliquat (revenus fonciers, base forfaitaire, immeubles bâtis)",
+    "name": "foncier_forfaitaire_batis_reliquat",
+    "start_line_number": 27,
+    "stop_line_number": 32,
+    "value_type": "int"
+  },
+  "foncier_forfaitaire_batis_taxe": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/capital/foncier.py",
+    "json_type": "integer",
+    "label": "Taxe effectivement payée à déduire (revenus fonciers, base forfaitaire, immeubles bâtis)",
+    "name": "foncier_forfaitaire_batis_taxe",
+    "start_line_number": 42,
+    "stop_line_number": 47,
+    "value_type": "int"
+  },
+  "foncier_forfaitaire_non_batis_depenses": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/capital/foncier.py",
+    "json_type": "integer",
+    "label": "Dépenses justifiées à déduire (revenus fonciers, base forfaitaire, terrains non bâtis)",
+    "name": "foncier_forfaitaire_non_batis_depenses",
+    "start_line_number": 58,
+    "stop_line_number": 63,
+    "value_type": "int"
+  },
+  "foncier_forfaitaire_non_batis_recettes": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/capital/foncier.py",
+    "json_type": "integer",
+    "label": "Recettes brutes réalisées TTC (revenus fonciers, base forfaitaire, terrains non bâtis)",
+    "name": "foncier_forfaitaire_non_batis_recettes",
+    "start_line_number": 51,
+    "stop_line_number": 56,
+    "value_type": "int"
+  },
+  "foncier_forfaitaire_non_batis_taxe": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/capital/foncier.py",
+    "json_type": "integer",
+    "label": "Taxe effectivement payée à déduire (revenus fonciers, base forfaitaire, terrains non bâtis)",
+    "name": "foncier_forfaitaire_non_batis_taxe",
+    "start_line_number": 65,
+    "stop_line_number": 70,
+    "value_type": "int"
+  },
+  "foncier_reel_resultat_fiscal": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/capital/foncier.py",
+    "json_type": "integer",
+    "label": "Résultat fiscal (revenus fonciers, régime réel)",
+    "name": "foncier_reel_resultat_fiscal",
+    "start_line_number": 11,
+    "stop_line_number": 16,
+    "value_type": "int"
+  },
+  "foncier_societes_personnes": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/capital/foncier.py",
+    "json_type": "integer",
+    "label": "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées qui réalisent des revenus fonciers",
+    "name": "foncier_societes_personnes",
+    "start_line_number": 72,
+    "stop_line_number": 77,
+    "value_type": "int"
+  },
+  "fonds_special_etat": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 245,
+        "stop_line_number": 253
+      }
+    },
+    "json_type": "number",
+    "label": "Fonds spécial de l'Etat",
+    "name": "fonds_special_etat",
+    "referring_variables": [
+      "cotisations_employeur"
+    ],
+    "start_line_number": 239,
+    "stop_line_number": 253,
+    "value_type": "float"
+  },
+  "impot_revenu_brut": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "parameters": [
+          "impot_revenu.bareme"
+        ],
+        "start_line_number": 602,
+        "stop_line_number": 607,
+        "variables": [
+          "revenu_net_imposable"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Impôt brut avant non-imposabilité",
+    "name": "impot_revenu_brut",
+    "referring_variables": [
+      "irpp"
+    ],
+    "start_line_number": 596,
+    "stop_line_number": 607,
+    "value_type": "float"
+  },
+  "impots_directs": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/common.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/common.py",
+        "start_line_number": 16,
+        "stop_line_number": 20
+      }
+    },
+    "json_type": "number",
+    "label": "Impôts directs",
+    "name": "impots_directs",
+    "referring_variables": [
+      "revenu_disponible_individuel"
+    ],
+    "start_line_number": 10,
+    "stop_line_number": 20,
+    "value_type": "float"
+  },
+  "interet_acquisition_logement": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/deductions.py",
+    "json_type": "integer",
+    "label": "Intérêts payés au titre des prêts relatifs à l’acquisition ou à la construction d’un logement social",
+    "name": "interet_acquisition_logement",
+    "start_line_number": 117,
+    "stop_line_number": 122,
+    "value_type": "int"
+  },
+  "invalide": {
+    "default_value": false,
+    "definition_period": "eternity",
+    "dtype": "bool_",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+    "is_period_size_independent": true,
+    "json_type": "boolean",
+    "label": "Invalide",
+    "name": "invalide",
+    "referring_variables": [
+      "prestations_familiales_enfant_a_charge"
+    ],
+    "start_line_number": 119,
+    "stop_line_number": 124,
+    "value_type": "bool"
+  },
+  "irpp": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 635,
+        "stop_line_number": 639,
+        "variables": [
+          "exoneration",
+          "impot_revenu_brut"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Impôt sur le revenu des personnes physiques",
+    "name": "irpp",
+    "start_line_number": 629,
+    "stop_line_number": 639,
+    "value_type": "float"
+  },
+  "irpp_mensuel_salarie": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 647,
+        "stop_line_number": 654,
+        "variables": [
+          "salaire_imposable"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Impôt sur le revenu des personnes physiques prélevé à la source pour les salariés",
+    "name": "irpp_mensuel_salarie",
+    "referring_variables": [
+      "salaire_net_a_payer"
+    ],
+    "start_line_number": 641,
+    "stop_line_number": 654,
+    "value_type": "float"
+  },
+  "loyer": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "menage",
+    "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/logement.py",
+    "json_type": "integer",
+    "label": "Loyer du logement",
+    "name": "loyer",
+    "start_line_number": 13,
+    "stop_line_number": 18,
+    "value_type": "int"
+  },
+  "majoration_salaire_unique": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "menage",
+    "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
+        "parameters": [
+          "prestations_familiales.salaire_unique.enf1",
+          "prestations_familiales.salaire_unique.enf2",
+          "prestations_familiales.salaire_unique.enf3"
+        ],
+        "start_line_number": 154,
+        "stop_line_number": 164,
+        "variables": [
+          "af_nbenf",
+          "salaire_unique"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Majoration du salaire unique",
+    "name": "majoration_salaire_unique",
+    "referring_variables": [
+      "prestations_familiales"
+    ],
+    "start_line_number": 148,
+    "stop_line_number": 164,
+    "value_type": "float"
+  },
+  "maladie_employeur": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 261,
+        "stop_line_number": 269
+      }
+    },
+    "json_type": "number",
+    "label": "Cotisation assurances sociales: maladie (employeur)",
+    "name": "maladie_employeur",
+    "referring_variables": [
+      "cotisations_employeur"
+    ],
+    "start_line_number": 255,
+    "stop_line_number": 269,
+    "value_type": "float"
+  },
+  "maladie_salarie": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 277,
+        "stop_line_number": 285
+      }
+    },
+    "json_type": "number",
+    "label": "Cotisation assurances sociales: maladie (salarié)",
+    "name": "maladie_salarie",
+    "referring_variables": [
+      "cotisations_salarie"
+    ],
+    "start_line_number": 271,
+    "stop_line_number": 285,
+    "value_type": "float"
+  },
+  "male": {
+    "default_value": false,
+    "definition_period": "eternity",
+    "dtype": "bool_",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+    "is_period_size_independent": true,
+    "json_type": "boolean",
+    "label": "Mâle",
+    "name": "male",
+    "start_line_number": 60,
+    "stop_line_number": 65,
+    "value_type": "bool"
+  },
+  "marie": {
+    "default_value": false,
+    "definition_period": "year",
+    "dtype": "bool_",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+        "start_line_number": 73,
+        "stop_line_number": 76,
+        "variables": [
+          "statut_marital"
+        ]
+      }
+    },
+    "is_period_size_independent": true,
+    "json_type": "boolean",
+    "label": "Marié(e)",
+    "name": "marie",
+    "start_line_number": 67,
+    "stop_line_number": 76,
+    "value_type": "bool"
+  },
+  "maternite_employeur": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 293,
+        "stop_line_number": 301
+      }
+    },
+    "json_type": "number",
+    "label": "Cotisation assurances sociales : maternité (employeur)",
+    "name": "maternite_employeur",
+    "referring_variables": [
+      "cotisations_employeur"
+    ],
+    "start_line_number": 287,
+    "stop_line_number": 301,
+    "value_type": "float"
+  },
+  "maternite_salarie": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 309,
+        "stop_line_number": 317
+      }
+    },
+    "json_type": "number",
+    "label": "Cotisation assurances sociales : maternité (salarié)",
+    "name": "maternite_salarie",
+    "referring_variables": [
+      "cotisations_salarie"
+    ],
+    "start_line_number": 303,
+    "stop_line_number": 317,
+    "value_type": "float"
+  },
+  "nb_enf": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "documentation": "\nTODO: fixme\n",
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "parameters": [
+          "impot_revenu.deductions.fam.age"
+        ],
+        "start_line_number": 17,
+        "stop_line_number": 29
+      }
+    },
+    "json_type": "number",
+    "label": "Nombre d'enfants",
+    "name": "nb_enf",
+    "referring_variables": [
+      "chef_de_famille",
+      "deduction_assurance_vie",
+      "deduction_famille"
+    ],
+    "start_line_number": 11,
+    "stop_line_number": 29,
+    "value_type": "float"
+  },
+  "nb_enf_sup": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "documentation": "\nTODO: Nombre d'enfants étudiants du supérieur non boursiers\n",
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 37,
+        "stop_line_number": 45
+      }
+    },
+    "json_type": "number",
+    "label": "Nombre d'enfants étudiants du supérieur non boursiers",
+    "name": "nb_enf_sup",
+    "start_line_number": 31,
+    "stop_line_number": 45,
+    "value_type": "float"
+  },
+  "nb_infirme": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "documentation": "\nTODO: Nombre d'enfants infirmes\n",
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 53,
+        "stop_line_number": 61
+      }
+    },
+    "json_type": "number",
+    "label": "Nombre d'enfants infirmes",
+    "name": "nb_infirme",
+    "start_line_number": 47,
+    "stop_line_number": 61,
+    "value_type": "float"
+  },
+  "nb_parents": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "documentation": "\nTODO: Nombre de parents\n",
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 69,
+        "stop_line_number": 77
+      }
+    },
+    "json_type": "number",
+    "label": "Nombre de parents",
+    "name": "nb_parents",
+    "start_line_number": 63,
+    "stop_line_number": 77,
+    "value_type": "float"
+  },
+  "pension_etranger_non_transferee": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/autres_revenus.py",
+    "json_type": "integer",
+    "label": "Pensions perçues à l'étranger (non transférées)",
+    "name": "pension_etranger_non_transferee",
+    "start_line_number": 16,
+    "stop_line_number": 21,
+    "value_type": "int"
+  },
+  "pension_etranger_transferee": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/autres_revenus.py",
+    "json_type": "integer",
+    "label": "Pensions perçues à l'étranger (transférées en Tunisie)",
+    "name": "pension_etranger_transferee",
+    "start_line_number": 23,
+    "stop_line_number": 28,
+    "value_type": "int"
+  },
+  "prestations_familiales": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "menage",
+    "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
+        "start_line_number": 222,
+        "stop_line_number": 227,
+        "variables": [
+          "af",
+          "contribution_frais_creche",
+          "majoration_salaire_unique"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Prestations familales",
+    "name": "prestations_familiales",
+    "start_line_number": 216,
+    "stop_line_number": 227,
+    "value_type": "float"
+  },
+  "prestations_familiales_enfant_a_charge": {
+    "default_value": false,
+    "definition_period": "month",
+    "dtype": "bool_",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
+        "start_line_number": 87,
+        "stop_line_number": 102,
+        "variables": [
+          "age",
+          "invalide"
+        ]
+      }
+    },
+    "is_period_size_independent": true,
+    "json_type": "boolean",
+    "label": "Enfant considéré à charge au sens des prestations familiales",
+    "name": "prestations_familiales_enfant_a_charge",
+    "reference": [
+      "http://www.cleiss.fr/docs/regimes/regime_tunisie_salaries.html"
+    ],
+    "start_line_number": 68,
+    "stop_line_number": 102,
+    "value_type": "bool"
+  },
+  "prestations_sociales": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/common.py",
+    "json_type": "integer",
+    "label": "Prestations sociales",
+    "name": "prestations_sociales",
+    "referring_variables": [
+      "revenu_disponible_individuel"
+    ],
+    "start_line_number": 22,
+    "stop_line_number": 27,
+    "value_type": "int"
+  },
+  "pret_universitaire": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/deductions.py",
+    "json_type": "integer",
+    "label": "Remboursement des prêts universitaires en principal et intérêts",
+    "name": "pret_universitaire",
+    "start_line_number": 102,
+    "stop_line_number": 107,
+    "value_type": "int"
+  },
+  "prime_assurance_vie": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/deductions.py",
+    "json_type": "integer",
+    "label": "Prime d’assurance-vie",
+    "name": "prime_assurance_vie",
+    "start_line_number": 88,
+    "stop_line_number": 93,
+    "value_type": "int"
+  },
+  "primes": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/salarie.py",
+    "json_type": "number",
+    "label": "Primes",
+    "name": "primes",
+    "referring_variables": [
+      "assiette_cotisations_sociales",
+      "salaire_super_brut"
+    ],
+    "set_input": "set_input_divide_by_period",
+    "start_line_number": 17,
+    "stop_line_number": 23,
+    "value_type": "float"
+  },
+  "protection_sociale_travailleurs_employeur": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 325,
+        "stop_line_number": 333
+      }
+    },
+    "json_type": "number",
+    "label": "Cotisation protection sociale des travailleurs (employeur)",
+    "name": "protection_sociale_travailleurs_employeur",
+    "referring_variables": [
+      "cotisations_employeur"
+    ],
+    "start_line_number": 319,
+    "stop_line_number": 333,
+    "value_type": "float"
+  },
+  "protection_sociale_travailleurs_salarie": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 341,
+        "stop_line_number": 349
+      }
+    },
+    "json_type": "number",
+    "label": "Cotisation protection sociale des travailleurs (salarié)",
+    "name": "protection_sociale_travailleurs_salarie",
+    "referring_variables": [
+      "cotisations_salarie"
+    ],
+    "start_line_number": 335,
+    "stop_line_number": 349,
+    "value_type": "float"
+  },
+  "regime_securite_sociale": {
+    "default_value": "rsna",
+    "definition_period": "eternity",
+    "dtype": "int16",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "is_period_size_independent": true,
+    "json_type": "string",
+    "label": "Régime de sécurité sociale du salarié",
+    "name": "regime_securite_sociale",
+    "possible_values": {
+      "pensionne_cnrps": "Régime des salariés des pensionnés de la Caisse Nationale de Retraite et de Prévoyance Sociale",
+      "raci": "Régime des Artistes, Créateurs et Intellectuels",
+      "re": "Régime des Etudiants, diplômés de l'enseignement supérieur et stagiaires",
+      "rsa": "Régime des Salariés Agricoles",
+      "rsaa": "Régime des Salariés Agricoles Amélioré",
+      "rsna": "Régime des Salariés Non Agricoles",
+      "rtfr": "Régime des Travailleurs à Faibles Revenus (gens de maisons, travailleurs de chantiers, et artisans travaillant à la pièce)",
+      "rtns": "Régime des Travailleurs Non Salariés (secteurs agricole et non agricole)",
+      "rtte": "Régime des Travailleurs Tunisiens à l'Etranger",
+      "salarie_cnrps": "Régime des salariés affilés à la Caisse Nationale de Retraite et de Prévoyance Sociale"
+    },
+    "referring_variables": [
+      "ugtt"
+    ],
+    "start_line_number": 83,
+    "stop_line_number": 90,
+    "value_type": "Enum"
+  },
+  "rente": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/deductions.py",
+    "json_type": "integer",
+    "label": "Rentes payées obligatoirement et à titre gratuit",
+    "name": "rente",
+    "referring_variables": [
+      "deduction_rente"
+    ],
+    "start_line_number": 81,
+    "stop_line_number": 86,
+    "value_type": "int"
+  },
+  "retr": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "parameters": [
+          "impot_revenu.tspr.abat_pen",
+          "impot_revenu.tspr.abat_pen_etr",
+          "impot_revenu.tspr.abat_sal"
+        ],
+        "start_line_number": 412,
+        "stop_line_number": 428
+      }
+    },
+    "json_type": "number",
+    "label": "Autres revenus (revenus de source étrangère n’ayant pas subi l’impôt dans le pays d'origine)",
+    "name": "retr",
+    "referring_variables": [
+      "rng"
+    ],
+    "start_line_number": 406,
+    "stop_line_number": 428,
+    "value_type": "float"
+  },
+  "retraite_employeur": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 357,
+        "stop_line_number": 365
+      }
+    },
+    "json_type": "number",
+    "label": "Cotisation pensions de retraite (employeur)",
+    "name": "retraite_employeur",
+    "referring_variables": [
+      "cotisations_employeur"
+    ],
+    "start_line_number": 351,
+    "stop_line_number": 365,
+    "value_type": "float"
+  },
+  "retraite_salarie": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 373,
+        "stop_line_number": 381
+      }
+    },
+    "json_type": "number",
+    "label": "Cotisation pensions de retraite (salarié)",
+    "name": "retraite_salarie",
+    "referring_variables": [
+      "cotisations_salarie"
+    ],
+    "start_line_number": 367,
+    "stop_line_number": 381,
+    "value_type": "float"
+  },
+  "revenu_assimile_pension": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/remplacement/retraite.py",
+    "json_type": "integer",
+    "label": "Revenus assimilés à des pensions (pensions et rentes viagères)",
+    "name": "revenu_assimile_pension",
+    "referring_variables": [
+      "revenu_disponible_individuel"
+    ],
+    "start_line_number": 8,
+    "stop_line_number": 13,
+    "value_type": "int"
+  },
+  "revenu_assimile_pension_apres_abattements": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "parameters": [
+          "impot_revenu.tspr.abat_pen"
+        ],
+        "start_line_number": 371,
+        "stop_line_number": 377
+      }
+    },
+    "json_type": "number",
+    "label": "Revenu assimilé à des pensions après abattements",
+    "name": "revenu_assimile_pension_apres_abattements",
+    "referring_variables": [
+      "tspr"
+    ],
+    "start_line_number": 365,
+    "stop_line_number": 377,
+    "value_type": "float"
+  },
+  "revenu_assimile_salaire": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 325,
+        "stop_line_number": 329
+      }
+    },
+    "json_type": "number",
+    "label": "Revenu assimilé à des salaires",
+    "name": "revenu_assimile_salaire",
+    "referring_variables": [
+      "revenu_assimile_salaire_apres_abattements",
+      "smig"
+    ],
+    "start_line_number": 319,
+    "stop_line_number": 329,
+    "value_type": "float"
+  },
+  "revenu_assimile_salaire_apres_abattements": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "parameters": [
+          "impot_revenu.tspr.abat_sal",
+          "impot_revenu.tspr.smig",
+          "impot_revenu.tspr.smig_ext"
+        ],
+        "start_line_number": 351,
+        "stop_line_number": 363,
+        "variables": [
+          "revenu_assimile_salaire",
+          "smig"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Revenu imposé comme des salaires net des abatements",
+    "name": "revenu_assimile_salaire_apres_abattements",
+    "referring_variables": [
+      "tspr"
+    ],
+    "start_line_number": 345,
+    "stop_line_number": 363,
+    "value_type": "float"
+  },
+  "revenu_disponible": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "menage",
+    "file_path": "/openfisca_tunisia/model/common.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/common.py",
+        "start_line_number": 35,
+        "stop_line_number": 38
+      }
+    },
+    "json_type": "number",
+    "label": "Revenu disponible du ménage",
+    "name": "revenu_disponible",
+    "start_line_number": 29,
+    "stop_line_number": 38,
+    "value_type": "float"
+  },
+  "revenu_disponible_individuel": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/common.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/common.py",
+        "start_line_number": 46,
+        "stop_line_number": 54,
+        "variables": [
+          "impots_directs",
+          "prestations_sociales",
+          "revenu_assimile_pension",
+          "revenus_du_capital",
+          "revenus_du_travail"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Revenu disponible individuel",
+    "name": "revenu_disponible_individuel",
+    "start_line_number": 40,
+    "stop_line_number": 54,
+    "value_type": "float"
+  },
+  "revenu_net_imposable": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "documentation": "\nRevenu net imposable ie soumis à au barême de l'impôt après déduction des dépenses\net charges professionnelles et des revenus non soumis à l'impôt\n",
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 584,
+        "stop_line_number": 594,
+        "variables": [
+          "deduction_assurance_vie",
+          "deduction_famille",
+          "rng"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Revenu net imposable",
+    "name": "revenu_net_imposable",
+    "referring_variables": [
+      "impot_revenu_brut"
+    ],
+    "start_line_number": 578,
+    "stop_line_number": 594,
+    "value_type": "float"
+  },
+  "revenus_du_capital": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/common.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/common.py",
+        "start_line_number": 62,
+        "stop_line_number": 65
+      }
+    },
+    "json_type": "number",
+    "label": "Revenus du capital",
+    "name": "revenus_du_capital",
+    "referring_variables": [
+      "revenu_disponible_individuel"
+    ],
+    "start_line_number": 56,
+    "stop_line_number": 65,
+    "value_type": "float"
+  },
+  "revenus_du_travail": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/common.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/common.py",
+        "start_line_number": 73,
+        "stop_line_number": 76,
+        "variables": [
+          "salaire_imposable"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Revenus du travail",
+    "name": "revenus_du_travail",
+    "referring_variables": [
+      "revenu_disponible_individuel"
+    ],
+    "start_line_number": 67,
+    "stop_line_number": 76,
+    "value_type": "float"
+  },
+  "revenus_fonciers": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 252,
+        "stop_line_number": 259,
+        "variables": [
+          "fon_forf_bati",
+          "fon_forf_nbat"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Revenus fonciers",
+    "name": "revenus_fonciers",
+    "referring_variables": [
+      "rng"
+    ],
+    "start_line_number": 246,
+    "stop_line_number": 259,
+    "value_type": "float"
+  },
+  "rng": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 441,
+        "stop_line_number": 449,
+        "variables": [
+          "bnc",
+          "retr",
+          "revenus_fonciers",
+          "rvcm",
+          "tspr"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Revenu net global",
+    "name": "rng",
+    "referring_variables": [
+      "exoneration",
+      "revenu_net_imposable"
+    ],
+    "start_line_number": 435,
+    "stop_line_number": 449,
+    "value_type": "float"
+  },
+  "rvcm": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 387,
+        "stop_line_number": 402
+      }
+    },
+    "json_type": "number",
+    "label": "Revenus de valeurs mobilières et de capitaux mobiliers",
+    "name": "rvcm",
+    "referring_variables": [
+      "rng"
+    ],
+    "start_line_number": 381,
+    "stop_line_number": 402,
+    "value_type": "float"
+  },
+  "salaire_de_base": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/salarie.py",
+    "json_type": "number",
+    "label": "Salaire de base",
+    "name": "salaire_de_base",
+    "referring_variables": [
+      "assiette_cotisations_sociales",
+      "salaire_super_brut"
+    ],
+    "set_input": "set_input_divide_by_period",
+    "start_line_number": 9,
+    "stop_line_number": 15,
+    "value_type": "float"
+  },
+  "salaire_en_nature": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/salarie.py",
+    "json_type": "number",
+    "label": "Avantages en nature assimilables à des salaires",
+    "name": "salaire_en_nature",
+    "set_input": "set_input_divide_by_period",
+    "start_line_number": 25,
+    "stop_line_number": 31,
+    "value_type": "float"
+  },
+  "salaire_etranger": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/autres_revenus.py",
+    "json_type": "integer",
+    "label": "Salaires perçus à l'étranger",
+    "name": "salaire_etranger",
+    "start_line_number": 9,
+    "stop_line_number": 14,
+    "value_type": "int"
+  },
+  "salaire_imposable": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 390,
+        "stop_line_number": 395,
+        "variables": [
+          "assiette_cotisations_sociales",
+          "cotisations_salarie"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Salaire imposable",
+    "name": "salaire_imposable",
+    "referring_variables": [
+      "irpp_mensuel_salarie",
+      "revenus_du_travail",
+      "salaire_net_a_payer"
+    ],
+    "set_input": "set_input_divide_by_period",
+    "start_line_number": 383,
+    "stop_line_number": 395,
+    "value_type": "float"
+  },
+  "salaire_net_a_payer": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 404,
+        "stop_line_number": 409,
+        "variables": [
+          "irpp_mensuel_salarie",
+          "salaire_imposable"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Salaire net à payer (fiche de paie)",
+    "name": "salaire_net_a_payer",
+    "set_input": "set_input_divide_by_period",
+    "start_line_number": 397,
+    "stop_line_number": 409,
+    "value_type": "float"
+  },
+  "salaire_super_brut": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 418,
+        "stop_line_number": 424,
+        "variables": [
+          "cotisations_employeur",
+          "primes",
+          "salaire_de_base"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Salaires super bruts",
+    "name": "salaire_super_brut",
+    "set_input": "set_input_divide_by_period",
+    "start_line_number": 411,
+    "stop_line_number": 424,
+    "value_type": "float"
+  },
+  "salaire_unique": {
+    "default_value": false,
+    "definition_period": "year",
+    "dtype": "bool_",
+    "entity": "menage",
+    "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
+        "start_line_number": 60,
+        "stop_line_number": 64
+      }
+    },
+    "is_period_size_independent": true,
+    "json_type": "boolean",
+    "label": "Indicatrice de salaire unique",
+    "name": "salaire_unique",
+    "referring_variables": [
+      "majoration_salaire_unique"
+    ],
+    "start_line_number": 54,
+    "stop_line_number": 64,
+    "value_type": "bool"
+  },
+  "smig": {
+    "default_value": false,
+    "definition_period": "year",
+    "dtype": "bool_",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 337,
+        "stop_line_number": 343,
+        "variables": [
+          "revenu_assimile_salaire"
+        ]
+      }
+    },
+    "is_period_size_independent": true,
+    "json_type": "boolean",
+    "label": "Indicatrice de SMIG ou SMAG déduite du montant des salaires",
+    "name": "smig",
+    "referring_variables": [
+      "revenu_assimile_salaire_apres_abattements"
+    ],
+    "start_line_number": 331,
+    "stop_line_number": 343,
+    "value_type": "bool"
+  },
+  "smig_dec": {
+    "default_value": false,
+    "definition_period": "month",
+    "dtype": "bool_",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/salarie.py",
+    "is_period_size_independent": true,
+    "json_type": "boolean",
+    "label": "Salarié déclarant percevoir le SMIG ou le SMAG",
+    "name": "smig_dec",
+    "start_line_number": 33,
+    "stop_line_number": 38,
+    "value_type": "bool"
+  },
+  "statut_marital": {
+    "default_value": 2,
+    "definition_period": "eternity",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+    "json_type": "integer",
+    "label": "Statut marital",
+    "name": "statut_marital",
+    "referring_variables": [
+      "celibataire",
+      "divorce",
+      "marie",
+      "veuf"
+    ],
+    "start_line_number": 111,
+    "stop_line_number": 117,
+    "value_type": "int"
+  },
+  "statut_occupation_logement": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "menage",
+    "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/logement.py",
+    "json_type": "integer",
+    "label": "Statut d'occupation du logement",
+    "name": "statut_occupation_logement",
+    "start_line_number": 19,
+    "stop_line_number": 24,
+    "value_type": "int"
+  },
+  "structure_declaration_investissement": {
+    "default_value": "api",
+    "definition_period": "year",
+    "dtype": "int16",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/activite/non_salarie.py",
+    "is_period_size_independent": true,
+    "json_type": "string",
+    "label": "Structure auprès de laquelle la déclaration d’investissement a été déposée",
+    "name": "structure_declaration_investissement",
+    "possible_values": {
+      "api": "Agence de Promotion de l'Industrie et de l'Innovation",
+      "apia": "Agence de Promotion des Investissements Agricoles",
+      "autres": "Autre structure (à préciser)",
+      "commissariat_regional_developpement_agricole": "Commissariat régional du développement agricole",
+      "ont": "ONT"
+    },
+    "start_line_number": 89,
+    "stop_line_number": 96,
+    "value_type": "Enum"
+  },
+  "tspr": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "float32",
+    "entity": "foyer_fiscal",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "start_line_number": 310,
+        "stop_line_number": 317,
+        "variables": [
+          "revenu_assimile_pension_apres_abattements",
+          "revenu_assimile_salaire_apres_abattements"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Traitements, salaires, indemnités, pensions et rentes viagères",
+    "name": "tspr",
+    "referring_variables": [
+      "exoneration",
+      "rng"
+    ],
+    "start_line_number": 304,
+    "stop_line_number": 317,
+    "value_type": "float"
+  },
+  "ugtt": {
+    "default_value": 0,
+    "definition_period": "month",
+    "dtype": "float32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+        "start_line_number": 432,
+        "stop_line_number": 435,
+        "variables": [
+          "regime_securite_sociale"
+        ]
+      }
+    },
+    "json_type": "number",
+    "label": "Cotisation syndicale UGTT",
+    "name": "ugtt",
+    "referring_variables": [
+      "cotisations_salarie"
+    ],
+    "start_line_number": 426,
+    "stop_line_number": 435,
+    "value_type": "float"
+  },
+  "valm_aut": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/capital/valeurs_mobilieres_et_capitaux_mobiliers.py",
+    "json_type": "integer",
+    "label": "Autres rémunérations assimilées",
+    "name": "valm_aut",
+    "start_line_number": 24,
+    "stop_line_number": 29,
+    "value_type": "int"
+  },
+  "valm_jpres": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/capital/valeurs_mobilieres_et_capitaux_mobiliers.py",
+    "json_type": "integer",
+    "label": "Jetons de présence",
+    "name": "valm_jpres",
+    "start_line_number": 17,
+    "stop_line_number": 22,
+    "value_type": "int"
+  },
+  "valm_nreg": {
+    "default_value": 0,
+    "definition_period": "year",
+    "dtype": "int32",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/revenus/capital/valeurs_mobilieres_et_capitaux_mobiliers.py",
+    "json_type": "integer",
+    "label": "Revenus des valeurs mobilières autres que ceux régulièrement distribués",
+    "name": "valm_nreg",
+    "start_line_number": 10,
+    "stop_line_number": 15,
+    "value_type": "int"
+  },
+  "veuf": {
+    "default_value": false,
+    "definition_period": "year",
+    "dtype": "bool_",
+    "entity": "individu",
+    "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+    "formulas": {
+      "0001-01-01": {
+        "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/demographie.py",
+        "start_line_number": 106,
+        "stop_line_number": 109,
+        "variables": [
+          "statut_marital"
+        ]
+      }
+    },
+    "is_period_size_independent": true,
+    "json_type": "boolean",
+    "label": "Veuf(ve)",
+    "name": "veuf",
+    "start_line_number": 100,
+    "stop_line_number": 109,
+    "value_type": "bool"
+  }
+}

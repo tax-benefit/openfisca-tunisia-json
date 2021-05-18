@@ -1,0 +1,29 @@
+{
+  "default_value": "rsna",
+  "definition_period": "eternity",
+  "dtype": "int16",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/cotisations_sociales.py",
+  "is_period_size_independent": true,
+  "json_type": "string",
+  "label": "Régime de sécurité sociale du salarié",
+  "name": "regime_securite_sociale",
+  "possible_values": {
+    "pensionne_cnrps": "Régime des salariés des pensionnés de la Caisse Nationale de Retraite et de Prévoyance Sociale",
+    "raci": "Régime des Artistes, Créateurs et Intellectuels",
+    "re": "Régime des Etudiants, diplômés de l'enseignement supérieur et stagiaires",
+    "rsa": "Régime des Salariés Agricoles",
+    "rsaa": "Régime des Salariés Agricoles Amélioré",
+    "rsna": "Régime des Salariés Non Agricoles",
+    "rtfr": "Régime des Travailleurs à Faibles Revenus (gens de maisons, travailleurs de chantiers, et artisans travaillant à la pièce)",
+    "rtns": "Régime des Travailleurs Non Salariés (secteurs agricole et non agricole)",
+    "rtte": "Régime des Travailleurs Tunisiens à l'Etranger",
+    "salarie_cnrps": "Régime des salariés affilés à la Caisse Nationale de Retraite et de Prévoyance Sociale"
+  },
+  "referring_variables": [
+    "ugtt"
+  ],
+  "start_line_number": 83,
+  "stop_line_number": 90,
+  "value_type": "Enum"
+}

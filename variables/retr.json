@@ -1,0 +1,709 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "float32",
+  "entity": "foyer_fiscal",
+  "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+  "formulas": {
+    "0001-01-01": {
+      "ast": {
+        "args": {
+          "args": [
+            {
+              "arg": "foyer_fiscal",
+              "ast_class": "arg",
+              "col_offset": 12,
+              "end_col_offset": 24,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "period",
+              "ast_class": "arg",
+              "col_offset": 26,
+              "end_col_offset": 32,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "parameters",
+              "ast_class": "arg",
+              "col_offset": 34,
+              "end_col_offset": 44,
+              "end_lineno": 1,
+              "lineno": 1
+            }
+          ],
+          "ast_class": "arguments",
+          "defaults": [],
+          "kw_defaults": [],
+          "kwonlyargs": [],
+          "posonlyargs": []
+        },
+        "ast_class": "FunctionDef",
+        "body": [
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 92,
+            "end_lineno": 2,
+            "lineno": 2,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 20,
+                "end_lineno": 2,
+                "id": "salaire_etranger",
+                "lineno": 2
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 56,
+                  "end_col_offset": 74,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": "salaire_etranger"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 23,
+              "end_col_offset": 92,
+              "end_lineno": 2,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "declarant_principal",
+                "col_offset": 23,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 55,
+                "end_lineno": 2,
+                "lineno": 2,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 23,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 35,
+                  "end_lineno": 2,
+                  "id": "foyer_fiscal",
+                  "lineno": 2
+                }
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 76,
+                  "end_col_offset": 91,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 85,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 91,
+                    "end_lineno": 2,
+                    "id": "period",
+                    "lineno": 2
+                  }
+                }
+              ],
+              "lineno": 2
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 55,
+            "end_lineno": 4,
+            "lineno": 3,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 31,
+                "end_lineno": 3,
+                "id": "pension_etranger_transferee",
+                "lineno": 3
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 8,
+                  "end_col_offset": 37,
+                  "end_lineno": 4,
+                  "lineno": 4,
+                  "value": "pension_etranger_transferee"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 34,
+              "end_col_offset": 55,
+              "end_lineno": 4,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "declarant_principal",
+                "col_offset": 34,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 66,
+                "end_lineno": 3,
+                "lineno": 3,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 34,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 46,
+                  "end_lineno": 3,
+                  "id": "foyer_fiscal",
+                  "lineno": 3
+                }
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 39,
+                  "end_col_offset": 54,
+                  "end_lineno": 4,
+                  "lineno": 4,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 48,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 54,
+                    "end_lineno": 4,
+                    "id": "period",
+                    "lineno": 4
+                  }
+                }
+              ],
+              "lineno": 3
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 59,
+            "end_lineno": 6,
+            "lineno": 5,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 35,
+                "end_lineno": 5,
+                "id": "pension_etranger_non_transferee",
+                "lineno": 5
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 8,
+                  "end_col_offset": 41,
+                  "end_lineno": 6,
+                  "lineno": 6,
+                  "value": "pension_etranger_non_transferee"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 38,
+              "end_col_offset": 59,
+              "end_lineno": 6,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "declarant_principal",
+                "col_offset": 38,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 70,
+                "end_lineno": 5,
+                "lineno": 5,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 38,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 50,
+                  "end_lineno": 5,
+                  "id": "foyer_fiscal",
+                  "lineno": 5
+                }
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 43,
+                  "end_col_offset": 58,
+                  "end_lineno": 6,
+                  "lineno": 6,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 52,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 58,
+                    "end_lineno": 6,
+                    "id": "period",
+                    "lineno": 6
+                  }
+                }
+              ],
+              "lineno": 5
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 51,
+            "end_lineno": 8,
+            "lineno": 7,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 27,
+                "end_lineno": 7,
+                "id": "autres_revenus_etranger",
+                "lineno": 7
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 8,
+                  "end_col_offset": 33,
+                  "end_lineno": 8,
+                  "lineno": 8,
+                  "value": "autres_revenus_etranger"
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 30,
+              "end_col_offset": 51,
+              "end_lineno": 8,
+              "func": {
+                "ast_class": "Attribute",
+                "attr": "declarant_principal",
+                "col_offset": 30,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 62,
+                "end_lineno": 7,
+                "lineno": 7,
+                "value": {
+                  "ast_class": "Name",
+                  "col_offset": 30,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 42,
+                  "end_lineno": 7,
+                  "id": "foyer_fiscal",
+                  "lineno": 7
+                }
+              },
+              "keywords": [
+                {
+                  "arg": "period",
+                  "ast_class": "keyword",
+                  "col_offset": 35,
+                  "end_col_offset": 50,
+                  "end_lineno": 8,
+                  "lineno": 8,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 44,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 50,
+                    "end_lineno": 8,
+                    "id": "period",
+                    "lineno": 8
+                  }
+                }
+              ],
+              "lineno": 7
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 53,
+            "end_lineno": 9,
+            "lineno": 9,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 8,
+                "end_lineno": 9,
+                "id": "tspr",
+                "lineno": 9
+              }
+            ],
+            "value": {
+              "ast_class": "Attribute",
+              "attr": "tspr",
+              "col_offset": 11,
+              "ctx": {
+                "ast_class": "Load"
+              },
+              "end_col_offset": 53,
+              "end_lineno": 9,
+              "lineno": 9,
+              "value": {
+                "ast_class": "Attribute",
+                "attr": "impot_revenu",
+                "col_offset": 11,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 48,
+                "end_lineno": 9,
+                "lineno": 9,
+                "value": {
+                  "args": [
+                    {
+                      "ast_class": "Attribute",
+                      "attr": "start",
+                      "col_offset": 22,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 34,
+                      "end_lineno": 9,
+                      "lineno": 9,
+                      "value": {
+                        "ast_class": "Name",
+                        "col_offset": 22,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 28,
+                        "end_lineno": 9,
+                        "id": "period",
+                        "lineno": 9
+                      }
+                    }
+                  ],
+                  "ast_class": "Call",
+                  "col_offset": 11,
+                  "end_col_offset": 35,
+                  "end_lineno": 9,
+                  "func": {
+                    "ast_class": "Name",
+                    "col_offset": 11,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 21,
+                    "end_lineno": 9,
+                    "id": "parameters",
+                    "lineno": 9
+                  },
+                  "keywords": [],
+                  "lineno": 9
+                }
+              }
+            }
+          },
+          {
+            "ast_class": "Return",
+            "col_offset": 4,
+            "end_col_offset": 9,
+            "end_lineno": 16,
+            "lineno": 11,
+            "value": {
+              "ast_class": "BinOp",
+              "col_offset": 8,
+              "end_col_offset": 31,
+              "end_lineno": 15,
+              "left": {
+                "ast_class": "BinOp",
+                "col_offset": 8,
+                "end_col_offset": 61,
+                "end_lineno": 14,
+                "left": {
+                  "ast_class": "BinOp",
+                  "col_offset": 8,
+                  "end_col_offset": 61,
+                  "end_lineno": 13,
+                  "left": {
+                    "ast_class": "BinOp",
+                    "col_offset": 8,
+                    "end_col_offset": 46,
+                    "end_lineno": 12,
+                    "left": {
+                      "ast_class": "Name",
+                      "col_offset": 8,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 24,
+                      "end_lineno": 12,
+                      "id": "salaire_etranger",
+                      "lineno": 12
+                    },
+                    "lineno": 12,
+                    "op": {
+                      "ast_class": "Mult"
+                    },
+                    "right": {
+                      "ast_class": "BinOp",
+                      "col_offset": 28,
+                      "end_col_offset": 45,
+                      "end_lineno": 12,
+                      "left": {
+                        "ast_class": "Constant",
+                        "col_offset": 28,
+                        "end_col_offset": 29,
+                        "end_lineno": 12,
+                        "lineno": 12,
+                        "value": 1
+                      },
+                      "lineno": 12,
+                      "op": {
+                        "ast_class": "Sub"
+                      },
+                      "right": {
+                        "ast_class": "Attribute",
+                        "attr": "abat_sal",
+                        "col_offset": 32,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 45,
+                        "end_lineno": 12,
+                        "lineno": 12,
+                        "value": {
+                          "ast_class": "Name",
+                          "col_offset": 32,
+                          "ctx": {
+                            "ast_class": "Load"
+                          },
+                          "end_col_offset": 36,
+                          "end_lineno": 12,
+                          "id": "tspr",
+                          "lineno": 12
+                        }
+                      }
+                    }
+                  },
+                  "lineno": 12,
+                  "op": {
+                    "ast_class": "Add"
+                  },
+                  "right": {
+                    "ast_class": "BinOp",
+                    "col_offset": 8,
+                    "end_col_offset": 61,
+                    "end_lineno": 13,
+                    "left": {
+                      "ast_class": "Name",
+                      "col_offset": 8,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 39,
+                      "end_lineno": 13,
+                      "id": "pension_etranger_non_transferee",
+                      "lineno": 13
+                    },
+                    "lineno": 13,
+                    "op": {
+                      "ast_class": "Mult"
+                    },
+                    "right": {
+                      "ast_class": "BinOp",
+                      "col_offset": 43,
+                      "end_col_offset": 60,
+                      "end_lineno": 13,
+                      "left": {
+                        "ast_class": "Constant",
+                        "col_offset": 43,
+                        "end_col_offset": 44,
+                        "end_lineno": 13,
+                        "lineno": 13,
+                        "value": 1
+                      },
+                      "lineno": 13,
+                      "op": {
+                        "ast_class": "Sub"
+                      },
+                      "right": {
+                        "ast_class": "Attribute",
+                        "attr": "abat_pen",
+                        "col_offset": 47,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 60,
+                        "end_lineno": 13,
+                        "lineno": 13,
+                        "value": {
+                          "ast_class": "Name",
+                          "col_offset": 47,
+                          "ctx": {
+                            "ast_class": "Load"
+                          },
+                          "end_col_offset": 51,
+                          "end_lineno": 13,
+                          "id": "tspr",
+                          "lineno": 13
+                        }
+                      }
+                    }
+                  }
+                },
+                "lineno": 12,
+                "op": {
+                  "ast_class": "Add"
+                },
+                "right": {
+                  "ast_class": "BinOp",
+                  "col_offset": 8,
+                  "end_col_offset": 61,
+                  "end_lineno": 14,
+                  "left": {
+                    "ast_class": "Name",
+                    "col_offset": 8,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 35,
+                    "end_lineno": 14,
+                    "id": "pension_etranger_transferee",
+                    "lineno": 14
+                  },
+                  "lineno": 14,
+                  "op": {
+                    "ast_class": "Mult"
+                  },
+                  "right": {
+                    "ast_class": "BinOp",
+                    "col_offset": 39,
+                    "end_col_offset": 60,
+                    "end_lineno": 14,
+                    "left": {
+                      "ast_class": "Constant",
+                      "col_offset": 39,
+                      "end_col_offset": 40,
+                      "end_lineno": 14,
+                      "lineno": 14,
+                      "value": 1
+                    },
+                    "lineno": 14,
+                    "op": {
+                      "ast_class": "Sub"
+                    },
+                    "right": {
+                      "ast_class": "Attribute",
+                      "attr": "abat_pen_etr",
+                      "col_offset": 43,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 60,
+                      "end_lineno": 14,
+                      "lineno": 14,
+                      "value": {
+                        "ast_class": "Name",
+                        "col_offset": 43,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 47,
+                        "end_lineno": 14,
+                        "id": "tspr",
+                        "lineno": 14
+                      }
+                    }
+                  }
+                }
+              },
+              "lineno": 12,
+              "op": {
+                "ast_class": "Add"
+              },
+              "right": {
+                "ast_class": "Name",
+                "col_offset": 8,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 31,
+                "end_lineno": 15,
+                "id": "autres_revenus_etranger",
+                "lineno": 15
+              }
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [],
+        "end_col_offset": 9,
+        "end_lineno": 16,
+        "lineno": 1,
+        "name": "formula"
+      },
+      "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+      "parameters": [
+        "impot_revenu.tspr.abat_pen",
+        "impot_revenu.tspr.abat_pen_etr",
+        "impot_revenu.tspr.abat_sal"
+      ],
+      "source_code": "def formula(foyer_fiscal, period, parameters):\n    salaire_etranger = foyer_fiscal.declarant_principal('salaire_etranger', period = period)\n    pension_etranger_transferee = foyer_fiscal.declarant_principal(\n        'pension_etranger_transferee', period = period)\n    pension_etranger_non_transferee = foyer_fiscal.declarant_principal(\n        'pension_etranger_non_transferee', period = period)\n    autres_revenus_etranger = foyer_fiscal.declarant_principal(\n        'autres_revenus_etranger', period = period)\n    tspr = parameters(period.start).impot_revenu.tspr\n\n    return (\n        salaire_etranger * (1 - tspr.abat_sal) +\n        pension_etranger_non_transferee * (1 - tspr.abat_pen) +\n        pension_etranger_transferee * (1 - tspr.abat_pen_etr) +\n        autres_revenus_etranger\n        )\n",
+      "start_line_number": 412,
+      "stop_line_number": 428
+    }
+  },
+  "json_type": "number",
+  "label": "Autres revenus (revenus de source étrangère n’ayant pas subi l’impôt dans le pays d'origine)",
+  "name": "retr",
+  "referring_variables": [
+    "rng"
+  ],
+  "start_line_number": 406,
+  "stop_line_number": 428,
+  "value_type": "float"
+}

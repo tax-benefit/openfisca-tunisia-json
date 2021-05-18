@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/capital/foncier.py",
+  "json_type": "integer",
+  "label": "Reliquat (revenus fonciers, base forfaitaire, immeubles bâtis)",
+  "name": "foncier_forfaitaire_batis_reliquat",
+  "start_line_number": 27,
+  "stop_line_number": 32,
+  "value_type": "int"
+}

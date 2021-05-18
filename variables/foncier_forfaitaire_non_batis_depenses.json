@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "individu",
+  "file_path": "/openfisca_tunisia/model/revenus/capital/foncier.py",
+  "json_type": "integer",
+  "label": "Dépenses justifiées à déduire (revenus fonciers, base forfaitaire, terrains non bâtis)",
+  "name": "foncier_forfaitaire_non_batis_depenses",
+  "start_line_number": 58,
+  "stop_line_number": 63,
+  "value_type": "int"
+}

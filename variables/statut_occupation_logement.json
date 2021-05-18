@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "menage",
+  "file_path": "/openfisca_tunisia/model/caracteristiques_socio_demographiques/logement.py",
+  "json_type": "integer",
+  "label": "Statut d'occupation du logement",
+  "name": "statut_occupation_logement",
+  "start_line_number": 19,
+  "stop_line_number": 24,
+  "value_type": "int"
+}

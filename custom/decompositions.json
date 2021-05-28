@@ -1,0 +1,31 @@
+{
+  "af": { "label": "Allocations familiales" },
+  "contribution_frais_creche": { "label": "Contribution aux frais de creche" },
+  "cotisations_employeur": { "label": "Cotisations sociales patronales" },
+  "cotisations_salarie": { "label": "Cotisations sociales salariées" },
+  "impots_directs": { "label": "Impôts directs", "children": ["irpp"] },
+  "irpp": { "label": "Impôt sur le revenu" },
+  "majoration_salaire_unique": { "label": "Majoration salaire unique" },
+  "prestations_familiales": {
+    "label": "Prestations familiales",
+    "children": ["af", "majoration_salaire_unique", "contribution_frais_creche"]
+  },
+  "revenu_disponible": {
+    "label": "Revenu disponible",
+    "children": [
+      "revenus_du_travail",
+      "prestations_familiales",
+      "impots_directs"
+    ]
+  },
+  "revenus_du_travail": { "label": "Revenu du travail", "children": ["sal"] },
+  "sal": {
+    "label": "Salaires nets",
+    "children": ["salaire_brut", "cotisations_salarie"]
+  },
+  "salaire_brut": {
+    "label": "Salaires bruts",
+    "children": ["salaire_super_brut", "cotisations_employeur"]
+  },
+  "salaire_super_brut": { "label": "Salaires super bruts" }
+}

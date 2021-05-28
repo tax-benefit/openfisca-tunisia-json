@@ -89,7 +89,7 @@
     "label": "Résultat fiscal (BNC, régime réel)"
   },
   "contribution_frais_creche": {
-    "label": "Contribution aux frais de crêche"
+    "label": "Contribution aux frais de creche"
   },
   "cotisations_employeur": {
     "children": [
@@ -102,7 +102,7 @@
       "protection_sociale_travailleurs_employeur",
       "retraite_employeur"
     ],
-    "label": "Cotisation sociales employeur"
+    "label": "Cotisations sociales patronales"
   },
   "cotisations_salarie": {
     "children": [
@@ -115,7 +115,7 @@
       "retraite_salarie",
       "ugtt"
     ],
-    "label": "Cotisation sociales salarié"
+    "label": "Cotisations sociales salariées"
   },
   "cotisations_sociales": {
     "children": [
@@ -152,13 +152,13 @@
     "label": "Impôts directs"
   },
   "irpp": {
-    "label": "Impôt sur le revenu des personnes physiques"
+    "label": "Impôt sur le revenu"
   },
   "irpp_mensuel_salarie": {
     "label": "Impôt sur le revenu des personnes physiques prélevé à la source pour les salariés"
   },
   "majoration_salaire_unique": {
-    "label": "Majoration du salaire unique"
+    "label": "Majoration salaire unique"
   },
   "maladie_employeur": {
     "label": "Cotisation assurances sociales: maladie (employeur)"
@@ -178,7 +178,7 @@
       "majoration_salaire_unique",
       "contribution_frais_creche"
     ],
-    "label": "Prestations familales"
+    "label": "Prestations familiales"
   },
   "prestations_sociales": {
     "label": "Prestations sociales"
@@ -214,7 +214,7 @@
     "children": [
       "revenu_disponible_individuel"
     ],
-    "label": "Revenu disponible du ménage"
+    "label": "Revenu disponible"
   },
   "revenu_disponible_individuel": {
     "children": [
@@ -236,10 +236,24 @@
     "children": [
       "salaire_imposable"
     ],
-    "label": "Revenus du travail"
+    "label": "Revenu du travail"
   },
   "revenus_fonciers": {
     "label": "Revenus fonciers"
+  },
+  "sal": {
+    "children": [
+      "salaire_brut",
+      "cotisations_salarie"
+    ],
+    "label": "Salaires nets"
+  },
+  "salaire_brut": {
+    "children": [
+      "salaire_super_brut",
+      "cotisations_employeur"
+    ],
+    "label": "Salaires bruts"
   },
   "salaire_de_base": {
     "label": "Salaire de base"

@@ -253,6 +253,9 @@
   "json_type": "number",
   "label": "Impôt sur le revenu des personnes physiques",
   "name": "irpp",
+  "referring_variables": [
+    "impots_directs"
+  ],
   "start_line_number": 629,
   "stop_line_number": 639,
   "value_type": "float"

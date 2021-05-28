@@ -7,6 +7,9 @@
   "is_period_size_independent": true,
   "json_type": "boolean",
   "name": "boursier",
+  "referring_variables": [
+    "nb_enf_sup"
+  ],
   "start_line_number": 134,
   "stop_line_number": 138,
   "value_type": "bool"

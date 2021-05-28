@@ -544,6 +544,9 @@
   "reference": [
     "http://www.cleiss.fr/docs/regimes/regime_tunisie_salaries.html"
   ],
+  "referring_variables": [
+    "af_nbenf"
+  ],
   "start_line_number": 68,
   "stop_line_number": 102,
   "value_type": "bool"

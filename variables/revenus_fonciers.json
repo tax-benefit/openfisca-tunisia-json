@@ -435,6 +435,7 @@
   "label": "Revenus fonciers",
   "name": "revenus_fonciers",
   "referring_variables": [
+    "revenus_du_capital",
     "rng"
   ],
   "start_line_number": 246,

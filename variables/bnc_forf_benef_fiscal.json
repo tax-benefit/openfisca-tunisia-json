@@ -293,6 +293,9 @@
   "json_type": "number",
   "label": "Bénéfice fiscal (régime forfaitaire en % des recettes brutes TTC)",
   "name": "bnc_forf_benef_fiscal",
+  "referring_variables": [
+    "bnc"
+  ],
   "start_line_number": 213,
   "stop_line_number": 226,
   "value_type": "float"

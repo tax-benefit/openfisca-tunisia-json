@@ -9,6 +9,7 @@
   "label": "Invalide",
   "name": "invalide",
   "referring_variables": [
+    "nb_infirme",
     "prestations_familiales_enfant_a_charge"
   ],
   "start_line_number": 119,

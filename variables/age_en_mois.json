@@ -1082,6 +1082,9 @@
   "json_type": "integer",
   "label": "Âge (en mois)",
   "name": "age_en_mois",
+  "referring_variables": [
+    "contribution_frais_creche"
+  ],
   "start_line_number": 22,
   "stop_line_number": 50,
   "unit": "months",

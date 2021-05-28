@@ -7,6 +7,9 @@
   "json_type": "integer",
   "label": "Prime d’assurance-vie",
   "name": "prime_assurance_vie",
+  "referring_variables": [
+    "deduction_assurance_vie"
+  ],
   "start_line_number": 88,
   "stop_line_number": 93,
   "value_type": "int"

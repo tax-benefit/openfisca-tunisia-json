@@ -505,6 +505,9 @@
   "json_type": "number",
   "label": "Revenu disponible individuel",
   "name": "revenu_disponible_individuel",
+  "referring_variables": [
+    "revenu_disponible"
+  ],
   "start_line_number": 40,
   "stop_line_number": 54,
   "value_type": "float"

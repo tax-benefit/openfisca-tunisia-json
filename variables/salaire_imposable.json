@@ -153,6 +153,7 @@
   "label": "Salaire imposable",
   "name": "salaire_imposable",
   "referring_variables": [
+    "contribution_frais_creche",
     "irpp_mensuel_salarie",
     "revenus_du_travail",
     "salaire_net_a_payer"

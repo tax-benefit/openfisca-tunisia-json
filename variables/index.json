@@ -94,7 +94,10 @@
       "0001-01-01": {
         "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
         "start_line_number": 110,
-        "stop_line_number": 118
+        "stop_line_number": 118,
+        "variables": [
+          "prestations_familiales_enfant_a_charge"
+        ]
       }
     },
     "json_type": "number",
@@ -130,6 +133,9 @@
     "name": "age",
     "referring_variables": [
       "age_en_mois",
+      "nb_enf",
+      "nb_enf_sup",
+      "nb_infirme",
       "prestations_familiales_enfant_a_charge"
     ],
     "set_input": "set_input_dispatch_by_period",
@@ -158,6 +164,9 @@
     "json_type": "integer",
     "label": "Âge (en mois)",
     "name": "age_en_mois",
+    "referring_variables": [
+      "contribution_frais_creche"
+    ],
     "start_line_number": 22,
     "stop_line_number": 50,
     "unit": "months",
@@ -625,7 +634,12 @@
       "0001-01-01": {
         "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
         "start_line_number": 200,
-        "stop_line_number": 211
+        "stop_line_number": 211,
+        "variables": [
+          "bnc_forf_benef_fiscal",
+          "bnc_part_benef_sp",
+          "bnc_reel_res_fiscal"
+        ]
       }
     },
     "json_type": "number",
@@ -658,6 +672,9 @@
     "json_type": "number",
     "label": "Bénéfice fiscal (régime forfaitaire en % des recettes brutes TTC)",
     "name": "bnc_forf_benef_fiscal",
+    "referring_variables": [
+      "bnc"
+    ],
     "start_line_number": 213,
     "stop_line_number": 226,
     "value_type": "float"
@@ -687,6 +704,9 @@
     "json_type": "integer",
     "label": "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimiléesqui réalisent des bénéfices non commerciaux (BNC)",
     "name": "bnc_part_benef_sp",
+    "referring_variables": [
+      "bnc"
+    ],
     "start_line_number": 205,
     "stop_line_number": 211,
     "value_type": "int"
@@ -700,6 +720,9 @@
     "json_type": "integer",
     "label": "Résultat fiscal (BNC, régime réel)",
     "name": "bnc_reel_res_fiscal",
+    "referring_variables": [
+      "bnc"
+    ],
     "start_line_number": 176,
     "stop_line_number": 181,
     "value_type": "int"
@@ -713,6 +736,9 @@
     "is_period_size_independent": true,
     "json_type": "boolean",
     "name": "boursier",
+    "referring_variables": [
+      "nb_enf_sup"
+    ],
     "start_line_number": 134,
     "stop_line_number": 138,
     "value_type": "bool"
@@ -984,7 +1010,11 @@
           "prestations_familiales.creche.plaf"
         ],
         "start_line_number": 190,
-        "stop_line_number": 214
+        "stop_line_number": 214,
+        "variables": [
+          "age_en_mois",
+          "salaire_imposable"
+        ]
       }
     },
     "json_type": "number",
@@ -1183,7 +1213,8 @@
         "start_line_number": 525,
         "stop_line_number": 533,
         "variables": [
-          "nb_enf"
+          "nb_enf",
+          "prime_assurance_vie"
         ]
       }
     },
@@ -1226,6 +1257,7 @@
     "name": "deduction_famille",
     "referring_variables": [
       "exoneration",
+      "irpp_mensuel_salarie",
       "revenu_net_imposable"
     ],
     "start_line_number": 481,
@@ -1678,7 +1710,10 @@
       "0001-01-01": {
         "file_path": "/openfisca_tunisia/model/common.py",
         "start_line_number": 16,
-        "stop_line_number": 20
+        "stop_line_number": 20,
+        "variables": [
+          "irpp"
+        ]
       }
     },
     "json_type": "number",
@@ -1715,6 +1750,7 @@
     "label": "Invalide",
     "name": "invalide",
     "referring_variables": [
+      "nb_infirme",
       "prestations_familiales_enfant_a_charge"
     ],
     "start_line_number": 119,
@@ -1741,6 +1777,9 @@
     "json_type": "number",
     "label": "Impôt sur le revenu des personnes physiques",
     "name": "irpp",
+    "referring_variables": [
+      "impots_directs"
+    ],
     "start_line_number": 629,
     "stop_line_number": 639,
     "value_type": "float"
@@ -1757,6 +1796,7 @@
         "start_line_number": 647,
         "stop_line_number": 654,
         "variables": [
+          "deduction_famille",
           "salaire_imposable"
         ]
       }
@@ -1960,7 +2000,10 @@
           "impot_revenu.deductions.fam.age"
         ],
         "start_line_number": 17,
-        "stop_line_number": 29
+        "stop_line_number": 29,
+        "variables": [
+          "age"
+        ]
       }
     },
     "json_type": "number",
@@ -1986,7 +2029,11 @@
         "documentation": "\nTODO: Nombre d'enfants étudiants du supérieur non boursiers\n",
         "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
         "start_line_number": 37,
-        "stop_line_number": 45
+        "stop_line_number": 45,
+        "variables": [
+          "age",
+          "boursier"
+        ]
       }
     },
     "json_type": "number",
@@ -2007,7 +2054,11 @@
         "documentation": "\nTODO: Nombre d'enfants infirmes\n",
         "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
         "start_line_number": 53,
-        "stop_line_number": 61
+        "stop_line_number": 61,
+        "variables": [
+          "age",
+          "invalide"
+        ]
       }
     },
     "json_type": "number",
@@ -2113,6 +2164,9 @@
     "reference": [
       "http://www.cleiss.fr/docs/regimes/regime_tunisie_salaries.html"
     ],
+    "referring_variables": [
+      "af_nbenf"
+    ],
     "start_line_number": 68,
     "stop_line_number": 102,
     "value_type": "bool"
@@ -2155,6 +2209,9 @@
     "json_type": "integer",
     "label": "Prime d’assurance-vie",
     "name": "prime_assurance_vie",
+    "referring_variables": [
+      "deduction_assurance_vie"
+    ],
     "start_line_number": 88,
     "stop_line_number": 93,
     "value_type": "int"
@@ -2450,7 +2507,10 @@
       "0001-01-01": {
         "file_path": "/openfisca_tunisia/model/common.py",
         "start_line_number": 35,
-        "stop_line_number": 38
+        "stop_line_number": 38,
+        "variables": [
+          "revenu_disponible_individuel"
+        ]
       }
     },
     "json_type": "number",
@@ -2483,6 +2543,9 @@
     "json_type": "number",
     "label": "Revenu disponible individuel",
     "name": "revenu_disponible_individuel",
+    "referring_variables": [
+      "revenu_disponible"
+    ],
     "start_line_number": 40,
     "stop_line_number": 54,
     "value_type": "float"
@@ -2526,7 +2589,10 @@
       "0001-01-01": {
         "file_path": "/openfisca_tunisia/model/common.py",
         "start_line_number": 62,
-        "stop_line_number": 65
+        "stop_line_number": 65,
+        "variables": [
+          "revenus_fonciers"
+        ]
       }
     },
     "json_type": "number",
@@ -2586,6 +2652,7 @@
     "label": "Revenus fonciers",
     "name": "revenus_fonciers",
     "referring_variables": [
+      "revenus_du_capital",
       "rng"
     ],
     "start_line_number": 246,
@@ -2712,6 +2779,7 @@
     "label": "Salaire imposable",
     "name": "salaire_imposable",
     "referring_variables": [
+      "contribution_frais_creche",
       "irpp_mensuel_salarie",
       "revenus_du_travail",
       "salaire_net_a_payer"

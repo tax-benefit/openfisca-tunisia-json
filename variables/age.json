@@ -217,6 +217,9 @@
   "name": "age",
   "referring_variables": [
     "age_en_mois",
+    "nb_enf",
+    "nb_enf_sup",
+    "nb_infirme",
     "prestations_familiales_enfant_a_charge"
   ],
   "set_input": "set_input_dispatch_by_period",

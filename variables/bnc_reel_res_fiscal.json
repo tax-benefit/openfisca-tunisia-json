@@ -7,6 +7,9 @@
   "json_type": "integer",
   "label": "Résultat fiscal (BNC, régime réel)",
   "name": "bnc_reel_res_fiscal",
+  "referring_variables": [
+    "bnc"
+  ],
   "start_line_number": 176,
   "stop_line_number": 181,
   "value_type": "int"

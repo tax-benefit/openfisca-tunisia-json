@@ -749,6 +749,7 @@
   "name": "deduction_famille",
   "referring_variables": [
     "exoneration",
+    "irpp_mensuel_salarie",
     "revenu_net_imposable"
   ],
   "start_line_number": 481,

@@ -1,0 +1,40 @@
+[
+  {
+    "familles": { "Famille": { "enfants": [], "parents": ["Dominique"] } },
+    "foyers_fiscaux": {
+      "Foyer fiscal": { "declarants": ["Dominique"], "personnes_a_charge": [] }
+    },
+    "individus": { "Dominique": { "salaire_de_base": 18655 } },
+    "menages": {
+      "Ménage": {
+        "conjoint": [],
+        "enfants": [],
+        "personne_de_reference": ["Dominique"]
+      }
+    },
+    "title": "Célibataire, sans enfant, salarié"
+  },
+  {
+    "familles": {
+      "Famille": { "enfants": ["Claude"], "parents": ["Dominique"] }
+    },
+    "foyers_fiscaux": {
+      "Foyer fiscal": {
+        "declarants": ["Dominique"],
+        "personnes_a_charge": ["Claude"]
+      }
+    },
+    "individus": {
+      "Claude": { "age": 1 },
+      "Dominique": { "salaire_de_base": 18655 }
+    },
+    "menages": {
+      "Ménage": {
+        "conjoint": [],
+        "enfants": ["Claude"],
+        "personne_de_reference": ["Dominique"]
+      }
+    },
+    "title": "Célibataire, 1 bébé, salarié"
+  }
+]

@@ -1,0 +1,4704 @@
+{
+  "cotisations_sociales": {
+    "description": "Cotisations sociales",
+    "file_path": "/openfisca_tunisia/parameters/cotisations_sociales",
+    "gen": {
+      "description": "Paramètres généraux",
+      "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen",
+      "indemnite_complementaire_provisoire": {
+        "description": "Indemnité Complémentaire Provisoire (ICP) - montant par mois",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/indemnite_complementaire_provisoire.yaml",
+        "metadata": {
+          "unit": "currency"
+        },
+        "name": "cotisations_sociales.gen.indemnite_complementaire_provisoire",
+        "values": {
+          "1981-04-07": {
+            "reference": [
+              {
+                "title": "Décret n° 81-437 du 7 avril 1981"
+              }
+            ],
+            "value": 10
+          }
+        }
+      },
+      "majoration_smig_40h_mensuel": {
+        "description": "Majoration du Salaire Minimum Interprofessionnel Garanti au régime de 40h dans les secteurs non agricoles - montant par mois",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/majoration_smig_40h_mensuel.yaml",
+        "metadata": {
+          "unit": "currency"
+        },
+        "name": "cotisations_sociales.gen.majoration_smig_40h_mensuel",
+        "values": {
+          "1982-03-16": {
+            "reference": [
+              {
+                "title": "Décret n° 82-501 du 16 mars 1982"
+              }
+            ],
+            "value": 20
+          }
+        }
+      },
+      "majoration_smig_48h_mensuel": {
+        "description": "Majoration du Salaire Minimum Interprofessionnel Garanti au régime de 48h dans les secteurs non agricoles - montant par mois",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/majoration_smig_48h_mensuel.yaml",
+        "metadata": {
+          "unit": "currency"
+        },
+        "name": "cotisations_sociales.gen.majoration_smig_48h_mensuel",
+        "values": {
+          "1982-03-16": {
+            "reference": [
+              {
+                "title": "Décret n° 82-501 du 16 mars 1982"
+              }
+            ],
+            "value": 20.368
+          }
+        }
+      },
+      "name": "cotisations_sociales.gen",
+      "plafond_securite_sociale": {
+        "description": "Plafond de la sécurité sociale (en SMIG)",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/plafond_securite_sociale.yaml",
+        "metadata": {
+          "unit": "/1"
+        },
+        "name": "cotisations_sociales.gen.plafond_securite_sociale",
+        "values": {
+          "1960-01-01": {
+            "value": 6
+          }
+        }
+      },
+      "salaire_de_base_40h_horaire": {
+        "description": "salaire de base horaire - régime 40h par semaine",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/salaire_de_base_40h_horaire.yaml",
+        "metadata": {
+          "unit": "currency"
+        },
+        "name": "cotisations_sociales.gen.salaire_de_base_40h_horaire",
+        "values": {
+          "2008-07-01": {
+            "reference": [
+              {
+                "title": "Décret n°2008-2072 du 02 Juin 2008 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2008/2008F/046/TF200820723.pdf"
+              }
+            ],
+            "value": 1.084
+          },
+          "2009-08-01": {
+            "reference": [
+              {
+                "title": "Décret n°2009-2257 du 14 Juillet 2009 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2009/2009F/062/TF200922573.pdf"
+              }
+            ],
+            "value": 1.126
+          },
+          "2010-07-01": {
+            "reference": [
+              {
+                "title": "Décret n°2010-1746 du 17 Juillet 2010 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2010/2010F/058/TF201017463.pdf"
+              }
+            ],
+            "value": 1.183
+          },
+          "2011-05-01": {
+            "reference": [
+              {
+                "title": "Décret n°2011-679 du 09 Juin 2011 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2011/2011F/042/TF20116793.pdf"
+              }
+            ],
+            "value": 1.248
+          },
+          "2012-07-01": {
+            "reference": [
+              {
+                "title": "Décret n°2012-1981 du 20 Septembre 2012 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2012/2012F/077/TF201219813.pdf"
+              }
+            ],
+            "value": 1.324
+          },
+          "2014-05-01": {
+            "reference": [
+              {
+                "title": "Décret n°2014-2907 du 11 Août 2014 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2014/2014F/066/Tf201429073.pdf"
+              }
+            ],
+            "value": 1.411
+          }
+        }
+      },
+      "salaire_de_base_40h_mensuel": {
+        "description": "salaire de base mensuel - régime 40h par semaine",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/salaire_de_base_40h_mensuel.yaml",
+        "metadata": {
+          "unit": "currency"
+        },
+        "name": "cotisations_sociales.gen.salaire_de_base_40h_mensuel",
+        "values": {
+          "2008-07-01": {
+            "reference": [
+              {
+                "title": "Décret n°2008-2072 du 02 Juin 2008 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2008/2008F/046/TF200820723.pdf"
+              }
+            ],
+            "value": 187.88
+          },
+          "2009-08-01": {
+            "reference": [
+              {
+                "title": "Décret n°2009-2257 du 14 Juillet 2009 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2009/2009F/062/TF200922573.pdf"
+              }
+            ],
+            "value": 195.16
+          },
+          "2010-07-01": {
+            "reference": [
+              {
+                "title": "Décret n°2010-1746 du 17 Juillet 2010 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2010/2010F/058/TF201017463.pdf"
+              }
+            ],
+            "value": 205.04
+          },
+          "2011-05-01": {
+            "reference": [
+              {
+                "title": "Décret n°2011-679 du 09 Juin 2011 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2011/2011F/042/TF20116793.pdf"
+              }
+            ],
+            "value": 216.306
+          },
+          "2012-07-01": {
+            "reference": [
+              {
+                "title": "Décret n°2012-1981 du 20 Septembre 2012 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2012/2012F/077/TF201219813.pdf"
+              }
+            ],
+            "value": 229.479
+          },
+          "2014-05-01": {
+            "reference": [
+              {
+                "title": "Décret n°2014-2907 du 11 Août 2014 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2014/2014F/066/Tf201429073.pdf"
+              }
+            ],
+            "value": 244.559
+          }
+        }
+      },
+      "salaire_de_base_48h_horaire": {
+        "description": "salaire de base horaire - régime 48h par semaine",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/salaire_de_base_48h_horaire.yaml",
+        "metadata": {
+          "unit": "currency"
+        },
+        "name": "cotisations_sociales.gen.salaire_de_base_48h_horaire",
+        "values": {
+          "2008-07-01": {
+            "reference": [
+              {
+                "title": "Décret n°2008-2072 du 02 Juin 2008 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2008/2008F/046/TF200820723.pdf"
+              }
+            ],
+            "value": 1.065
+          },
+          "2009-08-01": {
+            "reference": [
+              {
+                "title": "Décret n°2009-2257 du 14 Juillet 2009 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2009/2009F/062/TF200922573.pdf"
+              }
+            ],
+            "value": 1.107
+          },
+          "2010-07-01": {
+            "reference": [
+              {
+                "title": "Décret n°2010-1746 du 17 Juillet 2010 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2010/2010F/058/TF201017463.pdf"
+              }
+            ],
+            "value": 1.164
+          },
+          "2011-05-01": {
+            "reference": [
+              {
+                "title": "Décret n°2011-679 du 09 Juin 2011 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2011/2011F/042/TF20116793.pdf"
+              }
+            ],
+            "value": 1.229
+          },
+          "2012-07-01": {
+            "reference": [
+              {
+                "title": "Décret n°2012-1981 du 20 Septembre 2012 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2012/2012F/077/TF201219813.pdf"
+              }
+            ],
+            "value": 1.305
+          },
+          "2014-05-01": {
+            "reference": [
+              {
+                "title": "Décret n°2014-2907 du 11 Août 2014 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2014/2014F/066/Tf201429073.pdf"
+              }
+            ],
+            "value": 1.392
+          }
+        }
+      },
+      "salaire_de_base_48h_mensuel": {
+        "description": "salaire de base mensuel - régime 48h par semaine",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/salaire_de_base_48h_mensuel.yaml",
+        "metadata": {
+          "unit": "currency"
+        },
+        "name": "cotisations_sociales.gen.salaire_de_base_48h_mensuel",
+        "values": {
+          "2008-07-01": {
+            "reference": [
+              {
+                "title": "Décret n°2008-2072 du 02 Juin 2008 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2008/2008F/046/TF200820723.pdf"
+              }
+            ],
+            "value": 221.52
+          },
+          "2009-08-01": {
+            "reference": [
+              {
+                "title": "Décret n°2009-2257 du 14 Juillet 2009 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2009/2009F/062/TF200922573.pdf"
+              }
+            ],
+            "value": 230.256
+          },
+          "2010-07-01": {
+            "reference": [
+              {
+                "title": "Décret n°2010-1746 du 17 Juillet 2010 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2010/2010F/058/TF201017463.pdf"
+              }
+            ],
+            "value": 242.112
+          },
+          "2011-05-01": {
+            "reference": [
+              {
+                "title": "Décret n°2011-679 du 09 Juin 2011 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2011/2011F/042/TF20116793.pdf"
+              }
+            ],
+            "value": 255.632
+          },
+          "2012-07-01": {
+            "reference": [
+              {
+                "title": "Décret n°2012-1981 du 20 Septembre 2012 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2012/2012F/077/TF201219813.pdf"
+              }
+            ],
+            "value": 271.44
+          },
+          "2014-05-01": {
+            "reference": [
+              {
+                "title": "Décret n°2014-2907 du 11 Août 2014 - http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2014/2014F/066/Tf201429073.pdf"
+              }
+            ],
+            "value": 289.536
+          }
+        }
+      },
+      "smag_journalier": {
+        "description": "Salaire Minimum Agricole Garanti (SMAG) - montant par jour",
+        "documentation": "Salaire minimum agricole garanti par journée de travail effectif pour les travailleurs des deux sexes âgés de 18 ans au moins\nالأجر الأدنى الفلاحي المضمون للعمال من الجنسين البالغين من العمر 18 سنة على الأقل عن كل يوم عمل فعلي\n",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/smag_journalier.yaml",
+        "metadata": {
+          "unit": "currency"
+        },
+        "name": "cotisations_sociales.gen.smag_journalier",
+        "values": {
+          "1966-01-01": {
+            "value": 0.385
+          },
+          "1968-05-01": {
+            "value": 0.5
+          },
+          "1969-11-01": {
+            "value": 0.55
+          },
+          "1971-05-01": {
+            "value": 0.6
+          },
+          "1974-06-01": {
+            "value": 0.8
+          },
+          "1975-06-01": {
+            "value": 0.9
+          },
+          "1977-05-01": {
+            "value": 1.2
+          },
+          "1978-05-01": {
+            "value": 1.332
+          },
+          "1979-05-01": {
+            "value": 1.44
+          },
+          "1980-02-01": {
+            "value": 1.483
+          },
+          "1980-05-01": {
+            "value": 1.631
+          },
+          "1981-04-01": {
+            "value": 2.0
+          },
+          "1982-02-01": {
+            "value": 2.4
+          },
+          "1983-01-01": {
+            "value": 2.64
+          },
+          "1986-07-01": {
+            "value": 2.9
+          },
+          "1987-11-01": {
+            "value": 3.05
+          },
+          "1988-04-01": {
+            "value": 3.2
+          },
+          "1989-08-01": {
+            "value": 3.315
+          },
+          "1990-01-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 3.661
+          },
+          "1991-08-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 3.761
+          },
+          "1992-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 3.961
+          },
+          "1992-08-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 4.061
+          },
+          "1993-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 4.261
+          },
+          "1993-08-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 4.361
+          },
+          "1994-08-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 4.461
+          },
+          "1995-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 4.661
+          },
+          "1996-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 4.861
+          },
+          "1996-09-09": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 4.961
+          },
+          "1997-07-20": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 5.061
+          },
+          "1997-11-07": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 5.209
+          },
+          "1998-08-20": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 5.309
+          },
+          "1999-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 5.509
+          },
+          "1999-08-19": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 5.609
+          },
+          "2000-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 5.809
+          },
+          "2001-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 6.059
+          },
+          "2002-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 6.259
+          },
+          "2003-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 6.509
+          },
+          "2004-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 6.709
+          },
+          "2005-09-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 6.909
+          },
+          "2006-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 7.129
+          },
+          "2007-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 7.379
+          },
+          "2008-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 7.749
+          },
+          "2009-08-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 8.019
+          },
+          "2010-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmagFR.pdf"
+              }
+            ],
+            "value": 8.38
+          },
+          "2011-05-01": {
+            "value": 9.0
+          },
+          "2012-07-01": {
+            "value": 10.608
+          },
+          "2012-12-01": {
+            "value": 11.608
+          },
+          "2014-08-11": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2014/2014F/066/Tf201429083.pdf",
+                "title": "Décret n°2014-2908 du 11 Août 2014"
+              }
+            ],
+            "value": 12.304
+          },
+          "2015-11-09": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2015/2015F/091/Tf2015017623.pdf",
+                "title": "Décret n°2015-1763 du 09 Novembre 2015"
+              }
+            ],
+            "value": 13.0
+          },
+          "2017-06-05": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2017/2017F/045/Tf20176693.pdf",
+                "title": "Décret n°2017-669 du 05 Juin 2017"
+              }
+            ],
+            "value": 13.736
+          },
+          "2018-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2018/2018F/064/Tf20186723.pdf",
+                "title": "Décret gouvernemental n°2018-673 du 07 août 2018"
+              }
+            ],
+            "value": 14.56
+          },
+          "2019-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/fr/detailtexte/Décret%20Gouvernemental-num-2019-455-du----jort-2019-043__20190430045532?shorten=m5lK",
+                "title": "Décret gouvernemental n° 2019-455 du 28 mai 2019"
+              }
+            ],
+            "value": 15.504
+          }
+        }
+      },
+      "smig_40h_horaire": {
+        "description": "Salaire Minimum Interprofessionnel Garanti (SMIG) horaire - régime 40h par semaine",
+        "documentation": "Salaire minimum interprofessionnel garanti dans les secteurs non agricoles pour les travailleurs des deux sexes âgés de 18 ans au moins\nالأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية للعمال من الجنسين البالغين من العمر 18 سنة على الأقل\n",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/smig_40h_horaire.yaml",
+        "metadata": {
+          "unit": "currency"
+        },
+        "name": "cotisations_sociales.gen.smig_40h_horaire",
+        "values": {
+          "1990-01-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 0.621
+          },
+          "1991-08-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 0.633
+          },
+          "1992-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 0.671
+          },
+          "1992-08-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 0.683
+          },
+          "1993-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 0.721
+          },
+          "1993-08-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 0.733
+          },
+          "1994-08-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 0.745
+          },
+          "1995-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 0.779
+          },
+          "1996-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 0.808
+          },
+          "1996-09-09": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 0.82
+          },
+          "1997-07-20": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 0.832
+          },
+          "1997-11-07": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 0.861
+          },
+          "1998-08-20": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 0.875
+          },
+          "1999-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 0.904
+          },
+          "1999-08-19": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 0.916
+          },
+          "2000-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 0.945
+          },
+          "2001-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 0.986
+          },
+          "2002-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 1.02
+          },
+          "2003-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 1.061
+          },
+          "2004-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 1.095
+          },
+          "2005-09-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 1.124
+          },
+          "2006-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 1.158
+          },
+          "2007-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 1.199
+          },
+          "2008-07-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2008/2008F/046/TF200820723.pdf",
+                "title": "Décret n°2008-2072 du 02 Juin 2008"
+              }
+            ],
+            "value": 1.257
+          },
+          "2009-08-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2009/2009F/062/TF200922573.pdf",
+                "title": "Décret n°2009-2257 du 14 Juillet 2009"
+              }
+            ],
+            "value": 1.299
+          },
+          "2010-07-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2010/2010F/058/TF201017463.pdf",
+                "title": "Décret n°2010-1746 du 17 Juillet 2010"
+              }
+            ],
+            "value": 1.356
+          },
+          "2011-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2011/2011F/042/TF20116793.pdf",
+                "title": "Décret n°2011-679 du 09 Juin 2011"
+              }
+            ],
+            "value": 1.421
+          },
+          "2012-07-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2012/2012F/077/TF201219813.pdf",
+                "title": "Décret n°2012-1981 du 20 Septembre 2012"
+              }
+            ],
+            "value": 1.497
+          },
+          "2014-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2014/2014F/066/Tf201429073.pdf",
+                "title": "Décret n°2014-2907 du 11 Août 2014"
+              }
+            ],
+            "value": 1.584
+          },
+          "2015-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2015/2015F/091/Tf2015017623.pdf",
+                "title": "Décret n°2015-1762 du 09 Novembre 2015"
+              }
+            ],
+            "value": 1.671
+          },
+          "2016-08-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2017/2017F/045/Tf20176683.pdf",
+                "title": "Décret n°2017-668 du 05 Juin 2017"
+              }
+            ],
+            "value": 1.763
+          },
+          "2018-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2018/2018F/064/Tf20186723.pdf",
+                "title": "Décret gouvernemental n° 2018-672 du 07 août 2018"
+              }
+            ],
+            "value": 1.866
+          },
+          "2019-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/fr/detailtexte/Décret%20Gouvernemental-num-2019-454-du----jort-2019-043__20190430045432?shorten=m5lq",
+                "title": "Décret gouvernemental n°2019-454 du 28 mai 2019"
+              }
+            ],
+            "value": 1.984
+          }
+        }
+      },
+      "smig_40h_mensuel": {
+        "description": "Salaire Minimum Interprofessionnel Garanti (SMIG) mensuel - régime 40h par semaine",
+        "documentation": "Salaire minimum interprofessionnel garanti dans les secteurs non agricoles pour les travailleurs des deux sexes âgés de 18 ans au moins\nالأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية للعمال من الجنسين البالغين من العمر 18 سنة على الأقل\n",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/smig_40h_mensuel.yaml",
+        "metadata": {
+          "unit": "currency"
+        },
+        "name": "cotisations_sociales.gen.smig_40h_mensuel",
+        "values": {
+          "1975-06-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/journal-officiel/1975/1975F/Jo03875.pdf",
+                "title": "Décret n°75-357 du 03 Juin 1975"
+              }
+            ],
+            "value": 25.133
+          },
+          "1980-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/journal-officiel/1980/1980F/Jo03180.pdf",
+                "title": "Décret n°80-609 du 19 Mai 1980"
+              }
+            ],
+            "value": 45.586
+          },
+          "1982-02-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/journal-officiel/1982/1982F/Jo01982.pdf",
+                "title": "Décret n°80-609 du 19 Mai 1980 + Décret n°82-501 du 16 Mars 1982"
+              }
+            ],
+            "value": 45.586
+          },
+          "1990-01-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 107.706
+          },
+          "1991-08-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 109.706
+          },
+          "1992-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 116.318
+          },
+          "1992-08-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 118.398
+          },
+          "1993-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 124.971
+          },
+          "1993-08-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 127.051
+          },
+          "1994-08-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 129.131
+          },
+          "1995-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 135.024
+          },
+          "1996-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 140.051
+          },
+          "1996-09-09": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 142.131
+          },
+          "1997-07-20": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 144.211
+          },
+          "1997-11-07": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 149.237
+          },
+          "1998-08-20": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 151.664
+          },
+          "1999-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 156.691
+          },
+          "1999-08-19": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 158.771
+          },
+          "2000-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 163.798
+          },
+          "2001-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 170.905
+          },
+          "2002-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 176.799
+          },
+          "2003-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 183.906
+          },
+          "2004-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 189.8
+          },
+          "2005-09-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 194.827
+          },
+          "2006-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 200.721
+          },
+          "2007-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig40FR.pdf"
+              }
+            ],
+            "value": 207.828
+          },
+          "2008-07-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2008/2008F/046/TF200820723.pdf",
+                "title": "Décret n°2008-2072 du 02 Juin 2008"
+              }
+            ],
+            "value": 217.88
+          },
+          "2009-08-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2009/2009F/062/TF200922573.pdf",
+                "title": "Décret n°2009-2257 du 14 Juillet 2009"
+              }
+            ],
+            "value": 225.16
+          },
+          "2010-07-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2010/2010F/058/TF201017463.pdf",
+                "title": "Décret n°2010-1746 du 17 Juillet 2010"
+              }
+            ],
+            "value": 235.04
+          },
+          "2011-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2011/2011F/042/TF20116793.pdf",
+                "title": "Décret n°2011-679 du 09 Juin 2011"
+              }
+            ],
+            "value": 246.306
+          },
+          "2012-07-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2012/2012F/077/TF201219813.pdf",
+                "title": "Décret n°2012-1981 du 20 Septembre 2012"
+              }
+            ],
+            "value": 259.479
+          },
+          "2014-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2014/2014F/066/Tf201429073.pdf",
+                "title": "Décret n°2014-2907 du 11 Août 2014"
+              }
+            ],
+            "value": 274.559
+          },
+          "2015-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2015/2015F/091/Tf2015017623.pdf",
+                "title": "Décret n°2015-1762 du 09 Novembre 2015"
+              }
+            ],
+            "value": 289.639
+          },
+          "2016-08-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2017/2017F/045/Tf20176683.pdf",
+                "title": "Décret n°2017-668 du 05 Juin 2017"
+              }
+            ],
+            "value": 305.586
+          },
+          "2018-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2018/2018F/064/Tf20186723.pdf",
+                "title": "Décret gouvernemental n°2018-672 du 07 août 2018"
+              }
+            ],
+            "value": 323.439
+          },
+          "2019-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/fr/detailtexte/Décret%20Gouvernemental-num-2019-454-du----jort-2019-043__20190430045432?shorten=m5lq",
+                "title": "Décret gouvernemental n°2019-454 du 28 mai 2019"
+              }
+            ],
+            "value": 343.892
+          }
+        }
+      },
+      "smig_48h_horaire": {
+        "description": "Salaire Minimum Interprofessionnel Garanti (SMIG) horaire - régime 48h par semaine",
+        "documentation": "Salaire minimum interprofessionnel garanti dans les secteurs non agricoles pour les travailleurs des deux sexes âgés de 18 ans au moins\nالأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية للعمال من الجنسين البالغين من العمر 18 سنة على الأقل\n",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/smig_48h_horaire.yaml",
+        "metadata": {
+          "unit": "currency"
+        },
+        "name": "cotisations_sociales.gen.smig_48h_horaire",
+        "values": {
+          "1961-04-01": {
+            "value": 0.076
+          },
+          "1966-01-01": {
+            "value": 0.084
+          },
+          "1968-05-01": {
+            "value": 0.084
+          },
+          "1971-05-01": {
+            "value": 0.104
+          },
+          "1974-01-01": {
+            "value": 0.13
+          },
+          "1975-06-01": {
+            "value": 0.145
+          },
+          "1977-02-01": {
+            "value": 0.193
+          },
+          "1978-05-01": {
+            "value": 0.21425
+          },
+          "1979-05-01": {
+            "value": 0.232
+          },
+          "1980-02-01": {
+            "value": 0.23896
+          },
+          "1980-05-01": {
+            "value": 0.263
+          },
+          "1981-04-01": {
+            "value": 0.311
+          },
+          "1982-02-01": {
+            "value": 0.409
+          },
+          "1983-01-01": {
+            "value": 0.457
+          },
+          "1986-07-01": {
+            "value": 0.481
+          },
+          "1987-11-01": {
+            "value": 0.505
+          },
+          "1988-04-01": {
+            "value": 0.529
+          },
+          "1989-08-01": {
+            "value": 0.543
+          },
+          "1990-01-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 0.591
+          },
+          "1991-08-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 0.601
+          },
+          "1992-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 0.639
+          },
+          "1992-08-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 0.649
+          },
+          "1993-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 0.687
+          },
+          "1993-08-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 0.697
+          },
+          "1994-08-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 0.707
+          },
+          "1995-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 0.741
+          },
+          "1996-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 0.77
+          },
+          "1996-09-09": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 0.78
+          },
+          "1997-07-20": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 0.79
+          },
+          "1997-11-07": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 0.819
+          },
+          "1998-08-20": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 0.831
+          },
+          "1999-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 0.86
+          },
+          "1999-08-19": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 0.87
+          },
+          "2000-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 0.899
+          },
+          "2001-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 0.94
+          },
+          "2002-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 0.974
+          },
+          "2003-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 1.015
+          },
+          "2004-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 1.049
+          },
+          "2005-09-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 1.078
+          },
+          "2006-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 1.112
+          },
+          "2007-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 1.153
+          },
+          "2008-07-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2008/2008F/046/TF200820723.pdf",
+                "title": "Décret n°2008-2072 du 02 Juin 2008"
+              }
+            ],
+            "value": 1.211
+          },
+          "2009-08-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2009/2009F/062/TF200922573.pdf",
+                "title": "Décret n°2009-2257 du 14 Juillet 2009"
+              }
+            ],
+            "value": 1.253
+          },
+          "2010-07-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2010/2010F/058/TF201017463.pdf",
+                "title": "Décret n°2010-1746 du 17 Juillet 2010"
+              }
+            ],
+            "value": 1.31
+          },
+          "2011-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2011/2011F/042/TF20116793.pdf",
+                "title": "Décret n°2011-679 du 09 Juin 2011"
+              }
+            ],
+            "value": 1.375
+          },
+          "2012-07-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2012/2012F/077/TF201219813.pdf",
+                "title": "Décret n°2012-1981 du 20 Septembre 2012"
+              }
+            ],
+            "value": 1.451
+          },
+          "2014-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2014/2014F/066/Tf201429073.pdf",
+                "title": "Décret n°2014-2907 du 11 Août 2014"
+              }
+            ],
+            "value": 1.538
+          },
+          "2015-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2015/2015F/091/Tf2015017623.pdf",
+                "title": "Décret n°2015-1762 du 09 Novembre 2015"
+              }
+            ],
+            "value": 1.625
+          },
+          "2016-08-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2017/2017F/045/Tf20176683.pdf",
+                "title": "Décret n°2017-668 du 05 Juin 2017"
+              }
+            ],
+            "value": 1.717
+          },
+          "2018-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2018/2018F/064/Tf20186723.pdf",
+                "title": "Décret gouvernemental n°2018-672 du 07 août 2018"
+              }
+            ],
+            "value": 1.82
+          },
+          "2019-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/fr/detailtexte/Décret%20Gouvernemental-num-2019-454-du----jort-2019-043__20190430045432?shorten=m5lq",
+                "title": "Décret gouvernemental n°2019-454 du 28 mai 2019"
+              }
+            ],
+            "value": 1.938
+          }
+        }
+      },
+      "smig_48h_mensuel": {
+        "description": "Salaire Minimum Interprofessionnel Garanti (SMIG) mensuel - régime 48h par semaine",
+        "documentation": "Salaire minimum interprofessionnel garanti dans les secteurs non agricoles pour les travailleurs des deux sexes âgés de 18 ans au moins\nالأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية للعمال من الجنسين البالغين من العمر 18 سنة على الأقل\n",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/smig_48h_mensuel.yaml",
+        "metadata": {
+          "unit": "currency"
+        },
+        "name": "cotisations_sociales.gen.smig_48h_mensuel",
+        "values": {
+          "1975-06-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/journal-officiel/1975/1975F/Jo03875.pdf",
+                "title": "Décret n°75-357 du 03 Juin 1975"
+              }
+            ],
+            "value": 30.16
+          },
+          "1980-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/journal-officiel/1980/1980F/Jo03180.pdf",
+                "title": "Décret n°80-609 du 19 Mai 1980"
+              }
+            ],
+            "value": 54.704
+          },
+          "1982-02-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/journal-officiel/1982/1982F/Jo01982.pdf",
+                "title": "Décret n°80-609 du 19 Mai 1980 + Décret n°82-501 du 16 Mars 1982"
+              }
+            ],
+            "value": 54.704
+          },
+          "1990-01-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 123.016
+          },
+          "1991-08-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 125.016
+          },
+          "1992-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 132.912
+          },
+          "1992-08-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 134.992
+          },
+          "1993-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 142.896
+          },
+          "1993-08-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 144.976
+          },
+          "1994-08-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 147.056
+          },
+          "1995-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 154.128
+          },
+          "1996-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 160.16
+          },
+          "1996-09-09": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 162.24
+          },
+          "1997-07-20": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 164.32
+          },
+          "1997-11-07": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 170.352
+          },
+          "1998-08-20": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 172.848
+          },
+          "1999-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 178.88
+          },
+          "1999-08-19": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 180.96
+          },
+          "2000-05-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 186.992
+          },
+          "2001-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 195.52
+          },
+          "2002-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 202.592
+          },
+          "2003-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 211.12
+          },
+          "2004-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 218.192
+          },
+          "2005-09-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 224.224
+          },
+          "2006-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 231.296
+          },
+          "2007-07-01": {
+            "reference": [
+              {
+                "href": "http://www.social.tn/fileadmin/user1/doc/pdftravail/evosmig48FR.pdf"
+              }
+            ],
+            "value": 239.824
+          },
+          "2008-07-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2008/2008F/046/TF200820723.pdf",
+                "title": "Décret n°2008-2072 du 02 Juin 2008"
+              }
+            ],
+            "value": 251.888
+          },
+          "2009-08-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2009/2009F/062/TF200922573.pdf",
+                "title": "Décret n°2009-2257 du 14 Juillet 2009"
+              }
+            ],
+            "value": 260.624
+          },
+          "2010-07-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2010/2010F/058/TF201017463.pdf",
+                "title": "Décret n°2010-1746 du 17 Juillet 2010"
+              }
+            ],
+            "value": 272.48
+          },
+          "2011-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2011/2011F/042/TF20116793.pdf",
+                "title": "Décret n°2011-679 du 09 Juin 2011"
+              }
+            ],
+            "value": 286.0
+          },
+          "2012-07-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2012/2012F/077/TF201219813.pdf",
+                "title": "Décret n°2012-1981 du 20 Septembre 2012"
+              }
+            ],
+            "value": 301.808
+          },
+          "2014-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2014/2014F/066/Tf201429073.pdf",
+                "title": "Décret n°2014-2907 du 11 Août 2014"
+              }
+            ],
+            "value": 319.904
+          },
+          "2015-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2015/2015F/091/Tf2015017623.pdf",
+                "title": "Décret n°2015-1762 du 09 Novembre 2015"
+              }
+            ],
+            "value": 338.0
+          },
+          "2016-08-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2017/2017F/045/Tf20176683.pdf",
+                "title": "Décret n°2017-668 du 05 Juin 2017"
+              }
+            ],
+            "value": 357.136
+          },
+          "2018-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/sites/default/files/fraction-journal-officiel/2018/2018F/064/Tf20186723.pdf",
+                "title": "Décret gouvernemental n°2018-672 du 07 août 2018"
+              }
+            ],
+            "value": 378.56
+          },
+          "2019-05-01": {
+            "reference": [
+              {
+                "href": "http://www.legislation.tn/fr/detailtexte/Décret%20Gouvernemental-num-2019-454-du----jort-2019-043__20190430045432?shorten=m5lq",
+                "title": "Décret gouvernemental n°2019-454 du 28 mai 2019"
+              }
+            ],
+            "value": 403.104
+          }
+        }
+      }
+    },
+    "name": "cotisations_sociales",
+    "pensionne_cnrps": {
+      "deces": {
+        "brackets": [
+          {
+            "rate": {
+              "1985-01-01": {
+                "value": 0.01
+              }
+            },
+            "threshold": {
+              "1985-01-01": {
+                "value": 0
+              }
+            }
+          }
+        ],
+        "description": "Capital décès",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/pensionne_cnrps/deces.yaml",
+        "metadata": {
+          "rate_unit": "/1",
+          "threshold_unit": "currency"
+        },
+        "name": "cotisations_sociales.pensionne_cnrps.deces"
+      },
+      "description": "Cotisations des agents pensionnés de l'Etat",
+      "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/pensionne_cnrps",
+      "name": "cotisations_sociales.pensionne_cnrps",
+      "prev_soc": {
+        "brackets": [
+          {
+            "rate": {
+              "1985-01-01": {
+                "value": 0.0
+              },
+              "2007-07-01": {
+                "value": 0.04
+              }
+            },
+            "threshold": {
+              "2002-03-12": {
+                "value": 0
+              }
+            }
+          }
+        ],
+        "description": "Prévoyance sociale",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/pensionne_cnrps/prev_soc.yaml",
+        "metadata": {
+          "rate_unit": "/1",
+          "threshold_unit": "currency"
+        },
+        "name": "cotisations_sociales.pensionne_cnrps.prev_soc"
+      }
+    },
+    "raci": {
+      "assurances_sociales": {
+        "deces": {
+          "brackets": [
+            {
+              "rate": {
+                "2003-01-01": {
+                  "value": 0.0056
+                }
+              },
+              "threshold": {
+                "2003-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Indemnités de décès et capital décès",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/raci/assurances_sociales/deces.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.raci.assurances_sociales.deces"
+        },
+        "description": "Assurances sociales",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/raci/assurances_sociales",
+        "maladie": {
+          "brackets": [
+            {
+              "rate": {
+                "2003-01-01": {
+                  "value": 0.0675
+                }
+              },
+              "threshold": {
+                "2003-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Assurance Maladie",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/raci/assurances_sociales/maladie.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.raci.assurances_sociales.maladie"
+        },
+        "maternite": {
+          "brackets": [
+            {
+              "rate": {
+                "2003-01-01": {
+                  "value": 0.0074
+                }
+              },
+              "threshold": {
+                "2003-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Indemnités de maladie et maternité",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/raci/assurances_sociales/maternite.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.raci.assurances_sociales.maternite"
+        },
+        "name": "cotisations_sociales.raci.assurances_sociales"
+      },
+      "description": "Régime des créateurs, artistes et intellectuels",
+      "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/raci",
+      "metadata": {
+        "reference": {
+          "0001-01-01": [
+            {
+              "title": "Loi n°2002-104 du 30 décembre 2002, relative au régime de sécurité sociale des artistes, des créateurs et des intellectuels."
+            }
+          ]
+        }
+      },
+      "name": "cotisations_sociales.raci",
+      "retraite": {
+        "brackets": [
+          {
+            "rate": {
+              "2003-01-01": {
+                "value": 0.0525
+              }
+            },
+            "threshold": {
+              "2003-01-01": {
+                "value": 0
+              }
+            }
+          }
+        ],
+        "description": "Pensions",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/raci/retraite.yaml",
+        "metadata": {
+          "rate_unit": "/1",
+          "threshold_unit": "currency"
+        },
+        "name": "cotisations_sociales.raci.retraite"
+      }
+    },
+    "re": {
+      "cotisation": {
+        "description": "Montant de la cotisation",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/re/cotisation.yaml",
+        "metadata": {
+          "reference": {
+            "0001-01-01": [
+              {
+                "title": "Décret n°92-631 du 23 mars 1992 tel que modifié par le décret n°2003-1544 du 2 juillet 2003, fixant les conditions de bénéfice du régime de sécurité sociale des étudiants."
+              }
+            ]
+          },
+          "unit": "currency"
+        },
+        "name": "cotisations_sociales.re.cotisation",
+        "values": {
+          "2003-07-02": {
+            "value": 5
+          }
+        }
+      },
+      "description": "Régime des étudiants",
+      "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/re",
+      "metadata": {
+        "reference": {
+          "0001-01-01": [
+            {
+              "title": "Loi n° 65-17 du 28 juin 1965 (28 safar 1385), étendant les régimes de sécurité sociale aux étudiants."
+            }
+          ]
+        }
+      },
+      "name": "cotisations_sociales.re"
+    },
+    "rsa": {
+      "cotisations_employeur": {
+        "assurances_sociales": {
+          "deces": {
+            "brackets": [
+              {
+                "rate": {
+                  "1960-01-01": {
+                    "value": 0.000375
+                  }
+                },
+                "threshold": {
+                  "1960-01-01": {
+                    "value": 0
+                  }
+                }
+              }
+            ],
+            "description": "Indemnités de décès et capital décès",
+            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_employeur/assurances_sociales/deces.yaml",
+            "metadata": {
+              "rate_unit": "/1",
+              "threshold_unit": "currency"
+            },
+            "name": "cotisations_sociales.rsa.cotisations_employeur.assurances_sociales.deces"
+          },
+          "description": "Assurances sociales",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_employeur/assurances_sociales",
+          "maladie": {
+            "brackets": [
+              {
+                "rate": {
+                  "1960-01-01": {
+                    "value": 0.006825
+                  },
+                  "2007-07-01": {
+                    "value": 0.013525
+                  },
+                  "2008-07-01": {
+                    "value": 0.020225
+                  },
+                  "2009-07-01": {
+                    "value": 0.026825
+                  },
+                  "2010-07-01": {
+                    "value": 0.033425
+                  },
+                  "2011-07-01": {
+                    "value": 0.040025
+                  }
+                },
+                "threshold": {
+                  "1960-01-01": {
+                    "value": 0
+                  }
+                }
+              }
+            ],
+            "description": "Assurance Maladie",
+            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_employeur/assurances_sociales/maladie.yaml",
+            "metadata": {
+              "rate_unit": "/1",
+              "threshold_unit": "currency"
+            },
+            "name": "cotisations_sociales.rsa.cotisations_employeur.assurances_sociales.maladie"
+          },
+          "maternite": {
+            "brackets": [
+              {
+                "rate": {
+                  "1960-01-01": {
+                    "value": 0.0018
+                  }
+                },
+                "threshold": {
+                  "1960-01-01": {
+                    "value": 0
+                  }
+                }
+              }
+            ],
+            "description": "Indemnités de maladie et maternité",
+            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_employeur/assurances_sociales/maternite.yaml",
+            "metadata": {
+              "rate_unit": "/1",
+              "threshold_unit": "currency"
+            },
+            "name": "cotisations_sociales.rsa.cotisations_employeur.assurances_sociales.maternite"
+          },
+          "name": "cotisations_sociales.rsa.cotisations_employeur.assurances_sociales"
+        },
+        "description": "Patronales",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_employeur",
+        "name": "cotisations_sociales.rsa.cotisations_employeur",
+        "retraite": {
+          "brackets": [
+            {
+              "rate": {
+                "1960-01-01": {
+                  "value": 0.035
+                }
+              },
+              "threshold": {
+                "1960-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Pensions",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_employeur/retraite.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.rsa.cotisations_employeur.retraite"
+        }
+      },
+      "cotisations_salarie": {
+        "assurances_sociales": {
+          "deces": {
+            "brackets": [
+              {
+                "rate": {
+                  "1960-01-01": {
+                    "value": 0.000125
+                  }
+                },
+                "threshold": {
+                  "1960-01-01": {
+                    "value": 0
+                  }
+                }
+              }
+            ],
+            "description": "Indemnités de décès et capital décès",
+            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_salarie/assurances_sociales/deces.yaml",
+            "metadata": {
+              "rate_unit": "/1",
+              "threshold_unit": "currency"
+            },
+            "name": "cotisations_sociales.rsa.cotisations_salarie.assurances_sociales.deces"
+          },
+          "description": "Assurances sociales",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_salarie/assurances_sociales",
+          "maladie": {
+            "brackets": [
+              {
+                "rate": {
+                  "1960-01-01": {
+                    "value": 0.0275
+                  }
+                },
+                "threshold": {
+                  "1960-01-01": {
+                    "value": 0
+                  }
+                }
+              }
+            ],
+            "description": "Assurance Maladie",
+            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_salarie/assurances_sociales/maladie.yaml",
+            "metadata": {
+              "rate_unit": "/1",
+              "threshold_unit": "currency"
+            },
+            "name": "cotisations_sociales.rsa.cotisations_salarie.assurances_sociales.maladie"
+          },
+          "maternite": {
+            "brackets": [
+              {
+                "rate": {
+                  "1960-01-01": {
+                    "value": 0.002275
+                  },
+                  "2008-07-01": {
+                    "value": 0.008575
+                  },
+                  "2009-07-01": {
+                    "value": 0.014875
+                  },
+                  "2010-07-01": {
+                    "value": 0.021175
+                  },
+                  "2011-07-01": {
+                    "value": 0.027475
+                  }
+                },
+                "threshold": {
+                  "1960-01-01": {
+                    "value": 0
+                  }
+                }
+              }
+            ],
+            "description": "Indemnités de maladie et maternité",
+            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_salarie/assurances_sociales/maternite.yaml",
+            "metadata": {
+              "rate_unit": "/1",
+              "threshold_unit": "currency"
+            },
+            "name": "cotisations_sociales.rsa.cotisations_salarie.assurances_sociales.maternite"
+          },
+          "name": "cotisations_sociales.rsa.cotisations_salarie.assurances_sociales"
+        },
+        "description": "Salariales",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_salarie",
+        "name": "cotisations_sociales.rsa.cotisations_salarie",
+        "retraite": {
+          "brackets": [
+            {
+              "rate": {
+                "1960-01-01": {
+                  "value": 0.0175
+                }
+              },
+              "threshold": {
+                "1960-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Pensions",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_salarie/retraite.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.rsa.cotisations_salarie.retraite"
+        }
+      },
+      "description": "Régime des salariés agricoles",
+      "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa",
+      "name": "cotisations_sociales.rsa"
+    },
+    "rsaa": {
+      "cotisations_employeur": {
+        "assurances_sociales": {
+          "deces": {
+            "brackets": [
+              {
+                "rate": {
+                  "1960-01-01": {
+                    "value": 0.0008
+                  }
+                },
+                "threshold": {
+                  "1960-01-01": {
+                    "value": 0
+                  }
+                }
+              }
+            ],
+            "description": "Indemnités de décès et capital décès",
+            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_employeur/assurances_sociales/deces.yaml",
+            "metadata": {
+              "rate_unit": "/1",
+              "threshold_unit": "currency"
+            },
+            "name": "cotisations_sociales.rsaa.cotisations_employeur.assurances_sociales.deces"
+          },
+          "description": "Assurances sociales",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_employeur/assurances_sociales",
+          "maladie": {
+            "brackets": [
+              {
+                "rate": {
+                  "1960-01-01": {
+                    "value": 0.0152
+                  },
+                  "2007-07-01": {
+                    "value": 0.0214
+                  },
+                  "2008-07-01": {
+                    "value": 0.0276
+                  },
+                  "2009-07-01": {
+                    "value": 0.0338
+                  },
+                  "2010-07-01": {
+                    "value": 0.0338
+                  }
+                },
+                "threshold": {
+                  "1960-01-01": {
+                    "value": 0
+                  }
+                }
+              }
+            ],
+            "description": "Assurance Maladie",
+            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_employeur/assurances_sociales/maladie.yaml",
+            "metadata": {
+              "rate_unit": "/1",
+              "threshold_unit": "currency"
+            },
+            "name": "cotisations_sociales.rsaa.cotisations_employeur.assurances_sociales.maladie"
+          },
+          "maternite": {
+            "brackets": [
+              {
+                "rate": {
+                  "1960-01-01": {
+                    "value": 0.004
+                  }
+                },
+                "threshold": {
+                  "1960-01-01": {
+                    "value": 0
+                  }
+                }
+              }
+            ],
+            "description": "Indemnités de maladie et maternité",
+            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_employeur/assurances_sociales/maternite.yaml",
+            "metadata": {
+              "rate_unit": "/1",
+              "threshold_unit": "currency"
+            },
+            "name": "cotisations_sociales.rsaa.cotisations_employeur.assurances_sociales.maternite"
+          },
+          "name": "cotisations_sociales.rsaa.cotisations_employeur.assurances_sociales"
+        },
+        "description": "Patronales",
+        "famille": {
+          "brackets": [
+            {
+              "rate": {
+                "1960-01-01": {
+                  "value": 0.03
+                }
+              },
+              "threshold": {
+                "1960-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Prestations familiales",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_employeur/famille.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.rsaa.cotisations_employeur.famille"
+        },
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_employeur",
+        "name": "cotisations_sociales.rsaa.cotisations_employeur",
+        "retraite": {
+          "brackets": [
+            {
+              "rate": {
+                "1960-01-01": {
+                  "value": 0.05
+                }
+              },
+              "threshold": {
+                "1960-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Pensions",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_employeur/retraite.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.rsaa.cotisations_employeur.retraite"
+        }
+      },
+      "cotisations_salarie": {
+        "assurances_sociales": {
+          "deces": {
+            "brackets": [
+              {
+                "rate": {
+                  "1960-01-01": {
+                    "value": 0.0004
+                  }
+                },
+                "threshold": {
+                  "1960-01-01": {
+                    "value": 0
+                  }
+                }
+              }
+            ],
+            "description": "Indemnités de décès et capital décès",
+            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_salarie/assurances_sociales/deces.yaml",
+            "metadata": {
+              "rate_unit": "/1",
+              "threshold_unit": "currency"
+            },
+            "name": "cotisations_sociales.rsaa.cotisations_salarie.assurances_sociales.deces"
+          },
+          "description": "Assurances sociales",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_salarie/assurances_sociales",
+          "maladie": {
+            "brackets": [
+              {
+                "rate": {
+                  "1960-01-01": {
+                    "value": 0.0076
+                  },
+                  "2008-07-01": {
+                    "value": 0.0143
+                  },
+                  "2009-07-01": {
+                    "value": 0.0209
+                  },
+                  "2010-07-01": {
+                    "value": 0.0275
+                  }
+                },
+                "threshold": {
+                  "1960-01-01": {
+                    "value": 0
+                  }
+                }
+              }
+            ],
+            "description": "Assurance Maladie",
+            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_salarie/assurances_sociales/maladie.yaml",
+            "metadata": {
+              "rate_unit": "/1",
+              "threshold_unit": "currency"
+            },
+            "name": "cotisations_sociales.rsaa.cotisations_salarie.assurances_sociales.maladie"
+          },
+          "maternite": {
+            "brackets": [
+              {
+                "rate": {
+                  "1960-01-01": {
+                    "value": 0.002
+                  }
+                },
+                "threshold": {
+                  "1960-01-01": {
+                    "value": 0
+                  }
+                }
+              }
+            ],
+            "description": "Indemnités de maladie et maternité",
+            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_salarie/assurances_sociales/maternite.yaml",
+            "metadata": {
+              "rate_unit": "/1",
+              "threshold_unit": "currency"
+            },
+            "name": "cotisations_sociales.rsaa.cotisations_salarie.assurances_sociales.maternite"
+          },
+          "name": "cotisations_sociales.rsaa.cotisations_salarie.assurances_sociales"
+        },
+        "description": "Salariales",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_salarie",
+        "name": "cotisations_sociales.rsaa.cotisations_salarie",
+        "prestations_familiales": {
+          "brackets": [
+            {
+              "rate": {
+                "1960-01-01": {
+                  "value": 0.015
+                }
+              },
+              "threshold": {
+                "1960-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Prestations familiales",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_salarie/prestations_familiales.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.rsaa.cotisations_salarie.prestations_familiales"
+        },
+        "retraite": {
+          "brackets": [
+            {
+              "rate": {
+                "1960-01-01": {
+                  "value": 0.025
+                }
+              },
+              "threshold": {
+                "1960-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Pensions",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_salarie/retraite.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.rsaa.cotisations_salarie.retraite"
+        }
+      },
+      "description": "Régime des salariés agricoles amélioré",
+      "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa",
+      "name": "cotisations_sociales.rsaa"
+    },
+    "rsna": {
+      "cotisations_employeur": {
+        "accident_du_travail": {
+          "brackets": [
+            {
+              "rate": {
+                "1960-01-01": {
+                  "value": 0.007222
+                }
+              },
+              "threshold": {
+                "1960-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Accidents du travail - Maladies professionelles",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_employeur/accident_du_travail.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.rsna.cotisations_employeur.accident_du_travail"
+        },
+        "assurances_sociales": {
+          "deces": {
+            "brackets": [
+              {
+                "rate": {
+                  "1960-01-01": {
+                    "value": 0.004694
+                  }
+                },
+                "threshold": {
+                  "1960-01-01": {
+                    "value": 0
+                  }
+                }
+              }
+            ],
+            "description": "Indemnités de décès et capital décès",
+            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_employeur/assurances_sociales/deces.yaml",
+            "metadata": {
+              "rate_unit": "/1",
+              "threshold_unit": "currency"
+            },
+            "name": "cotisations_sociales.rsna.cotisations_employeur.assurances_sociales.deces"
+          },
+          "description": "Assurances sociales",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_employeur/assurances_sociales",
+          "maladie": {
+            "brackets": [
+              {
+                "rate": {
+                  "1960-01-01": {
+                    "value": 0.034306
+                  },
+                  "2007-07-01": {
+                    "value": 0.040006
+                  }
+                },
+                "threshold": {
+                  "1960-01-01": {
+                    "value": 0
+                  }
+                }
+              }
+            ],
+            "description": "Assurance Maladie",
+            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_employeur/assurances_sociales/maladie.yaml",
+            "metadata": {
+              "rate_unit": "/1",
+              "threshold_unit": "currency"
+            },
+            "name": "cotisations_sociales.rsna.cotisations_employeur.assurances_sociales.maladie"
+          },
+          "maternite": {
+            "brackets": [
+              {
+                "rate": {
+                  "1960-01-01": {
+                    "value": 0.006139
+                  }
+                },
+                "threshold": {
+                  "1960-01-01": {
+                    "value": 0
+                  }
+                }
+              }
+            ],
+            "description": "Indemnités de maladie et maternité",
+            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_employeur/assurances_sociales/maternite.yaml",
+            "metadata": {
+              "rate_unit": "/1",
+              "threshold_unit": "currency"
+            },
+            "name": "cotisations_sociales.rsna.cotisations_employeur.assurances_sociales.maternite"
+          },
+          "name": "cotisations_sociales.rsna.cotisations_employeur.assurances_sociales"
+        },
+        "description": "Patronales",
+        "famille": {
+          "brackets": [
+            {
+              "rate": {
+                "1960-01-01": {
+                  "value": 0.022111
+                }
+              },
+              "threshold": {
+                "1960-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Prestations familiales",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_employeur/famille.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.rsna.cotisations_employeur.famille"
+        },
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_employeur",
+        "fonds_special_etat": {
+          "brackets": [
+            {
+              "rate": {
+                "1960-01-01": {
+                  "value": 0.005
+                }
+              },
+              "threshold": {
+                "1960-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Fond spécial de l'Etat",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_employeur/fonds_special_etat.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.rsna.cotisations_employeur.fonds_special_etat"
+        },
+        "name": "cotisations_sociales.rsna.cotisations_employeur",
+        "protection_sociale_travailleurs": {
+          "brackets": [
+            {
+              "rate": {
+                "1960-01-01": {
+                  "value": 0.002889
+                }
+              },
+              "threshold": {
+                "1960-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Protection sociale des travailleurs",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_employeur/protection_sociale_travailleurs.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.rsna.cotisations_employeur.protection_sociale_travailleurs"
+        },
+        "retraite": {
+          "brackets": [
+            {
+              "rate": {
+                "1960-01-01": {
+                  "value": 0.077639
+                }
+              },
+              "threshold": {
+                "1960-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Pensions de retraite",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_employeur/retraite.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.rsna.cotisations_employeur.retraite"
+        }
+      },
+      "cotisations_salarie": {
+        "accident_du_travail": {
+          "brackets": [
+            {
+              "rate": {
+                "1960-01-01": {
+                  "value": 0.002778
+                }
+              },
+              "threshold": {
+                "1960-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Accidents du travail - Maladies professionelles",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_salarie/accident_du_travail.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.rsna.cotisations_salarie.accident_du_travail"
+        },
+        "assurances_sociales": {
+          "deces": {
+            "brackets": [
+              {
+                "rate": {
+                  "1960-01-01": {
+                    "value": 0.001806
+                  }
+                },
+                "threshold": {
+                  "1960-01-01": {
+                    "value": 0
+                  }
+                }
+              }
+            ],
+            "description": "Indemnités de décès et capital décès",
+            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_salarie/assurances_sociales/deces.yaml",
+            "metadata": {
+              "rate_unit": "/1",
+              "threshold_unit": "currency"
+            },
+            "name": "cotisations_sociales.rsna.cotisations_salarie.assurances_sociales.deces"
+          },
+          "description": "Assurances sociales",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_salarie/assurances_sociales",
+          "maladie": {
+            "brackets": [
+              {
+                "rate": {
+                  "1960-01-01": {
+                    "value": 0.013194
+                  },
+                  "2008-07-01": {
+                    "value": 0.020394
+                  },
+                  "2009-07-01": {
+                    "value": 0.027494
+                  }
+                },
+                "threshold": {
+                  "1960-01-01": {
+                    "value": 0
+                  }
+                }
+              }
+            ],
+            "description": "Assurance Maladie",
+            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_salarie/assurances_sociales/maladie.yaml",
+            "metadata": {
+              "rate_unit": "/1",
+              "threshold_unit": "currency"
+            },
+            "name": "cotisations_sociales.rsna.cotisations_salarie.assurances_sociales.maladie"
+          },
+          "maternite": {
+            "brackets": [
+              {
+                "rate": {
+                  "1960-01-01": {
+                    "value": 0.002361
+                  }
+                },
+                "threshold": {
+                  "1960-01-01": {
+                    "value": 0
+                  }
+                }
+              }
+            ],
+            "description": "Indemnités de maladie et maternité",
+            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_salarie/assurances_sociales/maternite.yaml",
+            "metadata": {
+              "rate_unit": "/1",
+              "threshold_unit": "currency"
+            },
+            "name": "cotisations_sociales.rsna.cotisations_salarie.assurances_sociales.maternite"
+          },
+          "name": "cotisations_sociales.rsna.cotisations_salarie.assurances_sociales"
+        },
+        "description": "Salariales",
+        "famille": {
+          "brackets": [
+            {
+              "rate": {
+                "1960-01-01": {
+                  "value": 0.008889
+                }
+              },
+              "threshold": {
+                "1960-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Prestations familiales",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_salarie/famille.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.rsna.cotisations_salarie.famille"
+        },
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_salarie",
+        "name": "cotisations_sociales.rsna.cotisations_salarie",
+        "protection_sociale_travailleurs": {
+          "brackets": [
+            {
+              "rate": {
+                "1960-01-01": {
+                  "value": 0.001111
+                }
+              },
+              "threshold": {
+                "1960-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Protection sociale des travailleurs",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_salarie/protection_sociale_travailleurs.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.rsna.cotisations_salarie.protection_sociale_travailleurs"
+        },
+        "retraite": {
+          "brackets": [
+            {
+              "rate": {
+                "1960-01-01": {
+                  "value": 0.047361
+                }
+              },
+              "threshold": {
+                "1960-01-01": {
+                  "value": 0.0
+                }
+              }
+            }
+          ],
+          "description": "Pensions",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_salarie/retraite.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.rsna.cotisations_salarie.retraite"
+        }
+      },
+      "description": "Régime des salariés non agricoles (régime général)",
+      "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna",
+      "name": "cotisations_sociales.rsna"
+    },
+    "rtfr": {
+      "cotisations_employeur": {
+        "description": "Patronales",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtfr/cotisations_employeur",
+        "name": "cotisations_sociales.rtfr.cotisations_employeur",
+        "retraite": {
+          "brackets": [
+            {
+              "rate": {
+                "2002-03-12": {
+                  "value": 0.008333
+                }
+              },
+              "threshold": {
+                "2002-03-12": {
+                  "value": 0.0
+                }
+              }
+            },
+            {
+              "rate": {
+                "2002-03-12": {
+                  "value": 0.0
+                }
+              },
+              "threshold": {
+                "2002-03-12": {
+                  "value": 0.66
+                }
+              }
+            }
+          ],
+          "description": "Pensions (seuils exprimés en SMIG/SMAG)",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtfr/cotisations_employeur/retraite.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "/1"
+          },
+          "name": "cotisations_sociales.rtfr.cotisations_employeur.retraite"
+        },
+        "soin": {
+          "brackets": [
+            {
+              "rate": {
+                "2002-03-12": {
+                  "value": 0.016667
+                }
+              },
+              "threshold": {
+                "2002-03-12": {
+                  "value": 0.0
+                }
+              }
+            },
+            {
+              "rate": {
+                "2002-03-12": {
+                  "value": 0.0
+                }
+              },
+              "threshold": {
+                "2002-03-12": {
+                  "value": 0.66
+                }
+              }
+            }
+          ],
+          "description": "Soins (seuils exprimés en SMIG/SMAG)",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtfr/cotisations_employeur/soin.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "/1"
+          },
+          "name": "cotisations_sociales.rtfr.cotisations_employeur.soin"
+        }
+      },
+      "cotisations_salarie": {
+        "description": "Salariales",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtfr/cotisations_salarie",
+        "name": "cotisations_sociales.rtfr.cotisations_salarie",
+        "retraite": {
+          "brackets": [
+            {
+              "rate": {
+                "2002-03-12": {
+                  "value": 0.008333
+                }
+              },
+              "threshold": {
+                "2002-03-12": {
+                  "value": 0.0
+                }
+              }
+            },
+            {
+              "rate": {
+                "2002-03-12": {
+                  "value": 0.0
+                }
+              },
+              "threshold": {
+                "2002-03-12": {
+                  "value": 0.66
+                }
+              }
+            }
+          ],
+          "description": "Pensions (seuils exprimés en SMIG/SMAG)",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtfr/cotisations_salarie/retraite.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "/1"
+          },
+          "name": "cotisations_sociales.rtfr.cotisations_salarie.retraite"
+        },
+        "soin": {
+          "brackets": [
+            {
+              "rate": {
+                "2002-03-12": {
+                  "value": 0.008333
+                }
+              },
+              "threshold": {
+                "2002-03-12": {
+                  "value": 0.0
+                }
+              }
+            },
+            {
+              "rate": {
+                "2002-03-12": {
+                  "value": 0.0
+                }
+              },
+              "threshold": {
+                "2002-03-12": {
+                  "value": 0.66
+                }
+              }
+            }
+          ],
+          "description": "Soins (seuils exprimés en SMIG/SMAG)",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtfr/cotisations_salarie/soin.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.rtfr.cotisations_salarie.soin"
+        }
+      },
+      "description": "Régime des travailleurs à faibles revenus",
+      "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtfr",
+      "name": "cotisations_sociales.rtfr"
+    },
+    "rtns": {
+      "assurances_sociales": {
+        "deces": {
+          "brackets": [
+            {
+              "rate": {
+                "1960-01-01": {
+                  "value": 0.0045
+                }
+              },
+              "threshold": {
+                "1960-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Indemnités de décès et capital décès",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtns/assurances_sociales/deces.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.rtns.assurances_sociales.deces"
+        },
+        "description": "Assurances sociales",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtns/assurances_sociales",
+        "maladie": {
+          "brackets": [
+            {
+              "rate": {
+                "1960-01-01": {
+                  "value": 0.0304
+                },
+                "2007-07-01": {
+                  "value": 0.0397
+                },
+                "2008-07-01": {
+                  "value": 0.049
+                },
+                "2009-07-01": {
+                  "value": 0.0583
+                },
+                "2010-07-01": {
+                  "value": 0.0675
+                }
+              },
+              "threshold": {
+                "1960-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Assurance Maladie",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtns/assurances_sociales/maladie.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.rtns.assurances_sociales.maladie"
+        },
+        "maternite": {
+          "brackets": [
+            {
+              "rate": {
+                "1960-01-01": {
+                  "value": 0.0051
+                }
+              },
+              "threshold": {
+                "1960-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Indemnités de maladie et maternité",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtns/assurances_sociales/maternite.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.rtns.assurances_sociales.maternite"
+        },
+        "name": "cotisations_sociales.rtns.assurances_sociales"
+      },
+      "description": "Régime des travailleurs non salariés",
+      "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtns",
+      "name": "cotisations_sociales.rtns",
+      "retraite": {
+        "brackets": [
+          {
+            "rate": {
+              "1960-01-01": {
+                "value": 0.07
+              }
+            },
+            "threshold": {
+              "1960-01-01": {
+                "value": 0
+              }
+            }
+          }
+        ],
+        "description": "Pensions",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtns/retraite.yaml",
+        "metadata": {
+          "rate_unit": "/1",
+          "threshold_unit": "currency"
+        },
+        "name": "cotisations_sociales.rtns.retraite"
+      }
+    },
+    "rtte": {
+      "assurances_sociales": {
+        "deces": {
+          "brackets": [
+            {
+              "rate": {
+                "1960-01-01": {
+                  "value": 0.0056
+                }
+              },
+              "threshold": {
+                "1960-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Indemnités de décès et capital décès",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtte/assurances_sociales/deces.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.rtte.assurances_sociales.deces"
+        },
+        "description": "Assurances sociales",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtte/assurances_sociales",
+        "maladie": {
+          "brackets": [
+            {
+              "rate": {
+                "1960-01-01": {
+                  "value": 0.041
+                },
+                "2007-07-01": {
+                  "value": 0.0499
+                },
+                "2008-07-01": {
+                  "value": 0.0587
+                },
+                "2009-07-01": {
+                  "value": 0.0675
+                }
+              },
+              "threshold": {
+                "1960-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Assurance Maladie",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtte/assurances_sociales/maladie.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.rtte.assurances_sociales.maladie"
+        },
+        "maternite": {
+          "brackets": [
+            {
+              "rate": {
+                "1960-01-01": {
+                  "value": 0.0074
+                }
+              },
+              "threshold": {
+                "1960-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Indemnités de maladie et maternité",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtte/assurances_sociales/maternite.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.rtte.assurances_sociales.maternite"
+        },
+        "name": "cotisations_sociales.rtte.assurances_sociales"
+      },
+      "description": "Régime des travailleurs tunisiens à l'étranger",
+      "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtte",
+      "name": "cotisations_sociales.rtte",
+      "retraite": {
+        "brackets": [
+          {
+            "rate": {
+              "1960-01-01": {
+                "value": 0.0525
+              }
+            },
+            "threshold": {
+              "1960-01-01": {
+                "value": 0
+              }
+            }
+          }
+        ],
+        "description": "Pensions",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtte/retraite.yaml",
+        "metadata": {
+          "rate_unit": "/1",
+          "threshold_unit": "currency"
+        },
+        "name": "cotisations_sociales.rtte.retraite"
+      }
+    },
+    "salarie_cnrps": {
+      "cotisations_employeur": {
+        "description": "Patronales",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/salarie_cnrps/cotisations_employeur",
+        "maladie": {
+          "brackets": [
+            {
+              "rate": {
+                "1985-01-01": {
+                  "value": 0.04
+                }
+              },
+              "threshold": {
+                "2002-03-12": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Assurance maladie",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/salarie_cnrps/cotisations_employeur/maladie.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.salarie_cnrps.cotisations_employeur.maladie"
+        },
+        "name": "cotisations_sociales.salarie_cnrps.cotisations_employeur",
+        "retraite": {
+          "brackets": [
+            {
+              "rate": {
+                "1985-01-01": {
+                  "value": 0.07
+                },
+                "1995-01-01": {
+                  "value": 0.082
+                },
+                "2006-01-01": {
+                  "value": 0.097
+                },
+                "2009-01-01": {
+                  "value": 0.115
+                },
+                "2011-01-01": {
+                  "value": 0.125
+                }
+              },
+              "threshold": {
+                "2002-03-12": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Retraite",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/salarie_cnrps/cotisations_employeur/retraite.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.salarie_cnrps.cotisations_employeur.retraite"
+        }
+      },
+      "cotisations_salarie": {
+        "deces": {
+          "brackets": [
+            {
+              "rate": {
+                "1985-01-01": {
+                  "value": 0.01
+                }
+              },
+              "threshold": {
+                "1985-01-01": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Capital décès",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/salarie_cnrps/cotisations_salarie/deces.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.salarie_cnrps.cotisations_salarie.deces"
+        },
+        "description": "Salariales",
+        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/salarie_cnrps/cotisations_salarie",
+        "maladie": {
+          "brackets": [
+            {
+              "rate": {
+                "1985-01-01": {
+                  "value": 0.0275
+                }
+              },
+              "threshold": {
+                "2002-03-12": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Assurance maladie",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/salarie_cnrps/cotisations_salarie/maladie.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.salarie_cnrps.cotisations_salarie.maladie"
+        },
+        "name": "cotisations_sociales.salarie_cnrps.cotisations_salarie",
+        "retraite": {
+          "brackets": [
+            {
+              "rate": {
+                "1985-01-01": {
+                  "value": 0.05
+                },
+                "1995-01-01": {
+                  "value": 0.06
+                },
+                "2006-01-01": {
+                  "value": 0.07
+                },
+                "2009-01-01": {
+                  "value": 0.082
+                }
+              },
+              "threshold": {
+                "2002-03-12": {
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "description": "Retraite",
+          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/salarie_cnrps/cotisations_salarie/retraite.yaml",
+          "metadata": {
+            "rate_unit": "/1",
+            "threshold_unit": "currency"
+          },
+          "name": "cotisations_sociales.salarie_cnrps.cotisations_salarie.retraite"
+        }
+      },
+      "description": "Régime général des agents de l'Etat",
+      "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/salarie_cnrps",
+      "name": "cotisations_sociales.salarie_cnrps"
+    }
+  },
+  "file_path": "/openfisca_tunisia/parameters",
+  "impot_revenu": {
+    "bareme": {
+      "brackets": [
+        {
+          "rate": {
+            "1990-01-01": {
+              "value": 0
+            },
+            "2017-01-01": {
+              "reference": [
+                {
+                  "title": "http://doc-fiscale.finances.gov.tn/cimf-internet/page/document/fr/preview?path=/Loi%20de%20Finances/2017/Loi%20de%20finances%202017.pdf#page=4"
+                }
+              ],
+              "value": 0
+            }
+          },
+          "threshold": {
+            "1990-01-01": {
+              "value": 0
+            },
+            "2017-01-01": {
+              "value": 0
+            },
+            "2018-01-01": {
+              "value": 0.01
+            }
+          }
+        },
+        {
+          "rate": {
+            "1990-01-01": {
+              "value": 0.15
+            },
+            "2017-01-01": {
+              "reference": [
+                {
+                  "title": "http://doc-fiscale.finances.gov.tn/cimf-internet/page/document/fr/preview?path=/Loi%20de%20Finances/2017/Loi%20de%20finances%202017.pdf#page=4"
+                }
+              ],
+              "value": 0.26
+            },
+            "2018-01-01": {
+              "value": 0.27
+            }
+          },
+          "threshold": {
+            "1990-01-01": {
+              "value": 1500
+            },
+            "2017-01-01": {
+              "value": 5000
+            }
+          }
+        },
+        {
+          "rate": {
+            "1990-01-01": {
+              "value": 0.2
+            },
+            "2017-01-01": {
+              "reference": [
+                {
+                  "title": "http://doc-fiscale.finances.gov.tn/cimf-internet/page/document/fr/preview?path=/Loi%20de%20Finances/2017/Loi%20de%20finances%202017.pdf#page=4"
+                }
+              ],
+              "value": 0.28
+            },
+            "2018-01-01": {
+              "value": 0.29
+            }
+          },
+          "threshold": {
+            "1990-01-01": {
+              "value": 5000
+            },
+            "2017-01-01": {
+              "value": 20000
+            }
+          }
+        },
+        {
+          "rate": {
+            "1990-01-01": {
+              "value": 0.25
+            },
+            "2017-01-01": {
+              "reference": [
+                {
+                  "title": "http://doc-fiscale.finances.gov.tn/cimf-internet/page/document/fr/preview?path=/Loi%20de%20Finances/2017/Loi%20de%20finances%202017.pdf#page=4"
+                }
+              ],
+              "value": 0.32
+            },
+            "2018-01-01": {
+              "value": 0.33
+            }
+          },
+          "threshold": {
+            "1990-01-01": {
+              "value": 10000
+            },
+            "2017-01-01": {
+              "value": 30000
+            }
+          }
+        },
+        {
+          "rate": {
+            "1990-01-01": {
+              "value": 0.3
+            },
+            "2017-01-01": {
+              "reference": [
+                {
+                  "title": "http://doc-fiscale.finances.gov.tn/cimf-internet/page/document/fr/preview?path=/Loi%20de%20Finances/2017/Loi%20de%20finances%202017.pdf#page=4"
+                }
+              ],
+              "value": 0.35
+            },
+            "2018-01-01": {
+              "value": 0.36
+            }
+          },
+          "threshold": {
+            "1990-01-01": {
+              "value": 20000
+            },
+            "2017-01-01": {
+              "value": 50000
+            }
+          }
+        },
+        {
+          "rate": {
+            "1990-01-01": {
+              "value": 0.35
+            },
+            "2017-01-01": {
+              "reference": [
+                {
+                  "title": "http://doc-fiscale.finances.gov.tn/cimf-internet/page/document/fr/preview?path=/Loi%20de%20Finances/2017/Loi%20de%20finances%202017.pdf#page=4"
+                }
+              ],
+              "value": null
+            }
+          },
+          "threshold": {
+            "1990-01-01": {
+              "value": 50000
+            },
+            "2017-01-01": {
+              "value": null
+            }
+          }
+        }
+      ],
+      "description": "Tranches de l'IR",
+      "file_path": "/openfisca_tunisia/parameters/impot_revenu/bareme.yaml",
+      "metadata": {
+        "rate_unit": "/1",
+        "threshold_unit": "currency"
+      },
+      "name": "impot_revenu.bareme"
+    },
+    "bic": {
+      "description": "Bénéfices industriels et commerciaux",
+      "file_path": "/openfisca_tunisia/parameters/impot_revenu/bic",
+      "forf": {
+        "acc": {
+          "description": "Accomptes (en % de l'impôt forfaitaire dû)",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/bic/forf/acc.yaml",
+          "metadata": {
+            "unit": "/1"
+          },
+          "name": "impot_revenu.bic.forf.acc",
+          "values": {
+            "2007-01-01": {
+              "value": 0.3
+            }
+          }
+        },
+        "bareme": {
+          "brackets": [
+            {
+              "amount": {
+                "1990-01-01": {
+                  "value": 25
+                }
+              },
+              "threshold": {
+                "1990-01-01": {
+                  "value": 0
+                }
+              }
+            },
+            {
+              "amount": {
+                "1990-01-01": {
+                  "value": 45
+                }
+              },
+              "threshold": {
+                "1990-01-01": {
+                  "value": 3000
+                }
+              }
+            },
+            {
+              "amount": {
+                "1990-01-01": {
+                  "value": 75
+                }
+              },
+              "threshold": {
+                "1990-01-01": {
+                  "value": 6000
+                }
+              }
+            },
+            {
+              "amount": {
+                "1990-01-01": {
+                  "value": 120
+                }
+              },
+              "threshold": {
+                "1990-01-01": {
+                  "value": 9000
+                }
+              }
+            },
+            {
+              "amount": {
+                "1990-01-01": {
+                  "value": 180
+                }
+              },
+              "threshold": {
+                "1990-01-01": {
+                  "value": 12000
+                }
+              }
+            },
+            {
+              "amount": {
+                "1990-01-01": {
+                  "value": 260
+                }
+              },
+              "threshold": {
+                "1990-01-01": {
+                  "value": 18000
+                }
+              }
+            },
+            {
+              "amount": {
+                "1990-01-01": {
+                  "value": 260
+                }
+              },
+              "threshold": {
+                "1990-01-01": {
+                  "value": 18000
+                }
+              }
+            },
+            {
+              "amount": {
+                "1990-01-01": {
+                  "value": 360
+                }
+              },
+              "threshold": {
+                "1990-01-01": {
+                  "value": 21000
+                }
+              }
+            },
+            {
+              "amount": {
+                "1990-01-01": {
+                  "value": 360
+                }
+              },
+              "threshold": {
+                "1990-01-01": {
+                  "value": 24000
+                }
+              }
+            },
+            {
+              "amount": {
+                "1990-01-01": {
+                  "value": 360
+                }
+              },
+              "threshold": {
+                "1990-01-01": {
+                  "value": 27000
+                }
+              }
+            }
+          ],
+          "description": "Tranches de l'IR",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/bic/forf/bareme.yaml",
+          "metadata": {
+            "amount_unit": "currency",
+            "threshold_unit": "currency"
+          },
+          "name": "impot_revenu.bic.forf.bareme"
+        },
+        "description": "Régime forfaitaire",
+        "file_path": "/openfisca_tunisia/parameters/impot_revenu/bic/forf",
+        "forfait": {
+          "description": "Montant de l'impot forfaitaire dispensant du paiement des accomptes provisionnels",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/bic/forf/forfait.yaml",
+          "metadata": {
+            "unit": "currency"
+          },
+          "name": "impot_revenu.bic.forf.forfait",
+          "values": {
+            "2007-01-01": {
+              "value": 1500
+            }
+          }
+        },
+        "name": "impot_revenu.bic.forf"
+      },
+      "name": "impot_revenu.bic",
+      "reel": {
+        "description": "Régime réel",
+        "file_path": "/openfisca_tunisia/parameters/impot_revenu/bic/reel",
+        "forfait": {
+          "description": "---",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/bic/reel/forfait.yaml",
+          "metadata": {
+            "unit": "currency"
+          },
+          "name": "impot_revenu.bic.reel.forfait",
+          "values": {
+            "2007-01-01": {
+              "value": 0
+            }
+          }
+        },
+        "name": "impot_revenu.bic.reel"
+      },
+      "simpl": {
+        "description": "Régime réel simplifié",
+        "file_path": "/openfisca_tunisia/parameters/impot_revenu/bic/simpl",
+        "forfait": {
+          "description": "---",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/bic/simpl/forfait.yaml",
+          "metadata": {
+            "unit": "currency"
+          },
+          "name": "impot_revenu.bic.simpl.forfait",
+          "values": {
+            "2007-01-01": {
+              "value": 0
+            }
+          }
+        },
+        "name": "impot_revenu.bic.simpl"
+      }
+    },
+    "bnc": {
+      "description": "Bénéfices des professions non commerciales",
+      "file_path": "/openfisca_tunisia/parameters/impot_revenu/bnc",
+      "forf": {
+        "description": "Assiette forfaitaire",
+        "file_path": "/openfisca_tunisia/parameters/impot_revenu/bnc/forf",
+        "name": "impot_revenu.bnc.forf",
+        "part_forf": {
+          "description": "Part des recettes brutes TTC imposées",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/bnc/forf/part_forf.yaml",
+          "metadata": {
+            "unit": "/1"
+          },
+          "name": "impot_revenu.bnc.forf.part_forf",
+          "values": {
+            "2007-01-01": {
+              "value": 0.7
+            },
+            "2014-01-01": {
+              "value": 0.8
+            }
+          }
+        }
+      },
+      "name": "impot_revenu.bnc"
+    },
+    "contribution_budget_etat": {
+      "brackets": [
+        {
+          "amount": {
+            "2014-01-01": {
+              "value": 0
+            }
+          },
+          "threshold": {
+            "2014-01-01": {
+              "value": 0
+            }
+          }
+        },
+        {
+          "amount": {
+            "2014-01-01": {
+              "value": 1
+            }
+          },
+          "threshold": {
+            "2014-01-01": {
+              "value": 12000
+            }
+          }
+        },
+        {
+          "amount": {
+            "2014-01-01": {
+              "value": 2
+            }
+          },
+          "threshold": {
+            "2014-01-01": {
+              "value": 20000
+            }
+          }
+        },
+        {
+          "amount": {
+            "2014-01-01": {
+              "value": 3
+            }
+          },
+          "threshold": {
+            "2014-01-01": {
+              "value": 25000
+            }
+          }
+        },
+        {
+          "amount": {
+            "2014-01-01": {
+              "value": 4
+            }
+          },
+          "threshold": {
+            "2014-01-01": {
+              "value": 30000
+            }
+          }
+        },
+        {
+          "amount": {
+            "2014-01-01": {
+              "value": 5
+            }
+          },
+          "threshold": {
+            "2014-01-01": {
+              "value": 35000
+            }
+          }
+        },
+        {
+          "amount": {
+            "2014-01-01": {
+              "value": 6
+            }
+          },
+          "threshold": {
+            "2014-01-01": {
+              "value": 40000
+            }
+          }
+        }
+      ],
+      "description": "Contributions au budget de l'Etat (montant de la contribution en jour de salaire ou pension brut par tranche de revenu annuel net)",
+      "file_path": "/openfisca_tunisia/parameters/impot_revenu/contribution_budget_etat.yaml",
+      "metadata": {
+        "amount_unit": "day",
+        "threshold_unit": "currency"
+      },
+      "name": "impot_revenu.contribution_budget_etat"
+    },
+    "deductions": {
+      "assurance_vie": {
+        "conj_plaf": {
+          "description": "Majoration au titre du conjoint",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/assurance_vie/conj_plaf.yaml",
+          "metadata": {
+            "unit": "currency"
+          },
+          "name": "impot_revenu.deductions.assurance_vie.conj_plaf",
+          "values": {
+            "1990-01-01": {
+              "value": 400
+            },
+            "2007-01-01": {
+              "value": 600
+            }
+          }
+        },
+        "description": "Assurance vie",
+        "enf_plaf": {
+          "description": "Majoration au titre des enfants",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/assurance_vie/enf_plaf.yaml",
+          "metadata": {
+            "unit": "currency"
+          },
+          "name": "impot_revenu.deductions.assurance_vie.enf_plaf",
+          "values": {
+            "1990-01-01": {
+              "value": 200
+            },
+            "2007-01-01": {
+              "value": 300
+            }
+          }
+        },
+        "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/assurance_vie",
+        "name": "impot_revenu.deductions.assurance_vie",
+        "plaf": {
+          "description": "Plafond de la déduction",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/assurance_vie/plaf.yaml",
+          "metadata": {
+            "unit": "currency"
+          },
+          "name": "impot_revenu.deductions.assurance_vie.plaf",
+          "values": {
+            "1990-01-01": {
+              "value": 800
+            },
+            "2007-01-01": {
+              "value": 1200
+            }
+          }
+        }
+      },
+      "banq": {
+        "description": "Intérêts des comptes spéciaux d’épargne ouverts auprès des banques",
+        "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/banq",
+        "name": "impot_revenu.deductions.banq",
+        "plaf": {
+          "description": "Plafond de la déduction",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/banq/plaf.yaml",
+          "metadata": {
+            "unit": "currency"
+          },
+          "name": "impot_revenu.deductions.banq.plaf",
+          "values": {
+            "1990-01-01": {
+              "value": 1000
+            }
+          }
+        }
+      },
+      "cent": {
+        "description": "Intérêts des comptes spéciaux d’épargne ouverts auprès de la CENT",
+        "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/cent",
+        "name": "impot_revenu.deductions.cent",
+        "plaf": {
+          "description": "Plafond de la déduction",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/cent/plaf.yaml",
+          "metadata": {
+            "unit": "currency"
+          },
+          "name": "impot_revenu.deductions.cent.plaf",
+          "values": {
+            "1990-01-01": {
+              "value": 1000
+            }
+          }
+        }
+      },
+      "description": "Déductions",
+      "epinv": {
+        "description": "Intérêts des comptes épargne pour l'investissement",
+        "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/epinv",
+        "name": "impot_revenu.deductions.epinv",
+        "plaf": {
+          "description": "Plafond de la déduction",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/epinv/plaf.yaml",
+          "metadata": {
+            "unit": "currency"
+          },
+          "name": "impot_revenu.deductions.epinv.plaf",
+          "values": {
+            "1990-01-01": {
+              "value": 2000
+            }
+          }
+        }
+      },
+      "fam": {
+        "age": {
+          "description": "Age limite (exclu) des enfants à charge",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/age.yaml",
+          "metadata": {
+            "unit": "year"
+          },
+          "name": "impot_revenu.deductions.fam.age",
+          "values": {
+            "1990-01-01": {
+              "value": 20
+            }
+          }
+        },
+        "age_sup": {
+          "description": "Age limite (exclu) des enfants de supérieur à charge",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/age_sup.yaml",
+          "metadata": {
+            "unit": "year"
+          },
+          "name": "impot_revenu.deductions.fam.age_sup",
+          "values": {
+            "1990-01-01": {
+              "value": 25
+            }
+          }
+        },
+        "chef_de_famille": {
+          "description": "Chef de famille - رئيس عائلة",
+          "documentation": "Montant de la déduction sur le montant des revenus nets du \"chef de famille\".\nمبلغ الطرح من مبلغ المداخيل الصافية لرئيس العائلة\n",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/chef_de_famille.yaml",
+          "metadata": {
+            "reference": {
+              "0001-01-01": [
+                {
+                  "href": "http://www.legislation.tn/fr/affich-code-article/code-de-l%2526%2523039%3Bimp%C3%B4t-sur-le-revenu-des-personnes-physiques-et-de-l%2526%2523039%3Bimp%C3%B4t-sur-les-soci%C3%A9t%C3%A9s-article-40-__6169",
+                  "title": "Code de l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés - Article 40 - Paragraphe I"
+                }
+              ]
+            },
+            "unit": "currency"
+          },
+          "name": "impot_revenu.deductions.fam.chef_de_famille",
+          "values": {
+            "1990-01-01": {
+              "value": 150
+            },
+            "2019-01-01": {
+              "reference": [
+                {
+                  "title": "Article 55 de la loi no 2017-66 du 18-12-2017 portant Loi de finances 2018. Note commune 7/2018 http://www.impots.finances.gov.tn/images/Note_commune_N07.pdf"
+                }
+              ],
+              "value": 300
+            }
+          }
+        },
+        "description": "Déductions pour charge de famille",
+        "enf1": {
+          "description": "1er enfant à charge",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/enf1.yaml",
+          "metadata": {
+            "unit": "currency"
+          },
+          "name": "impot_revenu.deductions.fam.enf1",
+          "values": {
+            "1990-01-01": {
+              "value": 90
+            },
+            "2019-01-01": {
+              "reference": [
+                {
+                  "title": "Article 55 de la loi no 2017-66 du 18-12-2017 portant Loi de finances 2018. Note commune 7/2018 http://www.impots.finances.gov.tn/images/Note_commune_N07.pdf"
+                }
+              ],
+              "value": 100
+            }
+          }
+        },
+        "enf2": {
+          "description": "2e enfant à charge",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/enf2.yaml",
+          "metadata": {
+            "unit": "currency"
+          },
+          "name": "impot_revenu.deductions.fam.enf2",
+          "values": {
+            "1990-01-01": {
+              "value": 75
+            },
+            "2019-01-01": {
+              "reference": [
+                {
+                  "title": "Article 55 de la loi no 2017-66 du 18-12-2017 portant Loi de finances 2018. Note commune 7/2018 http://www.impots.finances.gov.tn/images/Note_commune_N07.pdf"
+                }
+              ],
+              "value": 100
+            }
+          }
+        },
+        "enf3": {
+          "description": "3e enfant à charge",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/enf3.yaml",
+          "metadata": {
+            "unit": "currency"
+          },
+          "name": "impot_revenu.deductions.fam.enf3",
+          "values": {
+            "1990-01-01": {
+              "value": 60
+            },
+            "2019-01-01": {
+              "reference": [
+                {
+                  "title": "Article 55 de la loi no 2017-66 du 18-12-2017 portant Loi de finances 2018. Note commune 7/2018 http://www.impots.finances.gov.tn/images/Note_commune_N07.pdf"
+                }
+              ],
+              "value": 100
+            }
+          }
+        },
+        "enf4": {
+          "description": "4e enfant à charge",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/enf4.yaml",
+          "metadata": {
+            "unit": "currency"
+          },
+          "name": "impot_revenu.deductions.fam.enf4",
+          "values": {
+            "1990-01-01": {
+              "value": 45
+            },
+            "2019-01-01": {
+              "reference": [
+                {
+                  "title": "Article 55 de la loi no 2017-66 du 18-12-2017 portant Loi de finances 2018. Note commune 7/2018 http://www.impots.finances.gov.tn/images/Note_commune_N07.pdf"
+                }
+              ],
+              "value": 100
+            }
+          }
+        },
+        "enf_sup": {
+          "description": "Enfant non boursier du supérieur",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/enf_sup.yaml",
+          "metadata": {
+            "unit": "currency"
+          },
+          "name": "impot_revenu.deductions.fam.enf_sup",
+          "values": {
+            "1990-01-01": {
+              "value": 300
+            },
+            "2010-01-01": {
+              "reference": [
+                {
+                  "title": "Article 40 de la loi no 2009-71 du 21-12-2004 portant Loi de finances 2010"
+                }
+              ],
+              "value": 600
+            },
+            "2014-01-01": {
+              "reference": [
+                {
+                  "title": "Loi de finances 2014"
+                }
+              ],
+              "value": 1000
+            }
+          }
+        },
+        "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam",
+        "infirme": {
+          "description": "Enfant infirme",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/infirme.yaml",
+          "metadata": {
+            "reference": {
+              "0001-01-01": [
+                {
+                  "title": "Article 40.III du Code l'impôt sur le revenu des personnes physiques et de l'impôt sur les sociétés"
+                }
+              ]
+            },
+            "unit": "currency"
+          },
+          "name": "impot_revenu.deductions.fam.infirme",
+          "values": {
+            "1990-01-01": {
+              "value": 500
+            },
+            "2004-01-01": {
+              "value": 600
+            },
+            "2005-01-01": {
+              "reference": [
+                {
+                  "title": "Article 50 de la loi no 2004-90 du 31-12-2004 portant Loi de finances 2005"
+                }
+              ],
+              "value": 750
+            },
+            "2010-01-01": {
+              "reference": [
+                {
+                  "title": "Article 40 de la loi no 2009-71 du 21-12-2009 portant Loi de finances 2010"
+                }
+              ],
+              "value": 1000
+            },
+            "2014-01-01": {
+              "reference": [
+                {
+                  "title": "Article 94 de la loi no 2013-54 du 30-12-2017 portant Loi de finances 2014"
+                }
+              ],
+              "value": 1200
+            },
+            "2018-01-01": {
+              "reference": [
+                {
+                  "title": "Article 55 de la loi no 2017-66 du 18-12-2017 portant Loi de finances 2018. . Note commune 7/2018 http://www.impots.finances.gov.tn/images/Note_commune_N07.pdf"
+                }
+              ],
+              "value": 2000
+            }
+          }
+        },
+        "name": "impot_revenu.deductions.fam",
+        "parent_max": {
+          "description": "Parent à charge (montant maximum)",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/parent_max.yaml",
+          "metadata": {
+            "unit": "currency"
+          },
+          "name": "impot_revenu.deductions.fam.parent_max",
+          "values": {
+            "1990-01-01": {
+              "value": 150
+            }
+          }
+        },
+        "parent_plaf": {
+          "description": "Parent à charge (plafond de revenu en SMIG)",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/parent_plaf.yaml",
+          "metadata": {
+            "unit": "/1"
+          },
+          "name": "impot_revenu.deductions.fam.parent_plaf",
+          "values": {
+            "1990-01-01": {
+              "value": 1
+            }
+          }
+        },
+        "parent_taux": {
+          "description": "Parent à charge (en % du revenu)",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/parent_taux.yaml",
+          "metadata": {
+            "unit": "/1"
+          },
+          "name": "impot_revenu.deductions.fam.parent_taux",
+          "values": {
+            "1990-01-01": {
+              "value": 0.05
+            }
+          }
+        }
+      },
+      "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions",
+      "name": "impot_revenu.deductions",
+      "oblig": {
+        "description": "Intérêts des emprunts obligataires",
+        "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/oblig",
+        "name": "impot_revenu.deductions.oblig",
+        "plaf": {
+          "description": "Plafond de la déduction",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/oblig/plaf.yaml",
+          "metadata": {
+            "unit": "currency"
+          },
+          "name": "impot_revenu.deductions.oblig.plaf",
+          "values": {
+            "1990-01-01": {
+              "value": 1500
+            }
+          }
+        }
+      }
+    },
+    "description": "Impôt sur le revenu",
+    "exoneration": {
+      "description": "Exonération d'impôt sur le revenu pour les revenus net inférieur à un certain seuil",
+      "file_path": "/openfisca_tunisia/parameters/impot_revenu/exoneration",
+      "name": "impot_revenu.exoneration",
+      "seuil": {
+        "description": "Seuil de revenu imposable net pour être exonéré",
+        "file_path": "/openfisca_tunisia/parameters/impot_revenu/exoneration/seuil.yaml",
+        "metadata": {
+          "unit": "currency"
+        },
+        "name": "impot_revenu.exoneration.seuil",
+        "values": {
+          "2014-01-01": {
+            "value": 5000
+          },
+          "2017-01-01": {
+            "value": null
+          }
+        }
+      }
+    },
+    "file_path": "/openfisca_tunisia/parameters/impot_revenu",
+    "foncier": {
+      "bati": {
+        "deduction_frais": {
+          "description": "Déduction pour frais, charges et amortissments",
+          "file_path": "/openfisca_tunisia/parameters/impot_revenu/foncier/bati/deduction_frais.yaml",
+          "metadata": {
+            "unit": "/1"
+          },
+          "name": "impot_revenu.foncier.bati.deduction_frais",
+          "values": {
+            "2007-01-01": {
+              "value": 0.3
+            },
+            "2016-01-01": {
+              "value": 0.2
+            }
+          }
+        },
+        "description": "Immeubles bâtis",
+        "file_path": "/openfisca_tunisia/parameters/impot_revenu/foncier/bati",
+        "name": "impot_revenu.foncier.bati"
+      },
+      "description": "Revenus fonciers",
+      "file_path": "/openfisca_tunisia/parameters/impot_revenu/foncier",
+      "name": "impot_revenu.foncier"
+    },
+    "name": "impot_revenu",
+    "tspr": {
+      "abat_pen": {
+        "description": "Abattement sur les pensions",
+        "file_path": "/openfisca_tunisia/parameters/impot_revenu/tspr/abat_pen.yaml",
+        "metadata": {
+          "unit": "/1"
+        },
+        "name": "impot_revenu.tspr.abat_pen",
+        "values": {
+          "1990-01-01": {
+            "value": 0.25
+          }
+        }
+      },
+      "abat_pen_etr": {
+        "description": "Abattement sur les pensions étrangères",
+        "file_path": "/openfisca_tunisia/parameters/impot_revenu/tspr/abat_pen_etr.yaml",
+        "metadata": {
+          "unit": "/1"
+        },
+        "name": "impot_revenu.tspr.abat_pen_etr",
+        "values": {
+          "2001-01-01": {
+            "value": 0.0
+          },
+          "2007-01-01": {
+            "value": 0.8
+          }
+        }
+      },
+      "abat_sal": {
+        "description": "Abattement sur les salaires",
+        "file_path": "/openfisca_tunisia/parameters/impot_revenu/tspr/abat_sal.yaml",
+        "metadata": {
+          "unit": "/1"
+        },
+        "name": "impot_revenu.tspr.abat_sal",
+        "values": {
+          "1990-01-01": {
+            "value": 0.1
+          }
+        }
+      },
+      "description": "Traitements, salaires, pensions et rentes",
+      "file_path": "/openfisca_tunisia/parameters/impot_revenu/tspr",
+      "name": "impot_revenu.tspr",
+      "smig": {
+        "description": "Abattement pour salaire minimum",
+        "file_path": "/openfisca_tunisia/parameters/impot_revenu/tspr/smig.yaml",
+        "metadata": {
+          "unit": "currency"
+        },
+        "name": "impot_revenu.tspr.smig",
+        "values": {
+          "2005-01-01": {
+            "value": 500
+          },
+          "2010-01-01": {
+            "value": 1000
+          }
+        }
+      },
+      "smig_ext": {
+        "description": "Extension de l'abattement précédent aux bas salaires",
+        "file_path": "/openfisca_tunisia/parameters/impot_revenu/tspr/smig_ext.yaml",
+        "metadata": {
+          "unit": "/1"
+        },
+        "name": "impot_revenu.tspr.smig_ext",
+        "values": {
+          "2011-01-01": {
+            "value": 0
+          }
+        }
+      }
+    }
+  },
+  "name": "",
+  "prestations_familiales": {
+    "af": {
+      "description": "Allocations familiales",
+      "file_path": "/openfisca_tunisia/parameters/prestations_familiales/af",
+      "name": "prestations_familiales.af",
+      "plaf_trim": {
+        "description": "Plafond de revenus trimestriels",
+        "file_path": "/openfisca_tunisia/parameters/prestations_familiales/af/plaf_trim.yaml",
+        "metadata": {
+          "unit": "currency"
+        },
+        "name": "prestations_familiales.af.plaf_trim",
+        "values": {
+          "1960-01-01": {
+            "value": 122
+          }
+        }
+      },
+      "taux": {
+        "description": "Taux (% de la BTAF)",
+        "enf1": {
+          "description": "Premier enfant à charge",
+          "file_path": "/openfisca_tunisia/parameters/prestations_familiales/af/taux/enf1.yaml",
+          "metadata": {
+            "unit": "/1"
+          },
+          "name": "prestations_familiales.af.taux.enf1",
+          "values": {
+            "1960-01-01": {
+              "value": 0.18
+            }
+          }
+        },
+        "enf2": {
+          "description": "Deuxième enfant à charge",
+          "file_path": "/openfisca_tunisia/parameters/prestations_familiales/af/taux/enf2.yaml",
+          "metadata": {
+            "unit": "/1"
+          },
+          "name": "prestations_familiales.af.taux.enf2",
+          "values": {
+            "1960-01-01": {
+              "value": 0.16
+            }
+          }
+        },
+        "enf3": {
+          "description": "Troisième enfant à charge",
+          "file_path": "/openfisca_tunisia/parameters/prestations_familiales/af/taux/enf3.yaml",
+          "metadata": {
+            "unit": "/1"
+          },
+          "name": "prestations_familiales.af.taux.enf3",
+          "values": {
+            "1960-01-01": {
+              "value": 0.14
+            }
+          }
+        },
+        "file_path": "/openfisca_tunisia/parameters/prestations_familiales/af/taux",
+        "name": "prestations_familiales.af.taux"
+      }
+    },
+    "creche": {
+      "age_max": {
+        "description": "Age (en mois) maximal",
+        "file_path": "/openfisca_tunisia/parameters/prestations_familiales/creche/age_max.yaml",
+        "metadata": {
+          "unit": "month"
+        },
+        "name": "prestations_familiales.creche.age_max",
+        "values": {
+          "1960-01-01": {
+            "value": 36
+          }
+        }
+      },
+      "age_min": {
+        "description": "Age (en mois) minimal",
+        "file_path": "/openfisca_tunisia/parameters/prestations_familiales/creche/age_min.yaml",
+        "metadata": {
+          "unit": "month"
+        },
+        "name": "prestations_familiales.creche.age_min",
+        "values": {
+          "1960-01-01": {
+            "value": 2
+          }
+        }
+      },
+      "description": "Contribution au frais de crêche",
+      "duree": {
+        "description": "Durée maximale (en mois)",
+        "file_path": "/openfisca_tunisia/parameters/prestations_familiales/creche/duree.yaml",
+        "metadata": {
+          "unit": "month"
+        },
+        "name": "prestations_familiales.creche.duree",
+        "values": {
+          "1960-01-01": {
+            "value": 11
+          }
+        }
+      },
+      "file_path": "/openfisca_tunisia/parameters/prestations_familiales/creche",
+      "montant": {
+        "description": "Montant",
+        "file_path": "/openfisca_tunisia/parameters/prestations_familiales/creche/montant.yaml",
+        "metadata": {
+          "unit": "currency"
+        },
+        "name": "prestations_familiales.creche.montant",
+        "values": {
+          "1960-01-01": {
+            "value": 15
+          }
+        }
+      },
+      "name": "prestations_familiales.creche",
+      "plaf": {
+        "description": "Plafond de ressources (en SMIG 48h)",
+        "file_path": "/openfisca_tunisia/parameters/prestations_familiales/creche/plaf.yaml",
+        "metadata": {
+          "unit": "/1"
+        },
+        "name": "prestations_familiales.creche.plaf",
+        "values": {
+          "1960-01-01": {
+            "value": 2.5
+          }
+        }
+      }
+    },
+    "description": "Prestations familiales",
+    "file_path": "/openfisca_tunisia/parameters/prestations_familiales",
+    "name": "prestations_familiales",
+    "salaire_unique": {
+      "description": "Majoration trimestrielle pour salaire unique",
+      "enf1": {
+        "description": "Premier enfant à charge",
+        "file_path": "/openfisca_tunisia/parameters/prestations_familiales/salaire_unique/enf1.yaml",
+        "metadata": {
+          "unit": "currency"
+        },
+        "name": "prestations_familiales.salaire_unique.enf1",
+        "values": {
+          "1960-01-01": {
+            "value": 9.375
+          }
+        }
+      },
+      "enf2": {
+        "description": "Deuxième enfant à charge",
+        "file_path": "/openfisca_tunisia/parameters/prestations_familiales/salaire_unique/enf2.yaml",
+        "metadata": {
+          "unit": "currency"
+        },
+        "name": "prestations_familiales.salaire_unique.enf2",
+        "values": {
+          "1960-01-01": {
+            "value": 18.75
+          }
+        }
+      },
+      "enf3": {
+        "description": "Troisième enfant",
+        "file_path": "/openfisca_tunisia/parameters/prestations_familiales/salaire_unique/enf3.yaml",
+        "metadata": {
+          "unit": "currency"
+        },
+        "name": "prestations_familiales.salaire_unique.enf3",
+        "values": {
+          "1960-01-01": {
+            "value": 23.475
+          }
+        }
+      },
+      "file_path": "/openfisca_tunisia/parameters/prestations_familiales/salaire_unique",
+      "name": "prestations_familiales.salaire_unique"
+    }
+  }
+}

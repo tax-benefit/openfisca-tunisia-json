@@ -1,13 +1,13 @@
 {
   "cotisations_sociales": {
     "description": "Cotisations sociales",
-    "file_path": "/openfisca_tunisia/parameters/cotisations_sociales",
+    "file_path": "cotisations_sociales",
     "gen": {
       "description": "Paramètres généraux",
-      "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen",
+      "file_path": "cotisations_sociales/gen",
       "indemnite_complementaire_provisoire": {
         "description": "Indemnité Complémentaire Provisoire (ICP) - montant par mois",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/indemnite_complementaire_provisoire.yaml",
+        "file_path": "cotisations_sociales/gen/indemnite_complementaire_provisoire.yaml",
         "metadata": {
           "unit": "currency"
         },
@@ -25,7 +25,7 @@
       },
       "majoration_smig_40h_mensuel": {
         "description": "Majoration du Salaire Minimum Interprofessionnel Garanti au régime de 40h dans les secteurs non agricoles - montant par mois",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/majoration_smig_40h_mensuel.yaml",
+        "file_path": "cotisations_sociales/gen/majoration_smig_40h_mensuel.yaml",
         "metadata": {
           "unit": "currency"
         },
@@ -43,7 +43,7 @@
       },
       "majoration_smig_48h_mensuel": {
         "description": "Majoration du Salaire Minimum Interprofessionnel Garanti au régime de 48h dans les secteurs non agricoles - montant par mois",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/majoration_smig_48h_mensuel.yaml",
+        "file_path": "cotisations_sociales/gen/majoration_smig_48h_mensuel.yaml",
         "metadata": {
           "unit": "currency"
         },
@@ -62,7 +62,7 @@
       "name": "cotisations_sociales.gen",
       "plafond_securite_sociale": {
         "description": "Plafond de la sécurité sociale (en SMIG)",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/plafond_securite_sociale.yaml",
+        "file_path": "cotisations_sociales/gen/plafond_securite_sociale.yaml",
         "metadata": {
           "unit": "/1"
         },
@@ -75,7 +75,7 @@
       },
       "salaire_de_base_40h_horaire": {
         "description": "salaire de base horaire - régime 40h par semaine",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/salaire_de_base_40h_horaire.yaml",
+        "file_path": "cotisations_sociales/gen/salaire_de_base_40h_horaire.yaml",
         "metadata": {
           "unit": "currency"
         },
@@ -133,7 +133,7 @@
       },
       "salaire_de_base_40h_mensuel": {
         "description": "salaire de base mensuel - régime 40h par semaine",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/salaire_de_base_40h_mensuel.yaml",
+        "file_path": "cotisations_sociales/gen/salaire_de_base_40h_mensuel.yaml",
         "metadata": {
           "unit": "currency"
         },
@@ -191,7 +191,7 @@
       },
       "salaire_de_base_48h_horaire": {
         "description": "salaire de base horaire - régime 48h par semaine",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/salaire_de_base_48h_horaire.yaml",
+        "file_path": "cotisations_sociales/gen/salaire_de_base_48h_horaire.yaml",
         "metadata": {
           "unit": "currency"
         },
@@ -249,7 +249,7 @@
       },
       "salaire_de_base_48h_mensuel": {
         "description": "salaire de base mensuel - régime 48h par semaine",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/salaire_de_base_48h_mensuel.yaml",
+        "file_path": "cotisations_sociales/gen/salaire_de_base_48h_mensuel.yaml",
         "metadata": {
           "unit": "currency"
         },
@@ -308,7 +308,7 @@
       "smag_journalier": {
         "description": "Salaire Minimum Agricole Garanti (SMAG) - montant par jour",
         "documentation": "Salaire minimum agricole garanti par journée de travail effectif pour les travailleurs des deux sexes âgés de 18 ans au moins\nالأجر الأدنى الفلاحي المضمون للعمال من الجنسين البالغين من العمر 18 سنة على الأقل عن كل يوم عمل فعلي\n",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/smag_journalier.yaml",
+        "file_path": "cotisations_sociales/gen/smag_journalier.yaml",
         "metadata": {
           "unit": "currency"
         },
@@ -635,7 +635,7 @@
       "smig_40h_horaire": {
         "description": "Salaire Minimum Interprofessionnel Garanti (SMIG) horaire - régime 40h par semaine",
         "documentation": "Salaire minimum interprofessionnel garanti dans les secteurs non agricoles pour les travailleurs des deux sexes âgés de 18 ans au moins\nالأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية للعمال من الجنسين البالغين من العمر 18 سنة على الأقل\n",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/smig_40h_horaire.yaml",
+        "file_path": "cotisations_sociales/gen/smig_40h_horaire.yaml",
         "metadata": {
           "unit": "currency"
         },
@@ -920,7 +920,7 @@
       "smig_40h_mensuel": {
         "description": "Salaire Minimum Interprofessionnel Garanti (SMIG) mensuel - régime 40h par semaine",
         "documentation": "Salaire minimum interprofessionnel garanti dans les secteurs non agricoles pour les travailleurs des deux sexes âgés de 18 ans au moins\nالأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية للعمال من الجنسين البالغين من العمر 18 سنة على الأقل\n",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/smig_40h_mensuel.yaml",
+        "file_path": "cotisations_sociales/gen/smig_40h_mensuel.yaml",
         "metadata": {
           "unit": "currency"
         },
@@ -1232,7 +1232,7 @@
       "smig_48h_horaire": {
         "description": "Salaire Minimum Interprofessionnel Garanti (SMIG) horaire - régime 48h par semaine",
         "documentation": "Salaire minimum interprofessionnel garanti dans les secteurs non agricoles pour les travailleurs des deux sexes âgés de 18 ans au moins\nالأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية للعمال من الجنسين البالغين من العمر 18 سنة على الأقل\n",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/smig_48h_horaire.yaml",
+        "file_path": "cotisations_sociales/gen/smig_48h_horaire.yaml",
         "metadata": {
           "unit": "currency"
         },
@@ -1571,7 +1571,7 @@
       "smig_48h_mensuel": {
         "description": "Salaire Minimum Interprofessionnel Garanti (SMIG) mensuel - régime 48h par semaine",
         "documentation": "Salaire minimum interprofessionnel garanti dans les secteurs non agricoles pour les travailleurs des deux sexes âgés de 18 ans au moins\nالأجر الأدنى المضمون لمختلف المهن في القطاعات غير الفلاحية للعمال من الجنسين البالغين من العمر 18 سنة على الأقل\n",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/gen/smig_48h_mensuel.yaml",
+        "file_path": "cotisations_sociales/gen/smig_48h_mensuel.yaml",
         "metadata": {
           "unit": "currency"
         },
@@ -1899,7 +1899,7 @@
           }
         ],
         "description": "Capital décès",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/pensionne_cnrps/deces.yaml",
+        "file_path": "cotisations_sociales/pensionne_cnrps/deces.yaml",
         "metadata": {
           "rate_unit": "/1",
           "threshold_unit": "currency"
@@ -1907,7 +1907,7 @@
         "name": "cotisations_sociales.pensionne_cnrps.deces"
       },
       "description": "Cotisations des agents pensionnés de l'Etat",
-      "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/pensionne_cnrps",
+      "file_path": "cotisations_sociales/pensionne_cnrps",
       "name": "cotisations_sociales.pensionne_cnrps",
       "prev_soc": {
         "brackets": [
@@ -1928,7 +1928,7 @@
           }
         ],
         "description": "Prévoyance sociale",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/pensionne_cnrps/prev_soc.yaml",
+        "file_path": "cotisations_sociales/pensionne_cnrps/prev_soc.yaml",
         "metadata": {
           "rate_unit": "/1",
           "threshold_unit": "currency"
@@ -1954,7 +1954,7 @@
             }
           ],
           "description": "Indemnités de décès et capital décès",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/raci/assurances_sociales/deces.yaml",
+          "file_path": "cotisations_sociales/raci/assurances_sociales/deces.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -1962,7 +1962,7 @@
           "name": "cotisations_sociales.raci.assurances_sociales.deces"
         },
         "description": "Assurances sociales",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/raci/assurances_sociales",
+        "file_path": "cotisations_sociales/raci/assurances_sociales",
         "maladie": {
           "brackets": [
             {
@@ -1979,7 +1979,7 @@
             }
           ],
           "description": "Assurance Maladie",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/raci/assurances_sociales/maladie.yaml",
+          "file_path": "cotisations_sociales/raci/assurances_sociales/maladie.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -2002,7 +2002,7 @@
             }
           ],
           "description": "Indemnités de maladie et maternité",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/raci/assurances_sociales/maternite.yaml",
+          "file_path": "cotisations_sociales/raci/assurances_sociales/maternite.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -2012,7 +2012,7 @@
         "name": "cotisations_sociales.raci.assurances_sociales"
       },
       "description": "Régime des créateurs, artistes et intellectuels",
-      "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/raci",
+      "file_path": "cotisations_sociales/raci",
       "metadata": {
         "reference": {
           "0001-01-01": [
@@ -2039,7 +2039,7 @@
           }
         ],
         "description": "Pensions",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/raci/retraite.yaml",
+        "file_path": "cotisations_sociales/raci/retraite.yaml",
         "metadata": {
           "rate_unit": "/1",
           "threshold_unit": "currency"
@@ -2050,7 +2050,7 @@
     "re": {
       "cotisation": {
         "description": "Montant de la cotisation",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/re/cotisation.yaml",
+        "file_path": "cotisations_sociales/re/cotisation.yaml",
         "metadata": {
           "reference": {
             "0001-01-01": [
@@ -2069,7 +2069,7 @@
         }
       },
       "description": "Régime des étudiants",
-      "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/re",
+      "file_path": "cotisations_sociales/re",
       "metadata": {
         "reference": {
           "0001-01-01": [
@@ -2100,7 +2100,7 @@
               }
             ],
             "description": "Indemnités de décès et capital décès",
-            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_employeur/assurances_sociales/deces.yaml",
+            "file_path": "cotisations_sociales/rsa/cotisations_employeur/assurances_sociales/deces.yaml",
             "metadata": {
               "rate_unit": "/1",
               "threshold_unit": "currency"
@@ -2108,7 +2108,7 @@
             "name": "cotisations_sociales.rsa.cotisations_employeur.assurances_sociales.deces"
           },
           "description": "Assurances sociales",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_employeur/assurances_sociales",
+          "file_path": "cotisations_sociales/rsa/cotisations_employeur/assurances_sociales",
           "maladie": {
             "brackets": [
               {
@@ -2140,7 +2140,7 @@
               }
             ],
             "description": "Assurance Maladie",
-            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_employeur/assurances_sociales/maladie.yaml",
+            "file_path": "cotisations_sociales/rsa/cotisations_employeur/assurances_sociales/maladie.yaml",
             "metadata": {
               "rate_unit": "/1",
               "threshold_unit": "currency"
@@ -2163,7 +2163,7 @@
               }
             ],
             "description": "Indemnités de maladie et maternité",
-            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_employeur/assurances_sociales/maternite.yaml",
+            "file_path": "cotisations_sociales/rsa/cotisations_employeur/assurances_sociales/maternite.yaml",
             "metadata": {
               "rate_unit": "/1",
               "threshold_unit": "currency"
@@ -2173,7 +2173,7 @@
           "name": "cotisations_sociales.rsa.cotisations_employeur.assurances_sociales"
         },
         "description": "Patronales",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_employeur",
+        "file_path": "cotisations_sociales/rsa/cotisations_employeur",
         "name": "cotisations_sociales.rsa.cotisations_employeur",
         "retraite": {
           "brackets": [
@@ -2191,7 +2191,7 @@
             }
           ],
           "description": "Pensions",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_employeur/retraite.yaml",
+          "file_path": "cotisations_sociales/rsa/cotisations_employeur/retraite.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -2217,7 +2217,7 @@
               }
             ],
             "description": "Indemnités de décès et capital décès",
-            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_salarie/assurances_sociales/deces.yaml",
+            "file_path": "cotisations_sociales/rsa/cotisations_salarie/assurances_sociales/deces.yaml",
             "metadata": {
               "rate_unit": "/1",
               "threshold_unit": "currency"
@@ -2225,7 +2225,7 @@
             "name": "cotisations_sociales.rsa.cotisations_salarie.assurances_sociales.deces"
           },
           "description": "Assurances sociales",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_salarie/assurances_sociales",
+          "file_path": "cotisations_sociales/rsa/cotisations_salarie/assurances_sociales",
           "maladie": {
             "brackets": [
               {
@@ -2242,7 +2242,7 @@
               }
             ],
             "description": "Assurance Maladie",
-            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_salarie/assurances_sociales/maladie.yaml",
+            "file_path": "cotisations_sociales/rsa/cotisations_salarie/assurances_sociales/maladie.yaml",
             "metadata": {
               "rate_unit": "/1",
               "threshold_unit": "currency"
@@ -2277,7 +2277,7 @@
               }
             ],
             "description": "Indemnités de maladie et maternité",
-            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_salarie/assurances_sociales/maternite.yaml",
+            "file_path": "cotisations_sociales/rsa/cotisations_salarie/assurances_sociales/maternite.yaml",
             "metadata": {
               "rate_unit": "/1",
               "threshold_unit": "currency"
@@ -2287,7 +2287,7 @@
           "name": "cotisations_sociales.rsa.cotisations_salarie.assurances_sociales"
         },
         "description": "Salariales",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_salarie",
+        "file_path": "cotisations_sociales/rsa/cotisations_salarie",
         "name": "cotisations_sociales.rsa.cotisations_salarie",
         "retraite": {
           "brackets": [
@@ -2305,7 +2305,7 @@
             }
           ],
           "description": "Pensions",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa/cotisations_salarie/retraite.yaml",
+          "file_path": "cotisations_sociales/rsa/cotisations_salarie/retraite.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -2314,7 +2314,7 @@
         }
       },
       "description": "Régime des salariés agricoles",
-      "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsa",
+      "file_path": "cotisations_sociales/rsa",
       "name": "cotisations_sociales.rsa"
     },
     "rsaa": {
@@ -2336,7 +2336,7 @@
               }
             ],
             "description": "Indemnités de décès et capital décès",
-            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_employeur/assurances_sociales/deces.yaml",
+            "file_path": "cotisations_sociales/rsaa/cotisations_employeur/assurances_sociales/deces.yaml",
             "metadata": {
               "rate_unit": "/1",
               "threshold_unit": "currency"
@@ -2344,7 +2344,7 @@
             "name": "cotisations_sociales.rsaa.cotisations_employeur.assurances_sociales.deces"
           },
           "description": "Assurances sociales",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_employeur/assurances_sociales",
+          "file_path": "cotisations_sociales/rsaa/cotisations_employeur/assurances_sociales",
           "maladie": {
             "brackets": [
               {
@@ -2373,7 +2373,7 @@
               }
             ],
             "description": "Assurance Maladie",
-            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_employeur/assurances_sociales/maladie.yaml",
+            "file_path": "cotisations_sociales/rsaa/cotisations_employeur/assurances_sociales/maladie.yaml",
             "metadata": {
               "rate_unit": "/1",
               "threshold_unit": "currency"
@@ -2396,7 +2396,7 @@
               }
             ],
             "description": "Indemnités de maladie et maternité",
-            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_employeur/assurances_sociales/maternite.yaml",
+            "file_path": "cotisations_sociales/rsaa/cotisations_employeur/assurances_sociales/maternite.yaml",
             "metadata": {
               "rate_unit": "/1",
               "threshold_unit": "currency"
@@ -2422,14 +2422,14 @@
             }
           ],
           "description": "Prestations familiales",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_employeur/famille.yaml",
+          "file_path": "cotisations_sociales/rsaa/cotisations_employeur/famille.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
           },
           "name": "cotisations_sociales.rsaa.cotisations_employeur.famille"
         },
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_employeur",
+        "file_path": "cotisations_sociales/rsaa/cotisations_employeur",
         "name": "cotisations_sociales.rsaa.cotisations_employeur",
         "retraite": {
           "brackets": [
@@ -2447,7 +2447,7 @@
             }
           ],
           "description": "Pensions",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_employeur/retraite.yaml",
+          "file_path": "cotisations_sociales/rsaa/cotisations_employeur/retraite.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -2473,7 +2473,7 @@
               }
             ],
             "description": "Indemnités de décès et capital décès",
-            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_salarie/assurances_sociales/deces.yaml",
+            "file_path": "cotisations_sociales/rsaa/cotisations_salarie/assurances_sociales/deces.yaml",
             "metadata": {
               "rate_unit": "/1",
               "threshold_unit": "currency"
@@ -2481,7 +2481,7 @@
             "name": "cotisations_sociales.rsaa.cotisations_salarie.assurances_sociales.deces"
           },
           "description": "Assurances sociales",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_salarie/assurances_sociales",
+          "file_path": "cotisations_sociales/rsaa/cotisations_salarie/assurances_sociales",
           "maladie": {
             "brackets": [
               {
@@ -2507,7 +2507,7 @@
               }
             ],
             "description": "Assurance Maladie",
-            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_salarie/assurances_sociales/maladie.yaml",
+            "file_path": "cotisations_sociales/rsaa/cotisations_salarie/assurances_sociales/maladie.yaml",
             "metadata": {
               "rate_unit": "/1",
               "threshold_unit": "currency"
@@ -2530,7 +2530,7 @@
               }
             ],
             "description": "Indemnités de maladie et maternité",
-            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_salarie/assurances_sociales/maternite.yaml",
+            "file_path": "cotisations_sociales/rsaa/cotisations_salarie/assurances_sociales/maternite.yaml",
             "metadata": {
               "rate_unit": "/1",
               "threshold_unit": "currency"
@@ -2540,7 +2540,7 @@
           "name": "cotisations_sociales.rsaa.cotisations_salarie.assurances_sociales"
         },
         "description": "Salariales",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_salarie",
+        "file_path": "cotisations_sociales/rsaa/cotisations_salarie",
         "name": "cotisations_sociales.rsaa.cotisations_salarie",
         "prestations_familiales": {
           "brackets": [
@@ -2558,7 +2558,7 @@
             }
           ],
           "description": "Prestations familiales",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_salarie/prestations_familiales.yaml",
+          "file_path": "cotisations_sociales/rsaa/cotisations_salarie/prestations_familiales.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -2581,7 +2581,7 @@
             }
           ],
           "description": "Pensions",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa/cotisations_salarie/retraite.yaml",
+          "file_path": "cotisations_sociales/rsaa/cotisations_salarie/retraite.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -2590,7 +2590,7 @@
         }
       },
       "description": "Régime des salariés agricoles amélioré",
-      "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsaa",
+      "file_path": "cotisations_sociales/rsaa",
       "name": "cotisations_sociales.rsaa"
     },
     "rsna": {
@@ -2611,7 +2611,7 @@
             }
           ],
           "description": "Accidents du travail - Maladies professionelles",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_employeur/accident_du_travail.yaml",
+          "file_path": "cotisations_sociales/rsna/cotisations_employeur/accident_du_travail.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -2635,7 +2635,7 @@
               }
             ],
             "description": "Indemnités de décès et capital décès",
-            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_employeur/assurances_sociales/deces.yaml",
+            "file_path": "cotisations_sociales/rsna/cotisations_employeur/assurances_sociales/deces.yaml",
             "metadata": {
               "rate_unit": "/1",
               "threshold_unit": "currency"
@@ -2643,7 +2643,7 @@
             "name": "cotisations_sociales.rsna.cotisations_employeur.assurances_sociales.deces"
           },
           "description": "Assurances sociales",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_employeur/assurances_sociales",
+          "file_path": "cotisations_sociales/rsna/cotisations_employeur/assurances_sociales",
           "maladie": {
             "brackets": [
               {
@@ -2663,7 +2663,7 @@
               }
             ],
             "description": "Assurance Maladie",
-            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_employeur/assurances_sociales/maladie.yaml",
+            "file_path": "cotisations_sociales/rsna/cotisations_employeur/assurances_sociales/maladie.yaml",
             "metadata": {
               "rate_unit": "/1",
               "threshold_unit": "currency"
@@ -2686,7 +2686,7 @@
               }
             ],
             "description": "Indemnités de maladie et maternité",
-            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_employeur/assurances_sociales/maternite.yaml",
+            "file_path": "cotisations_sociales/rsna/cotisations_employeur/assurances_sociales/maternite.yaml",
             "metadata": {
               "rate_unit": "/1",
               "threshold_unit": "currency"
@@ -2712,14 +2712,14 @@
             }
           ],
           "description": "Prestations familiales",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_employeur/famille.yaml",
+          "file_path": "cotisations_sociales/rsna/cotisations_employeur/famille.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
           },
           "name": "cotisations_sociales.rsna.cotisations_employeur.famille"
         },
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_employeur",
+        "file_path": "cotisations_sociales/rsna/cotisations_employeur",
         "fonds_special_etat": {
           "brackets": [
             {
@@ -2736,7 +2736,7 @@
             }
           ],
           "description": "Fond spécial de l'Etat",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_employeur/fonds_special_etat.yaml",
+          "file_path": "cotisations_sociales/rsna/cotisations_employeur/fonds_special_etat.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -2760,7 +2760,7 @@
             }
           ],
           "description": "Protection sociale des travailleurs",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_employeur/protection_sociale_travailleurs.yaml",
+          "file_path": "cotisations_sociales/rsna/cotisations_employeur/protection_sociale_travailleurs.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -2783,7 +2783,7 @@
             }
           ],
           "description": "Pensions de retraite",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_employeur/retraite.yaml",
+          "file_path": "cotisations_sociales/rsna/cotisations_employeur/retraite.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -2808,7 +2808,7 @@
             }
           ],
           "description": "Accidents du travail - Maladies professionelles",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_salarie/accident_du_travail.yaml",
+          "file_path": "cotisations_sociales/rsna/cotisations_salarie/accident_du_travail.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -2832,7 +2832,7 @@
               }
             ],
             "description": "Indemnités de décès et capital décès",
-            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_salarie/assurances_sociales/deces.yaml",
+            "file_path": "cotisations_sociales/rsna/cotisations_salarie/assurances_sociales/deces.yaml",
             "metadata": {
               "rate_unit": "/1",
               "threshold_unit": "currency"
@@ -2840,7 +2840,7 @@
             "name": "cotisations_sociales.rsna.cotisations_salarie.assurances_sociales.deces"
           },
           "description": "Assurances sociales",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_salarie/assurances_sociales",
+          "file_path": "cotisations_sociales/rsna/cotisations_salarie/assurances_sociales",
           "maladie": {
             "brackets": [
               {
@@ -2863,7 +2863,7 @@
               }
             ],
             "description": "Assurance Maladie",
-            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_salarie/assurances_sociales/maladie.yaml",
+            "file_path": "cotisations_sociales/rsna/cotisations_salarie/assurances_sociales/maladie.yaml",
             "metadata": {
               "rate_unit": "/1",
               "threshold_unit": "currency"
@@ -2886,7 +2886,7 @@
               }
             ],
             "description": "Indemnités de maladie et maternité",
-            "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_salarie/assurances_sociales/maternite.yaml",
+            "file_path": "cotisations_sociales/rsna/cotisations_salarie/assurances_sociales/maternite.yaml",
             "metadata": {
               "rate_unit": "/1",
               "threshold_unit": "currency"
@@ -2912,14 +2912,14 @@
             }
           ],
           "description": "Prestations familiales",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_salarie/famille.yaml",
+          "file_path": "cotisations_sociales/rsna/cotisations_salarie/famille.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
           },
           "name": "cotisations_sociales.rsna.cotisations_salarie.famille"
         },
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_salarie",
+        "file_path": "cotisations_sociales/rsna/cotisations_salarie",
         "name": "cotisations_sociales.rsna.cotisations_salarie",
         "protection_sociale_travailleurs": {
           "brackets": [
@@ -2937,7 +2937,7 @@
             }
           ],
           "description": "Protection sociale des travailleurs",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_salarie/protection_sociale_travailleurs.yaml",
+          "file_path": "cotisations_sociales/rsna/cotisations_salarie/protection_sociale_travailleurs.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -2960,7 +2960,7 @@
             }
           ],
           "description": "Pensions",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna/cotisations_salarie/retraite.yaml",
+          "file_path": "cotisations_sociales/rsna/cotisations_salarie/retraite.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -2969,13 +2969,13 @@
         }
       },
       "description": "Régime des salariés non agricoles (régime général)",
-      "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rsna",
+      "file_path": "cotisations_sociales/rsna",
       "name": "cotisations_sociales.rsna"
     },
     "rtfr": {
       "cotisations_employeur": {
         "description": "Patronales",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtfr/cotisations_employeur",
+        "file_path": "cotisations_sociales/rtfr/cotisations_employeur",
         "name": "cotisations_sociales.rtfr.cotisations_employeur",
         "retraite": {
           "brackets": [
@@ -3005,7 +3005,7 @@
             }
           ],
           "description": "Pensions (seuils exprimés en SMIG/SMAG)",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtfr/cotisations_employeur/retraite.yaml",
+          "file_path": "cotisations_sociales/rtfr/cotisations_employeur/retraite.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "/1"
@@ -3040,7 +3040,7 @@
             }
           ],
           "description": "Soins (seuils exprimés en SMIG/SMAG)",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtfr/cotisations_employeur/soin.yaml",
+          "file_path": "cotisations_sociales/rtfr/cotisations_employeur/soin.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "/1"
@@ -3050,7 +3050,7 @@
       },
       "cotisations_salarie": {
         "description": "Salariales",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtfr/cotisations_salarie",
+        "file_path": "cotisations_sociales/rtfr/cotisations_salarie",
         "name": "cotisations_sociales.rtfr.cotisations_salarie",
         "retraite": {
           "brackets": [
@@ -3080,7 +3080,7 @@
             }
           ],
           "description": "Pensions (seuils exprimés en SMIG/SMAG)",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtfr/cotisations_salarie/retraite.yaml",
+          "file_path": "cotisations_sociales/rtfr/cotisations_salarie/retraite.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "/1"
@@ -3115,7 +3115,7 @@
             }
           ],
           "description": "Soins (seuils exprimés en SMIG/SMAG)",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtfr/cotisations_salarie/soin.yaml",
+          "file_path": "cotisations_sociales/rtfr/cotisations_salarie/soin.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -3124,7 +3124,7 @@
         }
       },
       "description": "Régime des travailleurs à faibles revenus",
-      "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtfr",
+      "file_path": "cotisations_sociales/rtfr",
       "name": "cotisations_sociales.rtfr"
     },
     "rtns": {
@@ -3145,7 +3145,7 @@
             }
           ],
           "description": "Indemnités de décès et capital décès",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtns/assurances_sociales/deces.yaml",
+          "file_path": "cotisations_sociales/rtns/assurances_sociales/deces.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -3153,7 +3153,7 @@
           "name": "cotisations_sociales.rtns.assurances_sociales.deces"
         },
         "description": "Assurances sociales",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtns/assurances_sociales",
+        "file_path": "cotisations_sociales/rtns/assurances_sociales",
         "maladie": {
           "brackets": [
             {
@@ -3182,7 +3182,7 @@
             }
           ],
           "description": "Assurance Maladie",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtns/assurances_sociales/maladie.yaml",
+          "file_path": "cotisations_sociales/rtns/assurances_sociales/maladie.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -3205,7 +3205,7 @@
             }
           ],
           "description": "Indemnités de maladie et maternité",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtns/assurances_sociales/maternite.yaml",
+          "file_path": "cotisations_sociales/rtns/assurances_sociales/maternite.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -3215,7 +3215,7 @@
         "name": "cotisations_sociales.rtns.assurances_sociales"
       },
       "description": "Régime des travailleurs non salariés",
-      "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtns",
+      "file_path": "cotisations_sociales/rtns",
       "name": "cotisations_sociales.rtns",
       "retraite": {
         "brackets": [
@@ -3233,7 +3233,7 @@
           }
         ],
         "description": "Pensions",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtns/retraite.yaml",
+        "file_path": "cotisations_sociales/rtns/retraite.yaml",
         "metadata": {
           "rate_unit": "/1",
           "threshold_unit": "currency"
@@ -3259,7 +3259,7 @@
             }
           ],
           "description": "Indemnités de décès et capital décès",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtte/assurances_sociales/deces.yaml",
+          "file_path": "cotisations_sociales/rtte/assurances_sociales/deces.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -3267,7 +3267,7 @@
           "name": "cotisations_sociales.rtte.assurances_sociales.deces"
         },
         "description": "Assurances sociales",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtte/assurances_sociales",
+        "file_path": "cotisations_sociales/rtte/assurances_sociales",
         "maladie": {
           "brackets": [
             {
@@ -3293,7 +3293,7 @@
             }
           ],
           "description": "Assurance Maladie",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtte/assurances_sociales/maladie.yaml",
+          "file_path": "cotisations_sociales/rtte/assurances_sociales/maladie.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -3316,7 +3316,7 @@
             }
           ],
           "description": "Indemnités de maladie et maternité",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtte/assurances_sociales/maternite.yaml",
+          "file_path": "cotisations_sociales/rtte/assurances_sociales/maternite.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -3326,7 +3326,7 @@
         "name": "cotisations_sociales.rtte.assurances_sociales"
       },
       "description": "Régime des travailleurs tunisiens à l'étranger",
-      "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtte",
+      "file_path": "cotisations_sociales/rtte",
       "name": "cotisations_sociales.rtte",
       "retraite": {
         "brackets": [
@@ -3344,7 +3344,7 @@
           }
         ],
         "description": "Pensions",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/rtte/retraite.yaml",
+        "file_path": "cotisations_sociales/rtte/retraite.yaml",
         "metadata": {
           "rate_unit": "/1",
           "threshold_unit": "currency"
@@ -3355,7 +3355,7 @@
     "salarie_cnrps": {
       "cotisations_employeur": {
         "description": "Patronales",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/salarie_cnrps/cotisations_employeur",
+        "file_path": "cotisations_sociales/salarie_cnrps/cotisations_employeur",
         "maladie": {
           "brackets": [
             {
@@ -3372,7 +3372,7 @@
             }
           ],
           "description": "Assurance maladie",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/salarie_cnrps/cotisations_employeur/maladie.yaml",
+          "file_path": "cotisations_sociales/salarie_cnrps/cotisations_employeur/maladie.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -3408,7 +3408,7 @@
             }
           ],
           "description": "Retraite",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/salarie_cnrps/cotisations_employeur/retraite.yaml",
+          "file_path": "cotisations_sociales/salarie_cnrps/cotisations_employeur/retraite.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -3433,7 +3433,7 @@
             }
           ],
           "description": "Capital décès",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/salarie_cnrps/cotisations_salarie/deces.yaml",
+          "file_path": "cotisations_sociales/salarie_cnrps/cotisations_salarie/deces.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -3441,7 +3441,7 @@
           "name": "cotisations_sociales.salarie_cnrps.cotisations_salarie.deces"
         },
         "description": "Salariales",
-        "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/salarie_cnrps/cotisations_salarie",
+        "file_path": "cotisations_sociales/salarie_cnrps/cotisations_salarie",
         "maladie": {
           "brackets": [
             {
@@ -3458,7 +3458,7 @@
             }
           ],
           "description": "Assurance maladie",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/salarie_cnrps/cotisations_salarie/maladie.yaml",
+          "file_path": "cotisations_sociales/salarie_cnrps/cotisations_salarie/maladie.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -3491,7 +3491,7 @@
             }
           ],
           "description": "Retraite",
-          "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/salarie_cnrps/cotisations_salarie/retraite.yaml",
+          "file_path": "cotisations_sociales/salarie_cnrps/cotisations_salarie/retraite.yaml",
           "metadata": {
             "rate_unit": "/1",
             "threshold_unit": "currency"
@@ -3500,11 +3500,11 @@
         }
       },
       "description": "Régime général des agents de l'Etat",
-      "file_path": "/openfisca_tunisia/parameters/cotisations_sociales/salarie_cnrps",
+      "file_path": "cotisations_sociales/salarie_cnrps",
       "name": "cotisations_sociales.salarie_cnrps"
     }
   },
-  "file_path": "/openfisca_tunisia/parameters",
+  "file_path": "/home/manou/Projects/leximpact/openfisca-ast/.venv/lib/python3.9/site-packages/openfisca_tunisia/parameters",
   "impot_revenu": {
     "bareme": {
       "brackets": [
@@ -3663,7 +3663,7 @@
         }
       ],
       "description": "Tranches de l'IR",
-      "file_path": "/openfisca_tunisia/parameters/impot_revenu/bareme.yaml",
+      "file_path": "impot_revenu/bareme.yaml",
       "metadata": {
         "rate_unit": "/1",
         "threshold_unit": "currency"
@@ -3672,11 +3672,11 @@
     },
     "bic": {
       "description": "Bénéfices industriels et commerciaux",
-      "file_path": "/openfisca_tunisia/parameters/impot_revenu/bic",
+      "file_path": "impot_revenu/bic",
       "forf": {
         "acc": {
           "description": "Accomptes (en % de l'impôt forfaitaire dû)",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/bic/forf/acc.yaml",
+          "file_path": "impot_revenu/bic/forf/acc.yaml",
           "metadata": {
             "unit": "/1"
           },
@@ -3811,7 +3811,7 @@
             }
           ],
           "description": "Tranches de l'IR",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/bic/forf/bareme.yaml",
+          "file_path": "impot_revenu/bic/forf/bareme.yaml",
           "metadata": {
             "amount_unit": "currency",
             "threshold_unit": "currency"
@@ -3819,10 +3819,10 @@
           "name": "impot_revenu.bic.forf.bareme"
         },
         "description": "Régime forfaitaire",
-        "file_path": "/openfisca_tunisia/parameters/impot_revenu/bic/forf",
+        "file_path": "impot_revenu/bic/forf",
         "forfait": {
           "description": "Montant de l'impot forfaitaire dispensant du paiement des accomptes provisionnels",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/bic/forf/forfait.yaml",
+          "file_path": "impot_revenu/bic/forf/forfait.yaml",
           "metadata": {
             "unit": "currency"
           },
@@ -3838,10 +3838,10 @@
       "name": "impot_revenu.bic",
       "reel": {
         "description": "Régime réel",
-        "file_path": "/openfisca_tunisia/parameters/impot_revenu/bic/reel",
+        "file_path": "impot_revenu/bic/reel",
         "forfait": {
           "description": "---",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/bic/reel/forfait.yaml",
+          "file_path": "impot_revenu/bic/reel/forfait.yaml",
           "metadata": {
             "unit": "currency"
           },
@@ -3856,10 +3856,10 @@
       },
       "simpl": {
         "description": "Régime réel simplifié",
-        "file_path": "/openfisca_tunisia/parameters/impot_revenu/bic/simpl",
+        "file_path": "impot_revenu/bic/simpl",
         "forfait": {
           "description": "---",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/bic/simpl/forfait.yaml",
+          "file_path": "impot_revenu/bic/simpl/forfait.yaml",
           "metadata": {
             "unit": "currency"
           },
@@ -3875,14 +3875,14 @@
     },
     "bnc": {
       "description": "Bénéfices des professions non commerciales",
-      "file_path": "/openfisca_tunisia/parameters/impot_revenu/bnc",
+      "file_path": "impot_revenu/bnc",
       "forf": {
         "description": "Assiette forfaitaire",
-        "file_path": "/openfisca_tunisia/parameters/impot_revenu/bnc/forf",
+        "file_path": "impot_revenu/bnc/forf",
         "name": "impot_revenu.bnc.forf",
         "part_forf": {
           "description": "Part des recettes brutes TTC imposées",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/bnc/forf/part_forf.yaml",
+          "file_path": "impot_revenu/bnc/forf/part_forf.yaml",
           "metadata": {
             "unit": "/1"
           },
@@ -3987,7 +3987,7 @@
         }
       ],
       "description": "Contributions au budget de l'Etat (montant de la contribution en jour de salaire ou pension brut par tranche de revenu annuel net)",
-      "file_path": "/openfisca_tunisia/parameters/impot_revenu/contribution_budget_etat.yaml",
+      "file_path": "impot_revenu/contribution_budget_etat.yaml",
       "metadata": {
         "amount_unit": "day",
         "threshold_unit": "currency"
@@ -3998,7 +3998,7 @@
       "assurance_vie": {
         "conj_plaf": {
           "description": "Majoration au titre du conjoint",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/assurance_vie/conj_plaf.yaml",
+          "file_path": "impot_revenu/deductions/assurance_vie/conj_plaf.yaml",
           "metadata": {
             "unit": "currency"
           },
@@ -4015,7 +4015,7 @@
         "description": "Assurance vie",
         "enf_plaf": {
           "description": "Majoration au titre des enfants",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/assurance_vie/enf_plaf.yaml",
+          "file_path": "impot_revenu/deductions/assurance_vie/enf_plaf.yaml",
           "metadata": {
             "unit": "currency"
           },
@@ -4029,11 +4029,11 @@
             }
           }
         },
-        "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/assurance_vie",
+        "file_path": "impot_revenu/deductions/assurance_vie",
         "name": "impot_revenu.deductions.assurance_vie",
         "plaf": {
           "description": "Plafond de la déduction",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/assurance_vie/plaf.yaml",
+          "file_path": "impot_revenu/deductions/assurance_vie/plaf.yaml",
           "metadata": {
             "unit": "currency"
           },
@@ -4050,11 +4050,11 @@
       },
       "banq": {
         "description": "Intérêts des comptes spéciaux d’épargne ouverts auprès des banques",
-        "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/banq",
+        "file_path": "impot_revenu/deductions/banq",
         "name": "impot_revenu.deductions.banq",
         "plaf": {
           "description": "Plafond de la déduction",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/banq/plaf.yaml",
+          "file_path": "impot_revenu/deductions/banq/plaf.yaml",
           "metadata": {
             "unit": "currency"
           },
@@ -4068,11 +4068,11 @@
       },
       "cent": {
         "description": "Intérêts des comptes spéciaux d’épargne ouverts auprès de la CENT",
-        "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/cent",
+        "file_path": "impot_revenu/deductions/cent",
         "name": "impot_revenu.deductions.cent",
         "plaf": {
           "description": "Plafond de la déduction",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/cent/plaf.yaml",
+          "file_path": "impot_revenu/deductions/cent/plaf.yaml",
           "metadata": {
             "unit": "currency"
           },
@@ -4087,11 +4087,11 @@
       "description": "Déductions",
       "epinv": {
         "description": "Intérêts des comptes épargne pour l'investissement",
-        "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/epinv",
+        "file_path": "impot_revenu/deductions/epinv",
         "name": "impot_revenu.deductions.epinv",
         "plaf": {
           "description": "Plafond de la déduction",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/epinv/plaf.yaml",
+          "file_path": "impot_revenu/deductions/epinv/plaf.yaml",
           "metadata": {
             "unit": "currency"
           },
@@ -4106,7 +4106,7 @@
       "fam": {
         "age": {
           "description": "Age limite (exclu) des enfants à charge",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/age.yaml",
+          "file_path": "impot_revenu/deductions/fam/age.yaml",
           "metadata": {
             "unit": "year"
           },
@@ -4119,7 +4119,7 @@
         },
         "age_sup": {
           "description": "Age limite (exclu) des enfants de supérieur à charge",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/age_sup.yaml",
+          "file_path": "impot_revenu/deductions/fam/age_sup.yaml",
           "metadata": {
             "unit": "year"
           },
@@ -4133,7 +4133,7 @@
         "chef_de_famille": {
           "description": "Chef de famille - رئيس عائلة",
           "documentation": "Montant de la déduction sur le montant des revenus nets du \"chef de famille\".\nمبلغ الطرح من مبلغ المداخيل الصافية لرئيس العائلة\n",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/chef_de_famille.yaml",
+          "file_path": "impot_revenu/deductions/fam/chef_de_famille.yaml",
           "metadata": {
             "reference": {
               "0001-01-01": [
@@ -4163,7 +4163,7 @@
         "description": "Déductions pour charge de famille",
         "enf1": {
           "description": "1er enfant à charge",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/enf1.yaml",
+          "file_path": "impot_revenu/deductions/fam/enf1.yaml",
           "metadata": {
             "unit": "currency"
           },
@@ -4184,7 +4184,7 @@
         },
         "enf2": {
           "description": "2e enfant à charge",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/enf2.yaml",
+          "file_path": "impot_revenu/deductions/fam/enf2.yaml",
           "metadata": {
             "unit": "currency"
           },
@@ -4205,7 +4205,7 @@
         },
         "enf3": {
           "description": "3e enfant à charge",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/enf3.yaml",
+          "file_path": "impot_revenu/deductions/fam/enf3.yaml",
           "metadata": {
             "unit": "currency"
           },
@@ -4226,7 +4226,7 @@
         },
         "enf4": {
           "description": "4e enfant à charge",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/enf4.yaml",
+          "file_path": "impot_revenu/deductions/fam/enf4.yaml",
           "metadata": {
             "unit": "currency"
           },
@@ -4247,7 +4247,7 @@
         },
         "enf_sup": {
           "description": "Enfant non boursier du supérieur",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/enf_sup.yaml",
+          "file_path": "impot_revenu/deductions/fam/enf_sup.yaml",
           "metadata": {
             "unit": "currency"
           },
@@ -4274,10 +4274,10 @@
             }
           }
         },
-        "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam",
+        "file_path": "impot_revenu/deductions/fam",
         "infirme": {
           "description": "Enfant infirme",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/infirme.yaml",
+          "file_path": "impot_revenu/deductions/fam/infirme.yaml",
           "metadata": {
             "reference": {
               "0001-01-01": [
@@ -4333,7 +4333,7 @@
         "name": "impot_revenu.deductions.fam",
         "parent_max": {
           "description": "Parent à charge (montant maximum)",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/parent_max.yaml",
+          "file_path": "impot_revenu/deductions/fam/parent_max.yaml",
           "metadata": {
             "unit": "currency"
           },
@@ -4346,7 +4346,7 @@
         },
         "parent_plaf": {
           "description": "Parent à charge (plafond de revenu en SMIG)",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/parent_plaf.yaml",
+          "file_path": "impot_revenu/deductions/fam/parent_plaf.yaml",
           "metadata": {
             "unit": "/1"
           },
@@ -4359,7 +4359,7 @@
         },
         "parent_taux": {
           "description": "Parent à charge (en % du revenu)",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/fam/parent_taux.yaml",
+          "file_path": "impot_revenu/deductions/fam/parent_taux.yaml",
           "metadata": {
             "unit": "/1"
           },
@@ -4371,15 +4371,15 @@
           }
         }
       },
-      "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions",
+      "file_path": "impot_revenu/deductions",
       "name": "impot_revenu.deductions",
       "oblig": {
         "description": "Intérêts des emprunts obligataires",
-        "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/oblig",
+        "file_path": "impot_revenu/deductions/oblig",
         "name": "impot_revenu.deductions.oblig",
         "plaf": {
           "description": "Plafond de la déduction",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/deductions/oblig/plaf.yaml",
+          "file_path": "impot_revenu/deductions/oblig/plaf.yaml",
           "metadata": {
             "unit": "currency"
           },
@@ -4395,11 +4395,11 @@
     "description": "Impôt sur le revenu",
     "exoneration": {
       "description": "Exonération d'impôt sur le revenu pour les revenus net inférieur à un certain seuil",
-      "file_path": "/openfisca_tunisia/parameters/impot_revenu/exoneration",
+      "file_path": "impot_revenu/exoneration",
       "name": "impot_revenu.exoneration",
       "seuil": {
         "description": "Seuil de revenu imposable net pour être exonéré",
-        "file_path": "/openfisca_tunisia/parameters/impot_revenu/exoneration/seuil.yaml",
+        "file_path": "impot_revenu/exoneration/seuil.yaml",
         "metadata": {
           "unit": "currency"
         },
@@ -4414,12 +4414,12 @@
         }
       }
     },
-    "file_path": "/openfisca_tunisia/parameters/impot_revenu",
+    "file_path": "impot_revenu",
     "foncier": {
       "bati": {
         "deduction_frais": {
           "description": "Déduction pour frais, charges et amortissments",
-          "file_path": "/openfisca_tunisia/parameters/impot_revenu/foncier/bati/deduction_frais.yaml",
+          "file_path": "impot_revenu/foncier/bati/deduction_frais.yaml",
           "metadata": {
             "unit": "/1"
           },
@@ -4434,18 +4434,18 @@
           }
         },
         "description": "Immeubles bâtis",
-        "file_path": "/openfisca_tunisia/parameters/impot_revenu/foncier/bati",
+        "file_path": "impot_revenu/foncier/bati",
         "name": "impot_revenu.foncier.bati"
       },
       "description": "Revenus fonciers",
-      "file_path": "/openfisca_tunisia/parameters/impot_revenu/foncier",
+      "file_path": "impot_revenu/foncier",
       "name": "impot_revenu.foncier"
     },
     "name": "impot_revenu",
     "tspr": {
       "abat_pen": {
         "description": "Abattement sur les pensions",
-        "file_path": "/openfisca_tunisia/parameters/impot_revenu/tspr/abat_pen.yaml",
+        "file_path": "impot_revenu/tspr/abat_pen.yaml",
         "metadata": {
           "unit": "/1"
         },
@@ -4458,7 +4458,7 @@
       },
       "abat_pen_etr": {
         "description": "Abattement sur les pensions étrangères",
-        "file_path": "/openfisca_tunisia/parameters/impot_revenu/tspr/abat_pen_etr.yaml",
+        "file_path": "impot_revenu/tspr/abat_pen_etr.yaml",
         "metadata": {
           "unit": "/1"
         },
@@ -4474,7 +4474,7 @@
       },
       "abat_sal": {
         "description": "Abattement sur les salaires",
-        "file_path": "/openfisca_tunisia/parameters/impot_revenu/tspr/abat_sal.yaml",
+        "file_path": "impot_revenu/tspr/abat_sal.yaml",
         "metadata": {
           "unit": "/1"
         },
@@ -4486,11 +4486,11 @@
         }
       },
       "description": "Traitements, salaires, pensions et rentes",
-      "file_path": "/openfisca_tunisia/parameters/impot_revenu/tspr",
+      "file_path": "impot_revenu/tspr",
       "name": "impot_revenu.tspr",
       "smig": {
         "description": "Abattement pour salaire minimum",
-        "file_path": "/openfisca_tunisia/parameters/impot_revenu/tspr/smig.yaml",
+        "file_path": "impot_revenu/tspr/smig.yaml",
         "metadata": {
           "unit": "currency"
         },
@@ -4506,7 +4506,7 @@
       },
       "smig_ext": {
         "description": "Extension de l'abattement précédent aux bas salaires",
-        "file_path": "/openfisca_tunisia/parameters/impot_revenu/tspr/smig_ext.yaml",
+        "file_path": "impot_revenu/tspr/smig_ext.yaml",
         "metadata": {
           "unit": "/1"
         },
@@ -4523,11 +4523,11 @@
   "prestations_familiales": {
     "af": {
       "description": "Allocations familiales",
-      "file_path": "/openfisca_tunisia/parameters/prestations_familiales/af",
+      "file_path": "prestations_familiales/af",
       "name": "prestations_familiales.af",
       "plaf_trim": {
         "description": "Plafond de revenus trimestriels",
-        "file_path": "/openfisca_tunisia/parameters/prestations_familiales/af/plaf_trim.yaml",
+        "file_path": "prestations_familiales/af/plaf_trim.yaml",
         "metadata": {
           "unit": "currency"
         },
@@ -4542,7 +4542,7 @@
         "description": "Taux (% de la BTAF)",
         "enf1": {
           "description": "Premier enfant à charge",
-          "file_path": "/openfisca_tunisia/parameters/prestations_familiales/af/taux/enf1.yaml",
+          "file_path": "prestations_familiales/af/taux/enf1.yaml",
           "metadata": {
             "unit": "/1"
           },
@@ -4555,7 +4555,7 @@
         },
         "enf2": {
           "description": "Deuxième enfant à charge",
-          "file_path": "/openfisca_tunisia/parameters/prestations_familiales/af/taux/enf2.yaml",
+          "file_path": "prestations_familiales/af/taux/enf2.yaml",
           "metadata": {
             "unit": "/1"
           },
@@ -4568,7 +4568,7 @@
         },
         "enf3": {
           "description": "Troisième enfant à charge",
-          "file_path": "/openfisca_tunisia/parameters/prestations_familiales/af/taux/enf3.yaml",
+          "file_path": "prestations_familiales/af/taux/enf3.yaml",
           "metadata": {
             "unit": "/1"
           },
@@ -4579,14 +4579,14 @@
             }
           }
         },
-        "file_path": "/openfisca_tunisia/parameters/prestations_familiales/af/taux",
+        "file_path": "prestations_familiales/af/taux",
         "name": "prestations_familiales.af.taux"
       }
     },
     "creche": {
       "age_max": {
         "description": "Age (en mois) maximal",
-        "file_path": "/openfisca_tunisia/parameters/prestations_familiales/creche/age_max.yaml",
+        "file_path": "prestations_familiales/creche/age_max.yaml",
         "metadata": {
           "unit": "month"
         },
@@ -4599,7 +4599,7 @@
       },
       "age_min": {
         "description": "Age (en mois) minimal",
-        "file_path": "/openfisca_tunisia/parameters/prestations_familiales/creche/age_min.yaml",
+        "file_path": "prestations_familiales/creche/age_min.yaml",
         "metadata": {
           "unit": "month"
         },
@@ -4613,7 +4613,7 @@
       "description": "Contribution au frais de crêche",
       "duree": {
         "description": "Durée maximale (en mois)",
-        "file_path": "/openfisca_tunisia/parameters/prestations_familiales/creche/duree.yaml",
+        "file_path": "prestations_familiales/creche/duree.yaml",
         "metadata": {
           "unit": "month"
         },
@@ -4624,10 +4624,10 @@
           }
         }
       },
-      "file_path": "/openfisca_tunisia/parameters/prestations_familiales/creche",
+      "file_path": "prestations_familiales/creche",
       "montant": {
         "description": "Montant",
-        "file_path": "/openfisca_tunisia/parameters/prestations_familiales/creche/montant.yaml",
+        "file_path": "prestations_familiales/creche/montant.yaml",
         "metadata": {
           "unit": "currency"
         },
@@ -4641,7 +4641,7 @@
       "name": "prestations_familiales.creche",
       "plaf": {
         "description": "Plafond de ressources (en SMIG 48h)",
-        "file_path": "/openfisca_tunisia/parameters/prestations_familiales/creche/plaf.yaml",
+        "file_path": "prestations_familiales/creche/plaf.yaml",
         "metadata": {
           "unit": "/1"
         },
@@ -4654,13 +4654,13 @@
       }
     },
     "description": "Prestations familiales",
-    "file_path": "/openfisca_tunisia/parameters/prestations_familiales",
+    "file_path": "prestations_familiales",
     "name": "prestations_familiales",
     "salaire_unique": {
       "description": "Majoration trimestrielle pour salaire unique",
       "enf1": {
         "description": "Premier enfant à charge",
-        "file_path": "/openfisca_tunisia/parameters/prestations_familiales/salaire_unique/enf1.yaml",
+        "file_path": "prestations_familiales/salaire_unique/enf1.yaml",
         "metadata": {
           "unit": "currency"
         },
@@ -4673,7 +4673,7 @@
       },
       "enf2": {
         "description": "Deuxième enfant à charge",
-        "file_path": "/openfisca_tunisia/parameters/prestations_familiales/salaire_unique/enf2.yaml",
+        "file_path": "prestations_familiales/salaire_unique/enf2.yaml",
         "metadata": {
           "unit": "currency"
         },
@@ -4686,7 +4686,7 @@
       },
       "enf3": {
         "description": "Troisième enfant",
-        "file_path": "/openfisca_tunisia/parameters/prestations_familiales/salaire_unique/enf3.yaml",
+        "file_path": "prestations_familiales/salaire_unique/enf3.yaml",
         "metadata": {
           "unit": "currency"
         },
@@ -4697,7 +4697,7 @@
           }
         }
       },
-      "file_path": "/openfisca_tunisia/parameters/prestations_familiales/salaire_unique",
+      "file_path": "prestations_familiales/salaire_unique",
       "name": "prestations_familiales.salaire_unique"
     }
   }

@@ -1,6 +1,7 @@
 {
   "currency": "DT",
   "name": "openfisca-tunisia",
+  "parameters_dir": "openfisca_tunisia/parameters",
   "repository_url": "https://github.com/openfisca/openfisca-tunisia",
   "version": "0.33.0"
 }

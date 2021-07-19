@@ -1,0 +1,6 @@
+description: Montant
+metadata:
+  unit: currency
+values:
+  1960-01-01:
+    value: 15

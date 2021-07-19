@@ -1,0 +1,6 @@
+description: Deuxième enfant à charge
+metadata:
+  unit: currency
+values:
+  1960-01-01:
+    value: 18.75

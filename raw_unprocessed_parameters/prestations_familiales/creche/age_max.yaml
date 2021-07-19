@@ -1,0 +1,6 @@
+description: Age (en mois) maximal
+metadata:
+  unit: month
+values:
+  1960-01-01:
+    value: 36

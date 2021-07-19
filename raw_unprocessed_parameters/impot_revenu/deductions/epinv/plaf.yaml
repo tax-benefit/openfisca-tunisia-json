@@ -1,0 +1,6 @@
+description: Plafond de la déduction
+metadata:
+  unit: currency
+values:
+  1990-01-01:
+    value: 2000

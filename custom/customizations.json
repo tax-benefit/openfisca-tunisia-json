@@ -1,0 +1,30 @@
+{
+  "salaire_de_base": {
+    "options": {
+      "waterfall": "super_brut_to_disponible",
+      "then": {
+        "children": [
+          {
+            "name": "salaire_super_brut"
+          },
+          {
+            "name": "primes",
+            "negate": true
+          },
+          {
+            "name": "cotisations_employeur"
+          }
+        ]
+      }
+    }
+  },
+  "salaire_super_brut": {
+    "options": {
+      "waterfall": "super_brut_to_disponible",
+      "then": {
+        "children": null
+      }
+    }
+  }
+}
+

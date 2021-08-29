@@ -1,0 +1,63 @@
+{
+  "foyer_fiscal": {
+    "key": "foyer_fiscal",
+    "key_plural": "foyers_fiscaux",
+    "label": "Déclaration d’impôts",
+    "roles": [
+      {
+        "key": "declarant",
+        "key_plural": "declarants",
+        "label": "Déclarants",
+        "max": 2,
+        "subroles": [
+          {
+            "key": "declarant_principal",
+            "max": 1
+          },
+          {
+            "key": "conjoint",
+            "max": 1
+          }
+        ]
+      },
+      {
+        "key": "personne_a_charge",
+        "key_plural": "personnes_a_charge",
+        "label": "Personnes à charge"
+      }
+    ]
+  },
+  "individu": {
+    "is_person": true,
+    "key": "individu",
+    "key_plural": "individus",
+    "label": "Individu"
+  },
+  "menage": {
+    "key": "menage",
+    "key_plural": "menages",
+    "label": "Logement principal",
+    "roles": [
+      {
+        "key": "personne_de_reference",
+        "label": "Personne de référence",
+        "max": 1
+      },
+      {
+        "key": "conjoint",
+        "label": "Conjoint",
+        "max": 1
+      },
+      {
+        "key": "enfant",
+        "key_plural": "enfants",
+        "label": "Enfants"
+      },
+      {
+        "key": "autre",
+        "key_plural": "autres",
+        "label": "Autres"
+      }
+    ]
+  }
+}

@@ -5,6 +5,9 @@
   "accident_du_travail_salarie": {
     "label": "Cotisation accidents du travail et maladies professionnelles (salarié)"
   },
+  "af": {
+    "label": "Allocations familiales"
+  },
   "assiette_cotisations_sociales": {
     "children": [
       {
@@ -15,6 +18,106 @@
       }
     ],
     "label": "Assiette des cotisations sociales"
+  },
+  "beap": {
+    "children": [
+      {
+        "name": "beap_reel_res_fiscal"
+      },
+      {
+        "name": "beap_reliq_benef_fiscal"
+      },
+      {
+        "name": "beap_monogr"
+      },
+      {
+        "name": "beap_part_benef_sp"
+      }
+    ],
+    "label": "Bénéfices de l'exploitation agricole et de pêche (BEAP)"
+  },
+  "beap_monogr": {
+    "label": "Bénéfice sur la base de monographies sectorielles (BEAP)"
+  },
+  "beap_part_benef_sp": {
+    "label": "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimilées exerçant dans le secteur agricole et de pêche (BEAP)"
+  },
+  "beap_reel_res_fiscal": {
+    "label": "Résultat fiscal (BEAP, régime réel)"
+  },
+  "beap_reliq_benef_fiscal": {
+    "label": "Bénéfice fiscal (BEAP, bénéfice comme reliquat positif entre recette et dépenses)"
+  },
+  "bic": {
+    "children": [
+      {
+        "name": "bic_reel_res"
+      }
+    ],
+    "label": "Bénéfices industriels et commerciaux (BIC)"
+  },
+  "bic_benef_fiscal_cession": {
+    "children": [
+      {
+        "name": "bic_res_cession"
+      },
+      {
+        "name": "bic_pv_cession"
+      }
+    ],
+    "label": "Bénéfice fiscal (BIC, cession de fond de commerce)"
+  },
+  "bic_ca_autre": {
+    "label": "Chiffre d’affaires global au titre d’autres activités (BIC, régime forfaitaire, cession de fonds de commerce)"
+  },
+  "bic_ca_global": {
+    "children": [
+      {
+        "name": "bic_ca_revente"
+      },
+      {
+        "name": "bic_ca_autre"
+      }
+    ],
+    "label": "Chiffre d’affaires global (BIC, cession de fond de commerce"
+  },
+  "bic_ca_revente": {
+    "label": "Chiffre d’affaires global au titre des activités d’achat en vue de la revente et les activités de transformation (BIC, régime forfaitaire, cession de fonds de commerce)"
+  },
+  "bic_pv_cession": {
+    "label": "Plue-value de cession du fond de commerce (BIC, régime forfaitaire, cession de fonds de commerce)"
+  },
+  "bic_reel_res": {
+    "label": "Résultat comptable (BIC, régime réel)"
+  },
+  "bic_res_cession": {
+    "label": "Résultat (BIC, cession de fond de commerce)"
+  },
+  "bnc": {
+    "children": [
+      {
+        "name": "bnc_reel_res_fiscal"
+      },
+      {
+        "name": "bnc_forf_benef_fiscal"
+      },
+      {
+        "name": "bnc_part_benef_sp"
+      }
+    ],
+    "label": "Bénéfices des professions non commerciales (BNC)"
+  },
+  "bnc_forf_benef_fiscal": {
+    "label": "Bénéfice fiscal (régime forfaitaire en % des recettes brutes TTC)"
+  },
+  "bnc_part_benef_sp": {
+    "label": "Part dans le bénéfice ou dans la perte des sociétés de personnes et assimiléesqui réalisent des bénéfices non commerciaux (BNC)"
+  },
+  "bnc_reel_res_fiscal": {
+    "label": "Résultat fiscal (BNC, régime réel)"
+  },
+  "contribution_frais_creche": {
+    "label": "Contribution aux frais de crêche"
   },
   "cotisations_employeur": {
     "children": [
@@ -74,11 +177,30 @@
     ],
     "label": "Cotisation sociales salarié"
   },
+  "cotisations_sociales": {
+    "children": [
+      {
+        "name": "cotisations_employeur"
+      },
+      {
+        "name": "cotisations_salarie"
+      }
+    ],
+    "label": "Cotisations sociales"
+  },
   "deces_employeur": {
     "label": "Cotisation assurances sociales: décès (employeur)"
   },
   "deces_salarie": {
     "label": "Cotisation assurances sociales: décès (salarié)"
+  },
+  "deduction_rente": {
+    "children": [
+      {
+        "name": "rente"
+      }
+    ],
+    "label": "Arrérages et rentes payées à titre obligatoire et gratuit"
   },
   "famille_employeur": {
     "label": "Cotisation sociale allocations familiales (employeur)"
@@ -100,6 +222,12 @@
   "irpp": {
     "label": "Impôt sur le revenu des personnes physiques"
   },
+  "irpp_mensuel_salarie": {
+    "label": "Impôt sur le revenu des personnes physiques prélevé à la source pour les salariés"
+  },
+  "majoration_salaire_unique": {
+    "label": "Majoration du salaire unique"
+  },
   "maladie_employeur": {
     "label": "Cotisation assurances sociales: maladie (employeur)"
   },
@@ -111,6 +239,20 @@
   },
   "maternite_salarie": {
     "label": "Cotisation assurances sociales : maternité (salarié)"
+  },
+  "prestations_familiales": {
+    "children": [
+      {
+        "name": "af"
+      },
+      {
+        "name": "majoration_salaire_unique"
+      },
+      {
+        "name": "contribution_frais_creche"
+      }
+    ],
+    "label": "Prestations familales"
   },
   "prestations_sociales": {
     "label": "Prestations sociales"
@@ -124,6 +266,9 @@
   "protection_sociale_travailleurs_salarie": {
     "label": "Cotisation protection sociale des travailleurs (salarié)"
   },
+  "rente": {
+    "label": "Rentes payées obligatoirement et à titre gratuit"
+  },
   "retraite_employeur": {
     "label": "Cotisation pensions de retraite (employeur)"
   },
@@ -132,6 +277,12 @@
   },
   "revenu_assimile_pension": {
     "label": "Revenus assimilés à des pensions (pensions et rentes viagères)"
+  },
+  "revenu_assimile_pension_apres_abattements": {
+    "label": "Revenu assimilé à des pensions après abattements"
+  },
+  "revenu_assimile_salaire_apres_abattements": {
+    "label": "Revenu imposé comme des salaires net des abatements"
   },
   "revenu_disponible": {
     "children": [
@@ -181,28 +332,7 @@
     "label": "Revenus fonciers"
   },
   "salaire_de_base": {
-    "label": "Salaire de base",
-    "options": [
-      {
-        "then": {
-          "children": [
-            {
-              "name": "salaire_super_brut"
-            },
-            {
-              "name": "primes",
-              "negate": true
-            },
-            {
-              "name": "cotisations_employeur"
-            }
-          ]
-        },
-        "waterfall": [
-          "super_brut_to_disponible"
-        ]
-      }
-    ]
+    "label": "Salaire de base"
   },
   "salaire_imposable": {
     "children": [
@@ -214,6 +344,17 @@
       }
     ],
     "label": "Salaire imposable"
+  },
+  "salaire_net_a_payer": {
+    "children": [
+      {
+        "name": "salaire_imposable"
+      },
+      {
+        "name": "irpp_mensuel_salarie"
+      }
+    ],
+    "label": "Salaire net à payer (fiche de paie)"
   },
   "salaire_super_brut": {
     "children": [
@@ -228,17 +369,18 @@
         "negate": true
       }
     ],
-    "label": "Salaires super bruts",
-    "options": [
+    "label": "Salaires super bruts"
+  },
+  "tspr": {
+    "children": [
       {
-        "then": {
-          "children": null
-        },
-        "waterfall": [
-          "super_brut_to_disponible"
-        ]
+        "name": "revenu_assimile_salaire_apres_abattements"
+      },
+      {
+        "name": "revenu_assimile_pension_apres_abattements"
       }
-    ]
+    ],
+    "label": "Traitements, salaires, indemnités, pensions et rentes viagères"
   },
   "ugtt": {
     "label": "Cotisation syndicale UGTT"

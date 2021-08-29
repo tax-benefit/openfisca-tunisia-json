@@ -154,5 +154,6 @@
   "name": "cotisations_sociales",
   "start_line_number": 92,
   "stop_line_number": 103,
+  "unit": "currency",
   "value_type": "float"
 }

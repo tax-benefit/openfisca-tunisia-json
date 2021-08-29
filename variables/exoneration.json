@@ -512,6 +512,7 @@
   "is_period_size_independent": true,
   "json_type": "boolean",
   "label": "Exoneration de l'impôt sur le revenu des personnes physiques",
+  "last_review": "2017-01-01",
   "name": "exoneration",
   "referring_variables": [
     "irpp"

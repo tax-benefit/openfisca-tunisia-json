@@ -143,5 +143,6 @@
   "name": "deduction_rente",
   "start_line_number": 507,
   "stop_line_number": 517,
+  "unit": "currency",
   "value_type": "float"
 }

@@ -238,5 +238,6 @@
   ],
   "start_line_number": 304,
   "stop_line_number": 317,
+  "unit": "currency",
   "value_type": "float"
 }

@@ -431,6 +431,9 @@
         "name": "formula"
       },
       "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+      "parameters": [
+        "cotisations_sociales.gen.smig_40h_mensuel"
+      ],
       "source_code": "def formula(foyer_fiscal, period, parameters):\n    revenu_assimile_salaire = foyer_fiscal('revenu_assimile_salaire', period = period)\n    smig_dec = foyer_fiscal.declarant_principal('smig_dec', period = period.first_month)\n    smig_40h_mensuel = parameters(period.start).cotisations_sociales.gen.smig_40h_mensuel\n    smig = or_(smig_dec, revenu_assimile_salaire <= 12 * smig_40h_mensuel)\n    return smig\n",
       "start_line_number": 337,
       "stop_line_number": 343,

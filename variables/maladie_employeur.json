@@ -166,5 +166,6 @@
   ],
   "start_line_number": 255,
   "stop_line_number": 269,
+  "unit": "currency",
   "value_type": "float"
 }

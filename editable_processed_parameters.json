@@ -1134,6 +1134,9 @@
                   }
                 ]
               },
+              "referring_variables": [
+                "smig"
+              ],
               "type": "number",
               "unit": "currency",
               "values": {
@@ -1789,6 +1792,9 @@
                   }
                 ]
               },
+              "referring_variables": [
+                "contribution_frais_creche"
+              ],
               "type": "number",
               "unit": "currency",
               "values": {
@@ -3988,6 +3994,9 @@
                   "description": "Part des recettes brutes TTC imposées",
                   "file_path": "impot_revenu/bnc/forf/part_forf.yaml",
                   "name": "impot_revenu.bnc.forf.part_forf",
+                  "referring_variables": [
+                    "bnc_forf_benef_fiscal"
+                  ],
                   "type": "number",
                   "unit": "/1",
                   "values": {
@@ -4607,6 +4616,9 @@
                   "description": "Déduction pour frais, charges et amortissments",
                   "file_path": "impot_revenu/foncier/bati/deduction_frais.yaml",
                   "name": "impot_revenu.foncier.bati.deduction_frais",
+                  "referring_variables": [
+                    "fon_forf_bati"
+                  ],
                   "type": "number",
                   "unit": "/1",
                   "values": {
@@ -4954,6 +4966,6 @@
     }
   },
   "class": "Node",
-  "file_path": "/home/manou/Projects/leximpact/openfisca-ast/.venv/lib/python3.9/site-packages/openfisca_tunisia/parameters",
+  "file_path": "/home/manou/.cache/pypoetry/virtualenvs/openfisca-json-extractor-3pYDVlun-py3.9/lib/python3.9/site-packages/openfisca_tunisia/parameters",
   "name": ""
 }

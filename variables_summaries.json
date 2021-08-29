@@ -20,6 +20,7 @@
     ],
     "start_line_number": 143,
     "stop_line_number": 157,
+    "unit": "currency",
     "value_type": "float"
   },
   "accident_du_travail_salarie": {
@@ -43,6 +44,7 @@
     ],
     "start_line_number": 159,
     "stop_line_number": 173,
+    "unit": "currency",
     "value_type": "float"
   },
   "activite": {
@@ -82,6 +84,7 @@
     ],
     "start_line_number": 120,
     "stop_line_number": 146,
+    "unit": "currency",
     "value_type": "float"
   },
   "af_nbenf": {
@@ -197,6 +200,7 @@
     ],
     "start_line_number": 70,
     "stop_line_number": 81,
+    "unit": "currency",
     "value_type": "float"
   },
   "autres_revenus_etranger": {
@@ -249,6 +253,7 @@
     "name": "beap",
     "start_line_number": 229,
     "stop_line_number": 242,
+    "unit": "currency",
     "value_type": "float"
   },
   "beap_monogr": {
@@ -265,6 +270,7 @@
     ],
     "start_line_number": 274,
     "stop_line_number": 279,
+    "unit": "currency",
     "value_type": "int"
   },
   "beap_part_benef_sp": {
@@ -281,6 +287,7 @@
     ],
     "start_line_number": 283,
     "stop_line_number": 289,
+    "unit": "currency",
     "value_type": "int"
   },
   "beap_reel_res_fiscal": {
@@ -297,6 +304,7 @@
     ],
     "start_line_number": 225,
     "stop_line_number": 230,
+    "unit": "currency",
     "value_type": "int"
   },
   "beap_reliq_benef_fiscal": {
@@ -313,6 +321,7 @@
     ],
     "start_line_number": 264,
     "stop_line_number": 269,
+    "unit": "currency",
     "value_type": "int"
   },
   "beap_reliq_dep_ex": {
@@ -375,6 +384,7 @@
     "name": "bic",
     "start_line_number": 125,
     "stop_line_number": 136,
+    "unit": "currency",
     "value_type": "float"
   },
   "bic_benef_fiscal_cession": {
@@ -399,6 +409,7 @@
     "name": "bic_benef_fiscal_cession",
     "start_line_number": 173,
     "stop_line_number": 184,
+    "unit": "currency",
     "value_type": "float"
   },
   "bic_ca_autre": {
@@ -415,6 +426,7 @@
     ],
     "start_line_number": 131,
     "stop_line_number": 136,
+    "unit": "currency",
     "value_type": "int"
   },
   "bic_ca_global": {
@@ -443,6 +455,7 @@
     ],
     "start_line_number": 143,
     "stop_line_number": 158,
+    "unit": "currency",
     "value_type": "float"
   },
   "bic_ca_revente": {
@@ -459,6 +472,7 @@
     ],
     "start_line_number": 123,
     "stop_line_number": 129,
+    "unit": "currency",
     "value_type": "int"
   },
   "bic_depenses": {
@@ -517,6 +531,7 @@
     ],
     "start_line_number": 145,
     "stop_line_number": 150,
+    "unit": "currency",
     "value_type": "int"
   },
   "bic_reel": {
@@ -555,6 +570,7 @@
     ],
     "start_line_number": 67,
     "stop_line_number": 72,
+    "unit": "currency",
     "value_type": "int"
   },
   "bic_res_cession": {
@@ -582,6 +598,7 @@
     ],
     "start_line_number": 160,
     "stop_line_number": 171,
+    "unit": "currency",
     "value_type": "float"
   },
   "bic_res_fiscal": {
@@ -650,6 +667,7 @@
     ],
     "start_line_number": 194,
     "stop_line_number": 211,
+    "unit": "currency",
     "value_type": "float"
   },
   "bnc_forf_benef_fiscal": {
@@ -662,6 +680,9 @@
       "0001-01-01": {
         "documentation": "\nBénéfice fiscal (régime forfaitaire, en % des recettes brutes TTC)\n",
         "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "parameters": [
+          "impot_revenu.bnc.forf.part_forf"
+        ],
         "start_line_number": 219,
         "stop_line_number": 226,
         "variables": [
@@ -677,6 +698,7 @@
     ],
     "start_line_number": 213,
     "stop_line_number": 226,
+    "unit": "currency",
     "value_type": "float"
   },
   "bnc_forfaitaire_recettes_brutes": {
@@ -709,6 +731,7 @@
     ],
     "start_line_number": 205,
     "stop_line_number": 211,
+    "unit": "currency",
     "value_type": "int"
   },
   "bnc_reel_res_fiscal": {
@@ -725,6 +748,7 @@
     ],
     "start_line_number": 176,
     "stop_line_number": 181,
+    "unit": "currency",
     "value_type": "int"
   },
   "boursier": {
@@ -1003,6 +1027,7 @@
       "0001-01-01": {
         "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
         "parameters": [
+          "cotisations_sociales.gen.smig_48h_mensuel",
           "prestations_familiales.creche.age_max",
           "prestations_familiales.creche.age_min",
           "prestations_familiales.creche.duree",
@@ -1025,6 +1050,7 @@
     ],
     "start_line_number": 184,
     "stop_line_number": 214,
+    "unit": "currency",
     "value_type": "float"
   },
   "cotisations_employeur": {
@@ -1059,6 +1085,7 @@
     ],
     "start_line_number": 105,
     "stop_line_number": 122,
+    "unit": "currency",
     "value_type": "float"
   },
   "cotisations_non_affilie": {
@@ -1106,6 +1133,7 @@
     ],
     "start_line_number": 124,
     "stop_line_number": 141,
+    "unit": "currency",
     "value_type": "float"
   },
   "cotisations_sociales": {
@@ -1130,6 +1158,7 @@
     "name": "cotisations_sociales",
     "start_line_number": 92,
     "stop_line_number": 103,
+    "unit": "currency",
     "value_type": "float"
   },
   "date_naissance": {
@@ -1171,6 +1200,7 @@
     ],
     "start_line_number": 175,
     "stop_line_number": 189,
+    "unit": "currency",
     "value_type": "float"
   },
   "deces_salarie": {
@@ -1194,6 +1224,7 @@
     ],
     "start_line_number": 191,
     "stop_line_number": 205,
+    "unit": "currency",
     "value_type": "float"
   },
   "deduction_assurance_vie": {
@@ -1315,6 +1346,7 @@
     "name": "deduction_rente",
     "start_line_number": 507,
     "stop_line_number": 517,
+    "unit": "currency",
     "value_type": "float"
   },
   "deduction_smig": {
@@ -1431,6 +1463,7 @@
     "is_period_size_independent": true,
     "json_type": "boolean",
     "label": "Exoneration de l'impôt sur le revenu des personnes physiques",
+    "last_review": "2017-01-01",
     "name": "exoneration",
     "referring_variables": [
       "irpp"
@@ -1460,6 +1493,7 @@
     ],
     "start_line_number": 207,
     "stop_line_number": 221,
+    "unit": "currency",
     "value_type": "float"
   },
   "famille_salarie": {
@@ -1483,6 +1517,7 @@
     ],
     "start_line_number": 223,
     "stop_line_number": 237,
+    "unit": "currency",
     "value_type": "float"
   },
   "fon_forf_bati": {
@@ -1494,6 +1529,9 @@
     "formulas": {
       "0001-01-01": {
         "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "parameters": [
+          "impot_revenu.foncier.bati.deduction_frais"
+        ],
         "start_line_number": 267,
         "stop_line_number": 281
       }
@@ -1669,6 +1707,7 @@
     ],
     "start_line_number": 239,
     "stop_line_number": 253,
+    "unit": "currency",
     "value_type": "float"
   },
   "impot_revenu_brut": {
@@ -1724,6 +1763,7 @@
     ],
     "start_line_number": 10,
     "stop_line_number": 20,
+    "unit": "currency",
     "value_type": "float"
   },
   "interet_acquisition_logement": {
@@ -1782,6 +1822,7 @@
     ],
     "start_line_number": 629,
     "stop_line_number": 639,
+    "unit": "currency",
     "value_type": "float"
   },
   "irpp_mensuel_salarie": {
@@ -1809,6 +1850,7 @@
     ],
     "start_line_number": 641,
     "stop_line_number": 654,
+    "unit": "currency",
     "value_type": "float"
   },
   "loyer": {
@@ -1854,6 +1896,7 @@
     ],
     "start_line_number": 148,
     "stop_line_number": 164,
+    "unit": "currency",
     "value_type": "float"
   },
   "maladie_employeur": {
@@ -1877,6 +1920,7 @@
     ],
     "start_line_number": 255,
     "stop_line_number": 269,
+    "unit": "currency",
     "value_type": "float"
   },
   "maladie_salarie": {
@@ -1900,6 +1944,7 @@
     ],
     "start_line_number": 271,
     "stop_line_number": 285,
+    "unit": "currency",
     "value_type": "float"
   },
   "male": {
@@ -1961,6 +2006,7 @@
     ],
     "start_line_number": 287,
     "stop_line_number": 301,
+    "unit": "currency",
     "value_type": "float"
   },
   "maternite_salarie": {
@@ -1984,6 +2030,7 @@
     ],
     "start_line_number": 303,
     "stop_line_number": 317,
+    "unit": "currency",
     "value_type": "float"
   },
   "nb_enf": {
@@ -2138,6 +2185,7 @@
     "name": "prestations_familiales",
     "start_line_number": 216,
     "stop_line_number": 227,
+    "unit": "currency",
     "value_type": "float"
   },
   "prestations_familiales_enfant_a_charge": {
@@ -2161,9 +2209,13 @@
     "json_type": "boolean",
     "label": "Enfant considéré à charge au sens des prestations familiales",
     "name": "prestations_familiales_enfant_a_charge",
-    "reference": [
-      "http://www.cleiss.fr/docs/regimes/regime_tunisie_salaries.html"
-    ],
+    "reference": {
+      "0001-01-01": [
+        {
+          "href": "http://www.cleiss.fr/docs/regimes/regime_tunisie_salaries.html"
+        }
+      ]
+    },
     "referring_variables": [
       "af_nbenf"
     ],
@@ -2185,6 +2237,7 @@
     ],
     "start_line_number": 22,
     "stop_line_number": 27,
+    "unit": "currency",
     "value_type": "int"
   },
   "pret_universitaire": {
@@ -2232,6 +2285,7 @@
     "set_input": "set_input_divide_by_period",
     "start_line_number": 17,
     "stop_line_number": 23,
+    "unit": "currency",
     "value_type": "float"
   },
   "protection_sociale_travailleurs_employeur": {
@@ -2255,6 +2309,7 @@
     ],
     "start_line_number": 319,
     "stop_line_number": 333,
+    "unit": "currency",
     "value_type": "float"
   },
   "protection_sociale_travailleurs_salarie": {
@@ -2278,6 +2333,7 @@
     ],
     "start_line_number": 335,
     "stop_line_number": 349,
+    "unit": "currency",
     "value_type": "float"
   },
   "regime_securite_sociale": {
@@ -2323,6 +2379,7 @@
     ],
     "start_line_number": 81,
     "stop_line_number": 86,
+    "unit": "currency",
     "value_type": "int"
   },
   "retr": {
@@ -2374,6 +2431,7 @@
     ],
     "start_line_number": 351,
     "stop_line_number": 365,
+    "unit": "currency",
     "value_type": "float"
   },
   "retraite_salarie": {
@@ -2397,6 +2455,7 @@
     ],
     "start_line_number": 367,
     "stop_line_number": 381,
+    "unit": "currency",
     "value_type": "float"
   },
   "revenu_assimile_pension": {
@@ -2413,6 +2472,7 @@
     ],
     "start_line_number": 8,
     "stop_line_number": 13,
+    "unit": "currency",
     "value_type": "int"
   },
   "revenu_assimile_pension_apres_abattements": {
@@ -2439,6 +2499,7 @@
     ],
     "start_line_number": 365,
     "stop_line_number": 377,
+    "unit": "currency",
     "value_type": "float"
   },
   "revenu_assimile_salaire": {
@@ -2495,6 +2556,7 @@
     ],
     "start_line_number": 345,
     "stop_line_number": 363,
+    "unit": "currency",
     "value_type": "float"
   },
   "revenu_disponible": {
@@ -2518,6 +2580,7 @@
     "name": "revenu_disponible",
     "start_line_number": 29,
     "stop_line_number": 38,
+    "unit": "currency",
     "value_type": "float"
   },
   "revenu_disponible_individuel": {
@@ -2548,6 +2611,7 @@
     ],
     "start_line_number": 40,
     "stop_line_number": 54,
+    "unit": "currency",
     "value_type": "float"
   },
   "revenu_net_imposable": {
@@ -2603,6 +2667,7 @@
     ],
     "start_line_number": 56,
     "stop_line_number": 65,
+    "unit": "currency",
     "value_type": "float"
   },
   "revenus_du_travail": {
@@ -2629,6 +2694,7 @@
     ],
     "start_line_number": 67,
     "stop_line_number": 76,
+    "unit": "currency",
     "value_type": "float"
   },
   "revenus_fonciers": {
@@ -2657,6 +2723,7 @@
     ],
     "start_line_number": 246,
     "stop_line_number": 259,
+    "unit": "currency",
     "value_type": "float"
   },
   "rng": {
@@ -2729,6 +2796,7 @@
     "set_input": "set_input_divide_by_period",
     "start_line_number": 9,
     "stop_line_number": 15,
+    "unit": "currency",
     "value_type": "float"
   },
   "salaire_en_nature": {
@@ -2787,6 +2855,7 @@
     "set_input": "set_input_divide_by_period",
     "start_line_number": 383,
     "stop_line_number": 395,
+    "unit": "currency",
     "value_type": "float"
   },
   "salaire_net_a_payer": {
@@ -2812,6 +2881,7 @@
     "set_input": "set_input_divide_by_period",
     "start_line_number": 397,
     "stop_line_number": 409,
+    "unit": "currency",
     "value_type": "float"
   },
   "salaire_super_brut": {
@@ -2838,6 +2908,7 @@
     "set_input": "set_input_divide_by_period",
     "start_line_number": 411,
     "stop_line_number": 424,
+    "unit": "currency",
     "value_type": "float"
   },
   "salaire_unique": {
@@ -2873,6 +2944,9 @@
     "formulas": {
       "0001-01-01": {
         "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+        "parameters": [
+          "cotisations_sociales.gen.smig_40h_mensuel"
+        ],
         "start_line_number": 337,
         "stop_line_number": 343,
         "variables": [
@@ -2984,6 +3058,7 @@
     ],
     "start_line_number": 304,
     "stop_line_number": 317,
+    "unit": "currency",
     "value_type": "float"
   },
   "ugtt": {
@@ -3010,6 +3085,7 @@
     ],
     "start_line_number": 426,
     "stop_line_number": 435,
+    "unit": "currency",
     "value_type": "float"
   },
   "valm_aut": {

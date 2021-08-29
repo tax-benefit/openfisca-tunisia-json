@@ -166,5 +166,6 @@
   ],
   "start_line_number": 351,
   "stop_line_number": 365,
+  "unit": "currency",
   "value_type": "float"
 }

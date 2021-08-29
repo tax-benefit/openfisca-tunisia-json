@@ -12,5 +12,6 @@
   ],
   "start_line_number": 176,
   "stop_line_number": 181,
+  "unit": "currency",
   "value_type": "int"
 }

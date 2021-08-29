@@ -10,17 +10,29 @@
   },
   "assiette_cotisations_sociales": {
     "children": [
-      "salaire_de_base",
-      "primes"
+      {
+        "name": "salaire_de_base"
+      },
+      {
+        "name": "primes"
+      }
     ],
     "label": "Assiette des cotisations sociales"
   },
   "beap": {
     "children": [
-      "beap_reel_res_fiscal",
-      "beap_reliq_benef_fiscal",
-      "beap_monogr",
-      "beap_part_benef_sp"
+      {
+        "name": "beap_reel_res_fiscal"
+      },
+      {
+        "name": "beap_reliq_benef_fiscal"
+      },
+      {
+        "name": "beap_monogr"
+      },
+      {
+        "name": "beap_part_benef_sp"
+      }
     ],
     "label": "Bénéfices de l'exploitation agricole et de pêche (BEAP)"
   },
@@ -38,14 +50,20 @@
   },
   "bic": {
     "children": [
-      "bic_reel_res"
+      {
+        "name": "bic_reel_res"
+      }
     ],
     "label": "Bénéfices industriels et commerciaux (BIC)"
   },
   "bic_benef_fiscal_cession": {
     "children": [
-      "bic_res_cession",
-      "bic_pv_cession"
+      {
+        "name": "bic_res_cession"
+      },
+      {
+        "name": "bic_pv_cession"
+      }
     ],
     "label": "Bénéfice fiscal (BIC, cession de fond de commerce)"
   },
@@ -54,8 +72,12 @@
   },
   "bic_ca_global": {
     "children": [
-      "bic_ca_revente",
-      "bic_ca_autre"
+      {
+        "name": "bic_ca_revente"
+      },
+      {
+        "name": "bic_ca_autre"
+      }
     ],
     "label": "Chiffre d’affaires global (BIC, cession de fond de commerce"
   },
@@ -73,9 +95,15 @@
   },
   "bnc": {
     "children": [
-      "bnc_reel_res_fiscal",
-      "bnc_forf_benef_fiscal",
-      "bnc_part_benef_sp"
+      {
+        "name": "bnc_reel_res_fiscal"
+      },
+      {
+        "name": "bnc_forf_benef_fiscal"
+      },
+      {
+        "name": "bnc_part_benef_sp"
+      }
     ],
     "label": "Bénéfices des professions non commerciales (BNC)"
   },
@@ -89,38 +117,74 @@
     "label": "Résultat fiscal (BNC, régime réel)"
   },
   "contribution_frais_creche": {
-    "label": "Contribution aux frais de creche"
+    "label": "Contribution aux frais de crêche"
   },
   "cotisations_employeur": {
     "children": [
-      "accident_du_travail_employeur",
-      "deces_employeur",
-      "fonds_special_etat",
-      "famille_employeur",
-      "maladie_employeur",
-      "maternite_employeur",
-      "protection_sociale_travailleurs_employeur",
-      "retraite_employeur"
+      {
+        "name": "accident_du_travail_employeur"
+      },
+      {
+        "name": "deces_employeur"
+      },
+      {
+        "name": "fonds_special_etat"
+      },
+      {
+        "name": "famille_employeur"
+      },
+      {
+        "name": "maladie_employeur"
+      },
+      {
+        "name": "maternite_employeur"
+      },
+      {
+        "name": "protection_sociale_travailleurs_employeur"
+      },
+      {
+        "name": "retraite_employeur"
+      }
     ],
-    "label": "Cotisations sociales patronales"
+    "label": "Cotisation sociales employeur"
   },
   "cotisations_salarie": {
     "children": [
-      "accident_du_travail_salarie",
-      "deces_salarie",
-      "famille_salarie",
-      "maladie_salarie",
-      "maternite_salarie",
-      "protection_sociale_travailleurs_salarie",
-      "retraite_salarie",
-      "ugtt"
+      {
+        "name": "accident_du_travail_salarie"
+      },
+      {
+        "name": "deces_salarie"
+      },
+      {
+        "name": "famille_salarie"
+      },
+      {
+        "name": "maladie_salarie"
+      },
+      {
+        "name": "maternite_salarie"
+      },
+      {
+        "name": "protection_sociale_travailleurs_salarie"
+      },
+      {
+        "name": "retraite_salarie"
+      },
+      {
+        "name": "ugtt"
+      }
     ],
-    "label": "Cotisations sociales salariées"
+    "label": "Cotisation sociales salarié"
   },
   "cotisations_sociales": {
     "children": [
-      "cotisations_employeur",
-      "cotisations_salarie"
+      {
+        "name": "cotisations_employeur"
+      },
+      {
+        "name": "cotisations_salarie"
+      }
     ],
     "label": "Cotisations sociales"
   },
@@ -132,7 +196,9 @@
   },
   "deduction_rente": {
     "children": [
-      "rente"
+      {
+        "name": "rente"
+      }
     ],
     "label": "Arrérages et rentes payées à titre obligatoire et gratuit"
   },
@@ -147,18 +213,20 @@
   },
   "impots_directs": {
     "children": [
-      "irpp"
+      {
+        "name": "irpp"
+      }
     ],
     "label": "Impôts directs"
   },
   "irpp": {
-    "label": "Impôt sur le revenu"
+    "label": "Impôt sur le revenu des personnes physiques"
   },
   "irpp_mensuel_salarie": {
     "label": "Impôt sur le revenu des personnes physiques prélevé à la source pour les salariés"
   },
   "majoration_salaire_unique": {
-    "label": "Majoration salaire unique"
+    "label": "Majoration du salaire unique"
   },
   "maladie_employeur": {
     "label": "Cotisation assurances sociales: maladie (employeur)"
@@ -174,11 +242,17 @@
   },
   "prestations_familiales": {
     "children": [
-      "af",
-      "majoration_salaire_unique",
-      "contribution_frais_creche"
+      {
+        "name": "af"
+      },
+      {
+        "name": "majoration_salaire_unique"
+      },
+      {
+        "name": "contribution_frais_creche"
+      }
     ],
-    "label": "Prestations familiales"
+    "label": "Prestations familales"
   },
   "prestations_sociales": {
     "label": "Prestations sociales"
@@ -212,78 +286,99 @@
   },
   "revenu_disponible": {
     "children": [
-      "revenu_disponible_individuel"
+      {
+        "name": "revenu_disponible_individuel"
+      }
     ],
-    "label": "Revenu disponible"
+    "label": "Revenu disponible du ménage"
   },
   "revenu_disponible_individuel": {
     "children": [
-      "revenus_du_travail",
-      "revenu_assimile_pension",
-      "revenus_du_capital",
-      "prestations_sociales",
-      "impots_directs"
+      {
+        "name": "revenus_du_travail"
+      },
+      {
+        "name": "revenu_assimile_pension"
+      },
+      {
+        "name": "revenus_du_capital"
+      },
+      {
+        "name": "prestations_sociales"
+      },
+      {
+        "name": "impots_directs"
+      }
     ],
     "label": "Revenu disponible individuel"
   },
   "revenus_du_capital": {
     "children": [
-      "revenus_fonciers"
+      {
+        "name": "revenus_fonciers"
+      }
     ],
     "label": "Revenus du capital"
   },
   "revenus_du_travail": {
     "children": [
-      "salaire_imposable"
+      {
+        "name": "salaire_imposable"
+      }
     ],
-    "label": "Revenu du travail"
+    "label": "Revenus du travail"
   },
   "revenus_fonciers": {
     "label": "Revenus fonciers"
-  },
-  "sal": {
-    "children": [
-      "salaire_brut",
-      "cotisations_salarie"
-    ],
-    "label": "Salaires nets"
-  },
-  "salaire_brut": {
-    "children": [
-      "salaire_super_brut",
-      "cotisations_employeur"
-    ],
-    "label": "Salaires bruts"
   },
   "salaire_de_base": {
     "label": "Salaire de base"
   },
   "salaire_imposable": {
     "children": [
-      "assiette_cotisations_sociales",
-      "cotisations_salarie"
+      {
+        "name": "assiette_cotisations_sociales"
+      },
+      {
+        "name": "cotisations_salarie"
+      }
     ],
     "label": "Salaire imposable"
   },
   "salaire_net_a_payer": {
     "children": [
-      "salaire_imposable",
-      "irpp_mensuel_salarie"
+      {
+        "name": "salaire_imposable"
+      },
+      {
+        "name": "irpp_mensuel_salarie"
+      }
     ],
     "label": "Salaire net à payer (fiche de paie)"
   },
   "salaire_super_brut": {
     "children": [
-      "salaire_de_base",
-      "primes",
-      "cotisations_employeur"
+      {
+        "name": "salaire_de_base"
+      },
+      {
+        "name": "primes"
+      },
+      {
+        "name": "cotisations_employeur",
+        "negate": true
+      }
     ],
     "label": "Salaires super bruts"
   },
   "tspr": {
     "children": [
-      "revenu_assimile_salaire_apres_abattements",
-      "revenu_assimile_pension_apres_abattements"
+      {
+        "name": "revenu_assimile_salaire_apres_abattements"
+      },
+      {
+        "name": "revenu_assimile_pension_apres_abattements"
+      }
     ],
     "label": "Traitements, salaires, indemnités, pensions et rentes viagères"
   },

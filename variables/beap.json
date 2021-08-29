@@ -416,5 +416,6 @@
   "name": "beap",
   "start_line_number": 229,
   "stop_line_number": 242,
+  "unit": "currency",
   "value_type": "float"
 }

@@ -186,5 +186,6 @@
   "name": "revenu_disponible",
   "start_line_number": 29,
   "stop_line_number": 38,
+  "unit": "currency",
   "value_type": "float"
 }

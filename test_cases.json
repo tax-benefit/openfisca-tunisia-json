@@ -1,40 +1,79 @@
 [
   {
-    "familles": { "Famille": { "enfants": [], "parents": ["Dominique"] } },
-    "foyers_fiscaux": {
-      "Foyer fiscal": { "declarants": ["Dominique"], "personnes_a_charge": [] }
-    },
-    "individus": { "Dominique": { "salaire_de_base": 18655 } },
-    "menages": {
-      "Ménage": {
-        "conjoint": [],
+    "familles": {
+      "Famille n°1": {
         "enfants": [],
-        "personne_de_reference": ["Dominique"]
+        "parents": ["Adulte 1"]
       }
     },
-    "title": "Célibataire, sans enfant, salarié"
-  },
-  {
-    "familles": {
-      "Famille": { "enfants": ["Claude"], "parents": ["Dominique"] }
-    },
     "foyers_fiscaux": {
-      "Foyer fiscal": {
-        "declarants": ["Dominique"],
-        "personnes_a_charge": ["Claude"]
+      "Déclaration d’impôts n°1": {
+        "declarants": ["Adulte 1"],
+        "personnes_a_charge": []
       }
     },
     "individus": {
-      "Claude": { "age": 1 },
-      "Dominique": { "salaire_de_base": 18655 }
-    },
-    "menages": {
-      "Ménage": {
-        "conjoint": [],
-        "enfants": ["Claude"],
-        "personne_de_reference": ["Dominique"]
+      "Adulte 1": {
+        "date_naissance": { "2021": "1982-11-05" },
+        "regime_securite_sociale": {
+          "2019": "rsna",
+          "2020": "rsna",
+          "2021": "rsna"
+        },
+        "salaire_de_base": {
+          "2019": 19002.42,
+          "2020": 19002.42,
+          "2021": 19002.42
+        }
       }
     },
-    "title": "Célibataire, 1 bébé, salarié"
+    "menages": {
+      "Logement principal n°1": {
+        "conjoint": [],
+        "enfants": [],
+        "personne_de_reference": ["Adulte 1"]
+      }
+    },
+    "title": "Célibataire, salarié, sans enfant"
+  },
+  {
+    "familles": {
+      "Famille n°1": {
+        "enfants": ["Enfant 1"],
+        "parents": ["Adulte 1"]
+      }
+    },
+    "foyers_fiscaux": {
+      "Déclaration d’impôts n°1": {
+        "declarants": ["Adulte 1"],
+        "personnes_a_charge": ["Enfant 1"]
+      }
+    },
+    "individus": {
+      "Adulte 1": {
+        "date_naissance": { "2021": "1985-11-05" },
+        "regime_securite_sociale": {
+          "2019": "rsna",
+          "2020": "rsna",
+          "2021": "rsna"
+        },
+        "salaire_de_base": {
+          "2019": 37987.66,
+          "2020": 37987.66,
+          "2021": 37987.66
+        }
+      },
+      "Enfant 1": {
+        "date_naissance": { "2021": "2014-01-01" }
+      }
+    },
+    "menages": {
+      "Logement principal n°1": {
+        "conjoint": [],
+        "enfants": ["Enfant 1"],
+        "personne_de_reference": ["Adulte 1"]
+      }
+    },
+    "title": "Célibataire, salarié, 1 enfant"
   }
 ]

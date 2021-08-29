@@ -234,5 +234,6 @@
   "name": "bic_benef_fiscal_cession",
   "start_line_number": 173,
   "stop_line_number": 184,
+  "unit": "currency",
   "value_type": "float"
 }

@@ -3504,7 +3504,7 @@
       "name": "cotisations_sociales.salarie_cnrps"
     }
   },
-  "file_path": "/home/manou/Projects/leximpact/openfisca-ast/.venv/lib/python3.9/site-packages/openfisca_tunisia/parameters",
+  "file_path": "/home/manou/.cache/pypoetry/virtualenvs/openfisca-json-extractor-3pYDVlun-py3.9/lib/python3.9/site-packages/openfisca_tunisia/parameters",
   "impot_revenu": {
     "bareme": {
       "brackets": [

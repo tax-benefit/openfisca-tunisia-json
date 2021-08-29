@@ -14,5 +14,6 @@
   "set_input": "set_input_divide_by_period",
   "start_line_number": 9,
   "stop_line_number": 15,
+  "unit": "currency",
   "value_type": "float"
 }

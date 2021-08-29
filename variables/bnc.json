@@ -457,5 +457,6 @@
   ],
   "start_line_number": 194,
   "stop_line_number": 211,
+  "unit": "currency",
   "value_type": "float"
 }

@@ -606,6 +606,9 @@
         "name": "formula"
       },
       "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+      "parameters": [
+        "impot_revenu.foncier.bati.deduction_frais"
+      ],
       "source_code": "def formula(foyer_fiscal, period, parameters):\n    foncier_forfaitaire_batis_recettes = foyer_fiscal.declarant_principal(\n        'foncier_forfaitaire_batis_recettes', period = period)\n    foncier_forfaitaire_batis_reliquat = foyer_fiscal.declarant_principal(\n        'foncier_forfaitaire_batis_reliquat', period = period)\n    foncier_forfaitaire_batis_frais = foyer_fiscal.declarant_principal(\n        'foncier_forfaitaire_batis_frais', period = period)\n    foncier_forfaitaire_batis_taxe = foyer_fiscal.declarant_principal(\n        'foncier_forfaitaire_batis_taxe', period = period)\n    P = parameters(period.start).impot_revenu.foncier.bati.deduction_frais\n    return max_(\n        0,\n        foncier_forfaitaire_batis_recettes * (1 - P) - foncier_forfaitaire_batis_frais - foncier_forfaitaire_batis_taxe\n        )\n",
       "start_line_number": 267,
       "stop_line_number": 281

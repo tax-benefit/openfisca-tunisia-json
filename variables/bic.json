@@ -143,5 +143,6 @@
   "name": "bic",
   "start_line_number": 125,
   "stop_line_number": 136,
+  "unit": "currency",
   "value_type": "float"
 }

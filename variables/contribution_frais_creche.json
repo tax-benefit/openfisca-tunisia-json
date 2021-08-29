@@ -1100,6 +1100,7 @@
       },
       "file_path": "/openfisca_tunisia/model/prestations_familiales.py",
       "parameters": [
+        "cotisations_sociales.gen.smig_48h_mensuel",
         "prestations_familiales.creche.age_max",
         "prestations_familiales.creche.age_min",
         "prestations_familiales.creche.duree",
@@ -1123,5 +1124,6 @@
   ],
   "start_line_number": 184,
   "stop_line_number": 214,
+  "unit": "currency",
   "value_type": "float"
 }

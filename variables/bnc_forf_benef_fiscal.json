@@ -282,6 +282,9 @@
       },
       "documentation": "\nBénéfice fiscal (régime forfaitaire, en % des recettes brutes TTC)\n",
       "file_path": "/openfisca_tunisia/model/prelevements_obligatoires/impot_revenu/irpp.py",
+      "parameters": [
+        "impot_revenu.bnc.forf.part_forf"
+      ],
       "source_code": "def formula(foyer_fiscal, period, parameters):\n    \"\"\"\n    Bénéfice fiscal (régime forfaitaire, en % des recettes brutes TTC)\n    \"\"\"\n    bnc_forfaitaire_recettes_brutes = foyer_fiscal('bnc_forfaitaire_recettes_brutes', period = period)\n    part = parameters(period.start).impot_revenu.bnc.forf.part_forf\n    return bnc_forfaitaire_recettes_brutes * part\n",
       "start_line_number": 219,
       "stop_line_number": 226,
@@ -298,5 +301,6 @@
   ],
   "start_line_number": 213,
   "stop_line_number": 226,
+  "unit": "currency",
   "value_type": "float"
 }

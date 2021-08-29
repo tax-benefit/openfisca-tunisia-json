@@ -1,0 +1,33 @@
+[
+  {
+    "icon": "/pictos/picto_femme.svg",
+    "label": "Particulier",
+    "name": "brut_to_disponible",
+    "root": "revenu_disponible",
+    "totalLabel": "Revenus disponibles du cas type /an"
+  },
+  {
+    "icon": "/pictos/picto_entreprise.svg",
+    "label": "Employeur",
+    "name": "brut_to_super_brut",
+    "root": "salaire_super_brut",
+    "totalLabel": "Coût pour l'employeur /an"
+  },
+  {
+    "advanced": true,
+    "icon": "/pictos/picto_etat.svg",
+    "label": "Administrations publiques",
+    "name": "super_brut_to_disponible",
+    "root": "revenu_disponible",
+    "total": [
+      {
+        "name": "revenu_disponible",
+        "negate": true
+      },
+      {
+        "name": "salaire_super_brut"
+      }
+    ],
+    "totalLabel": "Coût ou gain pour les administrations publiques /an"
+  }
+]

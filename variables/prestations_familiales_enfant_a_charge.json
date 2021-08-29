@@ -541,9 +541,13 @@
   "json_type": "boolean",
   "label": "Enfant considéré à charge au sens des prestations familiales",
   "name": "prestations_familiales_enfant_a_charge",
-  "reference": [
-    "http://www.cleiss.fr/docs/regimes/regime_tunisie_salaries.html"
-  ],
+  "reference": {
+    "0001-01-01": [
+      {
+        "href": "http://www.cleiss.fr/docs/regimes/regime_tunisie_salaries.html"
+      }
+    ]
+  },
   "referring_variables": [
     "af_nbenf"
   ],

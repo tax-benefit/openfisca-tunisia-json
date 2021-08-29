@@ -325,5 +325,6 @@
   "name": "prestations_familiales",
   "start_line_number": 216,
   "stop_line_number": 227,
+  "unit": "currency",
   "value_type": "float"
 }
